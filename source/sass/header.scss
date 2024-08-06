@@ -1,0 +1,42 @@
+@import "./vars";
+@import "./fonts.scss";
+
+.header {
+  background-color: $accent-blue;
+  height: 100px;
+}
+
+.header__wrapper {
+  padding: 15px;
+  width: 290px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__burger-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-right a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: end;
+}
+
+.phone-link {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}

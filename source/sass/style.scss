@@ -2,5 +2,8 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-@import "./header";
-// @import "./vars";
+@import "./blocks/header";
+@import "./blocks/promo.scss";
+@import "./global.scss";
+@import "./blocks/custom-swiper-bullet.scss";
+@import "./blocks/tours.scss";

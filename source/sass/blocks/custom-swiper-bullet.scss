@@ -1,0 +1,18 @@
+@import "../vars.scss";
+
+.swiper-pagination {
+  bottom: 37px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  background-color: transparent !important;
+  border: 2px solid $white !important;
+  opacity: 1 !important;
+  margin: 0 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $white !important;
+}

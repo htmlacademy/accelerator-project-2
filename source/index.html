@@ -17,17 +17,40 @@
 </head>
 
 <body class="page-body">
-  <div class="wrapper">
-    <header class="page-header" data-test="header">header</header>
+  <div class="wrapper" data-page-wrapper>
+    <header class="page-header" data-test="header" data-page-header>
+      <div class="container">
+        <button class="page-header__btn" type="button" data-menu-btn>
+          <span class="visually-hidden">открыть, закрыть меню</span>
+        </button>
+        <div class="page-header__logo">
+          <img width="142" height="42" src="img/svg/logo.svg" alt="логотип компании LIFETOUR">
+        </div>
+        <nav class="page-header__nav nav nav--header" data-menu>
+          <ul class="nav__list nav__list--header">
+            <li><a href="#tours">Туры</a></li>
+            <li><a href="#training">Обучение</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#gallery">Фотографии</a></li>
+            <li><a href="#form">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__contacts">
+          <a href="tel:88000000000">8 800 000-00-00</a>
+        </div>
+      </div>
+    </header>
     <main class="page-content">
-      <section data-test="hero">hero</section>
-      <section data-test="tours">tours</section>
-      <section data-test="training">training</section>
-      <section data-test="about">about</section>
-      <section data-test="reviews">reviews</section>
-      <section data-test="adv">adv</section>
-      <section data-test="gallery">gallery</section>
-      <section data-test="form">form</section>
+      <section class="hero" data-test="hero">
+      </section>
+      <section class="tours" id="tours" data-test="tours">tours</section>
+      <section class="training" id="training" data-test="training">training</section>
+      <section class="about" id="about" data-test="about">about</section>
+      <section class="reviews" id="reviews" data-test="reviews">reviews</section>
+      <section class="adv" data-test="adv">adv</section>
+      <section class="gallery" id="gallery" data-test="gallery">gallery</section>
+      <section class="form" id="form" data-test="form">form</section>
     </main>
     <footer class="page-footer" data-test="footer">footer</footer>
   </div>

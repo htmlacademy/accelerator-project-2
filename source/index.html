@@ -92,32 +92,35 @@
       <section class="tours">
         <div class="tours__inner">
           <h3 class="tours__title">Ближайшие туры</h3>
-          <div class="swiper">
+          <div class="swiper swiper-tours">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="tours-slide">
+                <div class="tours-slide tours-slide-1">
                   <div class="tour-info">
                     <div class="tour-info-up">
                       <div class="tour-info__place">
                         <svg width="16px" height="16px">
                           <use href="/__spritemap#sprite-location"></use>
                         </svg>
-                        <span>Кавказ</span>
+                        <span class="tour-place-name">Кавказ</span>
                       </div>
-                      <div class="tour-info__days">
-                        <svg width="20px" height="20px">
-                          <use href="/__spritemap#sprite-day-sun"></use>
-                        </svg>
-                        <span>4 дня</span>
-                      </div>
-                      <div class="tour-info__nights">
-                        <svg width="20px" height="20px">
-                          <use href="/__spritemap#sprite-moon"></use>
-                        </svg>
-                        <span>3 ночи</span>
+                      <div class="tour-info__duration">
+                        <div class="tour-info__days">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-day-sun"></use>
+                          </svg>
+                          <span>4 дня</span>
+                        </div>
+                        <div class="tour-info__nights">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <span>3 ночи</span>
+                        </div>
                       </div>
                     </div>
                     <h2 class="tour-title">Путешествие вокруг Эльбруса</h2>
+                    <div class="tour-decor-line"></div>
                     <div class="tour-info-bottom">
                       <div class="tour-info-bottom__content">
                         <span
@@ -152,9 +155,191 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
+              <div class="swiper-slide">
+                <div class="tours-slide tours-slide-2">
+                  <div class="tour-info">
+                    <div class="tour-info-up">
+                      <div class="tour-info__place">
+                        <svg width="16px" height="16px">
+                          <use href="/__spritemap#sprite-location"></use>
+                        </svg>
+                        <span class="tour-place-name">Алтай</span>
+                      </div>
+                      <div class="tour-info__duration">
+                        <div class="tour-info__days">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-day-sun"></use>
+                          </svg>
+                          <span>14 дней</span>
+                        </div>
+                        <div class="tour-info__nights">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <span>13 ночей</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="tour-title">Путь к подножию Белухи</h2>
+                    <div class="tour-decor-line"></div>
+                    <div class="tour-info-bottom">
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-hardness"
+                          >Сложность:</span
+                        >
+                        <span class="tour-info-bottom__data">
+                          <svg width="84" height="16">
+                            <use href="/__spritemap#sprite-four-stars"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-collecting"
+                          >Даты набора:</span
+                        >
+                        <span class="tour-info-bottom__data collecting-data">
+                          14.06–23.06
+                        </span>
+                      </div>
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-collecting"
+                          >Группа:</span
+                        >
+                        <span class="tour-info-bottom__data collecting-data">
+                          до 25 чел.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="tours-slide tours-slide-3">
+                  <div class="tour-info">
+                    <div class="tour-info-up">
+                      <div class="tour-info__place">
+                        <svg width="16px" height="16px">
+                          <use href="/__spritemap#sprite-location"></use>
+                        </svg>
+                        <span class="tour-place-name">Адыгея</span>
+                      </div>
+                      <div class="tour-info__duration">
+                        <div class="tour-info__days">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-day-sun"></use>
+                          </svg>
+                          <span>7 дней</span>
+                        </div>
+                        <div class="tour-info__nights">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <span>6 ночей</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="tour-title">
+                      Через Фишт к Чёрному морю и обратно
+                    </h2>
+                    <div class="tour-decor-line"></div>
+                    <div class="tour-info-bottom">
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-hardness"
+                          >Сложность:</span
+                        >
+                        <span class="tour-info-bottom__data">
+                          <svg width="84" height="16">
+                            <use href="/__spritemap#sprite-four-stars"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-collecting"
+                          >Даты набора:</span
+                        >
+                        <span class="tour-info-bottom__data collecting-data">
+                          15.07–19.07
+                        </span>
+                      </div>
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-collecting"
+                          >Группа:</span
+                        >
+                        <span class="tour-info-bottom__data collecting-data">
+                          до 22 чел.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="tours-slide tours-slide-4">
+                  <div class="tour-info">
+                    <div class="tour-info-up">
+                      <div class="tour-info__place">
+                        <svg width="16px" height="16px">
+                          <use href="/__spritemap#sprite-location"></use>
+                        </svg>
+                        <span class="tour-place-name">Урал</span>
+                      </div>
+                      <div class="tour-info__duration">
+                        <div class="tour-info__days">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-day-sun"></use>
+                          </svg>
+                          <span>9 дней</span>
+                        </div>
+                        <div class="tour-info__nights">
+                          <svg width="20px" height="20px">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <span>10 ночей</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="tour-title">Восхождение Манарага</h2>
+                    <div class="tour-decor-line"></div>
+                    <div class="tour-info-bottom">
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-hardness"
+                          >Сложность:</span
+                        >
+                        <span class="tour-info-bottom__data">
+                          <svg width="84" height="16">
+                            <use href="/__spritemap#sprite-five-stars"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-collecting"
+                          >Даты набора:</span
+                        >
+                        <span class="tour-info-bottom__data collecting-data">
+                          12.07–19.07
+                        </span>
+                      </div>
+                      <div class="tour-info-bottom__content">
+                        <span
+                          class="tour-info-bottom__criteria criteria-collecting"
+                          >Группа:</span
+                        >
+                        <span class="tour-info-bottom__data collecting-data">
+                          до 7 чел.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- <div class="swiper-pagination"></div> -->
             <!-- If we need navigation buttons -->

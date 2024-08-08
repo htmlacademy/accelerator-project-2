@@ -21,16 +21,35 @@
   line-height: 26px;
 }
 
+.swiper-tours {
+  margin-bottom: 25px;
+}
+
 .tours-slide {
   width: 290px;
   height: 416px;
-  background-image: url("../../img/tours-mobile-elbrus.png");
   padding: 30px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin: 0 auto;
+}
+
+.tours-slide-1 {
+  background-image: url("../../img/tours-mobile-elbrus.png");
+}
+
+.tours-slide-2 {
+  background-image: url("../../img/tours-mobile-altay.png");
+}
+
+.tours-slide-3 {
+  background-image: url("../../img/tours-mobile-adigeya.png");
+}
+
+.tours-slide-4 {
+  background-image: url("../../img/tours-mobile-ural.png");
 }
 
 .tour-info {
@@ -40,6 +59,8 @@
 .tour-info-up {
   display: flex;
   margin-bottom: 15px;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .tour-info__place {
@@ -50,6 +71,7 @@
   align-items: center;
   gap: 6px;
   margin-right: 5px;
+  // margin-bottom: 12px;
 }
 
 .tour-info__place span {
@@ -58,8 +80,13 @@
   line-height: 12px;
 }
 
+.tour-info__duration {
+  display: flex;
+  margin-top: 12px;
+}
+
 .tour-info__days {
-  margin-right: 14px;
+  margin-right: 8px;
 }
 
 .tour-info__days,
@@ -77,10 +104,10 @@
 }
 
 .tour-title {
-  margin: 0 0 31px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .tour-info-bottom {
@@ -105,10 +132,19 @@
 
 .criteria-collecting {
   margin-bottom: 7px;
+  width: 83px;
 }
 
 .collecting-data {
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
+}
+
+.tour-decor-line {
+  width: 80px;
+  height: 1px;
+  opacity: 0.2;
+  background: $white;
+  margin: 15px 0;
 }

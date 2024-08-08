@@ -1,3 +1,5 @@
+@import "../vars.scss";
+
 .tours {
   padding: 17px 15px 20px;
 }
@@ -7,4 +9,106 @@
   font-size: 22px;
   font-weight: 800;
   line-height: 22px;
+  position: relative;
+}
+
+.tours__title::before {
+  content: "Ближайшие туры";
+  position: absolute;
+  top: -15px;
+  opacity: 0.03;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.tours-slide {
+  width: 290px;
+  height: 416px;
+  background-image: url("../../img/tours-mobile-elbrus.png");
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.tour-info {
+  color: $white;
+}
+
+.tour-info-up {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.tour-info__place {
+  display: block;
+  background-color: #0266c1;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 5px;
+}
+
+.tour-info__place span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour-info__days {
+  margin-right: 14px;
+}
+
+.tour-info__days,
+.tour-info__nights {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tour-info__days span,
+.tour-info__nights span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour-title {
+  margin: 0 0 31px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.tour-info-bottom {
+  display: flex;
+  gap: 8px;
+}
+
+.tour-info-bottom__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-info-bottom__criteria {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.criteria-hardness {
+  margin-bottom: 4px;
+}
+
+.criteria-collecting {
+  margin-bottom: 7px;
+}
+
+.collecting-data {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
 }

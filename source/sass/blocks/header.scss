@@ -18,12 +18,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .header-right {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header-right a {

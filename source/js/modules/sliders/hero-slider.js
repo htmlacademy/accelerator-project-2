@@ -15,6 +15,7 @@ const heroSliderInit = () => {
       slidesPerView: 1,
       pagination: {
         el: '.hero__slider-pagination',
+        clickable: true,
       },
     });
   }

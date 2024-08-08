@@ -1,8 +1,46 @@
-.hero-slide {}
+.hero-slide {
+  padding-top: 200px;
+  padding-bottom: 80px;
+  background-color: #5f83ae;
+  color: $color-white;
+}
 
 .hero-slide__content {}
 
-.hero-slide__info {}
+.hero-slide__content h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 944px;
+  font-size: 77px;
+  line-height: 77px;
+  font-weight: 800;
+}
+
+.hero-slide__content p {
+  margin: 0;
+  margin-bottom: 35px;
+  max-width: 464px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.hero-slide__info {
+  margin-top: 134px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.hero-slide__info span {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border: 1px solid $color-white;
+}
 
 .hero-slide__duration {}
 

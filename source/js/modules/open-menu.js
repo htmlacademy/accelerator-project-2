@@ -1,9 +1,9 @@
 const openMenu = () => {
-  if (document.querySelector('[data-menu]') && document.querySelector('[data-menu-btn]')) {
-    const menu = document.querySelector('[data-menu]');
-    const menuBtn = document.querySelector('[data-menu-btn]');
-    const header = document.querySelector('[data-page-header]');
-    const wrapper = document.querySelector('[data-page-wrapper]');
+  if (document.querySelector('[data-element="menu"]') && document.querySelector('[data-element="menu-btn"]')) {
+    const menu = document.querySelector('[data-element="menu"]');
+    const menuBtn = document.querySelector('[data-element="menu-btn"]');
+    const header = document.querySelector('[data-element="page-header"]');
+    const wrapper = document.querySelector('[data-element="page-wrapper"]');
     const menuItems = menu.querySelectorAll('a');
 
     const closeMenu = () => {

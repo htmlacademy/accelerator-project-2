@@ -1,0 +1,241 @@
+.tours {
+  padding-top: 120px;
+  padding-bottom: 109px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: -126px;
+    right: 0;
+    width: 602px;
+    height: 1630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    @supports (background-image: url(image.webp)) {
+      background-image: url("../../img/backgrounds/clouds-1-desktop.webp");
+    }
+
+    background-image: url("../../img/backgrounds/clouds-1-desktop.jpg");
+
+    @media (resolution >=2dppx) {
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/backgrounds/clouds-1-desktop@2x.webp");
+      }
+
+      background-image: url("../../img/backgrounds/clouds-1-desktop@2x.jpg");
+    }
+
+    @include vp-1439 {
+      width: 425px;
+      top: -92px;
+
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/backgrounds/clouds-1-tablet.webp");
+      }
+
+      background-image: url("../../img/backgrounds/clouds-1-tablet.jpg");
+
+      @media (resolution >=2dppx) {
+        @supports (background-image: url(image.webp)) {
+          background-image: url("../../img/backgrounds/clouds-1-tablet@2x.webp");
+        }
+
+        background-image: url("../../img/backgrounds/clouds-1-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      width: 141px;
+      height: 595px;
+      top: 10px;
+
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/backgrounds/clouds-1-mobile.webp");
+      }
+
+      background-image: url("../../img/backgrounds/clouds-1-mobile.jpg");
+
+      @media (resolution >=2dppx) {
+        @supports (background-image: url(image.webp)) {
+          background-image: url("../../img/backgrounds/clouds-1-mobile@2x.webp");
+        }
+
+        background-image: url("../../img/backgrounds/clouds-1-mobile@2x.jpg");
+      }
+    }
+  }
+
+  @include vp-1439 {
+    padding-top: 60px;
+    padding-bottom: 49px;
+  }
+
+  @include vp-767 {
+    padding-top: 38px;
+    padding-bottom: 20px;
+  }
+}
+
+.tours__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px;
+
+  @include vp-1439 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+}
+
+.tours__slider-btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 4px;
+
+  @include vp-1439 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.tours__arrow {
+  width: 37px;
+  height: 35px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-action;
+  color: $color-white;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+  transition: background-color $trans-default, border-color $trans-default, color $trans-default;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $color-white;
+    color: $color-dark-alternative;
+    border-color: $color-white;
+  }
+
+  &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
+    background-color: $color-white;
+    color: $color-dark-alternative;
+    border-color: $color-dark-alternative;
+  }
+
+  &:active {
+    background-color: $color-dark-alternative;
+    color: $color-white;
+    border-color: $color-dark-alternative;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    color: $color-white;
+    background-color: #999999;
+    border-color: #999999;
+  }
+}
+
+.tours__arrow.disabled {
+  pointer-events: none;
+  color: $color-white;
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.tours__title {
+  margin-top: 3px;
+
+  @include vp-1439 {
+    margin-top: 0;
+  }
+}
+
+.tours__title-back {
+  bottom: -3px;
+
+  @include vp-1439 {
+    bottom: 11px;
+  }
+}
+
+.tours__slider {
+  margin-bottom: 64px;
+
+  @include vp-1439 {
+    margin-bottom: 36px;
+  }
+}
+
+.tours__link {
+  display: flex;
+  justify-content: center;
+}
+
+.tours__link a {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  position: relative;
+  transition: opacity $trans-default, color $trans-default;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $color-action;
+  }
+
+  &:hover:not(.disabled):not(:focus-visible):not(:active) {
+    color: rgba($color-action, 0.1);
+
+  }
+
+  &:active {
+    color: $color-dark-alternative;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.tours__link.disabled {
+  pointer-events: none;
+  color: #999999;
+}
+
+.tours__link svg {
+  margin-left: 12px;
+}

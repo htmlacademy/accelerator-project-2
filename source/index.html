@@ -130,8 +130,9 @@
           <div class="tours__head">
             <h2 class="section-title tours__title">Ближайшие туры</h2>
             <span class="section-title__back tours__title-back" aria-hidden="true">Ближайшие туры</span>
-            <div class="tours__slider-btns">
-              <button class="tours__arrow tours__arrow--prev slider-arrow swiper-arrow swiper-button-prev"
+            <div class="training__slider-btns slider-btns">
+              <button
+                class="slider-btns__arrow slider-btns__arrow--prev tours__arrow tours__arrow--prev swiper-arrow swiper-button-prev"
                 type="button">
                 <span class="visually-hidden">Предыдущий слайд.</span>
                 <svg width="13" height="7">
@@ -139,7 +140,7 @@
                 </svg>
               </button>
               <button
-                class="tours__arrow tours__arrow--next slider-arrow slider-arrow--next swiper-arrow swiper-button-next"
+                class="slider-btns__arrow slider-btns__arrow--next tours__arrow tours__arrow--next swiper-arrow swiper-button-next"
                 type="button">
                 <span class="visually-hidden">Следующий слайд.</span>
                 <svg width="13" height="7">
@@ -260,7 +261,180 @@
           </div>
         </div>
       </section>
-      <section class="training" id="training" data-test="training">training</section>
+      <section class="training" id="training" data-test="training">
+        <div class="container">
+          <div class="training__head">
+            <h2 class="section-title training__title">Обучение</h2>
+            <span class="section-title__back training__title-back" aria-hidden="true">Обучение</span>
+            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
+              Кавказа, Крыма,
+              Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          </div>
+          <div class="training__middle">
+            <h3 class="section-title training__middle-title">Наши инструкторы</h3>
+            <div class="training__slider-btns slider-btns">
+              <button
+                class="slider-btns__arrow slider-btns__arrow--prev training__arrow training__arrow--prev swiper-arrow swiper-button-prev"
+                type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+                <svg width="13" height="7">
+                  <use href="/__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </button>
+              <button
+                class="slider-btns__arrow slider-btns__arrow--next training__arrow training__arrow--next swiper-arrow swiper-button-next"
+                type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+                <svg width="13" height="7">
+                  <use href="/__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training__slider swiper" data-slider="training-slider">
+            <div class="training__wrapper swiper-wrapper">
+              <div class="training__slide training-slide swiper-slide">
+                <div class="training-slide__container">
+                  <div class="training-slide__img">
+                    <picture>
+                      <!-- desktop -->
+                      <source width="255" height="200" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/instructors/item-1.webp 1x, img/instructors/item-1@2x.webp 2x">
+                      <img width="255" height="200" src="img/instructors/item-1.jpg"
+                        srcset="img/instructors/item-1@2x.jpg 2x" alt="Александр Прокофьев.">
+                    </picture>
+                  </div>
+                  <div class="training-slide__content">
+                    <div class="training-slide__head">
+                      <h4>Александр Прокофьев</h4>
+                      <a href="http://vk.com"><span class="visually-hidden">страница вконтакте</span><svg width="14"
+                          height="8">
+                          <use href="/__spritemap#sprite-icon-vk"></use>
+                        </svg></a>
+                    </div>
+                    <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="training__slide training-slide swiper-slide">
+                <div class="training-slide__container">
+                  <div class="training-slide__img">
+                    <picture>
+                      <!-- desktop -->
+                      <source width="255" height="200" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/instructors/item-2.webp 1x, img/instructors/item-2@2x.webp 2x">
+                      <img width="255" height="200" src="img/instructors/item-2.jpg"
+                        srcset="img/instructors/item-2@2x.jpg 2x" alt="Светлана
+Афиногенова.">
+                    </picture>
+                  </div>
+                  <div class="training-slide__content">
+                    <div class="training-slide__head">
+                      <h4>Светлана
+                        Афиногенова</h4>
+                      <a href="http://vk.com"><span class="visually-hidden">страница вконтакте</span><svg width="14"
+                          height="8">
+                          <use href="/__spritemap#sprite-icon-vk"></use>
+                        </svg></a>
+                    </div>
+                    <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
+                      в этом назначение
+                      жизни.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="training__slide training-slide swiper-slide">
+                <div class="training-slide__container">
+                  <div class="training-slide__img">
+                    <picture>
+                      <!-- desktop -->
+                      <source width="255" height="200" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/instructors/item-3.webp 1x, img/instructors/item-3@2x.webp 2x">
+                      <img width="255" height="200" src="img/instructors/item-3.jpg"
+                        srcset="img/instructors/item-3@2x.jpg 2x" alt="Надежда
+Колесниченко.">
+                    </picture>
+                  </div>
+                  <div class="training-slide__content">
+                    <div class="training-slide__head">
+                      <h4>Надежда
+                        Колесниченко</h4>
+                      <a href="http://vk.com"><span class="visually-hidden">страница вконтакте</span><svg width="14"
+                          height="8">
+                          <use href="/__spritemap#sprite-icon-vk"></use>
+                        </svg></a>
+                    </div>
+                    <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь
+                      себя спокойно
+                      и уверенно.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="training__slide training-slide swiper-slide">
+                <div class="training-slide__container">
+                  <div class="training-slide__img">
+                    <picture>
+                      <!-- desktop -->
+                      <source width="255" height="200" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/instructors/item-4.webp 1x, img/instructors/item-4@2x.webp 2x">
+                      <img width="255" height="200" src="img/instructors/item-4.jpg"
+                        srcset="img/instructors/item-4@2x.jpg 2x" alt="Федор
+Кайгородов.">
+                    </picture>
+                  </div>
+                  <div class="training-slide__content">
+                    <div class="training-slide__head">
+                      <h4>Федор
+                        Кайгородов</h4>
+                      <a href="http://vk.com"><span class="visually-hidden">страница вконтакте</span><svg width="14"
+                          height="8">
+                          <use href="/__spritemap#sprite-icon-vk"></use>
+                        </svg></a>
+                    </div>
+                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                      путешествует по Европе.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="training__slide training-slide swiper-slide">
+                <div class="training-slide__container">
+                  <div class="training-slide__img">
+                    <picture>
+                      <!-- desktop -->
+                      <source width="255" height="200" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/instructors/item-5.webp 1x, img/instructors/item-5@2x.webp 2x">
+                      <img width="255" height="200" src="img/instructors/item-5.jpg"
+                        srcset="img/instructors/item-5@2x.jpg 2x" alt="Даниэль
+Васнецов.">
+                    </picture>
+                  </div>
+                  <div class="training-slide__content">
+                    <div class="training-slide__head">
+                      <h4>Даниэль
+                        Васнецов</h4>
+                      <a href="http://vk.com"><span class="visually-hidden">страница вконтакте</span><svg width="14"
+                          height="8">
+                          <use href="/__spritemap#sprite-icon-vk"></use>
+                        </svg></a>
+                    </div>
+                    <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="training__process">
+            <h3 class="training__process-title">Процесс обучения</h3>
+            <ul class="training__list">
+              <li><span>Изучение спортивного
+                  туристского движения</span></li>
+              <li><span>Подготовка и техническое снаряжение в походах</span></li>
+              <li><span>Лекции по окружающей среде, экологии и гигиене</span></li>
+              <li><span>Разъяснение сложности горных препятствий</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="about" id="about" data-test="about">about</section>
       <section class="reviews" id="reviews" data-test="reviews">reviews</section>
       <section class="adv" data-test="adv">adv</section>

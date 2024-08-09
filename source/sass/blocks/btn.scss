@@ -13,7 +13,7 @@
   text-decoration: none;
   color: $color-white;
   background-color: $color-action;
-  transition: opacity $trans-default, background-color $trans-default, border-color $trans-default, color $trans-default;
+  transition: background-color $trans-default, border-color $trans-default, color $trans-default;
 
   &:focus {
     outline: none;

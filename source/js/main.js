@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".promo-swiper", {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
   // Optional parameters
@@ -20,5 +20,17 @@ const swiper = new Swiper(".swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+  },
+});
+
+const swiperTours = new Swiper(".tours-swiper", {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+
+  scrollbar: {
+    el: ".tours-swiper-scrollbar",
   },
 });

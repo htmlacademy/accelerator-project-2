@@ -41,7 +41,7 @@
     </header>
     <main class="main">
       <section class="promo">
-        <div class="swiper">
+        <div class="swiper promo-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="promo-slide__wrapper slide-1">
@@ -90,9 +90,14 @@
         </div>
       </section>
       <section class="tours">
+        <img
+          class="tours__back-img"
+          src="img/clouds-mobile.png"
+          alt="облака на заднем фоне"
+        />
         <div class="tours__inner">
           <h3 class="tours__title">Ближайшие туры</h3>
-          <div class="swiper swiper-tours">
+          <div class="swiper tours-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="tours-slide tours-slide-1">
@@ -341,13 +346,13 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div> -->
-
-            <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
+            <a class="tours__all-tours-link" href="#"
+              >Показать все туры
+              <svg width="9" height="14">
+                <use href="/__spritemap#sprite-right"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>

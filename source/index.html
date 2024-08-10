@@ -14,17 +14,14 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
+    <!--
     <div data-test="about">about</div>
     <div data-test="reviews">reviews</div>
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
-    <header class="header">
+    <header class="header" data-test="header">
       <div class="header__wrapper">
         <div class="header-left">
           <button class="header__burger-button" type="button">
@@ -40,7 +37,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="promo">
+      <section class="promo" data-test="hero">
         <div class="swiper promo-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -89,14 +86,14 @@
           <div class="swiper-scrollbar"></div>
         </div>
       </section>
-      <section class="tours">
+      <section class="tours" data-test="tours">
         <img
           class="tours__back-img"
           src="img/clouds-mobile.png"
           alt="облака на заднем фоне"
         />
         <div class="tours__inner">
-          <h3 class="tours__title">Ближайшие туры</h3>
+          <h3 class="tours__title title">Ближайшие туры</h3>
           <div class="swiper tours-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -353,6 +350,41 @@
                 <use href="/__spritemap#sprite-right"></use>
               </svg>
             </a>
+          </div>
+        </div>
+      </section>
+      <section class="training" data-test="training">
+        <!-- Обучение: основной текст и описание инструктора без class-->
+        <div class="training__inner">
+          <h3 class="training__title title">Обучение</h3>
+          <p>
+            Обучение проводится квалифицированными специалистами, за плечами
+            которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев,
+            Эльбруса, Алтая, Карелии, Адыгеи и других.
+          </p>
+          <div class="training__instructors">
+            <h2 class="training__instructors-title title">Наши инструкторы</h2>
+            <div class="swiper instructors-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="instructors-slide__wrapper">
+                    <div class="instructors-slide instructors-slide-1">
+                      <div class="instructor-photo">
+                        <img
+                          src="./img/instructor-nadejda.jpg"
+                          alt="инструктор Надежда"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+
+              <!-- If we need scrollbar -->
+              <div class="instructors-swiper-scrollbar"></div>
+            </div>
           </div>
         </div>
       </section>

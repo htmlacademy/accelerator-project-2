@@ -34,3 +34,15 @@ const swiperTours = new Swiper(".tours-swiper", {
     el: ".tours-swiper-scrollbar",
   },
 });
+
+const swiperInstructors = new Swiper(".instructors-swiper", {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+
+  scrollbar: {
+    el: ".instructors-swiper-scrollbar",
+  },
+});

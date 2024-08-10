@@ -1,6 +1,15 @@
+@import "./vars.scss";
+
 .page-body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   margin: 0;
   color: $black;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  position: relative;
 }

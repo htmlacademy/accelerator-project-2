@@ -86,6 +86,14 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
+  margin: 25px 0;
+}
+
+.training__process-inner {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .process-line__picture {
@@ -124,4 +132,26 @@
 
 .process-info__list {
   list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0;
+}
+
+.process-info__item {
+  display: flex;
+  gap: 9px;
+}
+
+.process-info__description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  width: 200px;
+}
+
+.process-line__picture-wrapper {
+  width: 18px;
 }

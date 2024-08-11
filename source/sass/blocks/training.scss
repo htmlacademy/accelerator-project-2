@@ -36,10 +36,92 @@
   padding: 15px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $white;
+  width: 290px;
+  box-sizing: border-box;
+  height: 356px;
+  margin: 0 auto;
 }
 
 .instructors-slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 15px;
+}
+
+.instructor__data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.instructor__data span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.instructor__data + p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  width: 240px;
+}
+
+.instructor-photo {
+  width: 260px;
+  height: 200px;
+}
+
+.instructor-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.instructors-swiper {
+  margin-bottom: 25px;
+}
+
+.training__process-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.process-line__picture {
+  width: 2px;
+  height: 183px;
+  background-color: $accent-blue;
+  margin-left: 6px;
+  position: relative;
+}
+.picture-circle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $accent-blue;
+}
+
+.circle1 {
+  left: -6px;
+}
+
+.circle2 {
+  left: -6px;
+  top: 55px;
+}
+
+.circle3 {
+  left: -6px;
+  bottom: 55px;
+}
+
+.circle4 {
+  left: -6px;
+  bottom: 0px;
+}
+
+.process-info__list {
+  list-style-type: none;
 }

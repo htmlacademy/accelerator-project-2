@@ -60,11 +60,11 @@ const initHeroSlider = () => {
     on: {
       init: () => {
         initActiveSlide();
+        isFirstLoad = false;
       },
       slideChange: () => {
         initActiveSlide();
         setActiveLink();
-        isFirstLoad = false;
       },
       slideChangeTransitionStart: () => {
         initActiveSlide();

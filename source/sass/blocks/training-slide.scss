@@ -53,6 +53,37 @@
   justify-content: center;
   color: $color-dark;
   border: 1px solid rgba($color-dark, 0.3);
+  transition: background-color $trans-default, border-color $trans-default, color $trans-default;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $color-transparent;
+    color: $color-dark;
+    border-color: $color-transparent;
+  }
+
+  &:hover:not(.disabled):not(:focus-visible):not(:active) {
+    background-color: $color-transparent;
+    color: $color-dark;
+    border-color: $color-dark;
+  }
+
+  &:active {
+    background-color: $color-action;
+    color: $color-white;
+    border-color: $color-action;
+  }
+}
+
+.training-slide__content a.disabled {
+  pointer-events: none;
+  color: #2d383f;
+  background-color: $color-transparent;
+  border-color: #2d383f;
 }
 
 .training-slide__content p {

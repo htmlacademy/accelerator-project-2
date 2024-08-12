@@ -46,3 +46,15 @@ const swiperInstructors = new Swiper(".instructors-swiper", {
     el: ".instructors-swiper-scrollbar",
   },
 });
+
+const swiperReviews = new Swiper(".reviews-swiper", {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+
+  scrollbar: {
+    el: ".reviews-swiper-scrollbar",
+  },
+});

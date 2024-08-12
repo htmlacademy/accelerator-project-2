@@ -1,7 +1,7 @@
 @import "../vars.scss";
 
 .training {
-  padding: 20px 15px;
+  padding: 36px 15px 20px;
   // display: flex;
   // flex-direction: column;
   background-color: $white;
@@ -17,10 +17,10 @@
 }
 
 .training__title {
-  margin: 0 0 35px;
+  margin: 0 0 34px;
 }
 
-.training__title + p {
+.training__intro-text p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -30,10 +30,11 @@
 
 .training__instructors-title {
   margin-bottom: 25px;
+  margin-top: 28px;
 }
 
 .instructors-slide__wrapper {
-  padding: 15px;
+  padding: 12px 15px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $white;
   width: 290px;
@@ -45,7 +46,7 @@
 .instructors-slide {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .instructor__data {
@@ -91,14 +92,18 @@
 
 .training__process-inner {
   display: flex;
-  gap: 15px;
+  gap: 11px;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+}
+
+.training__process {
+  margin-top: -1px;
 }
 
 .process-line__picture {
   width: 2px;
-  height: 183px;
+  height: 195px;
   background-color: $accent-blue;
   margin-left: 6px;
   position: relative;
@@ -113,16 +118,17 @@
 
 .circle1 {
   left: -6px;
+  top: -2px;
 }
 
 .circle2 {
   left: -6px;
-  top: 55px;
+  top: 59px;
 }
 
 .circle3 {
   left: -6px;
-  bottom: 55px;
+  bottom: 61px;
 }
 
 .circle4 {

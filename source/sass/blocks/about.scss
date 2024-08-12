@@ -1,0 +1,38 @@
+.about {
+  padding-top: 20px;
+}
+
+.about__content {
+  padding: 0px 15px 20px;
+}
+
+.about__content h3 {
+  margin-top: 11px;
+  margin-bottom: 43px;
+
+  &::before {
+    content: "О нас";
+    position: absolute;
+    top: -15px;
+    opacity: 0.03;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.about__content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: -1px;
+}
+
+.about__content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.about__content p:first-of-type {
+  margin-bottom: 27px;
+}

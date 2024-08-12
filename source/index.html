@@ -459,7 +459,78 @@
           </div>
         </div>
       </section>
-      <section class="reviews" id="reviews" data-test="reviews">reviews</section>
+      <section class="reviews" id="reviews" data-test="reviews">
+        <div class="reviews__container">
+          <div class="reviews__head">
+            <h2 class="section-title reviews__title">Отзывы</h2>
+            <span class="section-title__back reviews__title-back" aria-hidden="true">Отзывы</span>
+            <div class="training__slider-btns slider-btns">
+              <button
+                class="slider-btns__arrow slider-btns__arrow--prev reviews__arrow reviews__arrow--prev swiper-arrow swiper-button-prev"
+                type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+                <svg width="13" height="7">
+                  <use href="/__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </button>
+              <button
+                class="slider-btns__arrow slider-btns__arrow--next reviews__arrow reviews__arrow--next swiper-arrow swiper-button-next"
+                type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+                <svg width="13" height="7">
+                  <use href="/__spritemap#sprite-icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="reviews__slider swiper" data-slider="reviews-slider">
+            <div class="reviews__wrapper swiper-wrapper">
+              <div class="reviews__slide reviews-slide swiper-slide">
+                <div class="reviews-slide__container">
+                  <div class="reviews-slide__img">
+                    <picture>
+                      <!-- mobile -->
+                      <source width="250" height="169" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/reviews/item-1-mobile.webp 1x, img/reviews/item-1-mobile@2x.webp 2x">
+                      <source width="250" height="169" type="image/jpeg" media="(max-width: 767px)"
+                        srcset="img/reviews/item-1-mobile.jpg 1x, img/reviews/item-1-mobile@2x.jpg 2x">
+                      <!-- tablet -->
+                      <source width="186" height="237" type="image/webp"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/reviews/item-1-tablet.webp 1x, img/reviews/item-1-tablet@2x.webp 2x">
+                      <source width="186" height="237" type="image/jpeg"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/reviews/item-1-tablet.jpg 1x, img/reviews/item-1-tablet@2x.jpg 2x">
+                      <!-- desktop -->
+                      <source width="258" height="253" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/reviews/item-1-desktop.webp 1x, img/reviews/item-1-desktop@2x.webp 2x">
+                      <img width="258" height="253" src="img/reviews/item-1-desktop.jpg"
+                        srcset="img/reviews/item-1-desktop@2x.jpg 2x" alt="Фролов Александр.">
+                    </picture>
+                  </div>
+                  <div class="reviews-slide__content">
+                    <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие
+                      эксперты, всему научили,
+                      все показали. Делились историями о местах, людях, культуре места.
+                    </p>
+                    <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
+                      так душой и телом. Всем
+                      очень рекомендую!</p>
+                    <div class="reviews-slide__author">
+                      <b>Фролов Александр</b>
+                      <span>38 лет, Москва</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide reviews-slide swiper-slide"></div>
+              <div class="reviews__slide reviews-slide swiper-slide"></div>
+              <div class="reviews__slide reviews-slide swiper-slide"></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
       <section class="adv" data-test="adv">adv</section>
       <section class="gallery" id="gallery" data-test="gallery">gallery</section>
       <section class="form" id="form" data-test="form">form</section>

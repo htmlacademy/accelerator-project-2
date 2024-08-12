@@ -1,0 +1,239 @@
+.about {
+  padding-top: 143px;
+  padding-bottom: 179px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 0;
+    width: 660px;
+    height: 498px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    @supports (background-image: url(image.webp)) {
+      background-image: url("../../img/about/about-desktop.webp");
+    }
+
+    background-image: url("../../img/about/about-desktop.png");
+
+    @media (resolution >=2dppx) {
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/about/about-desktop@2x.webp");
+      }
+
+      background-image: url("../../img/about/about-desktop@2x.png");
+    }
+
+    @include vp-1439 {
+      z-index: -1;
+      width: 542px;
+      height: 350px;
+      top: 174px;
+
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/about/about-tablet.webp");
+      }
+
+      background-image: url("../../img/about/about-tablet.png");
+
+      @media (resolution >=2dppx) {
+        @supports (background-image: url(image.webp)) {
+          background-image: url("../../img/about/about-tablet@2x.webp");
+        }
+
+        background-image: url("../../img/about/about-tablet@2x.png");
+      }
+    }
+
+    @include vp-767 {
+      width: 434px;
+      height: 400px;
+      top: 20px;
+      background-size: contain;
+      background-position: 0 0;
+
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/about/about-mobile.webp");
+      }
+
+      background-image: url("../../img/about/about-mobile.png");
+
+      @media (resolution >=2dppx) {
+        @supports (background-image: url(image.webp)) {
+          background-image: url("../../img/about/about-mobile@2x.webp");
+        }
+
+        background-image: url("../../img/about/about-mobile@2x.png");
+      }
+    }
+  }
+
+
+  @include vp-1439 {
+    padding-top: 59px;
+    padding-bottom: 42px;
+  }
+
+  @include vp-767 {
+    justify-content: center;
+    padding-top: 436px;
+    padding-bottom: 17px;
+  }
+
+}
+
+.about__container {
+  width: 100%;
+  max-width: 660px;
+  margin-right: 120px;
+
+  @include vp-1439 {
+    margin-right: 48px;
+    max-width: 270px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: none;
+    margin-right: 0;
+  }
+}
+
+.about__head {
+  position: relative;
+  margin-bottom: 60px;
+
+  @include vp-1439 {
+    margin-bottom: 49px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+  }
+}
+
+.about__head h2 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+  text-align: left;
+
+  &--dark {
+    color: $color-dark;
+  }
+
+  @include vp-1439 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.about__head span {
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  text-align: left;
+  color: rgba($color-dark, 0.03);
+
+  @include vp-1439 {
+    font-size: 40px;
+    line-height: 40px;
+    bottom: 0;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    bottom: 9px;
+  }
+}
+
+.about__history,
+.about__mission {
+  max-width: 585px;
+
+  @include vp-1439 {
+    max-width: none;
+  }
+}
+
+.about__history h3,
+.about__mission h3 {
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+  @include vp-1439 {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.about__history p,
+.about__mission p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+
+  @include vp-1439 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.about__history {
+  margin-bottom: 28px;
+
+  @include vp-1439 {
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+  }
+}
+
+.about__history br {
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+.about__mission {}
+
+.about__mission {}
+
+.about__mission {}

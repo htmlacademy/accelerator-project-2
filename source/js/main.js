@@ -58,3 +58,26 @@ const swiperReviews = new Swiper(".reviews-swiper", {
     el: ".reviews-swiper-scrollbar",
   },
 });
+
+const swiperAdvantages = new Swiper(".advantages-swiper", {
+  init: false,
+  breakpoints: {
+    1440: {
+      init: true,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  },
+
+  modules: [Navigation, Pagination],
+  direction: "horizontal",
+  loop: false,
+
+  scrollbar: {
+    el: ".advantages-swiper-scrollbar",
+  },
+
+  pagination: {
+    el: ".advantages-pagination",
+  },
+});

@@ -32,7 +32,7 @@
     @include vp-1439 {
       width: 768px;
       height: 996px;
-      bottom: -600;
+      bottom: -600; //спустить до нужного
 
       @supports (background-image: url(image.webp)) {
         background-image: url("../../img/backgrounds/clouds-3-tablet.webp");

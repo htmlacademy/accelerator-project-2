@@ -47,6 +47,10 @@
         background-image: url("../../img/backgrounds/clouds-2-tablet@2x.jpg");
       }
     }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   @include vp-1439 {

@@ -1,0 +1,119 @@
+.reviews {
+  padding-top: 145px;
+  padding-bottom: 66px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    bottom: -166px;
+    left: 0;
+    width: 1440px;
+    height: 447px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    @supports (background-image: url(image.webp)) {
+      background-image: url("../../img/backgrounds/clouds-3-desktop.webp");
+    }
+
+    background-image: url("../../img/backgrounds/clouds-3-desktop.jpg");
+
+    @media (resolution >=2dppx) {
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/backgrounds/clouds-3-desktop@2x.webp");
+      }
+
+      background-image: url("../../img/backgrounds/clouds-3-desktop@2x.jpg");
+    }
+
+    @include vp-1439 {
+      width: 768px;
+      height: 996px;
+      bottom: -600;
+
+      @supports (background-image: url(image.webp)) {
+        background-image: url("../../img/backgrounds/clouds-3-tablet.webp");
+      }
+
+      background-image: url("../../img/backgrounds/clouds-3-tablet.jpg");
+
+      @media (resolution >=2dppx) {
+        @supports (background-image: url(image.webp)) {
+          background-image: url("../../img/backgrounds/clouds-3-tablet@2x.webp");
+        }
+
+        background-image: url("../../img/backgrounds/clouds-3-tablet@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1439 {
+    padding-top: 60px;
+    padding-bottom: 27px;
+  }
+
+  @include vp-767 {
+    padding-top: 37px;
+    padding-bottom: 2px;
+  }
+}
+
+.reviews__container {
+  padding-left: 120px;
+
+  @include vp-1439 {
+    padding-left: 45px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.reviews__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 0;
+  padding-right: 120px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @include vp-1439 {
+    padding-right: 45px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+    margin-bottom: 51px;
+  }
+}
+
+.reviews__title-back {
+  bottom: 19px;
+
+  @include vp-1439 {
+    bottom: 11px;
+  }
+
+  @include vp-767 {
+    bottom: 9px;
+  }
+}
+
+.reviews__wrapper {
+  padding: 10px;
+
+  @include vp-1439 {
+    padding: 0;
+  }
+}

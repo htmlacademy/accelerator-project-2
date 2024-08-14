@@ -16,6 +16,7 @@ const initReviewsSlider = () => {
     speed: 500,
     loop: false,
     autoHeight: false,
+    slidesPerView: 'auto',
     navigation: {
       nextEl: '.reviews__arrow--next',
       prevEl: '.reviews__arrow--prev',
@@ -23,17 +24,17 @@ const initReviewsSlider = () => {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
         initialSlide: 0,
+        autoHeight: true,
       },
       768: {
-        slidesPerView: 1.265,
-        spaceBetween: 30,
+        spaceBetween: 0,
         simulateTouch: false,
+        autoHeight: false,
       },
       1440: {
-        slidesPerView: 1.755,
-        spaceBetween: 120,
+        spaceBetween: 100,
+        autoHeight: false,
       },
     },
   });

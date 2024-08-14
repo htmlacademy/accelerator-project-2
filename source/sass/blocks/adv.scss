@@ -14,7 +14,11 @@
   }
 }
 
-.adv__container {}
+.adv__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .adv__head {
   margin-bottom: 50px;
@@ -71,8 +75,6 @@
     justify-content: flex-start;
     row-gap: 15px;
     column-gap: 0;
-    // padding-left: 15px;
-    // padding-right: 15px;
   }
 }
 

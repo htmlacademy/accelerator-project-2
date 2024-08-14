@@ -1,9 +1,4 @@
 .about {
-  padding-top: 143px;
-  padding-bottom: 179px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
   position: relative;
   overflow: hidden;
 
@@ -75,7 +70,17 @@
       }
     }
   }
+}
 
+.about__wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 143px;
+  padding-bottom: 179px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
 
   @include vp-1439 {
     padding-top: 59px;
@@ -87,7 +92,6 @@
     padding-top: 436px;
     padding-bottom: 17px;
   }
-
 }
 
 .about__container {

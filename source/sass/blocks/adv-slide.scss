@@ -9,7 +9,6 @@
 
   max-width: 380px;
 
-  // &::after,
   &::before {
     position: absolute;
     content: "";
@@ -32,42 +31,6 @@
       top: 19px;
     }
   }
-
-  // &::before {
-  //   border: 1px solid $color-action;
-  // }
-
-  // &::after {
-  //   mask-repeat: no-repeat;
-  //   mask-position: center;
-  //   background-color: $color-action;
-
-  // }
-
-  // &:nth-child(5n+1)::after {
-  //   mask-image: url("../__spritemap#sprite-icon-shield-view");
-  //   mask-size: 18px 20px;
-  // }
-
-  // &:nth-child(5n +2)::after {
-  //   mask-image: url("../__spritemap#sprite-icon-crown-view");
-  //   mask-size: 20px 18px;
-  // }
-
-  // &:nth-child(5n +3)::after {
-  //   mask-image: url("../__spritemap#sprite-icon-boots-view");
-  //   mask-size: 20px 18px;
-  // }
-
-  // &:nth-child(5n +4)::after {
-  //   mask-image: url("../__spritemap#sprite-icon-path-view");
-  //   mask-size: 20px 20px;
-  // }
-
-  // &:nth-child(5n +5)::after {
-  //   mask-image: url("../__spritemap#sprite-icon-leaf-view");
-  //   mask-size: 20px 14px;
-  // }
 
   @include vp-1439 {
     padding-top: 103px;

@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-
 const createAdvSlider = () => {
   const advSlider = document.querySelector('[data-slider="adv-slider"]');
   if (advSlider) {
@@ -11,22 +10,19 @@ const createAdvSlider = () => {
       grabCursor: false,
       speed: 500,
       loop: true,
-      autoHeight: false,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 30,
+      initialSlide: 2,
+      slidesPerGroup: 2,
       navigation: {
         nextEl: '.adv__arrow--next',
         prevEl: '.adv__arrow--prev',
-        lockClass: 'disabled',
       },
-      centeredSlides: true,
-      initialSlide: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      slidesPerView: 'auto',
     });
   }
   return null;
 };
-
 const initAdvSlider = () => {
   let swiper = null;
   const isValid = () => {
@@ -34,25 +30,21 @@ const initAdvSlider = () => {
     return desktopWidth.matches;
   };
 
-  const initializeSwiper = () => {
+  if (isValid()) {
+    swiper = createAdvSlider();
+  }
+
+  window.addEventListener('resize', () => {
     if (isValid()) {
-      swiper = createAdvSlider();
-    }
-
-    window.addEventListener('resize', () => {
-      if (isValid()) {
-        if (!swiper) {
-          swiper = createAdvSlider();
-        }
-      } else {
-        if (swiper) {
-          swiper.destroy();
-          swiper = null;
-        }
+      if (!swiper) {
+        swiper = createAdvSlider();
       }
-    });
-  };
-  setTimeout(initializeSwiper, 200);
+    } else {
+      if (swiper) {
+        swiper.destroy();
+        swiper = null;
+      }
+    }
+  });
 };
-
 export { initAdvSlider };

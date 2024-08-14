@@ -2,6 +2,7 @@
 
 .gallery {
   background-color: $white;
+  padding-bottom: 3px;
 }
 
 .gallery__info {
@@ -26,4 +27,68 @@
     font-size: 26px;
     line-height: 26px;
   }
+}
+
+.swiper-slide .gallery-swiper-slide {
+  width: 156px;
+}
+
+.gallery-slide-big {
+  width: 156px;
+  height: 266px;
+}
+
+.gallery-slide-1 {
+  background-image: url(../../img/gallery/gallery-1-1440px.png);
+  background-repeat: no-repeat;
+  background-size: 165px;
+}
+
+.gallery-slide-smalls {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.gallery-slide-small-up {
+  width: 157px;
+  height: 134px;
+}
+
+.gallery-slide-small-bottom {
+  width: 157px;
+  height: 124px;
+}
+
+.gallery-slide-2-1 {
+  background-image: url(../../img/gallery/gallery-2-1.png);
+  background-size: 165px;
+}
+
+.gallery-slide-2-2 {
+  background-image: url(../../img/gallery/gallery-2:2-1440px.png);
+  background-position: -63px;
+  background-position-y: -5px;
+  background-size: 286px;
+  background-repeat: no-repeat;
+}
+
+.gallery-slide-3 {
+  background-image: url(../../img/gallery/gallery-3.png);
+  background-size: 165px;
+}
+
+.gallery-slide-4-1 {
+  background-image: url(../../img/gallery/gallery-4:1.png);
+  background-size: 165px;
+}
+
+.gallery-slide-4-2 {
+  background-image: url(../../img/gallery/gallery-4:2.png);
+  background-size: 165px;
+}
+
+.gallery-slide-5 {
+  background-image: url(../../img/gallery/gallery-5.png);
+  background-size: 165px;
 }

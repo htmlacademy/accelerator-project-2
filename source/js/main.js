@@ -81,3 +81,19 @@ const swiperAdvantages = new Swiper(".advantages-swiper", {
     el: ".advantages-pagination",
   },
 });
+
+const swiperGallery = new Swiper(".gallery-swiper", {
+  slidesPerView: 2,
+  spaceBetween: 5,
+  modules: [Navigation, Pagination],
+  direction: "horizontal",
+  loop: true,
+
+  scrollbar: {
+    el: ".gallery-swiper-scrollbar",
+  },
+
+  pagination: {
+    el: ".gallery-pagination",
+  },
+});

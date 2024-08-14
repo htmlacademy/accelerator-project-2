@@ -4,7 +4,9 @@ import 'swiper/css';
 
 const initTrainingSlider = () => {
   const trainingSlider = document.querySelector('[data-slider="training-slider"]');
-  if (!trainingSlider) return;
+  if (!trainingSlider) {
+    return;
+  }
 
   new Swiper(trainingSlider, {
     modules: [Navigation],

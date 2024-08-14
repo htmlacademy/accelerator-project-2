@@ -4,7 +4,9 @@ import 'swiper/css';
 
 const initToursSlider = () => {
   const toursSlider = document.querySelector('[data-slider="tours-slider"]');
-  if (!toursSlider) return;
+  if (!toursSlider) {
+    return;
+  }
 
   new Swiper(toursSlider, {
     modules: [Navigation],

@@ -4,7 +4,9 @@ import 'swiper/css';
 
 const initReviewsSlider = () => {
   const reviewsSlider = document.querySelector('[data-slider="reviews-slider"]');
-  if (!reviewsSlider) return;
+  if (!reviewsSlider) {
+    return;
+  }
 
   new Swiper(reviewsSlider, {
     modules: [Navigation],

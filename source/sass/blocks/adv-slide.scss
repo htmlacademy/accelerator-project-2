@@ -1,71 +1,72 @@
-.adv-slide {
-  position: relative;
-  border: 1px solid rgba($color-action, 0.1);
-  padding-top: 124px;
-  padding-bottom: 38px;
+.adv-slide.swiper-slide {
+  width: 380px;
+  min-height: 329px;
+  padding-top: 39px;
+  padding-bottom: 20px;
   padding-left: 19px;
   padding-right: 19px;
-  color: $color-action;
-
-  max-width: 380px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 54px;
-    height: 54px;
-    left: 50%;
-    top: 39px;
-    transform: translateX(-50%);
-    border: 1px solid $color-action;
-
-    @include vp-1439 {
-      width: 48px;
-      height: 48px;
-      top: 29px;
-    }
-
-    @include vp-767 {
-      width: 42px;
-      height: 42px;
-      top: 19px;
-    }
-  }
+  border: 1px solid rgba($color-action, 0.1);
+  background-color: $color-white;
 
   @include vp-1439 {
-    padding-top: 103px;
-    padding-bottom: 28px;
-    max-width: 324px;
+    width: 324px;
     min-height: 340px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+
+    &:last-of-type {
+      grid-column: span 2;
+    }
   }
 
   @include vp-767 {
-    min-height: 239px;
-    max-width: 290px;
-    padding-top: 81px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-.adv-slide svg {
-  position: absolute;
-  top: 56px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @include vp-1439 {
-    top: 42px;
-  }
-
-  @include vp-767 {
-    top: 29px;
+    min-height: auto;
+    max-width: 100%;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 }
 
 .adv-slide__container {
   color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adv-slide__icon {
+  width: 54px;
+  height: 54px;
+  border: 1px solid $color-action;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include vp-1439 {
+    margin-bottom: 25px;
+    width: 48px;
+    height: 48px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.adv-slide__container svg {
+  width: 22px;
+  height: 22px;
+  color: $color-action;
+
+  @include vp-1439 {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .adv-slide__container h3 {
@@ -94,8 +95,6 @@
   font-weight: 400;
   text-align: center;
 
-  @include vp-1439 {}
-
   @include vp-767 {
     font-size: 12px;
     line-height: 18px;
@@ -103,8 +102,16 @@
   }
 }
 
-.adv-slide__container br {
-  @include vp-1439 {
+.adv-slide__container h3 > br {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
+  }
+}
+
+.adv-slide__container p > br {
+  @include vp-767 {
     display: none;
   }
 }

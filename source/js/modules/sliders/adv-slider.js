@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css';
 const createAdvSlider = () => {
   const advSlider = document.querySelector('[data-slider="adv-slider"]');
   if (advSlider) {

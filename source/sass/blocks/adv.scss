@@ -2,8 +2,6 @@
   padding-top: 135px;
   padding-bottom: 100px;
 
-  // background-color: red;
-
   @include vp-1439 {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -11,13 +9,8 @@
 
   @include vp-767 {
     padding-top: 36px;
+    padding-bottom: 20px;
   }
-}
-
-.adv__container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .adv__head {
@@ -51,30 +44,52 @@
   }
 }
 
+.adv__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include vp-1439 {
+    padding: 0 45px;
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
 .adv__slider {
   margin-bottom: 50px;
 
   @include vp-1439 {
     margin-bottom: 0;
   }
+
+  @include vp-767 {
+    overflow: visible;
+  }
 }
 
-.adv__wrapper {
+.adv__wrapper.swiper-wrapper {
   @include vp-1439 {
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 678px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     justify-content: center;
-    align-items: stretch;
-    column-gap: 30px;
-    row-gap: 30px;
+    justify-items: center;
   }
 
   @include vp-767 {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     row-gap: 15px;
-    column-gap: 0;
+    height: auto;
   }
 }
 

@@ -7,11 +7,12 @@ import { initAdvSlider } from '../js/modules/sliders/adv-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
   openMenu();
-  initHeroSlider();
+  initAdvSlider();
   window.addEventListener('load', () => {
+    initHeroSlider();
     initToursSlider();
     initTrainingSlider();
     initReviewsSlider();
-    initAdvSlider();
+
   });
 });

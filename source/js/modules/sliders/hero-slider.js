@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 
 const initHeroSlider = () => {
   if (!document.querySelector('[data-slider="hero-slider"]')) {
-    return null;
+    return;
   }
 
   const heroSlider = document.querySelector('[data-slider="hero-slider"]');
@@ -13,7 +13,9 @@ const initHeroSlider = () => {
 
   const initActiveSlide = () => {
     const activeSlide = document.querySelector('.swiper-slide-active');
-    if (!activeSlide) return;
+    if (!activeSlide) {
+      return;
+    }
 
     const allSlides = document.querySelectorAll('.hero-slide');
     allSlides.forEach((slide) => {
@@ -28,7 +30,9 @@ const initHeroSlider = () => {
   };
 
   const setActiveLink = () => {
-    if (isFirstLoad) return;
+    if (isFirstLoad) {
+      return;
+    }
 
     setTimeout(() => {
       const activeSlide = document.querySelector('.swiper-slide-active');

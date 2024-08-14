@@ -34,22 +34,25 @@ const initAdvSlider = () => {
     return desktopWidth.matches;
   };
 
-  if (isValid()) {
-    swiper = createAdvSlider();
-  }
-
-  window.addEventListener('resize', () => {
+  const initializeSwiper = () => {
     if (isValid()) {
-      if (!swiper) {
-        swiper = createAdvSlider();
-      }
-    } else {
-      if (swiper) {
-        swiper.destroy();
-        swiper = null;
-      }
+      swiper = createAdvSlider();
     }
-  });
+
+    window.addEventListener('resize', () => {
+      if (isValid()) {
+        if (!swiper) {
+          swiper = createAdvSlider();
+        }
+      } else {
+        if (swiper) {
+          swiper.destroy();
+          swiper = null;
+        }
+      }
+    });
+  };
+  setTimeout(initializeSwiper, 200);
 };
 
 export { initAdvSlider };

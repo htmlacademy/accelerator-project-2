@@ -1,7 +1,6 @@
 .gallery {
   padding-top: 123px;
   padding-bottom: 3px;
-  // background-color: red;
 
   @include vp-1439 {
     padding-top: 59px;
@@ -96,19 +95,11 @@
   }
 }
 
-.gallery__arrow {}
-
-.gallery__arrow--prev {}
-
-.gallery__arrow--next {}
-
 .gallery__container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.gallery__slider {}
 
 .gallery__wrapper.swiper-wrapper {
   @include vp-1440 {
@@ -122,5 +113,4 @@
   @include vp-1440 {
     width: 284px;
   }
-
 }

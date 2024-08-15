@@ -76,7 +76,7 @@
 
   @include vp-767 {
     padding-top: 38px;
-    padding-bottom: 20px;
+    padding-bottom: 29px;
   }
 }
 
@@ -84,7 +84,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  position: relative;
   margin-bottom: 50px;
 
   @include vp-1439 {
@@ -97,10 +96,17 @@
 }
 
 .tours__title {
+  position: relative;
+  width: 100%;
+  max-width: 70%;
   margin-top: 3px;
 
   @include vp-1439 {
     margin-top: 0;
+  }
+
+  @include vp-767 {
+    max-width: none;
   }
 }
 
@@ -108,6 +114,10 @@
   bottom: -3px;
 
   @include vp-1439 {
+    bottom: 1px;
+  }
+
+  @include vp-767 {
     bottom: 11px;
   }
 }

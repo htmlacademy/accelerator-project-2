@@ -85,7 +85,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
   padding-left: 0;
   padding-right: 120px;
   margin: 0 auto;
@@ -104,14 +103,18 @@
   }
 }
 
+.reviews__title {
+  position: relative;
+}
+
 .reviews__title-back {
   bottom: 19px;
 
   @include vp-1439 {
-    bottom: 11px;
+    bottom: 1px;
   }
 
   @include vp-767 {
-    bottom: 9px;
+    bottom: 11px;
   }
 }

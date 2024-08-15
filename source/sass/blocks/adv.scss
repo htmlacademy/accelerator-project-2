@@ -15,7 +15,6 @@
 
 .adv__head {
   margin-bottom: 50px;
-  position: relative;
 
   @include vp-1439 {
     margin-bottom: 60px;
@@ -28,6 +27,7 @@
 
 .adv__title {
   text-align: center;
+  position: relative;
 }
 
 .adv__title-back {

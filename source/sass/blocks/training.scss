@@ -1,6 +1,6 @@
 .training {
   padding-top: 63px;
-  padding-bottom: 54px;
+  padding-bottom: 34px;
   position: relative;
 
   &::after {
@@ -55,16 +55,17 @@
 
   @include vp-1439 {
     padding-top: 59px;
+    padding-bottom: 42px;
   }
 
   @include vp-767 {
     padding-top: 36px;
+    padding-bottom: 22px;
   }
 }
 
 .training__head {
   margin-bottom: 58px;
-  position: relative;
 
   @include vp-1439 {
     margin-bottom: 27px;
@@ -101,6 +102,7 @@
 }
 
 .training__title {
+  position: relative;
   margin-bottom: 32px;
 
   @include vp-1439 {
@@ -109,14 +111,14 @@
 }
 
 .training__title-back {
-  bottom: 77px;
+  bottom: -3px;
 
   @include vp-1439 {
-    bottom: 107px;
+    bottom: 1px;
   }
 
   @include vp-767 {
-    bottom: 167px;
+    bottom: 11px;
   }
 }
 

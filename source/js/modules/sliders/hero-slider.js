@@ -42,7 +42,7 @@ const initHeroSlider = () => {
           slideLink.focus();
         }
       }
-    }, 100);
+    }, 200);
   };
 
   new Swiper(heroSlider, {

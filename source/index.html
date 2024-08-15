@@ -15,7 +15,6 @@
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
     <!--
-    <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
     <header class="header" data-test="header">
       <div class="header__wrapper">
@@ -943,6 +942,35 @@
           </div>
           <!-- If we need pagination -->
           <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </section>
+      <section class="form" data-test="form">
+        <div class="form__inner">
+          <h3>Остались вопросы?</h3>
+          <p>
+            Заполните форму и наш оператор свяжется <br />
+            с вами для консультации.
+          </p>
+          <form
+            class="form-sending"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <input
+              class="form-field phone-form-field"
+              name="phone"
+              id="phone"
+              placeholder="Телефон"
+            />
+            <input
+              class="form-field mail-form-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <button class="form-btn" type="submit">Отправить</button>
+          </form>
         </div>
       </section>
     </main>

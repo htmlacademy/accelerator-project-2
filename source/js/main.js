@@ -8,8 +8,8 @@ import { initGallerySlider } from '../js/modules/sliders/gallery-slider';
 
 window.addEventListener('DOMContentLoaded', () => {
   openMenu();
-  initHeroSlider();
   window.addEventListener('load', () => {
+    initHeroSlider();
     initToursSlider();
     initTrainingSlider();
     initReviewsSlider();

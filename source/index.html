@@ -743,7 +743,208 @@
           </div>
         </div>
       </section>
-      <section class="gallery" id="gallery" data-test="gallery">gallery</section>
+      <section class="gallery" id="gallery" data-test="gallery">
+        <div class="gallery__head container">
+          <h2 class="section-title gallery__title">Фотогалерея<span class="section-title__back gallery__title-back"
+              aria-hidden="true">Фотогалерея</span></h2>
+          <p class="gallery__text">Добавляйте фото с хэштегом #лайфтур, <br>а также отмечайте нас на фото.
+            Лучшие фотографии украсят этот раздел нашего сайта.</p>
+          <div class="gallery__slider-btns slider-btns">
+            <button
+              class="slider-btns__arrow slider-btns__arrow--prev gallery__arrow gallery__arrow--prev swiper-arrow swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+              <svg width="13" height="7">
+                <use href="/__spritemap#sprite-icon-arrow"></use>
+              </svg>
+            </button>
+            <button
+              class="slider-btns__arrow slider-btns__arrow--next gallery__arrow gallery__arrow--next swiper-arrow swiper-button-next"
+              type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+              <svg width="13" height="7">
+                <use href="/__spritemap#sprite-icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery__container">
+          <div class="gallery__slider swiper" data-slider="gallery-slider">
+            <div class="gallery__wrapper swiper-wrapper">
+              <div class="gallery__slide gallery-slide swiper-slide">
+                <div class="gallery-slide__img">
+                  <picture>
+                    <!-- mobile -->
+                    <source width="158" height="266" type="image/webp" media="(max-width: 767px)"
+                      srcset="img/gallery/item-1-mobile.webp 1x, img/gallery/item-1-mobile@2x.webp 2x">
+                    <source width="158" height="266" type="image/jpeg" media="(max-width: 767px)"
+                      srcset="img/gallery/item-1-mobile.jpg 1x, img/gallery/item-1-mobile@2x.jpg 2x">
+                    <!-- tablet -->
+                    <source width="253" height="418" type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1439px)"
+                      srcset="img/gallery/item-1-tablet.webp 1x, img/gallery/item-1-tablet@2x.webp 2x">
+                    <source width="253" height="418" type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1439px)"
+                      srcset="img/gallery/item-1-tablet.jpg 1x, img/gallery/item-1-tablet@2x.jpg 2x">
+                    <!-- desktop -->
+                    <source width="284" height="463" type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/gallery/item-1-desktop.webp 1x, img/gallery/item-1-desktop@2x.webp 2x">
+                    <img width="284" height="463" src="img/gallery/item-1-desktop.jpg"
+                      srcset="img/gallery/item-1-desktop@2x.jpg 2x" alt="Турист на фоне гор.">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="gallery__slide gallery-slide swiper-slide gallery-slide--two-rows">
+                <div class="gallery-slide__row gallery-slide__row--top">
+                  <div class="gallery-slide__img">
+                    <picture>
+                      <!-- mobile -->
+                      <source width="157" height="134" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/gallery/item-2-mobile.webp 1x, img/gallery/item-2-mobile@2x.webp 2x">
+                      <source width="157" height="134" type="image/jpeg" media="(max-width: 767px)"
+                        srcset="img/gallery/item-2-mobile.jpg 1x, img/gallery/item-2-mobile@2x.jpg 2x">
+                      <!-- tablet -->
+                      <source width="252" height="210" type="image/webp"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-2-tablet.webp 1x, img/gallery/item-2-tablet@2x.webp 2x">
+                      <source width="252" height="210" type="image/jpeg"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-2-tablet.jpg 1x, img/gallery/item-2-tablet@2x.jpg 2x">
+                      <!-- desktop -->
+                      <source width="284" height="233" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/gallery/item-2-desktop.webp 1x, img/gallery/item-2-desktop@2x.webp 2x">
+                      <img width="284" height="233" src="img/gallery/item-1-desktop.jpg"
+                        srcset="img/gallery/item-1-desktop@2x.jpg 2x" alt="Люди в лесу у костра вечером.">
+                    </picture>
+                  </div>
+                </div>
+                <div class="gallery-slide__row gallery-slide__row--bottom">
+                  <div class="gallery-slide__img">
+                    <picture>
+                      <!-- mobile -->
+                      <source width="158" height="124" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/gallery/item-3-mobile.webp 1x, img/gallery/item-3-mobile@2x.webp 2x">
+                      <source width="158" height="124" type="image/jpeg" media="(max-width: 767px)"
+                        srcset="img/gallery/item-3-mobile.jpg 1x, img/gallery/item-3-mobile@2x.jpg 2x">
+                      <!-- tablet -->
+                      <source width="252" height="201" type="image/webp"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-3-tablet.webp 1x, img/gallery/item-3-tablet@2x.webp 2x">
+                      <source width="252" height="201" type="image/jpeg"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-3-tablet.jpg 1x, img/gallery/item-3-tablet@2x.jpg 2x">
+                      <!-- desktop -->
+                      <source width="284" height="223" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/gallery/item-3-desktop.webp 1x, img/gallery/item-3-desktop@2x.webp 2x">
+                      <img width="284" height="223" src="img/gallery/item-3-desktop.jpg"
+                        srcset="img/gallery/item-3-desktop@2x.jpg 2x" alt="Рука с компасом на фоне гор.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery__slide gallery-slide swiper-slide">
+                <div class="gallery-slide__img">
+                  <picture>
+                    <!-- mobile -->
+                    <source width="158" height="266" type="image/webp" media="(max-width: 767px)"
+                      srcset="img/gallery/item-4-mobile.webp 1x, img/gallery/item-4-mobile@2x.webp 2x">
+                    <source width="158" height="266" type="image/jpeg" media="(max-width: 767px)"
+                      srcset="img/gallery/item-4-mobile.jpg 1x, img/gallery/item-4-mobile@2x.jpg 2x">
+                    <!-- tablet -->
+                    <source width="253" height="418" type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1439px)"
+                      srcset="img/gallery/item-4-tablet.webp 1x, img/gallery/item-4-tablet@2x.webp 2x">
+                    <source width="253" height="418" type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1439px)"
+                      srcset="img/gallery/item-4-tablet.jpg 1x, img/gallery/item-4-tablet@2x.jpg 2x">
+                    <!-- desktop -->
+                    <source width="284" height="463" type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/gallery/item-4-desktop.webp 1x, img/gallery/item-4-desktop@2x.webp 2x">
+                    <img width="284" height="463" src="img/gallery/item-4-desktop.jpg"
+                      srcset="img/gallery/item-4-desktop@2x.jpg 2x" alt="Люди на горной тропе.">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="gallery__slide gallery-slide swiper-slide gallery-slide--two-rows">
+                <div class="gallery-slide__row gallery-slide__row--top">
+                  <div class="gallery-slide__img">
+                    <picture>
+                      <!-- mobile -->
+                      <source width="157" height="134" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/gallery/item-5-mobile.webp 1x, img/gallery/item-65mobile@2x.webp 2x">
+                      <source width="157" height="134" type="image/jpeg" media="(max-width: 767px)"
+                        srcset="img/gallery/item-5-mobile.jpg 1x, img/gallery/item-5-mobile@2x.jpg 2x">
+                      <!-- tablet -->
+                      <source width="252" height="210" type="image/webp"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-5-tablet.webp 1x, img/gallery/item-5-tablet@2x.webp 2x">
+                      <source width="252" height="210" type="image/jpeg"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-5-tablet.jpg 1x, img/gallery/item-5-tablet@2x.jpg 2x">
+                      <!-- desktop -->
+                      <source width="284" height="233" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/gallery/item-5-desktop.webp 1x, img/gallery/item-5-desktop@2x.webp 2x">
+                      <img width="284" height="233" src="img/gallery/item-6-desktop.jpg"
+                        srcset="img/gallery/item-6-desktop@2x.jpg 2x" alt="Люди на зимней горной тропе.">
+                    </picture>
+                  </div>
+                </div>
+                <div class="gallery-slide__row gallery-slide__row--bottom">
+                  <div class="gallery-slide__img">
+                    <picture>
+                      <!-- mobile -->
+                      <source width="158" height="124" type="image/webp" media="(max-width: 767px)"
+                        srcset="img/gallery/item-6-mobile.webp 1x, img/gallery/item-6-mobile@2x.webp 2x">
+                      <source width="158" height="124" type="image/jpeg" media="(max-width: 767px)"
+                        srcset="img/gallery/item-6-mobile.jpg 1x, img/gallery/item-6-mobile@2x.jpg 2x">
+                      <!-- tablet -->
+                      <source width="252" height="201" type="image/webp"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-6-tablet.webp 1x, img/gallery/item-6-tablet@2x.webp 2x">
+                      <source width="252" height="201" type="image/jpeg"
+                        media="(min-width: 768px) and (max-width: 1439px)"
+                        srcset="img/gallery/item-6-tablet.jpg 1x, img/gallery/item-6-tablet@2x.jpg 2x">
+                      <!-- desktop -->
+                      <source width="284" height="223" type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/gallery/item-6-desktop.webp 1x, img/gallery/item-6-desktop@2x.webp 2x">
+                      <img width="284" height="223" src="img/gallery/item-6-desktop.jpg"
+                        srcset="img/gallery/item-6-desktop@2x.jpg 2x" alt="палатка на фоне ночного неба.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery__slide gallery-slide swiper-slide">
+                <div class="gallery-slide__img">
+                  <picture>
+                    <!-- mobile -->
+                    <source width="158" height="266" type="image/webp" media="(max-width: 767px)"
+                      srcset="img/gallery/item-7-mobile.webp 1x, img/gallery/item-7-mobile@2x.webp 2x">
+                    <source width="158" height="266" type="image/jpeg" media="(max-width: 767px)"
+                      srcset="img/gallery/item-7-mobile.jpg 1x, img/gallery/item-7-mobile@2x.jpg 2x">
+                    <!-- tablet -->
+                    <source width="253" height="418" type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1439px)"
+                      srcset="img/gallery/item-7-tablet.webp 1x, img/gallery/item-7-tablet@2x.webp 2x">
+                    <source width="253" height="418" type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1439px)"
+                      srcset="img/gallery/item-7-tablet.jpg 1x, img/gallery/item-7-tablet@2x.jpg 2x">
+                    <!-- desktop -->
+                    <source width="284" height="463" type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/gallery/item-7-desktop.webp 1x, img/gallery/item-7-desktop@2x.webp 2x">
+                    <img width="284" height="463" src="img/gallery/item-7-desktop.jpg"
+                      srcset="img/gallery/item-7-desktop@2x.jpg 2x" alt="Люди на фоне гор у ксстра.">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
       <section class="form" id="form" data-test="form">form</section>
     </main>
     <footer class="page-footer" data-test="footer">footer</footer>

@@ -13,9 +13,7 @@
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <!--
-    <div data-test="footer">footer</div> -->
+
     <header class="header" data-test="header">
       <div class="header__wrapper">
         <div class="header-left">
@@ -972,6 +970,85 @@
             <button class="form-btn" type="submit">Отправить</button>
           </form>
         </div>
+      </section>
+      <section class="footer" data-test="footer">
+        <div class="footer__upper-content">
+          <div class="footer__contacts">
+            <h3 class="footer__title title">Контакты</h3>
+            <p>
+              Свяжитесь с нами любым удобным для вас способом или приходите
+              к нам в гости. Мы будем рады поделиться увлекательными историями
+              и подобрать для вас тур.
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="contact__icon">
+                  <svg width="22" height="22">
+                    <use
+                      width="22"
+                      height="22"
+                      href="/__spritemap#sprite-phone"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="contact__info">
+                  <h6 class="contact-info__title">Телефон</h6>
+                  <span class="contact-info__text"> +7 983 745-45-45 </span>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contact__icon">
+                  <svg width="22" height="22">
+                    <use
+                      width="22"
+                      height="22"
+                      href="/__spritemap#sprite-mail"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="contact__info">
+                  <h6 class="contact-info__title">Email</h6>
+                  <span class="contact-info__text"> info@lifetour.com </span>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contact__icon">
+                  <svg width="22" height="22">
+                    <use
+                      width="22"
+                      height="22"
+                      href="/__spritemap#sprite-address"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="contact__info">
+                  <h6 class="contact-info__title">Адрес</h6>
+                  <span class="contact-info__text">
+                    г. Москва, пр-т Мира, д. 14, офис 101</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__map">
+            <picture>
+              <source
+                srcset="./img/map-desktop.jpg"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="./img/map-tablet.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./img/map-mobile.jpg"
+                alt="Карта с расположением нашего офиса"
+              />
+            </picture>
+          </div>
+        </div>
+        <nav class="footer__nav"></nav>
+        <div class="footer__social"></div>
       </section>
     </main>
     <script type="module" src="js/main.js"></script>

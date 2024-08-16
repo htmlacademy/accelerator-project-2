@@ -1,0 +1,69 @@
+@import "../vars.scss";
+
+.footer {
+  background-color: $white;
+}
+
+.footer__contacts {
+  padding: 34px 15px 30px;
+}
+
+.footer__title {
+  margin: 0 0 29px;
+  &::before {
+    content: "Контакты";
+    position: absolute;
+    top: -15px;
+    opacity: 0.03;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.footer__title ~ p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 30px;
+  width: 290px;
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-info__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  margin: 0 0 8px;
+}
+
+.contact-info__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  width: 185px;
+}
+
+.footer__map img {
+  width: 100%;
+}
+
+.footer__upper-content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: (45, 56, 63, 0.2);
+}

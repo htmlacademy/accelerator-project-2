@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
 }
 
 .form-field {
@@ -40,8 +41,7 @@
   border-radius: 2px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background: $white;
-  color: $accent-blue;
-  // opacity: 0.5;
+  color: rgb(2, 100, 192, 0.5);
 
   &::placeholder {
     color: $black;

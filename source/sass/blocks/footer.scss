@@ -29,7 +29,7 @@
 }
 
 .contacts__list {
-  list-style-type: none;
+  // list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -41,6 +41,14 @@
 .contacts__item {
   display: flex;
   gap: 10px;
+}
+
+.contact__item-link {
+  // text-decoration: none;
+  display: block;
+  display: flex;
+  gap: 10px;
+  color: $black;
 }
 
 .contact-info__title {
@@ -65,5 +73,76 @@
 .footer__upper-content {
   padding-bottom: 20px;
   border-bottom: 1px solid;
-  border-color: (45, 56, 63, 0.2);
+  border-color: rgb(45, 56, 63, 0.2);
+}
+
+.footer__down-content {
+  padding: 23px 15px 20px;
+}
+
+.footer__logo-wrappe {
+  margin-bottom: 23px;
+}
+
+.footer__navigation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.footer__logo-link {
+  display: block;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 50px;
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav-item {
+  width: 120px;
+}
+
+.footer__nav-link {
+  color: $black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  display: block;
+}
+
+.footer__social-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+
+.social-link {
+  display: block;
+  width: 32px;
+  height: 30px;
+}
+
+.social-link__vk {
+  background-image: url(../../img/vk-footer.svg);
+}
+
+.social-link__ok {
+  background-image: url(../../img/ok.svg);
+}
+
+.social-link__reddit {
+  background-image: url(../../img/reddit.svg);
 }

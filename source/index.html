@@ -982,34 +982,38 @@
             </p>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <div class="contact__icon">
-                  <svg width="22" height="22">
-                    <use
-                      width="22"
-                      height="22"
-                      href="/__spritemap#sprite-phone"
-                    ></use>
-                  </svg>
-                </div>
-                <div class="contact__info">
-                  <h6 class="contact-info__title">Телефон</h6>
-                  <span class="contact-info__text"> +7 983 745-45-45 </span>
-                </div>
+                <a href="tel:1234567890" class="contact__item-link">
+                  <div class="contact__icon">
+                    <svg width="22" height="22">
+                      <use
+                        width="22"
+                        height="22"
+                        href="/__spritemap#sprite-phone"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="contact__info">
+                    <h6 class="contact-info__title">Телефон</h6>
+                    <span class="contact-info__text"> +7 983 745-45-45 </span>
+                  </div>
+                </a>
               </li>
               <li class="contacts__item">
-                <div class="contact__icon">
-                  <svg width="22" height="22">
-                    <use
-                      width="22"
-                      height="22"
-                      href="/__spritemap#sprite-mail"
-                    ></use>
-                  </svg>
-                </div>
-                <div class="contact__info">
-                  <h6 class="contact-info__title">Email</h6>
-                  <span class="contact-info__text"> info@lifetour.com </span>
-                </div>
+                <a class="contact__item-link" href="mailto:lalala@mail.ru">
+                  <div class="contact__icon">
+                    <svg width="22" height="22">
+                      <use
+                        width="22"
+                        height="22"
+                        href="/__spritemap#sprite-mail"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="contact__info">
+                    <h6 class="contact-info__title">Email</h6>
+                    <span class="contact-info__text"> info@lifetour.com </span>
+                  </div>
+                </a>
               </li>
               <li class="contacts__item">
                 <div class="contact__icon">
@@ -1047,8 +1051,62 @@
             </picture>
           </div>
         </div>
-        <nav class="footer__nav"></nav>
-        <div class="footer__social"></div>
+        <div class="footer__down-content">
+          <div class="footer__navigation-block">
+            <div class="footer__logo-wrapper">
+              <a href="./index.html" class="footer__logo-link"
+                ><img src="./img/footer-logo.svg" alt="Логотип"
+              /></a>
+            </div>
+            <nav class="footer__nav">
+              <div class="footer__nav-left">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Туры</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Обучение</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">О нас</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__nav-right">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Отзывы</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Фотографии</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-wrapper">
+              <a href="#" class="social-link social-link__vk"
+                ><span class="visually-hidden"
+                  >Ссылка на страницу Вконтакте</span
+                ></a
+              >
+              <a href="#" class="social-link social-link__ok"
+                ><span class="visually-hidden"
+                  >Ссылка на страницу Одноклассники</span
+                ></a
+              >
+              <a href="#" class="social-link social-link__reddit"
+                ><span class="visually-hidden"
+                  >Ссылка на страницу Реддит</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module" src="js/main.js"></script>

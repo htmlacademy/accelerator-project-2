@@ -1,5 +1,17 @@
 @import "./vars";
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
 .page-body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;

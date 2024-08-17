@@ -14,6 +14,9 @@
     padding-top: 29px;
     padding-bottom: 29px;
 
+    //test
+    //test
+
     &:last-of-type {
       grid-column: span 2;
     }
@@ -26,6 +29,9 @@
     padding-bottom: 19px;
     padding-left: 9px;
     padding-right: 9px;
+
+    //test
+    //test
   }
 }
 
@@ -49,6 +55,9 @@
     margin-bottom: 25px;
     width: 48px;
     height: 48px;
+
+    //test
+    //test
   }
 
   @include vp-767 {
@@ -57,6 +66,18 @@
     height: 42px;
   }
 }
+
+.adv-slide--security {}
+
+.adv-slide--knowledge {}
+
+.adv-slide--equipment {}
+
+.adv-slide--routes {}
+
+.adv-slide--nature {}
+
+.adv-slide--nature {}
 
 .adv-slide__container svg {
   width: 22px;
@@ -68,6 +89,41 @@
     height: 24px;
   }
 }
+
+// .adv-slide--security svg {
+//   @include vp-1439 {
+//     width: 21.82px;
+//     height: 19.64px;
+//   }
+// }
+
+// .adv-slide--knowledge svg {
+//   @include vp-1439 {
+//     width: 19.64px;
+//     height: 21.82px;
+//   }
+// }
+
+// .adv-slide--equipment svg {
+//   @include vp-1439 {
+//     width: 21.82px;
+//     height: 19.64px;
+//   }
+// }
+
+// .adv-slide--routes svg {
+//   @include vp-1439 {
+//     width: 21.82px;
+//     height: 21.82px;
+//   }
+// }
+
+// .adv-slide--nature svg {
+//   @include vp-1439 {
+//     width: 21.82px;
+//     height: 15.27px;
+//   }
+// }
 
 .adv-slide__container h3 {
   margin: 0;

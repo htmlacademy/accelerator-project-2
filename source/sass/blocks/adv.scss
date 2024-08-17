@@ -2,11 +2,12 @@
   padding-top: 135px;
   padding-bottom: 100px;
 
-  // background-color: red;
-
   @include vp-1439 {
     padding-top: 60px;
     padding-bottom: 40px;
+
+    //test
+    //test
   }
 
   @include vp-767 {
@@ -20,10 +21,15 @@
 
   @include vp-1439 {
     margin-bottom: 60px;
+
+    //test
+    //test
   }
 
   @include vp-767 {
     margin-bottom: 37px;
+    //test
+    //test
   }
 }
 

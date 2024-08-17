@@ -1,0 +1,54 @@
+.map {}
+
+.map__img {
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.map__img img {
+  width: 600px;
+  height: 324px;
+  display: block;
+
+  @include vp-1439 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @include vp-767 {}
+}
+
+.map__pin {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 162px;
+  left: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-action;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    mask-image: url("../__spritemap#sprite-icon-pin-filled-view");
+    mask-size: 32.73px 43.64px;
+  }
+
+  @include vp-1439 {
+    width: 42px;
+    height: 42px;
+    top: 185px;
+  }
+
+  @include vp-767 {}
+}

@@ -971,7 +971,58 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer" data-test="footer">footer</footer>
+    <footer class="page-footer" data-test="footer">
+      <section class="contacts">
+        <div class="contacts__container">
+          <div class="contacts__col contacts__col--info">
+            <div class="contacts__head">
+              <h2 class="section-title contacts__title">Контакты<span class="section-title__back contacts__title-back"
+                  aria-hidden="true">Контакты</span></h2>
+              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
+                Мы будем рады поделиться увлекательными
+                историями и подобрать для вас тур.</p>
+            </div>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--phone">
+                <span>Телефон</span>
+                <a href="tel:+79837454545">+7 983 745-45-45</a>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <span>Email</span>
+                <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class=" contacts__item contacts__item--address">
+                <span>Адрес</span>
+                <b>г. Москва, пр-т Мира, д. 14, офис 101</b>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__col contacts__col--map map">
+            <div class="map__img">
+              <picture>
+                <!-- mobile -->
+                <source width="320" height="343" type="image/webp" media="(max-width: 767px)"
+                  srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+                <source width="320" height="343" type="image/jpeg" media="(max-width: 767px)"
+                  srcset="img/map/map-mobile.png 1x, img/map/map-mobile@2x.png 2x">
+                <!-- tablet -->
+                <source width="768" height="340" type="image/webp" media="(min-width: 768px) and (max-width: 1439px)"
+                  srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+                <source width="768" height="340" type="image/jpeg" media="(min-width: 768px) and (max-width: 1439px)"
+                  srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+                <!-- desktop -->
+                <source width="600" height="324" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+                <img width="600" height="324" src="img/map/map-desktop.png" srcset="img/map/map-desktop@2x.png 2x"
+                  alt="г. Москва, пр-т Мира, д. 14, офис 101">
+              </picture>
+              <div class="map__pin">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>

@@ -1,10 +1,24 @@
 .form {
   min-height: 760px;
-  padding-top: 292px;
-  padding-bottom: 292px;
+  padding-top: 297px;
+  padding-bottom: 290px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
 
   @supports (background-image: url(image.webp)) {
     background-image: url("../../img/form/form-desktop.webp");
@@ -22,6 +36,8 @@
 
   @include vp-1439 {
     min-height: 680px;
+    padding-top: 186px;
+    padding-bottom: 180px;
 
     @supports (background-image: url(image.webp)) {
       background-image: url("../../img/form/form-tablet.webp");
@@ -40,6 +56,9 @@
 
   @include vp-767 {
     min-height: 638px;
+    padding-top: 177px;
+    padding-bottom: 170px;
+    background-position: -36px 0;
 
     @supports (background-image: url(image.webp)) {
       background-image: url("../../img/form/form-mobile.webp");
@@ -57,6 +76,11 @@
   }
 }
 
+.form .container {
+  position: relative;
+  z-index: 2;
+}
+
 .form__head {
   margin-bottom: 40px;
 
@@ -65,20 +89,20 @@
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
 .form__title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @include vp-1439 {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -143,7 +167,9 @@
 
   @include vp-1439 {}
 
-  @include vp-767 {}
+  @include vp-767 {
+    max-width: 258px;
+  }
 }
 
 .form__input input {
@@ -153,6 +179,7 @@
   padding-right: 30px;
   min-height: 56px;
   color: $color-dark;
+  border-radius: 2px;
   background-color: $color-white;
   border: 1px solid rgba($color-action, 0.1);
 
@@ -187,6 +214,12 @@
     border-color: #999999;
     color: rgba(#999999, 0.5);
   }
+
+  @include vp-767 {
+    min-height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .form__input.error input {
@@ -216,6 +249,10 @@
 
   @include vp-1439 {
     max-width: 360px;
+  }
+
+  @include vp-767 {
+    max-width: 258px;
   }
 }
 
@@ -264,6 +301,10 @@
     color: $color-white;
     background-color: #999999;
     border-color: #999999;
+  }
+
+  @include vp-767 {
+    min-height: 58px;
   }
 }
 

@@ -3,15 +3,47 @@
 
 }
 
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include vp-1439 {}
+
+  @include vp-767 {}
+}
+
 .page-footer__col {
   &--logo {}
 
   &--nav {}
 
-  &--phone {}
+  &--phone {
+    @include vp-1439 {
+      display: none;
+    }
+  }
+
+  &--social {
+    width: 100%;
+  }
+
+  &--policy {
+    width: 100%;
+  }
 }
 
 .page-footer__nav-list {}
+
+.page-footer__col--phone a {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+  color: inherit;
+}
 
 .page-footer__nav-item {
   &--tours {}

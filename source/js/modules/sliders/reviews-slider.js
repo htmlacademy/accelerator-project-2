@@ -15,7 +15,7 @@ const initReviewsSlider = () => {
     watchOverflow: true,
     speed: 500,
     loop: false,
-    autoHeight: false,
+    autoHeight: true,
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.reviews__arrow--next',

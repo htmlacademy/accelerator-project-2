@@ -41,14 +41,32 @@
     left: 0;
     top: 0;
     mask-image: url("../__spritemap#sprite-icon-pin-filled-view");
-    mask-size: 32.73px 43.64px;
+    mask-size: 34px 44px;
+
+    @include vp-1439 {
+      width: 42px;
+      height: 42px;
+      mask-size: 30px 40px;
+    }
+
+    @include vp-1439 {
+      width: 28px;
+      height: 28px;
+      mask-size: 20px 26px;
+    }
   }
 
   @include vp-1439 {
     width: 42px;
     height: 42px;
-    top: 185px;
+    top: 182px;
+    left: 385px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    width: 28px;
+    height: 28px;
+    top: 171px;
+    left: 198px;
+  }
 }

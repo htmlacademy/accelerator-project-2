@@ -1,0 +1,32 @@
+.page-footer {
+  border-top: 1px solid rgba($color-dark, 0.2);
+
+}
+
+.page-footer__col {
+  &--logo {}
+
+  &--nav {}
+
+  &--phone {}
+}
+
+.page-footer__nav-list {}
+
+.page-footer__nav-item {
+  &--tours {}
+
+  &--training {}
+
+  &--about {}
+
+  &--reviews {}
+
+  &--gallery {}
+
+  &--contacts {}
+}
+
+.page-footer__social-list {}
+
+.page-footer__policy {}

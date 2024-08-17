@@ -24,7 +24,7 @@
           <span class="visually-hidden">открыть, закрыть меню</span>
         </button>
         <div class="page-header__logo">
-          <img width="142" height="42" src="img/svg/logo.svg" alt="логотип компании LIFETOUR">
+          <img width="142" height="42" src="img/svg/logo-header.svg" alt="логотип компании LIFETOUR">
         </div>
         <nav class="page-header__nav nav nav--header" data-element="menu">
           <ul class="nav__list nav__list--header">
@@ -971,8 +971,8 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer" data-test="footer">
-      <section class="contacts">
+    <footer data-test="footer">
+      <section class="contacts" id="contacts">
         <div class="contacts__container">
           <div class="contacts__col contacts__col--info">
             <div class="contacts__head">
@@ -993,7 +993,7 @@
               </li>
               <li class=" contacts__item contacts__item--address">
                 <span>Адрес</span>
-                <b>г. Москва, пр-т Мира, д. 14, офис 101</b>
+                <b>г. Москва, пр-т Мира, <br>д. 14, офис 101</b>
               </li>
             </ul>
           </div>
@@ -1019,6 +1019,58 @@
               <div class="map__pin">
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-footer">
+        <div class="container">
+          <div class="page-footer__col page-footer__col--logo">
+            <img width="142" height="42" src="img/svg/logo-footer.svg" alt="логотип компании LIFETOUR">
+          </div>
+          <nav class="page-footer__col page-footer__col--nav nav nav--footer">
+            <ul class="nav__list nav__list--footer">
+              <li class="nav__item nav__item--tours">
+                <a href="#tours">Туры</a>
+              </li>
+              <li class="nav__item nav__item--training">
+                <a href="#training">Обучение</a>
+              </li>
+              <li class="nav__item nav__item--about">
+                <a href="#about">О нас</a>
+              </li>
+              <li class="nav__item nav__item--reviews">
+                <a href="#reviews">Отзывы</a>
+              </li>
+              <li class="nav__item nav__item--gallery">
+                <a href="#gallery">Фотографии</a>
+              </li>
+              <li class="nav__item nav__item--contacts">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <ul class="page-footer__social-list social-list">
+              <li>
+                <a href="http://vk.ru" rel="noreferrer noopener" target="_blank">
+                  <span class="visually-hidden">страница на vk.ru</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://ok.ru" rel="noreferrer noopener" target="_blank">
+                  <span class="visually-hidden">страница на ok.ru</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://reddit.com" rel="noreferrer noopener" target="_blank">
+                  <span class="visually-hidden">страница на reddit.com</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-footer__col page-footer__col--phone">
+            <a href="tel:88007253232">8 800 725-32-32</a>
+          </div>
+          <div class="page-footer__policy">
+            <a href="#">Политика конфиденциальности</a>
           </div>
         </div>
       </section>

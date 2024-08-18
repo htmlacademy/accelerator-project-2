@@ -100,9 +100,61 @@
     font-size: 14px;
     line-height: 14px;
   }
+
+  @include vp-767 {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    padding: 0;
+    border: none;
+  }
 }
 
 .nav__list a.disabled {
   color: #999999;
   pointer-events: none;
+}
+
+.nav__list--footer .nav__item {
+  &--tours {
+    @include vp-767 {
+      order: 1;
+    }
+  }
+
+  &--training {
+    @include vp-767 {
+      order: 3;
+    }
+  }
+
+  &--about {
+    @include vp-767 {
+      order: 5;
+    }
+  }
+
+  &--reviews {
+    @include vp-767 {
+      order: 2;
+    }
+  }
+
+  &--gallery {
+    @include vp-767 {
+      order: 4;
+    }
+  }
+
+  &--contacts {
+    @include vp-767 {
+      order: 6;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 0;
+    line-height: 0;
+  }
+
 }

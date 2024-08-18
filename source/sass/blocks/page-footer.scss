@@ -1,13 +1,14 @@
 .page-footer {
   border-top: 1px solid rgba($color-dark, 0.2);
-
+  padding-top: 30px;
 }
 
 .page-footer .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
+  row-gap: 22px;
 
   @include vp-1439 {}
 
@@ -15,11 +16,23 @@
 }
 
 .page-footer__col {
-  &--logo {}
+  &--logo {
+    width: 200px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  &--nav {}
+  &--nav {
+    padding-left: 109px;
+    padding-top: 19px;
+    margin-right: auto;
+  }
 
   &--phone {
+    padding-top: 20px;
+
     @include vp-1439 {
       display: none;
     }
@@ -27,10 +40,16 @@
 
   &--social {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   &--policy {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -45,18 +64,68 @@
   color: inherit;
 }
 
+.page-footer__col--policy a {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
 .page-footer__nav-item {
-  &--tours {}
+  &--tours {
+    @include vp-767 {}
+  }
 
-  &--training {}
+  &--training {
+    @include vp-767 {}
+  }
 
-  &--about {}
+  &--about {
+    @include vp-767 {}
+  }
 
-  &--reviews {}
+  &--reviews {
+    @include vp-767 {}
+  }
 
-  &--gallery {}
+  &--gallery {
+    @include vp-767 {}
+  }
 
-  &--contacts {}
+  &--contacts {
+    @include vp-767 {}
+  }
+}
+
+.page-footer__col--phone a,
+.page-footer__col--policy a {
+  transition:
+    color $trans-default;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $color-action;
+  }
+
+  &:hover:not(.disabled):not(:focus-visible):not(:active) {
+    color: rgba($color-action, 0.1);
+  }
+
+  &:active {
+    color: $color-dark-alternative;
+  }
+}
+
+.page-footer__col--phone a.disabled,
+.page-footer__col--policy a.disabled {
+  color: #999999;
+  pointer-events: none;
 }
 
 .page-footer__social-list {}

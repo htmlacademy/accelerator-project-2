@@ -91,6 +91,10 @@
 
 .contacts__title-back {
   bottom: -3px;
+
+  @include vp-1439 {
+    bottom: 1px;
+  }
 }
 
 .contacts__head p {

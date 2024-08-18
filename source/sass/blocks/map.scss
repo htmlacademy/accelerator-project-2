@@ -30,6 +30,20 @@
   align-items: center;
   justify-content: center;
 
+  @include vp-1439 {
+    width: 42px;
+    height: 42px;
+    top: 182px;
+    left: 385px;
+  }
+
+  @include vp-767 {
+    width: 28px;
+    height: 28px;
+    top: 171px;
+    left: 198px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -49,24 +63,10 @@
       mask-size: 30px 40px;
     }
 
-    @include vp-1439 {
+    @include vp-767 {
       width: 28px;
       height: 28px;
       mask-size: 20px 26px;
     }
-  }
-
-  @include vp-1439 {
-    width: 42px;
-    height: 42px;
-    top: 182px;
-    left: 385px;
-  }
-
-  @include vp-767 {
-    width: 28px;
-    height: 28px;
-    top: 171px;
-    left: 198px;
   }
 }

@@ -3,8 +3,6 @@
   padding-top: 30px;
   padding-bottom: 32px;
 
-  // background-color: red;
-
   @include vp-1439 {
     padding-top: 34px;
   }
@@ -44,10 +42,6 @@
       width: 142px;
       min-height: auto;
     }
-
-    // @include vp-767 {
-    //   margin-bottom: 23px;
-    // }
   }
 
   &--nav {

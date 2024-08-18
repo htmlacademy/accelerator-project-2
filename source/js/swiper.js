@@ -8,8 +8,8 @@ const swiper = new Swiper(".promo-swiper", {
   modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: true,
+  spaceBetween: 0,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
@@ -22,7 +22,7 @@ const swiperTours = new Swiper(".tours-swiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      // spaceBetween: 10,
+      spaceBetween: 18,
     },
   },
 
@@ -32,6 +32,11 @@ const swiperTours = new Swiper(".tours-swiper", {
 
   scrollbar: {
     el: ".tours-swiper-scrollbar",
+  },
+
+  navigation: {
+    nextEl: ".tours-swiper-button-next",
+    prevEl: ".tours-swiper-button-prev",
   },
 });
 

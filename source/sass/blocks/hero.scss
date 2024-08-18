@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+}
+
+.hero__container {
+  position: absolute;
+  bottom: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  @include vp-1439 {
+    bottom: 40px;
+  }
+
+  @include vp-767 {
+    bottom: 36px;
+  }
+}
+
+.hero__slider-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: flex-end;
+
+  @include vp-1439 {
+    max-width: none;
+    justify-content: center;
+  }
+}
+
+.hero__slider-bullet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $color-transparent;
+  border: 1px solid $color-white;
+  cursor: pointer;
+  position: relative;
+  transition: background-color $trans-default, border-color $trans-default;
+
+  &--is-active {
+    background-color: $color-white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      top: -3px;
+      left: -3px;
+      border: 1px solid rgba($color-white, 0.5);
+    }
+  }
+
+  &:hover:not(:disabled):not(.disabled):not(:focus-visible):not(:active) {
+    background-color: #d9d9d9;
+  }
+
+  &:active {
+    background-color: rgba($color-white, 0.5);
+    border: 1px solid $color-white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: #999999;
+    border-color: #999999;
+  }
+
+  @include vp-767 {
+    width: 16px;
+    height: 16px;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      ;
+    }
+  }
+}
+
+.hero__slider-bullet.disabled {
+  pointer-events: none;
+  background-color: #999999;
+  border-color: #999999;
+}

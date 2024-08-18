@@ -81,13 +81,27 @@
               <div class="swiper-slide">
                 <div class="promo-slide__wrapper slide-2">
                   <div class="promo-slide">
-                    <h2>Невероятная природа Камчатки</h2>
-                    <p>
-                      Незабываемое приключение, во время которого вы отправитесь
-                      в путешествие по одному из самых нетронутых уголков дикой
-                      природы в мире.
-                    </p>
-                    <button type="button">Смотреть тур</button>
+                    <div class="promo-slide__info">
+                      <h2>Невероятная природа Камчатки</h2>
+                      <p>
+                        Незабываемое приключение, во время которого
+                        вы отправитесь в путешествие по одному из самых
+                        нетронутых уголков дикой природы в мире.
+                      </p>
+                      <button type="button">Смотреть тур</button>
+                    </div>
+                    <div class="promo-slide__photo-cards">
+                      <picture>
+                        <source
+                          media="(min-width:1440px )"
+                          srcset="./img/promo/photo-cards-kamchatka-desktop.png"
+                        />
+                        <img
+                          src="./img/promo/photo-cards-kamchatka-tablet.png"
+                          alt="Фотокарточки из похода на Камчатку"
+                        />
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1027,12 +1041,8 @@
                 <li class="contacts__item">
                   <a href="tel:1234567890" class="contact__item-link">
                     <div class="contact__icon">
-                      <svg width="22" height="22">
-                        <use
-                          width="22"
-                          height="22"
-                          href="/__spritemap#sprite-phone"
-                        ></use>
+                      <svg width="22px" height="22px">
+                        <use href="/__spritemap#sprite-phone"></use>
                       </svg>
                     </div>
                     <div class="contact__info">

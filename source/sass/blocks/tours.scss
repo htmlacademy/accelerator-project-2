@@ -41,19 +41,19 @@
 }
 
 .tours-slide-1 {
-  background-image: url("../../img/tours-mobile-elbrus.png");
+  background-image: url("../../img/tours/tours-mobile-elbrus.png");
 }
 
 .tours-slide-2 {
-  background-image: url("../../img/tours-mobile-altay.png");
+  background-image: url("../../img/tours/tours-mobile-altay.png");
 }
 
 .tours-slide-3 {
-  background-image: url("../../img/tours-mobile-adigeya.png");
+  background-image: url("../../img/tours/tours-mobile-adigeya.png");
 }
 
 .tours-slide-4 {
-  background-image: url("../../img/tours-mobile-ural.png");
+  background-image: url("../../img/tours/tours-mobile-ural.png");
 }
 
 .tour-info {
@@ -169,4 +169,47 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .tours {
+    padding: 40px 45px;
+  }
+
+  .tours__title {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 35px;
+
+    &::before {
+      content: "Ближайшие туры";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 40px;
+    }
+  }
+
+  .tours-slide {
+    width: 330px;
+    height: 416px;
+    padding: 30px 20px 26px;
+  }
+
+  .tours-slide-1 {
+    background-image: url("../../img/tours/tours-tablet-elbrus.png");
+  }
+
+  .tours-slide-2 {
+    background-image: url("../../img/tours/tours-tablet-altay.png");
+  }
+
+  .tours-slide-3 {
+    background-size: 100%;
+  }
+
+  .tours-slide-4 {
+    background-size: 100%;
+  }
 }

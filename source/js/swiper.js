@@ -5,9 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const swiper = new Swiper(".promo-swiper", {
-  // configure Swiper to use modules
   modules: [Navigation, Pagination],
-  // Optional parameters
   direction: "horizontal",
   loop: true,
 
@@ -15,17 +13,20 @@ const swiper = new Swiper(".promo-swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
-
-  // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
 });
 
 const swiperTours = new Swiper(".tours-swiper", {
-  // configure Swiper to use modules
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      // spaceBetween: 10,
+    },
+  },
+
   modules: [Navigation, Pagination],
-  // Optional parameters
   direction: "horizontal",
   loop: false,
 
@@ -35,9 +36,7 @@ const swiperTours = new Swiper(".tours-swiper", {
 });
 
 const swiperInstructors = new Swiper(".instructors-swiper", {
-  // configure Swiper to use modules
   modules: [Navigation, Pagination],
-  // Optional parameters
   direction: "horizontal",
   loop: false,
 
@@ -47,9 +46,7 @@ const swiperInstructors = new Swiper(".instructors-swiper", {
 });
 
 const swiperReviews = new Swiper(".reviews-swiper", {
-  // configure Swiper to use modules
   modules: [Navigation, Pagination],
-  // Optional parameters
   direction: "horizontal",
   loop: false,
 

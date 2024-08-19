@@ -40,6 +40,11 @@ const swiperTours = new Swiper(".tours-swiper", {
   },
 });
 
+const swiperToursPrevBtn = document.querySelector(".swiper-button-prev");
+swiperToursPrevBtn.addEventListener("click", () => swiperTours.slidePrev());
+const swiperToursNxtBtn = document.querySelector(".swiper-button-next");
+swiperToursNxtBtn.addEventListener("click", () => swiperTours.slideNext());
+
 const swiperInstructors = new Swiper(".instructors-swiper", {
   modules: [Navigation, Pagination],
   direction: "horizontal",

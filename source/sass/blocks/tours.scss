@@ -169,13 +169,22 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  position: relative;
 }
 
 .swiper-button-prev::after {
   display: none;
 }
-.swiper-button-nxt::after {
+
+.swiper-button-next::after {
   display: none;
+}
+
+.tours::before {
+  content: url(../../img/tours/clouds-mobile.png);
+  position: absolute;
+  right: 0;
+  top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -264,5 +273,10 @@
     line-height: 16px; /* 100% */
     letter-spacing: 0.64px;
     text-transform: uppercase;
+  }
+
+  .tours::before {
+    content: url(../../img/tours/clouds-tablet.png);
+    top: -92px;
   }
 }

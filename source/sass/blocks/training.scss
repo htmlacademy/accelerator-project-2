@@ -2,8 +2,6 @@
 
 .training {
   padding: 36px 15px 20px;
-  // display: flex;
-  // flex-direction: column;
   background-color: $white;
 }
 
@@ -160,4 +158,41 @@
 
 .process-line__picture-wrapper {
   width: 18px;
+}
+
+.training-text-br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .training {
+    padding: 59px 45px 40px;
+  }
+
+  .training__title {
+    margin-bottom: 34px;
+
+    &::before {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 40px;
+    }
+  }
+
+  .training__intro-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 680px;
+    position: relative;
+  }
+
+  .training-text-br {
+    display: initial;
+  }
+
+  .training__instructors-title {
+    margin-bottom: 30px;
+    margin-top: 25px;
+  }
 }

@@ -26,3 +26,12 @@ ul {
   line-height: 22px;
   position: relative;
 }
+
+@media (min-width: 768px) {
+  .title,
+  .about__content h3 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+  }
+}

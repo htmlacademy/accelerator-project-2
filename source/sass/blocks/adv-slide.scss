@@ -15,7 +15,7 @@
   position: relative;
   width: 100%;
   min-height: 329px;
-  padding-top: 124px;
+  padding-top: 123px;
   padding-bottom: 40px;
   padding-left: 19px;
   padding-right: 19px;
@@ -33,7 +33,7 @@
   }
 
   &::before {
-    top: 40px;
+    top: 39px;
     left: 50%;
     transform: translateX(-50%);
     width: 54px;
@@ -44,6 +44,12 @@
       top: 29px;
       width: 48px;
       height: 48px;
+    }
+
+    @include vp-767 {
+      top: 19px;
+      width: 42px;
+      height: 42px;
     }
   }
 
@@ -60,6 +66,10 @@
     @include vp-1439 {
       top: 41px;
     }
+
+    @include vp-767 {
+      top: 28px;
+    }
   }
 
   @include vp-1439 {
@@ -70,7 +80,7 @@
 
   @include vp-767 {
     min-height: auto;
-    padding-top: 82px;
+    padding-top: 81px;
     padding-bottom: 19px;
     padding-left: 9px;
     padding-right: 9px;

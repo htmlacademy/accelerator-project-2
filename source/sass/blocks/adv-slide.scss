@@ -4,10 +4,6 @@
 
   @include vp-1439 {
     width: 324px;
-
-    &:last-of-type {
-      grid-column: span 2;
-    }
   }
 
   @include vp-767 {
@@ -43,6 +39,12 @@
     width: 54px;
     height: 54px;
     border: 1px solid $color-action;
+
+    @include vp-1439 {
+      top: 30px;
+      width: 48px;
+      height: 48px;
+    }
   }
 
   &::after {
@@ -54,17 +56,21 @@
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $color-action;
+
+    @include vp-1439 {
+      top: 42px;
+    }
   }
 
   @include vp-1439 {
     min-height: 340px;
-    padding-top: 29px;
+    padding-top: 103px;
     padding-bottom: 29px;
   }
 
   @include vp-767 {
     min-height: auto;
-    padding-top: 19px;
+    padding-top: 82px;
     padding-bottom: 19px;
     padding-left: 9px;
     padding-right: 9px;
@@ -154,6 +160,12 @@
   mask-position: center;
 }
 
+// .adv-slide--nature {
+//   @include vp-1439 {
+//     grid-column: span 2;
+//   }
+// }
+
 .adv-slide--nature .adv-slide__container::after {
   // width: 24px;
   // height:24px;
@@ -161,4 +173,9 @@
   mask-size: 21.82px 15.27px;
   mask-repeat: no-repeat;
   mask-position: center;
+}
+
+
+.adv-slide.swiper-slide:nth-last-child(-n+3) {
+  display: none;
 }

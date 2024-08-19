@@ -173,12 +173,23 @@
   width: 100%;
   max-width: 360px;
   flex-shrink: 0;
+  position: relative;
 
   @include vp-1439 {}
 
   @include vp-767 {
     max-width: 258px;
   }
+}
+
+.form__input label {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba($color-dark, 0.5);
 }
 
 .form__input input {
@@ -193,11 +204,10 @@
   border: 1px solid rgba($color-action, 0.1);
 
   &::placeholder {
-    color: inherit;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    color: rgba($color-dark, 0.5);
+    color: rgba($color-action, 0.5);
   }
 
   &:focus {

@@ -5,6 +5,7 @@ import { initTrainingSlider } from '../js/modules/sliders/training-slider';
 import { initReviewsSlider } from '../js/modules/sliders/reviews-slider';
 import { initAdvSlider } from '../js/modules/sliders/adv-slider';
 import { initGallerySlider } from '../js/modules/sliders/gallery-slider';
+import { validateForm } from '../js/modules/validate-form';
 
 window.addEventListener('DOMContentLoaded', () => {
   openMenu();
@@ -15,5 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initReviewsSlider();
     initAdvSlider();
     initGallerySlider();
+    validateForm();
   });
 });

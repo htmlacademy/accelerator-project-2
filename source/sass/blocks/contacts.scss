@@ -262,6 +262,30 @@
 .contacts__item a {
   text-decoration: none;
   color: inherit;
+  transition:
+    color $trans-default;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $color-action;
+  }
+
+  &:hover:not(.disabled):not(:focus-visible):not(:active) {
+    color: rgba($color-action, 0.1);
+  }
+
+  &:active {
+    color: $color-dark-alternative;
+  }
+}
+
+.contacts__item a.disabled {
+  color: #999999;
+  pointer-events: none;
 }
 
 .contacts__item br {

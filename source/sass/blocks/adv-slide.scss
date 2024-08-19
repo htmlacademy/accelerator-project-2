@@ -41,7 +41,7 @@
     border: 1px solid $color-action;
 
     @include vp-1439 {
-      top: 30px;
+      top: 29px;
       width: 48px;
       height: 48px;
     }
@@ -58,13 +58,13 @@
     background-color: $color-action;
 
     @include vp-1439 {
-      top: 42px;
+      top: 41px;
     }
   }
 
   @include vp-1439 {
     min-height: 340px;
-    padding-top: 103px;
+    padding-top: 102px;
     padding-bottom: 29px;
   }
 
@@ -128,54 +128,42 @@
 
 .adv-slide--security .adv-slide__container::after {
   mask-image: url("../__spritemap#sprite-icon-shield-view");
-  mask-size: 19.64px 21.82px;
+  mask-size: 22px 24px;
   mask-repeat: no-repeat;
   mask-position: center;
 }
 
 .adv-slide--knowledge .adv-slide__container::after {
-  // width: 24px;
-  // height:24px;
   mask-image: url("../__spritemap#sprite-icon-crown-view");
-  mask-size: 21.82px 19.64px;
+  mask-size: 24px 22px;
   mask-repeat: no-repeat;
   mask-position: center;
 }
 
 .adv-slide--equipment .adv-slide__container::after {
-  // width: 24px;
-  // height:24px;
   mask-image: url("../__spritemap#sprite-icon-boots-view");
-  mask-size: 21.82px 19.64px;
+  mask-size: 22px 20px;
   mask-repeat: no-repeat;
   mask-position: center;
 }
 
 .adv-slide--routes .adv-slide__container::after {
-  // width: 24px;
-  // height:24px;
   mask-image: url("../__spritemap#sprite-icon-path-view");
-  mask-size: 21.82px 21.82px;
+  mask-size: 24px 24px;
   mask-repeat: no-repeat;
   mask-position: center;
 }
 
-// .adv-slide--nature {
-//   @include vp-1439 {
-//     grid-column: span 2;
-//   }
-// }
-
 .adv-slide--nature .adv-slide__container::after {
-  // width: 24px;
-  // height:24px;
   mask-image: url("../__spritemap#sprite-icon-leaf-view");
-  mask-size: 21.82px 15.27px;
+  mask-size: 24px 18px;
   mask-repeat: no-repeat;
   mask-position: center;
 }
 
 
 .adv-slide.swiper-slide:nth-last-child(-n+3) {
-  display: none;
+  @include vp-1439 {
+    display: none;
+  }
 }

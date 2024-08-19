@@ -75,6 +75,10 @@
     margin-bottom: 25px;
     //test
   }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
 }
 
 .adv-slide--knowledge .adv-slide__icon {
@@ -82,6 +86,10 @@
     //test
     margin-bottom: 25px;
     //test
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
   }
 }
 
@@ -91,6 +99,10 @@
     margin-bottom: 25px;
     //test
   }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
 }
 
 .adv-slide--routes .adv-slide__icon {
@@ -99,13 +111,9 @@
     margin-bottom: 25px;
     //test
   }
-}
 
-.adv-slide--nature .adv-slide__icon {
-  @include vp-1439 {
-    //test
-    margin-bottom: 25px;
-    //test
+  @include vp-767 {
+    margin-bottom: 20px;
   }
 }
 
@@ -114,6 +122,22 @@
     //test
     margin-bottom: 25px;
     //test
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.adv-slide--nature .adv-slide__icon {
+  @include vp-1439 {
+    //test
+    margin-bottom: 25px;
+    //test
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
   }
 }
 

@@ -15,7 +15,7 @@ new Swiper('#swiper-training', {
       spaceBetween: 20,
       slidesPerView: 3,
     },
-    1366: {
+    1440: {
       spaceBetween: 20,
       slidesPerView: 4,
     }

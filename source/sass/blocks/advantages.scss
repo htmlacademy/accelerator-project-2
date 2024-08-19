@@ -82,6 +82,7 @@
   list-style: none;
 
   @media (min-width: $min-width-tablet) {
+    max-width: 678px;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
@@ -92,9 +93,9 @@
 
   @media (min-width: $min-width-desktop) {
     position: relative;
-    right: 305px;
+    left: -305px;
     flex-wrap: nowrap;
-    width: 2050px;
+    min-width: 2050px;
     padding: 50px 0;
   }
 }
@@ -105,6 +106,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  max-width: 290px;
   padding: 20px 10px;
   outline: 1px solid rgba(2, 102, 193, 0.1);
   text-align: center;
@@ -121,7 +123,7 @@
   }
 
   h6 {
-    max-width: 249px;
+    // max-width: 249px;
     margin: 62px 0 15px;
     padding: 0;
     font-weight: 600;
@@ -138,7 +140,7 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    width: 324px;
+    min-width: 324px;
     padding: 29px 20px;
 
 
@@ -164,7 +166,7 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    width: 380px;
+    min-width: 380px;
     padding: 40px 20px;
 
     &::before {
@@ -325,6 +327,12 @@
 
 .advantages__item--carefully {
   position: relative;
+  max-width: 290px;
+
+  h6 {
+    width: 249px;
+    margin-left: 9px;
+  }
 
   &::after {
     position: absolute;
@@ -343,6 +351,10 @@
   @media (min-width: $min-width-tablet) {
     padding: 30px 20px 36px;
 
+    h6 {
+      margin-left: 15px;
+    }
+
     &::after {
       top: 41px;
       left: 150px;
@@ -352,6 +364,12 @@
 
   @media (min-width: $min-width-desktop) {
     padding: 40px 20px 62px;
+
+    h6 {
+      width: 340px;
+      margin-left: 0;
+    }
+
 
     &::after {
       top: 54px;

@@ -25,7 +25,7 @@
             <svg class="header__logo" width="142" height="42">
               <use href="../__spritemap#sprite-logo"></use>
             </svg>
-            <nav class="header__nav-wrapper" aria-label="main">
+            <nav class="header__nav-wrapper header__nav-wrapper--closed" aria-label="main">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#tours-btn">
@@ -655,28 +655,30 @@
       <section class="advantages" data-test="adv">
         <h2 class="advantages__title-background title-h2">Преимущества</h2>
         <h3 class="advantages__title title-h3" aria-hidden="true">Преимущества</h3>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--safety">
-            <h6>Безопасность</h6>
-            <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
-          </li>
-          <li class="advantages__item advantages__item--expertise">
-            <h6>Экспертиза и знания</h6>
-            <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это<br>гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
-          </li>
-          <li class="advantages__item advantages__item--equipment">
-            <h6>Оборудование и снаряжение</h6>
-            <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
-          </li>
-          <li class="advantages__item advantages__item--route">
-            <h6>Индивидуальные маршруты</h6>
-            <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
-          </li>
-          <li class="advantages__item advantages__item--carefully">
-            <h6>Бережное отношение к&nbsp;природе</h6>
-            <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
-          </li>
-        </ul>
+        <div class="swiper" id="swiper-advantages">
+          <ul class="advantages__list swiper-wrapper">
+            <li class="advantages__item advantages__item--safety swiper-slide">
+              <h6>Безопасность</h6>
+              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+            </li>
+            <li class="advantages__item advantages__item--expertise swiper-slide">
+              <h6>Экспертиза и знания</h6>
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это<br>гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+            </li>
+            <li class="advantages__item advantages__item--equipment swiper-slide">
+              <h6>Оборудование и снаряжение</h6>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+            </li>
+            <li class="advantages__item advantages__item--route swiper-slide">
+              <h6>Индивидуальные маршруты</h6>
+              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+            </li>
+            <li class="advantages__item advantages__item--carefully swiper-slide">
+              <h6>Бережное отношение к&nbsp;природе</h6>
+              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+            </li>
+          </ul>
+        </div>
         <div class="advantages__swiper-buttons">
           <button class="advantages__button-prev button swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
@@ -710,120 +712,126 @@
             </svg>
           </button>
         </div>
-        <ul class="gallery__list">
-          <li class="gallery__item gallery__item--one">
-            <picture class="gallery__picture background">
-              <source srcset="img/gallery1-desktop.webp 1x, img/gallery1-desktop@2x.webp 2x"
-                media="(min-width: 1440px)" type="image/webp" width="284" height="463">
-              <source srcset="img/gallery1-tablet.webp 1x, img/gallery1-tablet@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" width="253" height="418">
-              <source srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x"
-                media="(min-width: 320px)" type="image/webp" width="158" height="266">
-              <source srcset="img/gallery1-desktop.jpg 1x, img/gallery1-desktop@2x.jpg 2x"
-                media="(min-width: 1440px)" type="image/jpg" width="284" height="463">
-              <source srcset="img/gallery1-tablet.jpg 1x, img/gallery1-tablet@2x.jpg 2x"
-                media="(min-width: 768px)" type="image/jpg" width="253" height="418">
-              <img src="img/gallery1.jpg"
-                srcset="img/gallery1@2x.jpg 2x" width="158" height="266" alt="Фото мужчины смотрящего сдаль на горы.">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--two">
-            <picture class="gallery__picture background">
-              <source srcset="img/gallery2-desktop.webp 1x, img/gallery2-desktop@2x.webp 2x"
-                media="(min-width: 1440px)" type="image/webp" width="284" height="240">
-              <source srcset="img/gallery2-tablet.webp 1x, img/gallery2-tablet@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" width="252" height="210">
-              <source srcset="img/gallery2-mobile.webp 1x, img/gallery2-mobile@2x.webp 2x"
-                media="(min-width: 320px)" type="image/webp" width="157" height="142">
-              <source srcset="img/gallery2-desktop.jpg 1x, img/gallery2-desktop2x.jpg 2x"
-                media="(min-width: 1440px)" type="image/jpg" width="284" height="240">
-              <source srcset="img/gallery2-tablet.jpg 1x, img/gallery-tablet@2x.jpg 2x"
-                media="(min-width: 768px)" type="image/jpg" width="319" height="210">
-              <img src="img/gallery2-mobile.jpg"
-                srcset="img/gallery2-mobile@2x.jpg 2x" width="157" height="142" alt="Фото людей у костра.">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--three">
-            <picture class="gallery__picture background">
-              <source srcset="img/gallery3-desktop.webp 1x, img/gallery3-desktop@2x.webp 2x"
-                media="(min-width: 1440px)" type="image/webp" width="284" height="223">
-              <source srcset="img/gallery3-tablet.webp 1x, img/gallery3-tablet@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" width="252" height="203">
-              <source srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x"
-                media="(min-width: 320px)" type="image/webp" width="157" height="223">
-              <source srcset="img/gallery3-desktop.jpg 1x, img/gallery3-desktop@2x.jpg 2x"
-                media="(min-width: 1440px)" type="image/jpg" width="284" height="223">
-              <source srcset="img/gallery3-tablet.jpg 1x, img/gallery3-tablet@2x.jpg 2x"
-                media="(min-width: 768px)" type="image/jpg" width="252" height="203">
-              <img src="img/gallery3.jpg"
-                srcset="img/gallery3@2x.jpg 2x" width="157" height="223" alt="Фото компаса на фоне гор.">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--four">
-            <picture class="gallery__picture background">
-              <source srcset="img/gallery4-desktop.webp 1x, img/gallery4-desktop@2x.webp 2x"
-                media="(min-width: 1440px)" type="image/webp" width="284" height="463">
-              <source srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" width="253" height="418">
-              <source srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x"
-                media="(min-width: 320px)" type="image/webp" width="260" height="425">
-              <source srcset="img/gallery4-desktop.jpg 1x, img/gallery4-desktop@2x.jpg 2x"
-                media="(min-width: 1440px)" type="image/jpg" width="284" height="463">
-              <source srcset="img/gallery4.jpg 1x, img/gallery4@2x.jpg 2x"
-                media="(min-width: 768px)" type="image/jpg" width="260" height="418">
-              <img src="img/gallery4.jpg"
-                srcset="img/gallery4@2x.jpg 2x" width="260" height="425" alt="Фото туристов в горах.">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--five">
-            <picture class="gallery__picture background">
-              <source srcset="img/gallery5-desktop.webp 1x, img/gallery5-desktop@2x.webp 2x"
-                media="(min-width: 1440px)" type="image/webp" width="284" height="240">
-              <!-- <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" width="260" height="425">
-              <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
-                media="(min-width: 320px)" type="image/webp" width="344" height="233"> -->
-              <source srcset="img/gallery5-desktop.jpg 1x, img/gallery5-desktop@2x.jpg 2x"
-                media="(min-width: 1440px)" type="image/jpg" width="284" height="240">
-              <!-- <source srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
-                media="(min-width: 768px)" type="image/jpg" width="260" height="425"> -->
-              <img src="img/gallery5.jpg"
-                srcset="img/gallery5@2x.jpg 2x" width="344" height="233" alt="Фото туристов в горах.">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--six">
-            <picture class="gallery__picture background">
-            <source srcset="img/gallery6-desktop.webp 1x, img/gallery6-desktop@2x.webp 2x"
-              media="(min-width: 1440px)" type="image/webp" width="284" height="224">
-            <!-- <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
-              media="(min-width: 768px)" type="image/webp" width="260" height="425"> -->
-            <source srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x"
-              media="(min-width: 320px)" type="image/webp" width="284" height="228">
-            <source srcset="img/gallery6-desktop.jpg 1x, img/gallery6-desktop@2x.jpg 2x"
-              media="(min-width: 1440px)" type="image/jpg" width="284" height="228">
-            <!-- <source srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
-              media="(min-width: 768px)" type="image/jpg" width="260" height="425"> -->
-            <img src="img/gallery6.jpg"
-              srcset="img/gallery6@2x.jpg 2x" width="284" height="223" alt="Фото палатки на фоне звездного неба.">
-            </picture>
-          </li>
-          <li class="gallery__item gallery__item--seven">
-            <picture class="gallery__picture background">
-              <source srcset="img/gallery7-desktop.webp 1x, img/gallery7-desktop@2x.webp 2x"
-                media="(min-width: 1440px)" type="image/webp" width="284" height="463">
-              <!-- <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" width="260" height="425"> -->
-              <source srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x"
-                media="(min-width: 320px)" type="image/webp" width="284" height="463">
-              <source srcset="img/gallery7-desktop.jpg 1x, img/gallery7-desktop@2x.jpg 2x"
-                media="(min-width: 1440px)" type="image/jpg" width="284" height="463">
-              <!-- <source srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
-                media="(min-width: 768px)" type="image/jpg" width="260" height="425"> -->
-              <img src="img/gallery7.jpg"
-                srcset="img/gallery7@2x.jpg 2x" width="284" height="633" alt="Фото двух мужчин в походе.">
-            </picture>
-          </li>
-        </ul>
+        <div class="swiper" id="swiper-gallery">
+          <div class="gallery__list swiper-wrapper">
+            <div class="gallery__item swiper-slide">
+              <picture class="background">
+                <source srcset="img/gallery1-desktop.webp 1x, img/gallery1-desktop@2x.webp 2x"
+                  media="(min-width: 1440px)" type="image/webp" width="284" height="463">
+                <source srcset="img/gallery1-tablet.webp 1x, img/gallery1-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp" width="253" height="418">
+                <source srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp" width="158" height="266">
+                <source srcset="img/gallery1-desktop.jpg 1x, img/gallery1-desktop@2x.jpg 2x"
+                  media="(min-width: 1440px)" type="image/jpg" width="284" height="463">
+                <source srcset="img/gallery1-tablet.jpg 1x, img/gallery1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpg" width="253" height="418">
+                <img src="img/gallery1.jpg"
+                  srcset="img/gallery1@2x.jpg 2x" width="158" height="266" alt="Фото мужчины смотрящего сдаль на горы.">
+              </picture>
+            </div>
+            <div class="gallery__item swiper-slide">
+              <div>
+                <picture class="gallery__picture background">
+                  <source srcset="img/gallery2-desktop.webp 1x, img/gallery2-desktop@2x.webp 2x"
+                    media="(min-width: 1440px)" type="image/webp" width="284" height="240">
+                  <source srcset="img/gallery2-tablet.webp 1x, img/gallery2-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" width="252" height="210">
+                  <source srcset="img/gallery2-mobile.webp 1x, img/gallery2-mobile@2x.webp 2x"
+                    media="(min-width: 320px)" type="image/webp" width="157" height="142">
+                  <source srcset="img/gallery2-desktop.jpg 1x, img/gallery2-desktop2x.jpg 2x"
+                    media="(min-width: 1440px)" type="image/jpg" width="284" height="240">
+                  <source srcset="img/gallery2-tablet.jpg 1x, img/gallery-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpg" width="319" height="210">
+                  <img src="img/gallery2-mobile.jpg"
+                    srcset="img/gallery2-mobile@2x.jpg 2x" width="157" height="142" alt="Фото людей у костра.">
+                </picture>
+              </div>
+              <div>
+                <picture class="gallery__picture background">
+                  <source srcset="img/gallery3-desktop.webp 1x, img/gallery3-desktop@2x.webp 2x"
+                    media="(min-width: 1440px)" type="image/webp" width="284" height="223">
+                  <source srcset="img/gallery3-tablet.webp 1x, img/gallery3-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" width="252" height="203">
+                  <source srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x"
+                    media="(min-width: 320px)" type="image/webp" width="157" height="223">
+                  <source srcset="img/gallery3-desktop.jpg 1x, img/gallery3-desktop@2x.jpg 2x"
+                    media="(min-width: 1440px)" type="image/jpg" width="284" height="223">
+                  <source srcset="img/gallery3-tablet.jpg 1x, img/gallery3-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpg" width="252" height="203">
+                  <img src="img/gallery3.jpg"
+                    srcset="img/gallery3@2x.jpg 2x" width="157" height="223" alt="Фото компаса на фоне гор.">
+                </picture>
+              </div>
+            </div>
+            <div class="gallery__item swiper-slide">
+              <picture class="background">
+                <source srcset="img/gallery4-desktop.webp 1x, img/gallery4-desktop@2x.webp 2x"
+                  media="(min-width: 1440px)" type="image/webp" width="284" height="463">
+                <source srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp" width="253" height="418">
+                <source srcset="img/gallery4.webp 1x, img/gallery4@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp" width="260" height="425">
+                <source srcset="img/gallery4-desktop.jpg 1x, img/gallery4-desktop@2x.jpg 2x"
+                  media="(min-width: 1440px)" type="image/jpg" width="284" height="463">
+                <source srcset="img/gallery4.jpg 1x, img/gallery4@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpg" width="260" height="418">
+                <img src="img/gallery4.jpg"
+                  srcset="img/gallery4@2x.jpg 2x" width="260" height="425" alt="Фото туристов в горах.">
+              </picture>
+            </div>
+            <div class="gallery__item swiper-slide">
+              <div>
+                <picture class="gallery__picture background">
+                  <source srcset="img/gallery5-desktop.webp 1x, img/gallery5-desktop@2x.webp 2x"
+                    media="(min-width: 1440px)" type="image/webp" width="284" height="240">
+                  <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" width="260" height="425">
+                  <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
+                    media="(min-width: 320px)" type="image/webp" width="344" height="233">
+                  <source srcset="img/gallery5-desktop.jpg 1x, img/gallery5-desktop@2x.jpg 2x"
+                    media="(min-width: 1440px)" type="image/jpg" width="284" height="240">
+                  <source srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
+                    media="(min-width: 768px)" type="image/jpg" width="260" height="425">
+                  <img src="img/gallery5.jpg"
+                    srcset="img/gallery5@2x.jpg 2x" width="344" height="233" alt="Фото туристов в горах.">
+                </picture>
+              </div>
+              <div>
+                <picture class="gallery__picture background">
+                <source srcset="img/gallery6-desktop.webp 1x, img/gallery6-desktop@2x.webp 2x"
+                  media="(min-width: 1440px)" type="image/webp" width="284" height="224">
+                <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp" width="260" height="425">
+                <source srcset="img/gallery6.webp 1x, img/gallery6@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp" width="284" height="228">
+                <source srcset="img/gallery6-desktop.jpg 1x, img/gallery6-desktop@2x.jpg 2x"
+                  media="(min-width: 1440px)" type="image/jpg" width="284" height="228">
+                <source srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpg" width="260" height="425">
+                <img src="img/gallery6.jpg"
+                  srcset="img/gallery6@2x.jpg 2x" width="284" height="223" alt="Фото палатки на фоне звездного неба.">
+                </picture>
+              </div>
+            </div>
+            <div class="gallery__item swiper-slide">
+              <picture class="background">
+                <source srcset="img/gallery7-desktop.webp 1x, img/gallery7-desktop@2x.webp 2x"
+                  media="(min-width: 1440px)" type="image/webp" width="284" height="463">
+                <source srcset="img/gallery5.webp 1x, img/gallery5@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp" width="260" height="425">
+                <source srcset="img/gallery7.webp 1x, img/gallery7@2x.webp 2x"
+                  media="(min-width: 320px)" type="image/webp" width="284" height="463">
+                <source srcset="img/gallery7-desktop.jpg 1x, img/gallery7-desktop@2x.jpg 2x"
+                  media="(min-width: 1440px)" type="image/jpg" width="284" height="463">
+                <source srcset="img/gallery5.jpg 1x, img/gallery5@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpg" width="260" height="425">
+                <img src="img/gallery7.jpg"
+                  srcset="img/gallery7@2x.jpg 2x" width="284" height="633" alt="Фото двух мужчин в походе.">
+              </picture>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="form" data-test="form">
         <div class="form__background">

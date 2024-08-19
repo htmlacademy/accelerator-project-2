@@ -5,7 +5,7 @@
   p {
     width: 290px;
     margin: 0;
-    padding: 10px 15px 31px;
+    padding: 9px 15px 31px;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -69,7 +69,7 @@
 
 .gallery__title {
   width: 290px;
-  margin: 16px 0 17px;
+  margin: 16px 0 18px;
   padding: 0 15px;
 
   @media (min-width: $min-width-tablet) {
@@ -101,104 +101,136 @@
   }
 }
 
+// .gallery__list {
+//   display: grid;
+//   grid-template-columns: 158px 158px;
+//   grid-template-rows: 133px 133px;
+//   row-gap: 5px;
+//   column-gap: 7px;
+//   height: 266px;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+
+//   @media (min-width: $min-width-tablet) {
+//     height: 418px;
+//     grid-template-columns: 253px 252px 253px;
+//     grid-template-rows: 206px 207px;
+//   }
+
+//   @media (min-width: $min-width-desktop) {
+//     height: 463px;
+//     grid-template-columns: 284px 284px 284px 284px 284px;
+//     grid-template-rows: 233px 233px;
+//   }
+// }
+
 .gallery__list {
-  display: grid;
-  grid-template-columns: 158px 158px;
-  grid-template-rows: 133px 133px;
-  row-gap: 5px;
-  column-gap: 7px;
-  height: 266px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  max-height: 266px;
 
   @media (min-width: $min-width-tablet) {
-    height: 418px;
-    grid-template-columns: 253px 252px 253px;
-    grid-template-rows: 206px 207px;
+    min-height: 418px;
   }
 
   @media (min-width: $min-width-desktop) {
-    height: 463px;
-    grid-template-columns: 284px 284px 284px 284px 284px;
-    grid-template-rows: 233px 233px;
+    min-height: 463px;
   }
 }
 
 .gallery__item {
-  list-style: none;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 9px;
+  // overflow: hidden;
+
+  @media (min-width: $min-width-tablet) {
+    min-width: 253px;
+  }
 }
 
-.gallery__item--one {
-  position: relative;
-  top: 0;
-  left: 0;
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-}
-
-.gallery__item--two {
-  position: relative;
-  left: -2px;
-  grid-column: 2/3;
-}
-
-
-.gallery__item--three {
-  position: relative;
-  top: 3px;
-  left: -3px;
-  overflow: hidden;
+.gallery__picture {
   display: block;
-  height: 125px;
-  grid-column: 2/3;
+  height: 141px;
 
   @media (min-width: $min-width-tablet) {
-    top: 5px;
-    height: 210px;
+    height: 215px;
   }
 
   @media (min-width: $min-width-desktop) {
-    top: 2px;
-    height: 223px;
+    height: 240px;
   }
 }
 
-.gallery__item--four {
-  grid-column: 3/4;
-  grid-row: 1/3;
+// .gallery__item--one {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   grid-column: 1 / 2;
+//   grid-row: 1 / 3;
+// }
 
-  @media (min-width: $min-width-tablet) {
-    position: relative;
-    left: -4px;
-  }
-}
+// .gallery__item--two {
+//   position: relative;
+//   left: -2px;
+//   grid-column: 2/3;
+// }
 
-.gallery__item--five {
-  grid-column: 4/5;
-  grid-row: 1/2;
 
-  @media (min-width: $min-width-desktop) {
-    position: relative;
-    top: 0;
-    left: -6px;
-  }
-}
+// .gallery__item--three {
+//   position: relative;
+//   top: 3px;
+//   left: -3px;
+//   overflow: hidden;
+//   display: block;
+//   height: 125px;
+//   grid-column: 2/3;
 
-.gallery__item--six {
-  @media (min-width: $min-width-desktop) {
-    position: relative;
-    top: 1px;
-    left: -6px;
-  }
-}
+//   @media (min-width: $min-width-tablet) {
+//     top: 5px;
+//     height: 210px;
+//   }
 
-.gallery__item--seven {
-  grid-column: 5 / 6;
-  grid-row: 1 / 3;
+//   @media (min-width: $min-width-desktop) {
+//     top: 2px;
+//     height: 223px;
+//   }
+// }
 
-  @media (min-width: $min-width-desktop) {
-    position: relative;
-    left: -8px;
-  }
-}
+// .gallery__item--four {
+//   grid-column: 3/4;
+//   grid-row: 1/3;
+
+//   @media (min-width: $min-width-tablet) {
+//     position: relative;
+//     left: -4px;
+//   }
+// }
+
+// .gallery__item--five {
+//   grid-column: 4/5;
+//   grid-row: 1/2;
+
+//   @media (min-width: $min-width-desktop) {
+//     position: relative;
+//     top: 0;
+//     left: -6px;
+//   }
+// }
+
+// .gallery__item--six {
+//   @media (min-width: $min-width-desktop) {
+//     position: relative;
+//     top: 1px;
+//     left: -6px;
+//   }
+// }
+
+// .gallery__item--seven {
+//   grid-column: 5 / 6;
+//   grid-row: 1 / 3;
+
+//   @media (min-width: $min-width-desktop) {
+//     position: relative;
+//     left: -8px;
+//   }
+// }

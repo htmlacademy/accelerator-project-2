@@ -1,0 +1,17 @@
+.social {
+  &:hover {
+    color: $base-dark;
+  }
+
+  &:focus {
+    color: $base-dark;
+  }
+
+  &:active {
+    color: $bg-alt;
+  }
+
+  &:disabled {
+    outline: 1px solid rgba(45, 56, 63, 0.3);
+  }
+}

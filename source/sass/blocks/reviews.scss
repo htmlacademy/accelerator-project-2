@@ -1,0 +1,234 @@
+.reviews {
+  position: relative;
+  padding: 20px 0 12px;
+  width: 320px;
+  overflow: hidden;
+
+  @media (min-width: $min-width-tablet) {
+    width: 768px;
+    padding: 40px 0 0 25px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 1440px;
+    padding: 100px 0 37px 120px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 317px;
+      left: 0;
+      width: 1440px;
+      height: 598px;
+      background-image: image-set("../../img/background3-desktop.png" 1x, "../../img/background3-desktop@2x.png" 2x, "../../img/background3-desktop.webp" 1x, "../../img/background3-desktop@2x.webp" 2x);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.reviews__position {
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.reviews__wrapper-box {
+  @media (min-width: $min-width-tablet) {
+    padding: 0;
+    left: 5px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    left: 0;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 299px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 352px;
+    justify-content: flex-start;
+  }
+}
+
+.reviews__list {
+  display: flex;
+  margin: 0;
+  padding: 20px 15px 0;
+  list-style: none;
+
+  @media (min-width: $min-width-tablet) {
+    margin: 5px 30px 40px 0;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 10px;
+  }
+}
+
+.reviews__item {
+  max-width: 290px;
+  padding: 20px;
+  background-color: $base-white;
+  box-shadow: 1px 1px 20px rgba(28, 51, 116, 0.1);
+
+  @media (min-width: $min-width-tablet) {
+    min-width: 565px;
+    max-width: 565px;
+    height: 277px;
+    padding: 20px 30px 20px 20px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    height: 293px;
+    min-width: 700px;
+    display: flex;
+    gap: 30px;
+    padding-right: 40px;
+  }
+}
+
+.reviews__title {
+  margin: 16px 15px 12px;
+
+  @media (min-width: $min-width-tablet) {
+    margin: 20px 0 10px 20px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 45px 0 23px;
+  }
+}
+
+.reviews__title-background {
+  position: absolute;
+  top: 24px;
+  left: 15px;
+  margin: 0;
+  opacity: 3%;
+
+  @media (min-width: $min-width-tablet) {
+    top: 45px;
+    left: 45px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    top: 106px;
+    left: 120px;
+  }
+}
+
+.reviews__picture {
+  display: block;
+  width: 250px;
+  height: 169px;
+
+  @media (min-width: $min-width-tablet) {
+    width: 186px;
+    height: 237px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 258px;
+    height: 253px;
+  }
+}
+
+.reviews__text {
+  min-height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 19px 0 16px;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    min-height: 172px;
+    margin: 0 0 25px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    min-height: 208px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: -2px 0 4px;
+  }
+}
+
+.reviews__name {
+  min-height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {
+    margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    span {
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
+}
+
+// <!-- swiper -->
+
+.reviews__swiper-buttons {
+  display: none;
+
+  @media (min-width: $min-width-tablet) {
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    top: 145px;
+    right: 120px;
+  }
+}
+
+.reviews__button-prev {
+  background-color: #999999;
+}
+
+.reviews__button-next {
+  background-color: $bg;
+  transform: rotate(180deg);
+}
+
+.reviews__svg-color {
+  position: relative;
+  top: 1.5px;
+  right: 0.7px;
+  width: 13px;
+  color: $base-white;
+}
+
+// <!-- swiper -->

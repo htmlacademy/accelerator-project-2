@@ -1,0 +1,33 @@
+.link {
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background: $base-white;
+    outline: 1px solid $bg-alt;
+  }
+
+  &:focus {
+    background: $base-white;
+  }
+
+  &:active {
+    background: $bg-alt;
+  }
+
+  &:disabled {
+    background: #999999;
+  }
+}
+
+
+// .swiper-button-prev::after {
+//   display: none;
+//   content: "";
+//   max-height: 30px;
+// }
+
+// .swiper-button-next::after
+// .swiper-button-prev::after {
+//   content: "";
+// }

@@ -207,7 +207,8 @@
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    color: rgba($color-action, 0.5);
+    color: transparent;
+    // color: rgba($color-action, 0.5);
   }
 
   &:focus {
@@ -217,16 +218,10 @@
   &:focus-visible {
     outline: none;
     border-color: $color-dark;
-
-    &::placeholder {}
   }
 
   &:hover:not(:disabled):not(:focus-visible):not(.error) {
     border-color: $color-action;
-
-    &::placeholder {
-      color: rgba($color-dark, 0.5);
-    }
   }
 
   &:disabled {
@@ -241,25 +236,30 @@
   }
 }
 
+.form__input input.show-placeholder::placeholder {
+  color: rgba($color-action, 0.5);
+}
+
 .form__input.error input {
-  // border-bottom: 1px solid $color-error;
+  color: rgba($color-dark, 0.5);
+  border-color: $color-error;
 }
 
-.form__error-text {
-  // display: none;
-}
+// .form__error-text {
+//   display: none;
+// }
 
-.form__input.error .form__error-text {
-  // display: block;
-  // position: absolute;
-  // bottom: -22px;
-  // left: 0;
-  // font-size: 14px;
-  // font-weight: 400;
-  // line-height: 22px;
-  // text-align: left;
-  // color: $color-error;
-}
+// .form__input.error .form__error-text {
+//   display: block;
+//   position: absolute;
+//   bottom: -32px;
+//   left: 0;
+//   font-size: 14px;
+//   font-weight: 400;
+//   line-height: 22px;
+//   text-align: left;
+//   color: $color-error;
+// }
 
 .form__btn {
   flex-shrink: 0;
@@ -327,4 +327,4 @@
   }
 }
 
-.form__error-text {}
+// .form__error-text {}

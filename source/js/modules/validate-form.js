@@ -5,35 +5,25 @@ const validateForm = () => {
     const digitsOnlyRegex = /^\d+$/;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.рф)?$/;
 
-    const showError = (input, errorMessage) => {
+    const showError = (input) => {
       const parent = input.parentElement;
-      const errorText = parent.querySelector('.form__error-text');
-
       parent.classList.add('error');
       input.classList.add('error');
-
-      errorText.textContent = errorMessage;
-      errorText.style.display = 'block';
     };
 
     const hideError = (input) => {
       const parent = input.parentElement;
-      const errorText = parent.querySelector('.form__error-text');
-
       parent.classList.remove('error');
       input.classList.remove('error');
-
-      errorText.textContent = '';
-      errorText.style.display = 'none';
     };
 
     const validatePhone = (input) => {
       const value = input.value.trim();
 
       if (value === '') {
-        showError(input, 'Поле Телефон обязательно для заполнения');
+        showError(input);
       } else if (!digitsOnlyRegex.test(value)) {
-        showError(input, 'Поле Телефон должно содержать только цифры');
+        showError(input);
       } else {
         hideError(input);
       }
@@ -43,9 +33,9 @@ const validateForm = () => {
       const value = input.value.trim();
 
       if (value === '') {
-        showError(input, 'Поле Email обязательно для заполнения');
+        showError(input);
       } else if (!emailRegex.test(value)) {
-        showError(input, 'Введите корректный Email');
+        showError(input);
       } else {
         hideError(input);
       }
@@ -71,38 +61,44 @@ const validateForm = () => {
     });
 
     inputs.forEach((input) => {
-      input.addEventListener('blur', () => {
-        if (input.value.trim() === '') {
-          input.parentElement.classList.remove('error');
-          input.classList.remove('error');
-        }
-      });
-
-      input.addEventListener('input', () => {
-        if (input.value.trim() === '') {
-          input.parentElement.classList.remove('error');
-          input.classList.remove('error');
-        }
-      });
-
       input.addEventListener('focus', () => {
         const label = input.previousElementSibling;
         if (label && label.tagName.toLowerCase() === 'label') {
-          label.style.transition = 'opacity 0.3s, height 0.3s';
-          label.style.opacity = '0';
-          label.style.height = '0';
-          label.style.overflow = 'hidden';
+          label.style.display = 'none';
         }
+        input.classList.add('show-placeholder');
       });
 
       input.addEventListener('blur', () => {
         const label = input.previousElementSibling;
         if (label && label.tagName.toLowerCase() === 'label') {
-          label.style.transition = 'opacity 0.3s, height 0.3s';
-          label.style.opacity = '1';
-          label.style.height = 'auto';
+          if (input.value.trim() === '') {
+            label.style.display = 'block';
+          }
+        }
+        input.classList.remove('show-placeholder');
+        const parent = input.parentElement;
+        parent.classList.remove('error');
+        input.classList.remove('error');
+      });
+
+      input.addEventListener('input', () => {
+        const label = input.previousElementSibling;
+        if (label && label.tagName.toLowerCase() === 'label') {
+          if (input.value.trim() !== '') {
+            label.style.display = 'none';
+          } else if (document.activeElement !== input) {
+            label.style.display = 'block';
+          }
         }
       });
+
+      const label = input.previousElementSibling;
+      if (label && label.tagName.toLowerCase() === 'label') {
+        if (input.value.trim() !== '') {
+          label.style.display = 'none';
+        }
+      }
     });
   }
 };

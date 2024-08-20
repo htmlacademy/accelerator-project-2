@@ -163,11 +163,8 @@
   display: none;
 }
 
-.instructors-slide-1 br {
-  display: none;
-}
-
-.instructors-slide-3 br {
+.text-br,
+.text-br-tablet {
   display: none;
 }
 
@@ -195,7 +192,8 @@
     margin-bottom: 31px;
   }
 
-  .training-text-br {
+  .training-text-br,
+  .text-br-tablet {
     display: initial;
   }
 
@@ -232,11 +230,7 @@
     top: 254px !important;
   }
 
-  .instructors-slide-1 br {
-    display: initial;
-  }
-
-  .instructors-slide-3 br {
+  .text-br {
     display: initial;
   }
 

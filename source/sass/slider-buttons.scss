@@ -37,3 +37,15 @@
   top: 11px !important;
   left: 646px !important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: initial !important;
+  }
+}

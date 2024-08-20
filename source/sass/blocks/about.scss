@@ -5,9 +5,14 @@
   background-color: $white;
 }
 
-.about__photo img {
-  width: 100%;
-}
+// .about__photo {
+//   background-image: url(../../img/about-tablet.png);
+//   height: 400px;
+//   width: 100%;
+//   background-size: 622px;
+//   background-position-y: -67px;
+//   background-position-x: -64px;
+// }
 
 .about__content {
   padding: 0px 15px 7px;
@@ -42,13 +47,13 @@
 
 .about__content p:first-of-type {
   margin-bottom: 27px;
-  margin-top: 13px;
+  margin-top: 14px;
 }
 
-// @media (min-width: 768px) {
-//   .about {
-//     padding-top: 52px;
-//     display: grid;
-//     grid-template-columns: 450px 270px;
-//   }
-// }
+@media (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: auto 270px;
+    padding-right: 48px;
+  }
+}

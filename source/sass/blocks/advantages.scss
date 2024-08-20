@@ -8,6 +8,7 @@
 .advantages__title {
   margin-bottom: 37px;
   text-align: center;
+  margin-top: 23px;
 
   &::before {
     content: "Преимущества";
@@ -62,6 +63,7 @@
 .advantages-slide p {
   font-size: 12px;
   font-weight: 400;
+  font-style: normal;
   line-height: 18px;
   text-align: center;
   margin: 0;

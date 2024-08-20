@@ -190,6 +190,10 @@
   line-height: 16px;
   font-weight: 400;
   color: rgba($color-dark, 0.5);
+
+  @include vp-767 {
+    left: 15px;
+  }
 }
 
 .form__input input {
@@ -208,7 +212,6 @@
     line-height: 16px;
     font-weight: 400;
     color: transparent;
-    // color: rgba($color-action, 0.5);
   }
 
   &:focus {
@@ -244,22 +247,6 @@
   color: rgba($color-dark, 0.5);
   border-color: $color-error;
 }
-
-// .form__error-text {
-//   display: none;
-// }
-
-// .form__input.error .form__error-text {
-//   display: block;
-//   position: absolute;
-//   bottom: -32px;
-//   left: 0;
-//   font-size: 14px;
-//   font-weight: 400;
-//   line-height: 22px;
-//   text-align: left;
-//   color: $color-error;
-// }
 
 .form__btn {
   flex-shrink: 0;
@@ -326,5 +313,3 @@
     min-height: 58px;
   }
 }
-
-// .form__error-text {}

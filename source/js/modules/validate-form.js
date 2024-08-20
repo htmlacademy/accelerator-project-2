@@ -3,7 +3,7 @@ const validateForm = () => {
     const form = document.querySelector('form');
     const inputs = form.querySelectorAll('input');
     const digitsOnlyRegex = /^\d+$/;
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.рф)?$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$|^[a-zA-Z0-9._%+-]+@[а-яА-ЯёЁ0-9.-]+\.[рф]{2,3}$/;
 
     const showError = (input) => {
       const parent = input.parentElement;
@@ -36,13 +36,14 @@ const validateForm = () => {
         showError(input);
       } else if (!emailRegex.test(value)) {
         showError(input);
+        input.blur(); // Снимаем фокус с поля email
       } else {
         hideError(input);
       }
     };
 
     form.addEventListener('submit', (event) => {
-      event.preventDefault();
+      let isValid = true;
 
       inputs.forEach((input) => {
         if (input.name === 'phone') {
@@ -50,13 +51,14 @@ const validateForm = () => {
         } else if (input.name === 'email') {
           validateEmail(input);
         }
+
+        if (input.classList.contains('error')) {
+          isValid = false;
+        }
       });
 
-      const isValid = Array.from(inputs).every(
-        (input) => !input.classList.contains('error'),
-      );
-      if (isValid) {
-        form.submit();
+      if (!isValid) {
+        event.preventDefault();
       }
     });
 

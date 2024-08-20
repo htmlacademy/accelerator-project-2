@@ -2,7 +2,6 @@
 
 .training {
   padding: 36px 15px 20px;
-  background-color: $white;
 }
 
 .training__title {
@@ -164,6 +163,14 @@
   display: none;
 }
 
+.instructors-slide-1 br {
+  display: none;
+}
+
+.instructors-slide-3 br {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .training {
     padding: 59px 45px 40px;
@@ -184,7 +191,8 @@
     font-weight: 400;
     line-height: 24px;
     width: 680px;
-    position: relative;
+    // position: relative;
+    margin-bottom: 31px;
   }
 
   .training-text-br {
@@ -192,7 +200,77 @@
   }
 
   .training__instructors-title {
-    margin-bottom: 30px;
-    margin-top: 25px;
+    margin-bottom: 36px;
+    margin-top: 30px;
+  }
+
+  .instructors-slide__wrapper {
+    width: 213px;
+    height: 388px;
+    padding: 14px;
+  }
+
+  .instructor-photo {
+    width: 183px;
+  }
+
+  .training__instructors {
+    position: relative;
+  }
+
+  .instructor__data + p {
+    width: 178px;
+  }
+
+  .instructor-swiper-button-next {
+    // position: absolute !important;
+    right: -35px !important;
+    top: 254px !important;
+  }
+  .instructor-swiper-button-prev {
+    left: -34px !important;
+    top: 254px !important;
+  }
+
+  .instructors-slide-1 br {
+    display: initial;
+  }
+
+  .instructors-slide-3 br {
+    display: initial;
+  }
+
+  .training__process-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-top: 28px;
+    margin-bottom: 101px;
+  }
+
+  .process-line__picture-wrapper {
+    display: none;
+  }
+
+  .process-info__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 104px;
+    column-gap: 172px;
+  }
+
+  .process-info__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 200px;
+  }
+
+  .item-equipment-order {
+    order: 2;
+  }
+
+  .item-eco-order {
+    order: 3;
   }
 }

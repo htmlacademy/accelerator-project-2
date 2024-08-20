@@ -127,15 +127,10 @@
           </div>
         </section>
         <section class="tours" data-test="tours" id="tours">
-          <!-- <img
-            class="tours__back-img"
-            src="img/clouds-mobile.png"
-            alt="облака на заднем фоне"
-          /> -->
           <div class="tours__inner">
             <h3 class="tours__title title">Ближайшие туры</h3>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="tours-swiper-button-prev swiper-button-prev"></div>
+            <div class="tours-swiper-button-next swiper-button-next"></div>
             <div class="swiper tours-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -410,16 +405,96 @@
               <h2 class="training__instructors-title title">
                 Наши инструкторы
               </h2>
+              <div
+                class="instructor-swiper-button-prev swiper-button-prev"
+              ></div>
+              <div
+                class="instructor-swiper-button-next swiper-button-next"
+              ></div>
               <div class="swiper instructors-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="instructors-slide__wrapper">
                       <div class="instructors-slide instructors-slide-1">
                         <div class="instructor-photo">
-                          <img
-                            src="./img/instructor-nadejda.jpg"
-                            alt="инструктор Надежда"
-                          />
+                          <picture>
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./img/instructors/instructor-alexandr-tablet.jpg
+                              " />
+                            <img
+                              src="./img/instructors/instructor-alexander.jpg"
+                              alt="инструктор Александр"
+                          /></picture>
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span>Александр <br />Прокофьев</span>
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Строгий и внимательный инструктор, весёлый <br />
+                            и общительный человек. Любит природу.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-2">
+                        <div class="instructor-photo">
+                          <picture>
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./img/instructors/instructor-svetlana-tablet.jpg
+                              " />
+                            <img
+                              src="./img/instructors/instructor-svetlana.jpg"
+                              alt="инструктор Светлана"
+                          /></picture>
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span
+                              >Светлана <br />
+                              Афиногенова</span
+                            >
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Видеть мир вокруг, познавать его опасности, находить
+                            друг друга, становиться ближе, чувствовать — в этом
+                            назначение жизни.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-3">
+                        <div class="instructor-photo">
+                          <picture>
+                            <source
+                              srcset="
+                                ./img/instructors/instructor-nadejda-tablet.jpg
+                              "
+                              media="(min-width: 768px)" />
+                            <img
+                              src="./img/instructors/instructor-nadejda.jpg"
+                              alt="инструктор Надежда"
+                          /></picture>
                         </div>
                         <div class="instructor__info">
                           <div class="instructor__data">
@@ -434,9 +509,11 @@
                             </a>
                           </div>
                           <p>
-                            Участники говорят, что Надежда ответственная,
-                            приятная в общении, и в поездках с ней чувствуешь
-                            себя спокойно и уверенно.
+                            Участники говорят, <br />
+                            что Надежда ответственная, приятная в общении,
+                            <br />
+                            и в поездках <br />
+                            с ней чувствуешь себя спокойно и уверенно.
                           </p>
                         </div>
                       </div>
@@ -444,12 +521,13 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="instructors-slide__wrapper">
-                      <div class="instructors-slide instructors-slide-2">
+                      <div class="instructors-slide instructors-slide-4">
                         <div class="instructor-photo">
-                          <img
-                            src="./img/instructor-fedor.jpg"
-                            alt="инструктор Фёдор"
-                          />
+                          <picture>
+                            <img
+                              src="./img/instructors/instructor-fedor.jpg"
+                              alt="инструктор Фёдор"
+                          /></picture>
                         </div>
                         <div class="instructor__info">
                           <div class="instructor__data">
@@ -474,10 +552,10 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="instructors-slide__wrapper">
-                      <div class="instructors-slide instructors-slide-3">
+                      <div class="instructors-slide instructors-slide-5">
                         <div class="instructor-photo">
                           <img
-                            src="./img/instructor-daniel.jpg"
+                            src="./img/instructors/instructor-daniel.jpg"
                             alt="инструктор Даниель"
                           />
                         </div>
@@ -501,67 +579,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="instructors-slide__wrapper">
-                      <div class="instructors-slide instructors-slide-4">
-                        <div class="instructor-photo">
-                          <img
-                            src="./img/instructor-alexander.jpg"
-                            alt="инструктор Александр"
-                          />
-                        </div>
-                        <div class="instructor__info">
-                          <div class="instructor__data">
-                            <span>Александр <br />Прокофьев</span>
-                            <a href="#">
-                              <svg width="24px" height="24px">
-                                <use href="/__spritemap#sprite-vk"></use>
-                              </svg>
-                            </a>
-                          </div>
-                          <p>
-                            Строгий и внимательный инструктор, весёлый и
-                            общительный человек. Любит природу.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="instructors-slide__wrapper">
-                      <div class="instructors-slide instructors-slide-5">
-                        <div class="instructor-photo">
-                          <img
-                            src="./img/instructor-svetlana.jpg"
-                            alt="инструктор Светлана"
-                          />
-                        </div>
-                        <div class="instructor__info">
-                          <div class="instructor__data">
-                            <span
-                              >Светлана <br />
-                              Афиногенова</span
-                            >
-                            <a href="#">
-                              <svg width="24px" height="24px">
-                                <use href="/__spritemap#sprite-vk"></use>
-                              </svg>
-                            </a>
-                          </div>
-                          <p>
-                            Видеть мир вокруг, познавать его опасности, находить
-                            друг друга, становиться ближе, чувствовать — в этом
-                            назначение жизни.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-
-                <!-- If we need scrollbar -->
                 <div class="instructors-swiper-scrollbar"></div>
               </div>
             </div>
@@ -586,7 +604,7 @@
                         Изучение спортивного туристского движения
                       </p>
                     </li>
-                    <li class="process-info__item">
+                    <li class="process-info__item item-equipment-order">
                       <svg width="25" height="25">
                         <use
                           width="25"
@@ -598,7 +616,7 @@
                         Подготовка и техническое снаряжение в походах
                       </p>
                     </li>
-                    <li class="process-info__item">
+                    <li class="process-info__item item-eco-order">
                       <svg width="25" height="25">
                         <use
                           width="25"

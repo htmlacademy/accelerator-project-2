@@ -10,6 +10,13 @@ const swiper = new Swiper(".promo-swiper", {
   loop: true,
   spaceBetween: 0,
 
+  breakpoints: {
+    320: { allowTouchMove: true },
+    768: {
+      allowTouchMove: true,
+    },
+  },
+
   pagination: {
     el: ".swiper-pagination",
   },
@@ -20,9 +27,12 @@ const swiper = new Swiper(".promo-swiper", {
 
 const swiperTours = new Swiper(".tours-swiper", {
   breakpoints: {
+    320: { allowTouchMove: true },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
+      allowTouchMove: true,
+      slidesPerGroup: 1,
     },
   },
 
@@ -49,9 +59,26 @@ const swiperInstructors = new Swiper(".instructors-swiper", {
   modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      initialSlide: 2,
+      allowTouchMove: true,
+    },
 
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      allowTouchMove: true,
+    },
+  },
   scrollbar: {
     el: ".instructors-swiper-scrollbar",
+  },
+
+  navigation: {
+    nextEl: ".instructor-swiper-button-next",
+    prevEl: ".instructor-swiper-button-prev",
   },
 });
 

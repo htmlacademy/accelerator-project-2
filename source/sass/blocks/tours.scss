@@ -3,7 +3,6 @@
 .tours {
   padding: 17px 15px 20px;
   position: relative;
-  background-color: $white;
 }
 
 .tours__back-img {
@@ -75,7 +74,6 @@
   align-items: center;
   gap: 6px;
   margin-right: 5px;
-  // margin-bottom: 12px;
 }
 
 .tour-info__place span {
@@ -197,6 +195,7 @@
     font-weight: 800;
     line-height: 25px;
     margin-bottom: 35px;
+    margin-top: 20px;
 
     &::before {
       content: "Ближайшие туры";
@@ -231,6 +230,7 @@
 
   .tour-info-up {
     justify-content: space-between;
+    margin-bottom: 16px;
   }
 
   .tour-title {
@@ -245,26 +245,6 @@
     width: 69px;
   }
 
-  .swiper-button-prev::after {
-    display: initial;
-    width: 37px !important;
-    height: 35px !important;
-    content: url(../../img/sprite/button-prev.svg) !important;
-    bottom: 248px !important;
-    left: 635px !important;
-    position: absolute;
-  }
-
-  .swiper-button-next::after {
-    display: initial;
-    width: 37px !important;
-    height: 35px !important;
-    content: url(../../img/sprite/button-nxt.svg) !important;
-    bottom: 248px !important;
-    right: 35px !important;
-    position: absolute;
-  }
-
   .tours__all-tours-link {
     z-index: 10;
     position: relative;
@@ -277,6 +257,12 @@
 
   .tours::before {
     content: url(../../img/tours/clouds-tablet.png);
-    top: -92px;
+    // top: -92px;
+    top: -149px;
+    z-index: -1;
+  }
+
+  .tour-decor-line {
+    margin: 14px 0 15px;
   }
 }

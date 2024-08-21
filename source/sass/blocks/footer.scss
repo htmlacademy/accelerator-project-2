@@ -1,0 +1,157 @@
+@import "../vars.scss";
+
+.footer {
+  background-color: $white;
+}
+
+.footer__contacts {
+  padding: 36px 15px 30px;
+}
+
+.footer__title {
+  margin: 0 0 29px;
+  &::before {
+    content: "Контакты";
+    position: absolute;
+    top: -15px;
+    opacity: 0.03;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.footer__title ~ p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 30px;
+  width: 290px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 10px;
+}
+
+.contact__item-link {
+  display: block;
+  display: flex;
+  gap: 10px;
+  color: $black;
+}
+
+.contact-info__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  margin: 0 0 8px;
+}
+
+.contact-info__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  width: 185px;
+}
+
+.footer__map img {
+  width: 100%;
+}
+
+.footer__upper-content {
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  border-color: rgb(45, 56, 63, 0.2);
+}
+
+.footer__down-content {
+  padding: 23px 15px 20px;
+}
+
+.footer__logo-wrappe {
+  margin-bottom: 23px;
+}
+
+.footer__navigation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.footer__logo-link {
+  display: block;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 50px;
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav-item {
+  width: 120px;
+}
+
+.footer__nav-link {
+  color: $black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  display: block;
+}
+
+.footer__social-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+
+.social-link {
+  display: block;
+  width: 32px;
+  height: 30px;
+}
+
+.social-link__vk {
+  background-image: url(../../img/vk-footer.svg);
+}
+
+.social-link__ok {
+  background-image: url(../../img/ok.svg);
+}
+
+.social-link__reddit {
+  background-image: url(../../img/reddit.svg);
+}
+
+.footer__confidential {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  color: $black;
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+}

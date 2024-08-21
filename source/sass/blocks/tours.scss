@@ -3,7 +3,6 @@
 .tours {
   padding: 17px 15px 20px;
   position: relative;
-  background-color: $white;
 }
 
 .tours__back-img {
@@ -41,19 +40,19 @@
 }
 
 .tours-slide-1 {
-  background-image: url("../../img/tours-mobile-elbrus.png");
+  background-image: url("../../img/tours/tours-mobile-elbrus.png");
 }
 
 .tours-slide-2 {
-  background-image: url("../../img/tours-mobile-altay.png");
+  background-image: url("../../img/tours/tours-mobile-altay.png");
 }
 
 .tours-slide-3 {
-  background-image: url("../../img/tours-mobile-adigeya.png");
+  background-image: url("../../img/tours/tours-mobile-adigeya.png");
 }
 
 .tours-slide-4 {
-  background-image: url("../../img/tours-mobile-ural.png");
+  background-image: url("../../img/tours/tours-mobile-ural.png");
 }
 
 .tour-info {
@@ -75,7 +74,6 @@
   align-items: center;
   gap: 6px;
   margin-right: 5px;
-  // margin-bottom: 12px;
 }
 
 .tour-info__place span {
@@ -169,4 +167,102 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  position: relative;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.tours::before {
+  content: url(../../img/tours/clouds-mobile.png);
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+@media (min-width: 768px) {
+  .tours {
+    padding: 40px 45px;
+  }
+
+  .tours__title {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+
+    &::before {
+      content: "Ближайшие туры";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 40px;
+    }
+  }
+
+  .tours-slide {
+    width: 330px;
+    height: 416px;
+    padding: 30px 20px 26px;
+  }
+
+  .tours-slide-1 {
+    background-image: url("../../img/tours/tours-tablet-elbrus.png");
+  }
+
+  .tours-slide-2 {
+    background-image: url("../../img/tours/tours-tablet-altay.png");
+  }
+
+  .tours-slide-3 {
+    background-size: 100%;
+  }
+
+  .tours-slide-4 {
+    background-size: 100%;
+  }
+
+  .tour-info-up {
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .tour-title {
+    width: 235px;
+  }
+
+  .tour-info-bottom {
+    justify-content: space-between;
+  }
+
+  .tour-info-bottom__content:last-child {
+    width: 69px;
+  }
+
+  .tours__all-tours-link {
+    z-index: 10;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px; /* 100% */
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+
+  .tours::before {
+    content: url(../../img/tours/clouds-tablet.png);
+    // top: -92px;
+    top: -149px;
+    z-index: -1;
+  }
+
+  .tour-decor-line {
+    margin: 14px 0 15px;
+  }
 }

@@ -1,0 +1,61 @@
+.swiper-button-prev::after {
+  display: initial;
+  width: 37px !important;
+  height: 35px !important;
+  content: url(../../img/sprite/button-prev.svg) !important;
+  position: absolute;
+}
+
+.swiper-button-next::after {
+  display: initial;
+  width: 37px !important;
+  height: 35px !important;
+  content: url(../../img/sprite/button-nxt.svg) !important;
+  position: absolute;
+}
+
+.tours-swiper-button-prev.swiper-button-disabled,
+.tours-swiper-button-next.swiper-button-disabled {
+  opacity: 1 !important;
+}
+
+.tours-swiper-button-prev {
+  top: 74px !important;
+  left: 650px !important;
+}
+.tours-swiper-button-next {
+  top: 74px !important;
+  left: 691px !important;
+}
+
+.instructor-swiper-button-prev {
+  top: 11px !important;
+  left: 605px !important;
+}
+
+.instructor-swiper-button-next {
+  top: 11px !important;
+  left: 646px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+.reviews-swiper-button-prev {
+  top: 19px !important;
+  left: 600px !important;
+}
+
+.reviews-swiper-button-next {
+  top: 19px !important;
+  left: 641px !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: initial !important;
+  }
+}

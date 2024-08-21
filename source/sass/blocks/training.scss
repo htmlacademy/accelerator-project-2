@@ -2,9 +2,6 @@
 
 .training {
   padding: 36px 15px 20px;
-  // display: flex;
-  // flex-direction: column;
-  background-color: $white;
 }
 
 .training__title {
@@ -160,4 +157,114 @@
 
 .process-line__picture-wrapper {
   width: 18px;
+}
+
+.training-text-br {
+  display: none;
+}
+
+.text-br,
+.text-br-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .training {
+    padding: 59px 45px 40px;
+  }
+
+  .training__title {
+    margin-bottom: 34px;
+
+    &::before {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 40px;
+    }
+  }
+
+  .training__intro-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 680px;
+    // position: relative;
+    margin-bottom: 31px;
+  }
+
+  .training-text-br,
+  .text-br-tablet {
+    display: initial;
+  }
+
+  .training__instructors-title {
+    margin-bottom: 36px;
+    margin-top: 30px;
+  }
+
+  .instructors-slide__wrapper {
+    width: 213px;
+    height: 388px;
+    padding: 14px;
+  }
+
+  .instructor-photo {
+    width: 183px;
+  }
+
+  .training__instructors {
+    position: relative;
+  }
+
+  .instructor__data + p {
+    width: 178px;
+  }
+
+  .instructor-swiper-button-next {
+    // position: absolute !important;
+    right: -35px !important;
+    top: 254px !important;
+  }
+  .instructor-swiper-button-prev {
+    left: -34px !important;
+    top: 254px !important;
+  }
+
+  .text-br {
+    display: initial;
+  }
+
+  .training__process-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-top: 28px;
+    margin-bottom: 101px;
+  }
+
+  .process-line__picture-wrapper {
+    display: none;
+  }
+
+  .process-info__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 104px;
+    column-gap: 172px;
+  }
+
+  .process-info__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 200px;
+  }
+
+  .item-equipment-order {
+    order: 2;
+  }
+
+  .item-eco-order {
+    order: 3;
+  }
 }

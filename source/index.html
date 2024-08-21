@@ -1,31 +1,1187 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/style.scss" />
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
+    <div class="body-filter">
+      <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    </svg> -->
+
+      <header class="header" data-test="header">
+        <div class="header__wrapper">
+          <nav class="header-nav header-nav--closed">
+            <button class="header__burger-button" type="button">
+              <svg class="burger-button-open" width="26" height="26">
+                <use href="/__spritemap#sprite-menu-open"></use>
+              </svg>
+              <svg
+                class="burger-button-close burger-button--closed"
+                width="26"
+                height="26"
+              >
+                <use href="/__spritemap#sprite-menu-close"></use>
+              </svg>
+            </button>
+            <div class="header-nav__wrapper header-nav__wrapper---closed">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#tours">Туры</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#edu">Обучение</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#about">О нас</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#reviews">Отзывы</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#photo">Фотографии</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header-logo">
+            <a href="#" class="logo-link">
+              <img src="img/logo.svg" alt="Логотип компании Lifetour" />
+            </a>
+            <a class="phone-link" href="tel:+77000000000">8 800 000-00-00</a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="promo" data-test="hero">
+          <div class="swiper promo-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="promo-slide__wrapper slide-1">
+                  <div class="promo-slide">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>
+                      В сопровождении опытных гидов вы пройдёте
+                      через потрясающие ландшафты и совершите восход на вершину
+                      горы Чегет.
+                    </p>
+                    <button type="button">Смотреть тур</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="promo-slide__wrapper slide-2">
+                  <div class="promo-slide">
+                    <div class="promo-slide__info">
+                      <h2>Невероятная природа Камчатки</h2>
+                      <p>
+                        Незабываемое приключение, во время которого
+                        вы отправитесь в путешествие по одному из самых
+                        нетронутых уголков дикой природы в мире.
+                      </p>
+                      <button type="button">Смотреть тур</button>
+                    </div>
+                    <div class="promo-slide__photo-cards">
+                      <picture>
+                        <source
+                          media="(min-width:1440px )"
+                          srcset="./img/promo/photo-cards-kamchatka-desktop.png"
+                        />
+                        <img
+                          src="./img/promo/photo-cards-kamchatka-tablet.png"
+                          alt="Фотокарточки из похода на Камчатку"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="promo-slide__wrapper slide-3">
+                  <div class="promo-slide">
+                    <h2>Магические пейзажи Алтайского Края</h2>
+                    <p>
+                      Алтайский трекинг-тур – это захватывающее приключение
+                      с посещением магических и захватывающих дух ландшафтов
+                      Алтайских гор.
+                    </p>
+                    <button type="button">Смотреть тур</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </section>
+        <section class="tours" data-test="tours" id="tours">
+          <div class="tours__inner">
+            <h3 class="tours__title title">Ближайшие туры</h3>
+            <div class="tours-swiper-button-prev swiper-button-prev"></div>
+            <div class="tours-swiper-button-next swiper-button-next"></div>
+            <div class="swiper tours-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="tours-slide tours-slide-1">
+                    <div class="tour-info">
+                      <div class="tour-info-up">
+                        <div class="tour-info__place">
+                          <svg width="16px" height="16px">
+                            <use href="/__spritemap#sprite-location"></use>
+                          </svg>
+                          <span class="tour-place-name">Кавказ</span>
+                        </div>
+                        <div class="tour-info__duration">
+                          <div class="tour-info__days">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-day-sun"></use>
+                            </svg>
+                            <span>4 дня</span>
+                          </div>
+                          <div class="tour-info__nights">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-moon"></use>
+                            </svg>
+                            <span>3 ночи</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="tour-title">Путешествие вокруг Эльбруса</h2>
+                      <div class="tour-decor-line"></div>
+                      <div class="tour-info-bottom">
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-hardness"
+                            >Сложность:</span
+                          >
+                          <span class="tour-info-bottom__data">
+                            <svg width="84" height="16">
+                              <use href="/__spritemap#sprite-four-stars"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Даты набора:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            12.06–19.06
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Группа:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            до 15 чел.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours-slide tours-slide-2">
+                    <div class="tour-info">
+                      <div class="tour-info-up">
+                        <div class="tour-info__place">
+                          <svg width="16px" height="16px">
+                            <use href="/__spritemap#sprite-location"></use>
+                          </svg>
+                          <span class="tour-place-name">Алтай</span>
+                        </div>
+                        <div class="tour-info__duration">
+                          <div class="tour-info__days">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-day-sun"></use>
+                            </svg>
+                            <span>14 дней</span>
+                          </div>
+                          <div class="tour-info__nights">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-moon"></use>
+                            </svg>
+                            <span>13 ночей</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="tour-title">Путь к подножию Белухи</h2>
+                      <div class="tour-decor-line"></div>
+                      <div class="tour-info-bottom">
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-hardness"
+                            >Сложность:</span
+                          >
+                          <span class="tour-info-bottom__data">
+                            <svg width="84" height="16">
+                              <use href="/__spritemap#sprite-three-stars"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Даты набора:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            14.06–23.06
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Группа:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            до 25 чел.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours-slide tours-slide-3">
+                    <div class="tour-info">
+                      <div class="tour-info-up">
+                        <div class="tour-info__place">
+                          <svg width="16px" height="16px">
+                            <use href="/__spritemap#sprite-location"></use>
+                          </svg>
+                          <span class="tour-place-name">Адыгея</span>
+                        </div>
+                        <div class="tour-info__duration">
+                          <div class="tour-info__days">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-day-sun"></use>
+                            </svg>
+                            <span>7 дней</span>
+                          </div>
+                          <div class="tour-info__nights">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-moon"></use>
+                            </svg>
+                            <span>6 ночей</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="tour-title">
+                        Через Фишт к Чёрному морю и обратно
+                      </h2>
+                      <div class="tour-decor-line"></div>
+                      <div class="tour-info-bottom">
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-hardness"
+                            >Сложность:</span
+                          >
+                          <span class="tour-info-bottom__data">
+                            <svg width="84" height="16">
+                              <use href="/__spritemap#sprite-four-stars"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Даты набора:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            15.07–19.07
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Группа:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            до 22 чел.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="tours-slide tours-slide-4">
+                    <div class="tour-info">
+                      <div class="tour-info-up">
+                        <div class="tour-info__place">
+                          <svg width="16px" height="16px">
+                            <use href="/__spritemap#sprite-location"></use>
+                          </svg>
+                          <span class="tour-place-name">Урал</span>
+                        </div>
+                        <div class="tour-info__duration">
+                          <div class="tour-info__days">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-day-sun"></use>
+                            </svg>
+                            <span>9 дней</span>
+                          </div>
+                          <div class="tour-info__nights">
+                            <svg width="20px" height="20px">
+                              <use href="/__spritemap#sprite-moon"></use>
+                            </svg>
+                            <span>10 ночей</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="tour-title">Восхождение Манарага</h2>
+                      <div class="tour-decor-line"></div>
+                      <div class="tour-info-bottom">
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-hardness"
+                            >Сложность:</span
+                          >
+                          <span class="tour-info-bottom__data">
+                            <svg width="84" height="16">
+                              <use href="/__spritemap#sprite-five-stars"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Даты набора:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            12.07–19.07
+                          </span>
+                        </div>
+                        <div class="tour-info-bottom__content">
+                          <span
+                            class="tour-info-bottom__criteria criteria-collecting"
+                            >Группа:</span
+                          >
+                          <span class="tour-info-bottom__data collecting-data">
+                            до 7 чел.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <a class="tours__all-tours-link" href="#"
+              >Показать все туры
+              <svg width="9" height="14">
+                <use href="/__spritemap#sprite-right"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="training" data-test="training" id="edu">
+          <div class="training__inner">
+            <h3 class="training__title title">Обучение</h3>
+            <div class="training__intro-text">
+              <p>
+                Обучение проводится квалифицированными специалистами,
+                <br class="training-text-br" />
+                за плечами которых десятки пройденных маршрутов Кавказа, Крыма,
+                Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+              </p>
+            </div>
+            <div class="training__instructors">
+              <h2 class="training__instructors-title title">
+                Наши инструкторы
+              </h2>
+              <div
+                class="instructor-swiper-button-prev swiper-button-prev"
+              ></div>
+              <div
+                class="instructor-swiper-button-next swiper-button-next"
+              ></div>
+              <div class="swiper instructors-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-1">
+                        <div class="instructor-photo">
+                          <picture>
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./img/instructors/instructor-alexandr-tablet.jpg
+                              " />
+                            <img
+                              src="./img/instructors/instructor-alexander.jpg"
+                              alt="инструктор Александр"
+                          /></picture>
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span>Александр <br />Прокофьев</span>
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Строгий и внимательный инструктор, весёлый
+                            <br class="text-br" />
+                            и общительный человек. Любит природу.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-2">
+                        <div class="instructor-photo">
+                          <picture>
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./img/instructors/instructor-svetlana-tablet.jpg
+                              " />
+                            <img
+                              src="./img/instructors/instructor-svetlana.jpg"
+                              alt="инструктор Светлана"
+                          /></picture>
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span
+                              >Светлана <br />
+                              Афиногенова</span
+                            >
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Видеть мир вокруг, познавать его опасности, находить
+                            друг друга, становиться ближе, чувствовать — в этом
+                            назначение жизни.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-3">
+                        <div class="instructor-photo">
+                          <picture>
+                            <source
+                              srcset="
+                                ./img/instructors/instructor-nadejda-tablet.jpg
+                              "
+                              media="(min-width: 768px)" />
+                            <img
+                              src="./img/instructors/instructor-nadejda.jpg"
+                              alt="инструктор Надежда"
+                          /></picture>
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span>
+                              Надежда <br />
+                              Колесниченко</span
+                            >
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Участники говорят, <br class="text-br-tablet" />
+                            что Надежда ответственная, приятная в общении,
+                            <br class="text-br" />
+                            и в поездках <br class="text-br" />
+                            с ней чувствуешь себя спокойно и уверенно.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-4">
+                        <div class="instructor-photo">
+                          <picture>
+                            <img
+                              src="./img/instructors/instructor-fedor.jpg"
+                              alt="инструктор Фёдор"
+                          /></picture>
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span
+                              >Федор <br />
+                              Кайгородов</span
+                            >
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Опыт походов: Ходит в походы с 2001 года. В России
+                            побывал в горных районах Хибины, Архыз, много
+                            путешествует по Европе.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="instructors-slide__wrapper">
+                      <div class="instructors-slide instructors-slide-5">
+                        <div class="instructor-photo">
+                          <img
+                            src="./img/instructors/instructor-daniel.jpg"
+                            alt="инструктор Даниель"
+                          />
+                        </div>
+                        <div class="instructor__info">
+                          <div class="instructor__data">
+                            <span
+                              >Даниэль <br />
+                              Васнецов</span
+                            >
+                            <a href="#">
+                              <svg width="24px" height="24px">
+                                <use href="/__spritemap#sprite-vk"></use>
+                              </svg>
+                            </a>
+                          </div>
+                          <p>
+                            Покорял самые сложные вершины. Выбирался из под
+                            лавин, дружит с медведями и не только.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="instructors-swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="training__process">
+              <h4 class="training__process-title">Процесс обучения</h4>
+              <div class="training__process-inner">
+                <div class="process-line__picture-wrapper">
+                  <div class="process-line__picture">
+                    <div class="picture-circle circle1"></div>
+                    <div class="picture-circle circle2"></div>
+                    <div class="picture-circle circle3"></div>
+                    <div class="picture-circle circle4"></div>
+                  </div>
+                </div>
+                <div class="process-info">
+                  <ul class="process-info__list">
+                    <li class="process-info__item">
+                      <svg width="25" height="25">
+                        <use href="/__spritemap#sprite-training-map"></use>
+                      </svg>
+                      <p class="process-info__description">
+                        Изучение спортивного туристского движения
+                      </p>
+                    </li>
+                    <li class="process-info__item item-equipment-order">
+                      <svg width="25" height="25">
+                        <use
+                          width="25"
+                          height="25"
+                          href="/__spritemap#sprite-training-boots"
+                        ></use>
+                      </svg>
+                      <p class="process-info__description">
+                        Подготовка и техническое снаряжение в походах
+                      </p>
+                    </li>
+                    <li class="process-info__item item-eco-order">
+                      <svg width="25" height="25">
+                        <use
+                          width="25"
+                          height="25"
+                          href="/__spritemap#sprite-training-pine-tree"
+                        ></use>
+                      </svg>
+                      <p class="process-info__description">
+                        Лекции по окружающей среде, экологии и гигиене
+                      </p>
+                    </li>
+                    <li class="process-info__item">
+                      <svg width="25" height="25">
+                        <use
+                          width="25"
+                          height="25"
+                          href="/__spritemap#sprite-training-mountain"
+                        ></use>
+                      </svg>
+                      <p class="process-info__description">
+                        Разъяснение сложности горных препятствий
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" data-test="about" id="about">
+          <div class="about__photo">
+            <picture>
+              <source
+                media="(min-width:1439px)"
+                srcset="./img/about-desktop.png" />
+              <source
+                media="(min-width:767px)"
+                srcset="./img/about-tablet.png" />
+              <img
+                src="./img/about-mobile.png"
+                alt="Фото с нашего восхождения на гору высокую"
+            /></picture>
+          </div>
+          <div class="about__content">
+            <h3>О нас</h3>
+            <h4>История компании</h4>
+            <p>
+              В далёком 2000 году мы начали заниматься туризмом — походы,
+              поездки, восхождения, нам это настолько понравилось, что мы этим
+              стали жить. Спустя 5 лет, в 2005 году мы основали компанию,
+              чтобы показывать людям удивительные места нашей страны.
+            </p>
+            <h4>Наша цель</h4>
+            <p>
+              Подарить вам незабываемые впечатления от похода в горы. Мы берём
+              на себя все организационные вопросы. При организации
+              мы обязательно учтём все ваши пожелания. Вам останется только
+              наслаждаться незабываемым приключением в приятной компании.
+            </p>
+          </div>
+        </section>
+        <section class="reviews" data-test="reviews" id="reviews">
+          <div class="reviews__inner">
+            <h3 class="reviews__title title">Отзывы</h3>
+            <div class="reviews-swiper-button-prev swiper-button-prev"></div>
+            <div class="reviews-swiper-button-next swiper-button-next"></div>
+            <div class="swiper reviews-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews-slide__wrapper">
+                    <div class="reviews-slide reviews-slide-1">
+                      <div class="reviews-photo">
+                        <picture>
+                          <source
+                            media="(min-width:1439px)"
+                            srcset="./img/review-1-desktop.png" />
+                          <source
+                            media="(min-width:767px)"
+                            srcset="./img/review-1-tablet.png" />
+                          <img src="./img/review-1.png" alt="фото участника"
+                        /></picture>
+                      </div>
+                      <div class="review__info">
+                        <div class="review__text">
+                          <p>
+                            Осенью ходили в поход на Алтай с друзьями.
+                            Впечатления потрясающие! Инструкторы, настоящие
+                            эксперты, всему научили, все показали. Делились
+                            историями о местах, людях, культуре места.
+                          </p>
+                          <p>
+                            С уверенностью могу сказать, что жизнь разделилась
+                            на до этого и после. Ещё никогда не отдыхал
+                            так душой и телом. Всем очень рекомендую!
+                          </p>
+                        </div>
+                        <div class="reviewer-info">
+                          <span class="reviewer-name">Фролов Александр</span
+                          ><br />
+                          <span class="reviewer-details">38 лет, Москва </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-slide__wrapper">
+                    <div class="reviews-slide reviews-slide-2">
+                      <div class="reviews-photo">
+                        <picture>
+                          <source
+                            media="(min-width:1439px)"
+                            srcset="./img/review-2-desktop.png" />
+                          <source
+                            media="(min-width:767px)"
+                            srcset="./img/review-2-tablet.png" />
+                          <img src="./img/review-2.png" alt="фото участника"
+                        /></picture>
+                      </div>
+                      <div class="review__info">
+                        <div class="review__text">
+                          <p>
+                            Хороший полноценный поход с разнообразными
+                            локациями. В начале дорога идёт по лыжне, далее
+                            прошли мимо полигона, по болотам, у озёр и лесных
+                            ручьёв, остатков дач конца 19 века. Было очень
+                            интересно!
+                          </p>
+                          <p>
+                            Инструктор Федор дружелюбный, внимательный к технике
+                            безопасности и своим туристам. Всем советую
+                            этот тур.
+                          </p>
+                        </div>
+
+                        <div class="reviewer-info">
+                          <span class="reviewer-name">Иван Соловьёв</span><br />
+                          <span class="reviewer-details"
+                            >25 лет, Владивосток</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-slide__wrapper">
+                    <div class="reviews-slide reviews-slide-3">
+                      <div class="reviews-photo">
+                        <picture>
+                          <source
+                            media="(min-width:1439px)"
+                            srcset="./img/review-3-desktop.png" />
+                          <source
+                            media="(min-width:767px)"
+                            srcset="./img/review-3-tablet.png" />
+                          <img src="./img/review-3.png" alt="фото участника"
+                        /></picture>
+                      </div>
+                      <div class="review__info">
+                        <div class="review__text">
+                          <p>
+                            Ранее не ходила на такие длинные дистанции. В первый
+                            день прошли около 30 км, физически я устала
+                            на 18 км, поэтому не была уверена,
+                            пройду ли до конца. Но я справилась. Второй день
+                            прошёл легче, чем ожидала, видимо организм
+                            уже привык.
+                          </p>
+                          <p>
+                            Спасибо ребятам, инструкторам за помощь и поддержку!
+                            Я была рада быть в такой компании.
+                          </p>
+                        </div>
+
+                        <div class="reviewer-info">
+                          <span class="reviewer-name">Евгения Баженова</span
+                          ><br />
+                          <span class="reviewer-details"
+                            >23 года, Кострома</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-slide__wrapper">
+                    <div class="reviews-slide reviews-slide-4">
+                      <div class="reviews-photo">
+                        <picture>
+                          <source
+                            media="(min-width:1439px)"
+                            srcset="./img/review-4-desktop.png" />
+                          <source
+                            media="(min-width:767px)"
+                            srcset="./img/review-4-tablet.png" />
+                          <img src="./img/review-4.png" alt="фото участника"
+                        /></picture>
+                      </div>
+                      <div class="review__info">
+                        <div class="review__text">
+                          <p>
+                            Это был опыт, изменивший мою жизнь! Думала,
+                            не справлюсь, но все получилось! Дух захватывает,
+                            когда наконец‑то, преодолев все трудности
+                            и препятствия, взбираешься на вершину.
+                          </p>
+                          <p>
+                            У нас собралась потрясающая команда. Все друг друга
+                            поддерживали, по вечерам мы сидели вместе у костра
+                            и пели песни. Обязательно повторю такое приключение!
+                          </p>
+                        </div>
+                        <div class="reviewer-info">
+                          <span class="reviewer-name">Елена Пирогова</span
+                          ><br />
+                          <span class="reviewer-details">37 лет, Тюмень</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+        </section>
+        <section class="advantages" data-test="adv">
+          <div class="advantages__inner">
+            <h3 class="advantages__title title">Преимущества</h3>
+            <div class="swiper advantages-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide advantages-swiper-slide">
+                  <div class="advantages-slide__wrapper">
+                    <div class="advantages-slide advantages-slide-1">
+                      <div class="advantages__icon">
+                        <svg width="42" height="42">
+                          <use href="/__spritemap#sprite-adv-safety"></use>
+                        </svg>
+                      </div>
+                      <h4>Безопасность</h4>
+                      <p>
+                        Уделяем внимание безопасности клиентов, внедряя строгие
+                        процедуры и протоколы безопасности. Имеем планы действий
+                        на случай непредвиденных обстоятельств и даём гарантию
+                        полной безопасности во время всего тура.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide advantages-swiper-slide">
+                  <div class="advantages-slide__wrapper">
+                    <div class="advantages-slide advantages-slide-2">
+                      <div class="advantages__icon">
+                        <svg width="42" height="42">
+                          <use href="/__spritemap#sprite-adv-knoledge"></use>
+                        </svg>
+                      </div>
+                      <h4>Экспертиза и знания</h4>
+                      <p>
+                        Наша команда опытных гидов имеет обширные знания
+                        о местности, погодных условиях и технике безопасности.
+                        Это гарантирует, что наши клиенты находятся в надёжных
+                        руках и могут в полной мере насладиться опытом
+                        без опасений.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide advantages-swiper-slide">
+                  <div class="advantages-slide__wrapper">
+                    <div class="advantages-slide advantages-slide-3">
+                      <div class="advantages__icon">
+                        <svg width="42" height="42">
+                          <use href="/__spritemap#sprite-adv-equipment"></use>
+                        </svg>
+                      </div>
+                      <h4>Оборудование и снаряжение</h4>
+                      <p>
+                        Мы предоставляем клиентам все необходимое оборудование,
+                        необходимое для путешествия. Это избавляет клиентов
+                        от необходимости покупать, брать с собой снаряжение,
+                        что делает путешествие более удобным и экономически
+                        выгодным.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide advantages-swiper-slide">
+                  <div class="advantages-slide__wrapper">
+                    <div class="advantages-slide advantages-slide-4">
+                      <div class="advantages__icon">
+                        <svg width="42" height="42">
+                          <use href="/__spritemap#sprite-adv-routs"></use>
+                        </svg>
+                      </div>
+                      <h4>Индивидуальные маршруты</h4>
+                      <p>
+                        Предлагаем широкий выбор туров, отвечающих различным
+                        уровням мастерства и интересам. Мы также можем
+                        адаптировать маршруты к вашим конкретным потребностям
+                        и предпочтениям, чтобы вы получили индивидуальный опыт.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide advantages-swiper-slide">
+                  <div class="advantages-slide__wrapper">
+                    <div class="advantages-slide advantages-slide-5">
+                      <div class="advantages__icon">
+                        <svg width="42" height="42">
+                          <use
+                            href="/__spritemap#sprite-adv-nature-friend"
+                          ></use>
+                        </svg>
+                      </div>
+                      <h4>
+                        Бережное отношение <br />
+                        к природе
+                      </h4>
+                      <p>
+                        Уделяем первостепенное внимание охране окружающей среды
+                        и гарантируем, что туры оказывают минимальное
+                        воздействие на природную среду. Наша компания следует
+                        принципу «Не оставлять следов».
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+        </section>
+        <section class="gallery" data-test="gallery" id="photo">
+          <div class="gallery__inner">
+            <div class="gallery__info">
+              <h3 class="gallery__title title">Фотогалерея</h3>
+              <p>
+                Добавляйте фото с хэштегом #лайфтур, а также отмечайте
+                нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+              </p>
+            </div>
+          </div>
+          <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery-swiper-slide">
+                <div class="gallery-slide__wrapper">
+                  <div
+                    class="gallery-slide gallery-slide-1 gallery-slide-big"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-slide gallery-swiper-slide">
+                <div class="gallery-slide__wrapper">
+                  <div class="gallery-slide gallery-slide-smalls">
+                    <div class="gallery-slide-small-up gallery-slide-2-1"></div>
+                    <div
+                      class="gallery-slide-small-bottom gallery-slide-2-2"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide gallery-swiper-slide">
+                <div class="gallery-slide__wrapper">
+                  <div
+                    class="gallery-slide gallery-slide-3 gallery-slide-big"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-slide gallery-swiper-slide">
+                <div class="gallery-slide__wrapper">
+                  <div class="gallery-slide gallery-slide-smalls">
+                    <div class="gallery-slide-small-up gallery-slide-4-1"></div>
+                    <div
+                      class="gallery-slide-small-bottom gallery-slide-4-2"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide gallery-swiper-slide">
+                <div class="gallery-slide__wrapper">
+                  <div
+                    class="gallery-slide gallery-slide-5 gallery-slide-big"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </section>
+        <section class="form" data-test="form">
+          <div class="form__inner">
+            <h3>Остались вопросы?</h3>
+            <p>
+              Заполните форму и наш оператор свяжется <br />
+              с вами для консультации.
+            </p>
+            <form
+              class="form-sending"
+              action="https://echo.htmlacademy.ru"
+              method="post"
+            >
+              <input
+                class="form-field phone-form-field"
+                name="phone"
+                id="phone"
+                placeholder="Телефон"
+              />
+              <input
+                class="form-field mail-form-field"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <button class="form-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="footer" data-test="footer">
+          <div class="footer__upper-content">
+            <div class="footer__contacts" id="contacts">
+              <h3 class="footer__title title">Контакты</h3>
+              <p>
+                Свяжитесь с нами любым удобным для вас способом или приходите
+                к нам в гости. Мы будем рады поделиться увлекательными историями
+                и подобрать для вас тур.
+              </p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="tel:1234567890" class="contact__item-link">
+                    <div class="contact__icon">
+                      <svg width="22px" height="22px">
+                        <use href="/__spritemap#sprite-phone"></use>
+                      </svg>
+                    </div>
+                    <div class="contact__info">
+                      <h6 class="contact-info__title">Телефон</h6>
+                      <span class="contact-info__text"> +7 983 745-45-45 </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contact__item-link" href="mailto:lalala@mail.ru">
+                    <div class="contact__icon">
+                      <svg width="22" height="22">
+                        <use
+                          width="22"
+                          height="22"
+                          href="/__spritemap#sprite-mail"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="contact__info">
+                      <h6 class="contact-info__title">Email</h6>
+                      <span class="contact-info__text">
+                        info@lifetour.com
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <div class="contact__icon">
+                    <svg width="22" height="22">
+                      <use
+                        width="22"
+                        height="22"
+                        href="/__spritemap#sprite-address"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="contact__info">
+                    <h6 class="contact-info__title">Адрес</h6>
+                    <span class="contact-info__text">
+                      г. Москва, пр-т Мира, д. 14, офис 101</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__map">
+              <picture>
+                <source
+                  srcset="./img/map-desktop.jpg"
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="./img/map-tablet.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./img/map-mobile.jpg"
+                  alt="Карта с расположением нашего офиса"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="footer__down-content">
+            <div class="footer__navigation-block">
+              <div class="footer__logo-wrapper">
+                <a href="./index.html" class="footer__logo-link"
+                  ><img src="./img/footer-logo.svg" alt="Логотип"
+                /></a>
+              </div>
+              <nav class="footer__nav">
+                <div class="footer__nav-left">
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">Туры</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">Обучение</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">О нас</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__nav-right">
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">Отзывы</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">Фотографии</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="footer__social">
+              <div class="footer__social-wrapper">
+                <a href="#" class="social-link social-link__vk"
+                  ><span class="visually-hidden"
+                    >Ссылка на страницу Вконтакте</span
+                  ></a
+                >
+                <a href="#" class="social-link social-link__ok"
+                  ><span class="visually-hidden"
+                    >Ссылка на страницу Одноклассники</span
+                  ></a
+                >
+                <a href="#" class="social-link social-link__reddit"
+                  ><span class="visually-hidden"
+                    >Ссылка на страницу Реддит</span
+                  ></a
+                >
+              </div>
+            </div>
+            <a href="#" class="footer__confidential"
+              >Политика конфиденциальности</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

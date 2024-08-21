@@ -1,0 +1,98 @@
+@import "../vars";
+
+.gallery {
+  background-color: $white;
+  padding-bottom: 3px;
+}
+
+.gallery__info {
+  padding: 14px 15px 32px;
+}
+
+.gallery__info p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 260px;
+  margin: 0;
+}
+
+.gallery__title {
+  margin-bottom: 27px;
+  &::before {
+    content: "Фотогалерея";
+    position: absolute;
+    top: -15px;
+    opacity: 0.03;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.swiper-slide .gallery-swiper-slide {
+  width: 156px;
+}
+
+.gallery-slide-big {
+  width: 158px;
+  height: 266px;
+}
+
+.gallery-slide-1 {
+  background-image: url(../../img/gallery/gallery-1-1440px.png);
+  background-repeat: no-repeat;
+  background-size: 165px;
+}
+
+.gallery-slide-smalls {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.gallery-slide-small-up {
+  width: 157px;
+  height: 134px;
+}
+
+.gallery-slide-small-bottom {
+  width: 157px;
+  height: 125px;
+}
+
+.gallery-slide-2-1 {
+  background-image: url(../../img/gallery/gallery-2-1.png);
+  background-size: 179px;
+  background-position-x: 171px;
+  background-position-y: -13px;
+}
+
+.gallery-slide-2-2 {
+  background-image: url(../../img/gallery/gallery-2:2-1440px.png);
+  background-position: -63px;
+  background-position-y: 0;
+  background-size: 286px;
+  background-repeat: no-repeat;
+  background-position-x: -64px;
+}
+
+.gallery-slide-3 {
+  background-image: url(../../img/gallery/gallery-3.png);
+  background-size: 165px;
+}
+
+.gallery-slide-4-1 {
+  background-image: url(../../img/gallery/gallery-4:1.png);
+  background-size: 165px;
+}
+
+.gallery-slide-4-2 {
+  background-image: url(../../img/gallery/gallery-4:2.png);
+  background-size: 165px;
+}
+
+.gallery-slide-5 {
+  background-image: url(../../img/gallery/gallery-5.png);
+  background-size: 165px;
+}

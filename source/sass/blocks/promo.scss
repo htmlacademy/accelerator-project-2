@@ -1,0 +1,148 @@
+@import "../vars";
+
+.promo-slide__wrapper {
+  padding: 40px 15px 56px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-1 {
+  background-image: url("../../img/promo/promo-slider-kaukaz.png");
+}
+
+.slide-2 {
+  background-image: url("../../img/promo/promo-mobile-kamchatka.png");
+}
+
+.slide-3 {
+  background-image: url("../../img/promo/promo-mobile-altay.png");
+}
+
+.promo-slide {
+  width: 290px;
+  height: 472px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.promo-slide__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-slide h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  color: $white;
+  margin: 0;
+}
+
+.promo-slide p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $white;
+  margin-bottom: 60px;
+}
+
+.promo-slide button {
+  background-color: $accent-blue;
+  border: transparent;
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  width: 180px;
+  height: 56px;
+}
+
+.promo-slide__photo-cards {
+  display: none;
+}
+
+.promo .swiper-pagination {
+  bottom: 36px !important;
+}
+
+.promo .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: transparent !important;
+  border: 2px solid $white !important;
+  opacity: 1 !important;
+  margin: 0 10px !important;
+}
+
+.promo .swiper-pagination-bullet-active {
+  background-color: $white !important;
+}
+
+@media (min-width: 768px) {
+  .promo-slide__wrapper {
+    // padding: 20px 0 80px;
+    padding: 49px 0 108px;
+
+    width: 100%;
+  }
+
+  .promo-slide__photo-cards {
+    display: initial;
+  }
+
+  .promo-slide {
+    width: auto;
+    height: 934px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .promo-slide h2 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 56px;
+    width: 678px;
+    margin-bottom: 14px;
+  }
+
+  .promo-slide p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 38px;
+    width: 500px;
+  }
+
+  .promo-slide__info {
+    margin-bottom: 45px;
+  }
+
+  .slide-1 {
+    background-image: url(../../img/promo/promo-tablet-kaukaz.png);
+    background-position-x: center;
+  }
+
+  .slide-2 {
+    background-image: url("../../img/promo/promo-tablet-kamchatka.png");
+  }
+
+  .slide-3 {
+    background-image: url("../../img/promo/promo-tablet-altay.png");
+  }
+
+  .promo .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}

@@ -86,15 +86,31 @@ const swiperReviews = new Swiper(".reviews-swiper", {
   modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.26,
+      spaceBetween: 30,
+      allowTouchMove: true,
+    },
+  },
 
   scrollbar: {
     el: ".reviews-swiper-scrollbar",
+  },
+
+  navigation: {
+    nextEl: ".reviews-swiper-button-next",
+    prevEl: ".reviews-swiper-button-prev",
   },
 });
 
 const swiperAdvantages = new Swiper(".advantages-swiper", {
   init: false,
   breakpoints: {
+    768: {
+      disable: true,
+    },
+
     1440: {
       init: true,
       slidesPerView: 2,

@@ -43,6 +43,16 @@
   display: none !important;
 }
 
+.reviews-swiper-button-prev {
+  top: 19px !important;
+  left: 600px !important;
+}
+
+.reviews-swiper-button-next {
+  top: 19px !important;
+  left: 641px !important;
+}
+
 @media (min-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {

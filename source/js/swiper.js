@@ -137,6 +137,13 @@ const swiperGallery = new Swiper(".gallery-swiper", {
   modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: true,
+  breakpoints: {
+    768: {
+      disable: true,
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+  },
 
   scrollbar: {
     el: ".gallery-swiper-scrollbar",
@@ -144,5 +151,10 @@ const swiperGallery = new Swiper(".gallery-swiper", {
 
   pagination: {
     el: ".gallery-pagination",
+  },
+
+  navigation: {
+    nextEl: ".gallery-swiper-button-next",
+    prevEl: ".gallery-swiper-button-prev",
   },
 });

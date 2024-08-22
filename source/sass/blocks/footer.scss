@@ -203,4 +203,39 @@
   .footer__upper-content {
     padding-bottom: 35px;
   }
+
+  .footer__navigation-block {
+    flex-direction: row;
+    gap: 43px;
+    margin-bottom: 30px;
+  }
+
+  .footer__down-content {
+    padding: 34px 45px 20px;
+  }
+
+  .footer__nav-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer__nav-left {
+    padding-bottom: 4px;
+  }
+
+  .footer__nav-right {
+    padding-bottom: 4px;
+  }
+
+  .footer__nav {
+    gap: 24px;
+  }
+
+  .footer__nav-item {
+    width: auto;
+  }
+
+  .footer__social-wrapper {
+    margin-bottom: 34px;
+  }
 }

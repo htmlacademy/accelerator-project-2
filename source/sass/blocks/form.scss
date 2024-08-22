@@ -3,20 +3,26 @@
 .form {
   height: 638px;
   background-image: url(../../img/form-back.jpg);
-  background-position-x: -637px;
-  background-position-y: -66px;
   background-repeat: no-repeat;
   padding-top: 176px;
   box-sizing: border-box;
+  background-position-x: -606px;
+  background-position-y: -45px;
+  background-size: 1387px;
 }
 
+.form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form h3 {
   color: $white;
   font-size: 22px;
   font-weight: 800;
   line-height: 22px;
   text-align: center;
-  margin: 0 0 18px;
+  margin: 0 0 6px;
 }
 
 .form p {
@@ -25,7 +31,8 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  margin-bottom: 0 auto 20px;
+  margin-bottom: 20px;
+  width: 270px;
 }
 
 .form-sending {

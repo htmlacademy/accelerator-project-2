@@ -1,0 +1,94 @@
+.training-slide {
+  border: 1px solid rgba($color-dark, 0.1);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  min-height: 356px;
+}
+
+.training-slide.swiper-slide {
+  @include vp-1439 {
+    height: auto;
+  }
+}
+
+.training-slide__img {
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.training-slide__img img {
+  display: block;
+  width: 255px;
+  height: 200px;
+  object-fit: cover;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.training-slide__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.training-slide__content h4 {
+  margin: 0;
+  max-width: 110px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.training-slide__content a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-dark;
+  border: 1px solid rgba($color-dark, 0.3);
+  transition: background-color $trans-default, border-color $trans-default, color $trans-default;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $color-transparent;
+    color: $color-dark;
+    border-color: $color-transparent;
+  }
+
+  &:hover:not(.disabled):not(:focus-visible):not(:active) {
+    background-color: $color-transparent;
+    color: $color-dark;
+    border-color: $color-dark;
+  }
+
+  &:active {
+    background-color: $color-action;
+    color: $color-white;
+    border-color: $color-action;
+  }
+}
+
+.training-slide__content a.disabled {
+  pointer-events: none;
+  color: #2d383f;
+  background-color: $color-transparent;
+  border-color: #2d383f;
+}
+
+.training-slide__content p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}

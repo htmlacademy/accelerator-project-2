@@ -155,3 +155,52 @@
   max-width: 250px;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .footer__contacts {
+    padding: 60px 37px 40px 46px;
+  }
+
+  .footer__title {
+    margin-bottom: 20px;
+    &::before {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  .footer__title ~ p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 40px;
+    width: 480px;
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-info__text {
+    display: inline;
+  }
+
+  .contacts__item svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-info__title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+
+  .contact-info__text {
+    line-height: 22px;
+  }
+
+  .footer__upper-content {
+    padding-bottom: 35px;
+  }
+}

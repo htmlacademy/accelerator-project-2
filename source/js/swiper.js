@@ -34,6 +34,10 @@ const swiperTours = new Swiper(".tours-swiper", {
       allowTouchMove: true,
       slidesPerGroup: 1,
     },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 
   modules: [Navigation, Pagination],

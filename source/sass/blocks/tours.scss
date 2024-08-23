@@ -191,9 +191,6 @@
   }
 
   .tours__title {
-    font-size: 25px;
-    font-weight: 800;
-    line-height: 25px;
     margin-bottom: 35px;
     margin-top: 20px;
 
@@ -247,7 +244,7 @@
 
   .tours__all-tours-link {
     z-index: 10;
-    position: relative;
+    // position: relative;
     font-size: 16px;
     font-weight: 700;
     line-height: 16px; /* 100% */
@@ -264,5 +261,41 @@
 
   .tour-decor-line {
     margin: 14px 0 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tours {
+    padding: 103px 120px;
+  }
+
+  .tours__inner {
+    position: relative;
+  }
+
+  .tours__title {
+    margin-bottom: 50px;
+  }
+
+  .tours-swiper {
+    margin-bottom: 53px;
+  }
+
+  .tours-slide {
+    width: 380px;
+    height: 416px;
+    padding: 30px 20px 26px;
+  }
+
+  .tours-slide-1 {
+    background-image: url("../../img/tours/tours-kaukaz-desktop.png");
+  }
+
+  .tours-slide-2 {
+    background-image: url("../../img/tours/tours-altay-desktop.png");
+  }
+
+  .tours-slide-3 {
+    background-image: url("../../img/tours/tours-adigeya-desktop.png");
   }
 }

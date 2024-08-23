@@ -69,3 +69,16 @@
     display: initial !important;
   }
 }
+
+@media (min-width: 1440px) {
+  .tours-swiper-button-next {
+    position: absolute !important;
+    top: 15px !important;
+    left: 1163px !important;
+  }
+
+  .tours-swiper-button-prev {
+    top: 15px !important;
+    left: 1122px !important;
+  }
+}

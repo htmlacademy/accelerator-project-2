@@ -181,6 +181,7 @@
   .promo-slide {
     height: 100%;
     align-items: flex-start;
+    // justify-content: flex-start;
   }
 
   .promo-slide h2 {
@@ -188,7 +189,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: 77px;
-    width: 780px;
+    width: 947px;
     text-align: start;
     margin-bottom: 22px;
   }
@@ -197,7 +198,7 @@
     text-align: start;
     font-size: 17px;
     line-height: 24px;
-    width: 420px;
+    width: 460px;
     margin-bottom: 38px;
   }
 
@@ -231,5 +232,23 @@
     text-align: end !important;
     right: 110px !important;
     bottom: 88px !important;
+  }
+
+  .slide-2 .promo-slide {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .promo-slide__info {
+    align-items: flex-start;
+  }
+
+  .promo-slide__photo-cards img {
+    lement.style {
+      position: absolute;
+      top: 163px;
+      right: 117px;
+    }
   }
 }

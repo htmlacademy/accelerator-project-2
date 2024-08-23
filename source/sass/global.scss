@@ -35,3 +35,15 @@ ul {
     line-height: 25px;
   }
 }
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 35px;
+    line-height: 100%;
+
+    &:before {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+}

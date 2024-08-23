@@ -1,14 +1,17 @@
 @import "../vars.scss";
 
 .form {
-  height: 638px;
-  background-image: url(../../img/form-back.jpg);
+  height: 639px;
+  background-image: url(../../img/form_mobile.png);
   background-repeat: no-repeat;
   padding-top: 176px;
   box-sizing: border-box;
-  background-position-x: -606px;
-  background-position-y: -45px;
-  background-size: 1387px;
+  // background-position-x: -606px;
+  // background-position-y: -45px;
+  // background-size: 1387px;
+  // background-position-x: -617px;
+  // background-position-y: -53px;
+  // background-size: 1406px;
 }
 
 .form__inner {

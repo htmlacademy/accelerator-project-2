@@ -85,11 +85,16 @@
   background-color: $white !important;
 }
 
+.promo__tour-details {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .promo-slide__wrapper {
     // padding: 20px 0 80px;
     padding: 49px 0 108px;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .promo-slide__photo-cards {
@@ -128,7 +133,7 @@
   }
 
   .slide-1 {
-    background-image: url(../../img/promo/promo-tablet-kaukaz.png);
+    background-image: url("../../img/promo/promo-tablet-kaukaz.png");
     background-position-x: center;
   }
 
@@ -143,5 +148,80 @@
   .promo .swiper-pagination-bullet {
     width: 16px !important;
     height: 16px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slide-1 {
+    background-image: url("../../img/promo/promo-desktop-kaukaz.png");
+    // background-position-x: center;
+  }
+
+  .slide-2 {
+    background-image: url("../../img/promo/promo-desktop-kamchatka.png");
+  }
+
+  .slide-3 {
+    background-image: url("../../img/promo/promo-desktop-altay.png");
+  }
+
+  .promo {
+    height: 800px;
+  }
+
+  .promo-swiper {
+    height: 100%;
+  }
+
+  .promo-slide__wrapper {
+    padding: 0 120px;
+    height: 100%;
+  }
+
+  .promo-slide {
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .promo-slide h2 {
+    font-size: 77px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 77px;
+    width: 780px;
+    text-align: start;
+    margin-bottom: 25px;
+  }
+
+  .promo-slide p {
+    text-align: start;
+    font-size: 17px;
+    line-height: 24px;
+    width: 420px;
+    margin-bottom: 35px;
+  }
+
+  .promo-slide button {
+    margin-bottom: 134px;
+  }
+
+  .promo__tour-details {
+    display: block;
+  }
+
+  .tour-details {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 14px 20px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tour-details__text {
+    color: $white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
   }
 }

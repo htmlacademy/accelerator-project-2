@@ -135,7 +135,7 @@
     justify-content: right;
     position: relative;
     width: 100%;
-    gap: 133px;
+    gap: 131px;
   }
 
   .header-nav__list {
@@ -159,8 +159,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
-    text-transform: capitalize;
-
+    text-transform: math-auto;
     font-style: normal;
   }
 }

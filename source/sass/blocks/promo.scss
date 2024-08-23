@@ -91,8 +91,8 @@
 
 @media (min-width: 768px) {
   .promo-slide__wrapper {
-    // padding: 20px 0 80px;
-    padding: 49px 0 108px;
+    padding: 20px 0 80px;
+    // padding: 49px 0 108px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -174,7 +174,7 @@
   }
 
   .promo-slide__wrapper {
-    padding: 0 120px;
+    padding: 120px 120px 0;
     height: 100%;
   }
 
@@ -190,7 +190,7 @@
     line-height: 77px;
     width: 780px;
     text-align: start;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .promo-slide p {
@@ -198,7 +198,7 @@
     font-size: 17px;
     line-height: 24px;
     width: 420px;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 
   .promo-slide button {
@@ -206,13 +206,13 @@
   }
 
   .promo__tour-details {
-    display: block;
+    display: flex;
+    gap: 10px;
   }
 
   .tour-details {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 14px 20px;
-    padding: 14px 20px;
+    padding: 13px 19px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -223,5 +223,13 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: auto !important;
+    text-align: end !important;
+    right: 110px !important;
+    bottom: 88px !important;
   }
 }

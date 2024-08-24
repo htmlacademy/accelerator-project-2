@@ -75,6 +75,11 @@ const swiperInstructors = new Swiper(".instructors-swiper", {
       spaceBetween: 20,
       allowTouchMove: true,
     },
+
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
   },
   scrollbar: {
     el: ".instructors-swiper-scrollbar",

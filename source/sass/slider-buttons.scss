@@ -28,6 +28,16 @@
   left: 691px !important;
 }
 
+.instructor-swiper-button-next {
+  // position: absolute !important;
+  right: -35px !important;
+  top: 254px !important;
+}
+.instructor-swiper-button-prev {
+  left: -34px !important;
+  top: 254px !important;
+}
+
 .instructor-swiper-button-prev {
   top: 11px !important;
   left: 605px !important;
@@ -36,11 +46,6 @@
 .instructor-swiper-button-next {
   top: 11px !important;
   left: 646px !important;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  display: none !important;
 }
 
 .reviews-swiper-button-prev {
@@ -80,5 +85,15 @@
   .tours-swiper-button-prev {
     top: 15px !important;
     left: 1122px !important;
+  }
+
+  .instructor-swiper-button-next {
+    left: 1163px !important;
+    top: 14.5px !important;
+  }
+
+  .instructor-swiper-button-prev {
+    left: 1122px !important;
+    top: 14.5px !important;
   }
 }

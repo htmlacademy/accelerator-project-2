@@ -266,7 +266,7 @@
 
 @media (min-width: 1440px) {
   .tours {
-    padding: 103px 120px;
+    padding: 103px 120px 100px;
   }
 
   .tours__inner {
@@ -297,5 +297,10 @@
 
   .tours-slide-3 {
     background-image: url("../../img/tours/tours-adigeya-desktop.png");
+  }
+
+  .tours::before {
+    content: url(../../img/tours/clouds-desktop.png);
+    top: -126px;
   }
 }

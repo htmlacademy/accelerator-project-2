@@ -168,6 +168,10 @@
   display: none;
 }
 
+.training-br-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .training {
     padding: 59px 45px 40px;
@@ -225,9 +229,15 @@
     right: -35px !important;
     top: 254px !important;
   }
+
   .instructor-swiper-button-prev {
     left: -34px !important;
     top: 254px !important;
+  }
+
+  .instructor-swiper-button-prev.swiper-button-disabled,
+  .instructor-swiper-button-next.swiper-button-disabled {
+    opacity: 1 !important;
   }
 
   .text-br {
@@ -266,5 +276,123 @@
 
   .item-eco-order {
     order: 3;
+  }
+}
+
+@media (min-width: 1440px) {
+  .training {
+    padding: 63px 120px;
+  }
+
+  .training__title {
+    margin-bottom: 32px;
+  }
+
+  .training__title::before {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .training__intro-text p {
+    width: 820px;
+    margin-bottom: 62px;
+  }
+
+  .training-text-br {
+    display: none;
+  }
+
+  .training__instructors-title {
+    margin-bottom: 16px;
+  }
+
+  .instructors-slide__wrapper {
+    width: 285px;
+    height: 356px;
+    padding: 14px;
+  }
+
+  .instructor-photo {
+    width: 255px;
+  }
+
+  .instructor__data + p {
+    width: 255px;
+  }
+
+  .text-br {
+    display: none;
+  }
+
+  .text-br-tablet {
+    display: none;
+  }
+
+  .training-br-desktop,
+  .training-nadejda-br-desktop {
+    display: initial;
+  }
+
+  .training__process-title {
+    font-size: 21px;
+    line-height: 21px;
+    margin-top: 59px;
+    margin-bottom: 18px;
+  }
+
+  .process-info__list {
+    gap: 0;
+  }
+
+  .item-equipment-order {
+    order: unset;
+  }
+
+  .item-eco-order {
+    order: unset;
+  }
+
+  .process-info__item {
+    padding-top: 9px;
+    padding-left: 10px;
+    padding-right: 9.5px;
+  }
+
+  .process-info__item svg {
+    padding-top: 2px;
+  }
+
+  .process-info__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .process-line__picture-wrapper {
+    display: initial;
+    transform: rotate(90deg);
+    position: absolute;
+
+    top: -499px;
+    right: 581px;
+  }
+
+  .process-line__picture {
+    height: 1181px;
+  }
+
+  .training__process-inner {
+    position: relative;
+  }
+
+  .circle1 {
+    top: 406px;
+  }
+
+  .circle2 {
+    top: 679px;
+  }
+
+  .circle3 {
+    bottom: 254px;
   }
 }

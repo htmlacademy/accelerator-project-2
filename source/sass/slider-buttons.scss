@@ -1,17 +1,6 @@
-.swiper-button-prev::after {
-  display: initial;
-  width: 37px !important;
-  height: 35px !important;
-  content: url(../../img/sprite/button-prev.svg) !important;
-  position: absolute;
-}
-
-.swiper-button-next::after {
-  display: initial;
-  width: 37px !important;
-  height: 35px !important;
-  content: url(../../img/sprite/button-nxt.svg) !important;
-  position: absolute;
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
 }
 
 .tours-swiper-button-prev.swiper-button-disabled,
@@ -73,6 +62,22 @@
   .swiper-button-next {
     display: initial !important;
   }
+}
+
+.swiper-button-prev::after {
+  // display: initial;
+  width: 37px !important;
+  height: 35px !important;
+  content: url(../../img/sprite/button-prev.svg) !important;
+  position: absolute;
+}
+
+.swiper-button-next::after {
+  // display: initial;
+  width: 37px !important;
+  height: 35px !important;
+  content: url(../../img/sprite/button-nxt.svg) !important;
+  position: absolute;
 }
 
 @media (min-width: 1440px) {

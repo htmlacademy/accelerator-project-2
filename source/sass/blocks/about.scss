@@ -2,17 +2,11 @@
 
 .about {
   padding-top: 20px;
-  // background-color: $white;
 }
 
-// .about__photo {
-//   background-image: url(../../img/about-tablet.png);
-//   height: 400px;
-//   width: 100%;
-//   background-size: 622px;
-//   background-position-y: -67px;
-//   background-position-x: -64px;
-// }
+.about__photo img {
+  width: 100%;
+}
 
 .about__content {
   padding: 0px 15px 7px;
@@ -95,5 +89,27 @@
   .about__content p:last-of-type {
     margin-top: 11px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    padding: 100px 120px 100px 0;
+  }
+
+  .about__photo img {
+    position: static;
+  }
+
+  .about__content h3 {
+    margin-bottom: 57px;
+    font-size: 35px;
+    line-height: 100%;
+
+    &::before {
+      content: "О нас";
+      font-size: 55px;
+      line-height: 55px;
+    }
   }
 }

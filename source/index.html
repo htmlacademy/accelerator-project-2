@@ -735,11 +735,14 @@
           <div class="about__photo">
             <picture>
               <source
-                media="(min-width:1439px)"
-                srcset="./img/about-desktop.png" />
+                media="(max-width:767px)"
+                srcset="./img/about-mobile.png" />
               <source
-                media="(min-width:767px)"
+                media="(max-width:1339px)"
                 srcset="./img/about-tablet.png" />
+              <source
+                media="(max-width:3000px)"
+                srcset="./img/about-desktop.png" />
               <img
                 src="./img/about-mobile.png"
                 alt="Фото с нашего восхождения на гору высокую"

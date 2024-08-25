@@ -3,20 +3,6 @@
   display: none !important;
 }
 
-.tours-swiper-button-prev.swiper-button-disabled,
-.tours-swiper-button-next.swiper-button-disabled {
-  opacity: 1 !important;
-}
-
-.tours-swiper-button-prev {
-  top: 74px !important;
-  left: 650px !important;
-}
-.tours-swiper-button-next {
-  top: 74px !important;
-  left: 691px !important;
-}
-
 .instructor-swiper-button-next {
   // position: absolute !important;
   right: -35px !important;
@@ -62,22 +48,36 @@
   .swiper-button-next {
     display: initial !important;
   }
-}
 
-.swiper-button-prev::after {
-  // display: initial;
-  width: 37px !important;
-  height: 35px !important;
-  content: url(../../img/sprite/button-prev.svg) !important;
-  position: absolute;
-}
+  .tours-swiper-button-prev.swiper-button-disabled,
+  .tours-swiper-button-next.swiper-button-disabled {
+    opacity: 1 !important;
+  }
 
-.swiper-button-next::after {
-  // display: initial;
-  width: 37px !important;
-  height: 35px !important;
-  content: url(../../img/sprite/button-nxt.svg) !important;
-  position: absolute;
+  .tours-swiper-button-prev {
+    top: 74px !important;
+    left: 650px !important;
+  }
+  .tours-swiper-button-next {
+    top: 74px !important;
+    left: 691px !important;
+  }
+
+  .swiper-button-prev::after {
+    display: initial;
+    width: 37px !important;
+    height: 35px !important;
+    content: url(../../img/sprite/button-prev.svg) !important;
+    position: absolute;
+  }
+
+  .swiper-button-next::after {
+    display: initial;
+    width: 37px !important;
+    height: 35px !important;
+    content: url(../../img/sprite/button-nxt.svg) !important;
+    position: absolute;
+  }
 }
 
 @media (min-width: 1440px) {

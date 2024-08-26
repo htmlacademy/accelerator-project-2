@@ -1,7 +1,7 @@
 @import "../vars";
 
 .advantages {
-  padding: 15px 15px 20px;
+  padding: 13px 15px 20px;
   background-color: $white;
 }
 
@@ -14,6 +14,7 @@
     content: "Преимущества";
     position: absolute;
     top: -15px;
+    right: 36px;
     opacity: 0.03;
     font-size: 26px;
     line-height: 26px;
@@ -71,7 +72,18 @@
 }
 
 .advantages__icon {
-  height: 42px;
+  padding: 8px 8px;
+  border: 1px solid $accent-blue;
+  height: 24px;
+  width: 24px;
+}
+
+.advantages-slide-5 h4 {
+  margin-left: -4px;
+}
+
+.advantages-slide-5 br ~ span {
+  margin-left: 4px;
 }
 
 @media (min-width: 768px) {
@@ -86,7 +98,7 @@
       font-size: 40px;
       font-weight: 800;
       line-height: 40px;
-      left: 201px;
+      left: 34px;
     }
   }
 
@@ -97,41 +109,83 @@
     gap: 30px;
   }
 
-  // .swiper-slide .advantages-swiper-slide {
-  //   width: 324px !important;
-  // }
-
   .advantages-swiper .swiper-slide {
     width: 324px !important;
     height: 340px;
   }
 
   .advantages-slide__wrapper {
-    padding: 30px 20px;
+    padding: 29px 20px;
     border: 1px solid rgba(2, 102, 193, 0.1);
     width: 324px;
     height: 340px;
-  }
-
-  .advantages__icon {
-    width: 48px;
-    height: 48px;
-  }
-  .advantages__icon svg {
-    width: 48px;
-    height: 48px;
   }
 
   .advantages-slide h4 {
     font-size: 16px;
     line-height: 16px;
     width: 260px;
-    margin-top: 25px;
+    margin-top: 26px;
+    margin-bottom: 14px;
   }
 
   .advantages-slide p {
     font-size: 14px;
     line-height: 22px;
     width: 285px;
+  }
+
+  .advantages__icon {
+    padding: 12px 11px 10px;
+    border: 1px solid $accent-blue;
+    height: 24px;
+    width: 24px;
+  }
+
+  .advantages-slide-5 h4 {
+    margin-left: -4px;
+  }
+
+  .advantages-slide-5 br ~ span {
+    margin-left: 4px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .advantages {
+    padding: 99px 0;
+    // position: relative !important;
+  }
+
+  .advantages__inner {
+    position: relative;
+  }
+
+  .advantages-swiper .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .advantages__title {
+    margin-bottom: 50px;
+
+    &::before {
+      font-size: 55px;
+      line-height: 55px;
+      left: 490px;
+      top: -29px;
+    }
+  }
+
+  .advantages-slide__wrapper {
+    padding: 40px 20px;
+    border: 1px solid rgba(2, 102, 193, 0.1);
+    width: 380px;
+    height: 329px;
+    box-sizing: border-box;
+  }
+
+  .advantages-swiper .swiper-slide {
+    width: 380px !important;
+    height: 329px;
   }
 }

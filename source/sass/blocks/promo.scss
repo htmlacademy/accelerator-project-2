@@ -181,7 +181,6 @@
   .promo-slide {
     height: 100%;
     align-items: flex-start;
-    // justify-content: flex-start;
   }
 
   .promo-slide h2 {
@@ -244,11 +243,13 @@
     align-items: flex-start;
   }
 
-  .promo-slide__photo-cards img {
-    lement.style {
-      position: absolute;
-      top: 163px;
-      right: 117px;
-    }
+  .promo-slide__photo-cards {
+    position: absolute;
+    top: 188px;
+    right: 120px;
+  }
+
+  .slide-2 .promo-slide h2 {
+    margin-top: 46px;
   }
 }

@@ -91,7 +91,6 @@
   display: flex;
   gap: 11px;
   align-items: center;
-  // justify-content: center;
 }
 
 .training__process {
@@ -192,7 +191,6 @@
     font-weight: 400;
     line-height: 24px;
     width: 680px;
-    // position: relative;
     margin-bottom: 31px;
   }
 
@@ -224,21 +222,16 @@
     width: 178px;
   }
 
-  .instructor-swiper-button-next {
-    // position: absolute !important;
-    right: -35px !important;
-    top: 254px !important;
-  }
+  // .instructor-swiper-button-next {
+  //   // position: absolute !important;
+  //   right: -35px !important;
+  //   top: 254px !important;
+  // }
 
-  .instructor-swiper-button-prev {
-    left: -34px !important;
-    top: 254px !important;
-  }
-
-  .instructor-swiper-button-prev.swiper-button-disabled,
-  .instructor-swiper-button-next.swiper-button-disabled {
-    opacity: 1 !important;
-  }
+  // .instructor-swiper-button-prev {
+  //   left: -34px !important;
+  //   top: 254px !important;
+  // }
 
   .text-br {
     display: initial;

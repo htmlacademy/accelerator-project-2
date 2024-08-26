@@ -779,11 +779,14 @@
                       <div class="reviews-photo">
                         <picture>
                           <source
-                            media="(min-width:1439px)"
-                            srcset="./img/review-1-desktop.png" />
+                            media="(max-width:767px)"
+                            srcset="./img/review-1.png" />
                           <source
-                            media="(min-width:767px)"
+                            media="(max-width:1439px)"
                             srcset="./img/review-1-tablet.png" />
+                          <source
+                            media="(max-width:3000px)"
+                            srcset="./img/review-1-desktop.png" />
                           <img src="./img/review-1.png" alt="фото участника"
                         /></picture>
                       </div>
@@ -816,11 +819,14 @@
                       <div class="reviews-photo">
                         <picture>
                           <source
-                            media="(min-width:1439px)"
-                            srcset="./img/review-2-desktop.png" />
+                            media="(max-width:767px)"
+                            srcset="./img/review-2.png" />
                           <source
-                            media="(min-width:767px)"
+                            media="(max-width:1439px)"
                             srcset="./img/review-2-tablet.png" />
+                          <source
+                            media="(max-width:3000px)"
+                            srcset="./img/review-2-desktop.png" />
                           <img src="./img/review-2.png" alt="фото участника"
                         /></picture>
                       </div>
@@ -856,11 +862,14 @@
                       <div class="reviews-photo">
                         <picture>
                           <source
-                            media="(min-width:1439px)"
-                            srcset="./img/review-3-desktop.png" />
+                            media="(max-width:767px)"
+                            srcset="./img/review-3.png" />
                           <source
-                            media="(min-width:767px)"
+                            media="(max-width:1439px)"
                             srcset="./img/review-3-tablet.png" />
+                          <source
+                            media="(max-width:3000px)"
+                            srcset="./img/review-3-desktop.png" />
                           <img src="./img/review-3.png" alt="фото участника"
                         /></picture>
                       </div>
@@ -897,11 +906,14 @@
                       <div class="reviews-photo">
                         <picture>
                           <source
-                            media="(min-width:1439px)"
-                            srcset="./img/review-4-desktop.png" />
+                            media="(max-width:767px)"
+                            srcset="./img/review-4.png" />
                           <source
-                            media="(min-width:767px)"
+                            media="(max-width:1439px)"
                             srcset="./img/review-4-tablet.png" />
+                          <source
+                            media="(max-width:3000px)"
+                            srcset="./img/review-4-desktop.png" />
                           <img src="./img/review-4.png" alt="фото участника"
                         /></picture>
                       </div>
@@ -943,7 +955,7 @@
                   <div class="advantages-slide__wrapper">
                     <div class="advantages-slide advantages-slide-1">
                       <div class="advantages__icon">
-                        <svg width="42" height="42">
+                        <svg width="24" height="24">
                           <use href="/__spritemap#sprite-adv-safety"></use>
                         </svg>
                       </div>
@@ -961,8 +973,8 @@
                   <div class="advantages-slide__wrapper">
                     <div class="advantages-slide advantages-slide-2">
                       <div class="advantages__icon">
-                        <svg width="42" height="42">
-                          <use href="/__spritemap#sprite-adv-knoledge"></use>
+                        <svg width="24" height="24">
+                          <use href="/__spritemap#sprite-adv-crown"></use>
                         </svg>
                       </div>
                       <h4>Экспертиза и знания</h4>
@@ -980,8 +992,8 @@
                   <div class="advantages-slide__wrapper">
                     <div class="advantages-slide advantages-slide-3">
                       <div class="advantages__icon">
-                        <svg width="42" height="42">
-                          <use href="/__spritemap#sprite-adv-equipment"></use>
+                        <svg width="24" height="24">
+                          <use href="/__spritemap#sprite-adv-boot"></use>
                         </svg>
                       </div>
                       <h4>Оборудование и снаряжение</h4>
@@ -999,7 +1011,7 @@
                   <div class="advantages-slide__wrapper">
                     <div class="advantages-slide advantages-slide-4">
                       <div class="advantages__icon">
-                        <svg width="42" height="42">
+                        <svg width="24" height="24">
                           <use href="/__spritemap#sprite-adv-routs"></use>
                         </svg>
                       </div>
@@ -1017,16 +1029,11 @@
                   <div class="advantages-slide__wrapper">
                     <div class="advantages-slide advantages-slide-5">
                       <div class="advantages__icon">
-                        <svg width="42" height="42">
-                          <use
-                            href="/__spritemap#sprite-adv-nature-friend"
-                          ></use>
+                        <svg width="24" height="24">
+                          <use href="/__spritemap#sprite-adv-leaf"></use>
                         </svg>
                       </div>
-                      <h4>
-                        Бережное отношение <br />
-                        к природе
-                      </h4>
+                      <h4>Бережное отношение <br /><span>к природе</span></h4>
                       <p>
                         Уделяем первостепенное внимание охране окружающей среды
                         и гарантируем, что туры оказывают минимальное
@@ -1037,9 +1044,9 @@
                   </div>
                 </div>
               </div>
-              <!-- If we need pagination -->
-              <!-- <div class="swiper-pagination"></div> -->
             </div>
+            <div class="advantages-swiper-button-prev swiper-button-prev"></div>
+            <div class="advantages-swiper-button-next swiper-button-next"></div>
           </div>
         </section>
         <section class="gallery" data-test="gallery" id="photo">
@@ -1047,7 +1054,7 @@
             <div class="gallery__info">
               <h3 class="gallery__title title">Фотогалерея</h3>
               <p>
-                Добавляйте фото с хэштегом #лайфтур ,<br />
+                Добавляйте фото с хэштегом #лайфтур,<br />
                 а также отмечайте нас на фото. Лучшие фотографии украсят этот
                 раздел нашего сайта.
               </p>
@@ -1139,8 +1146,6 @@
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </section>
         <section class="form" data-test="form">

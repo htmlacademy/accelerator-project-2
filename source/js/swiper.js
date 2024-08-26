@@ -97,12 +97,15 @@ const swiperReviews = new Swiper(".reviews-swiper", {
   loop: false,
   breakpoints: {
     768: {
-      slidesPerView: 1.26,
+      slidesPerView: 1.276,
       spaceBetween: 30,
       allowTouchMove: true,
     },
+    1440: {
+      slidesPerView: 1.75,
+      spaceBetween: 124,
+    },
   },
-
   scrollbar: {
     el: ".reviews-swiper-scrollbar",
   },
@@ -116,14 +119,18 @@ const swiperReviews = new Swiper(".reviews-swiper", {
 const swiperAdvantages = new Swiper(".advantages-swiper", {
   init: false,
   breakpoints: {
+    320: {
+      init: false,
+    },
+
     768: {
-      disable: true,
+      init: false,
     },
 
     1440: {
       init: true,
-      slidesPerView: 2,
-      spaceBetween: 10,
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
   },
 
@@ -135,8 +142,9 @@ const swiperAdvantages = new Swiper(".advantages-swiper", {
     el: ".advantages-swiper-scrollbar",
   },
 
-  pagination: {
-    el: ".advantages-pagination",
+  navigation: {
+    nextEl: ".advantages-swiper-button-next",
+    prevEl: ".advantages-swiper-button-prev",
   },
 });
 

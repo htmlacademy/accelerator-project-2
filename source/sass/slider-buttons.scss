@@ -62,13 +62,13 @@
   }
 
   .gallery-swiper-button-prev {
-    top: 164px !important;
-    left: 646px !important;
+    top: 81.5% !important;
+    left: 84% !important;
   }
 
   .gallery-swiper-button-next {
-    top: 164px !important;
-    left: 686px !important;
+    top: 81.5% !important;
+    left: 89.3% !important;
   }
 }
 
@@ -104,7 +104,7 @@
 
   .advantages-swiper-button-prev,
   .advantages-swiper-button-next {
-    display: initial;
+    display: initial !important;
     opacity: 1 !important;
   }
 
@@ -113,5 +113,20 @@
     width: 37px !important;
     height: 35px !important;
     content: url(../img/sprite/prev-blue.svg) !important;
+  }
+
+  .advantages-swiper-button-prev {
+    top: 116.7% !important;
+    left: 47.3% !important;
+  }
+
+  .advantages-swiper-button-next {
+    top: 116.7% !important;
+    right: 48% !important;
+  }
+
+  .gallery-swiper-button-prev,
+  .gallery-swiper-button-next {
+    display: none !important;
   }
 }

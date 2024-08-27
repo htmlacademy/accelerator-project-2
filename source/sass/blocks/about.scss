@@ -60,7 +60,14 @@
     z-index: -1;
     position: absolute;
     top: 156px;
-    // width: 100%;
+    width: 542px;
+  }
+
+  .about__content h3 {
+    &::before {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   .about__content {
@@ -115,6 +122,7 @@
       content: "О нас";
       font-size: 55px;
       line-height: 55px;
+      top: -37px;
     }
   }
 

@@ -149,16 +149,19 @@ const swiperAdvantages = new Swiper(".advantages-swiper", {
 });
 
 const swiperGallery = new Swiper(".gallery-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 5,
   modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: true,
+  slidesPerView: 2,
+  spaceBetween: 5,
   breakpoints: {
     768: {
-      disable: true,
       slidesPerView: 3,
       spaceBetween: 5,
+      enabled: true,
+    },
+    1440: {
+      enabled: false,
     },
   },
 

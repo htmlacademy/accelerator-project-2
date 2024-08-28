@@ -1,4 +1,4 @@
-import Swiper from "swiper/bundle";
+import Swiper from 'swiper/bundle';
 import 'swiper/scss';
 
 new Swiper('#swiper-reviews', {
@@ -8,16 +8,14 @@ new Swiper('#swiper-reviews', {
   },
   breakpoints: {
     320: {
-      spaceBetween: 20,
       slidesPerView: 1,
     },
     768: {
-      spaceBetween: 30,
-      slidesPerView: 1.29,
+      slidesPerView: 1.65,
     },
     1440: {
       spaceBetween: 120,
-      slidesPerView: 1.7,
+      slidesPerView: 1.82,
     }
   }
-})
+});

@@ -164,6 +164,7 @@
   margin: 0;
   padding: 17px 15px;
   border: none;
+  border-radius: 2px;
   background: $base-white;
   appearance: textfield;
 
@@ -176,19 +177,19 @@
   }
 
   &:hover {
-    opacity: 1;
+    outline: 1px solid $bg;
   }
 
   &:focus {
-    height: 35px;
-    padding: 0 0 0 4px;
-    margin: -7px 0 -3px -4px;
-    outline: 1px solid $base-white;
-    opacity: 1;
+    outline: 1px solid $base-dark;
+  }
+
+  &:active {
+    color: 1px solid $bg-alt;
   }
 
   &:disabled {
-    opacity: 0.4;
+    outline: 1px solid $base-light;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -199,4 +200,27 @@
   @media (min-width: $min-width-desktop) {
     width: 360px;
   }
+}
+
+.form__input--phone.error {
+  border-bottom: 1px solid #ff121f;
+}
+
+.form__input--email.error {
+  border-bottom: 1px solid #ff121f;
+}
+
+.form__input::placeholder {
+  opacity: 0;
+}
+
+.form__input:focus::placeholder {
+  color: $bg;
+  opacity: 1;
+}
+
+.form__input:focus + .form__text-position,
+.form__input:required:valid + .form__text-position {
+  display: none;
+  opacity: 0;
 }

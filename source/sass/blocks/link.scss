@@ -16,18 +16,6 @@
   }
 
   &:disabled {
-    background: #999999;
+    background: $base-light;
   }
 }
-
-
-// .swiper-button-prev::after {
-//   display: none;
-//   content: "";
-//   max-height: 30px;
-// }
-
-// .swiper-button-next::after
-// .swiper-button-prev::after {
-//   content: "";
-// }

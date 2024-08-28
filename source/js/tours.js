@@ -1,4 +1,4 @@
-import Swiper from "swiper/bundle";
+import Swiper from 'swiper/bundle';
 import 'swiper/scss';
 
 new Swiper('#swiper-tours', {
@@ -12,6 +12,7 @@ new Swiper('#swiper-tours', {
       slidesPerView: 1,
     },
     768: {
+      spaceBetween: 18,
       slidesPerView: 2,
     },
     1440: {
@@ -19,7 +20,7 @@ new Swiper('#swiper-tours', {
       slidesPerView: 3,
     }
   }
-})
+});
 
 // const optionsTours = {
 //   slidesPerView: 1,

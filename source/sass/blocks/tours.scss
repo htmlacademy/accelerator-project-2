@@ -1,5 +1,6 @@
 .tours {
   position: relative;
+  width: $min-width-mobile;
   padding: 20px 15px;
 
   &::after {
@@ -16,6 +17,7 @@
 
   @media (min-width: $min-width-tablet) {
     padding: 40px 45px;
+    width: $min-width-tablet;
 
     &::after {
       position: absolute;
@@ -32,12 +34,27 @@
 
   @media (min-width: $min-width-desktop) {
     padding: 100px 120px;
+    width: $min-width-desktop;
 
     &::after {
       top: -126px;
       width: 602px;
       background-image: image-set("../../img/background1-desktop.png" 1x, "../../img/background1-desktop@2x.png" 2x, "../../img/background1-desktop.webp" 1x, "../../img/background1-desktop@2x.webp" 2x);
     }
+  }
+}
+
+.tours__container {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $min-width-tablet) {
+    width: 678px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 1200px;
   }
 }
 
@@ -56,20 +73,10 @@
 
 .tours__title-background {
   position: absolute;
-  top: 23px;
-  left: 15px;
+  top: -15px;
+  left: 0;
   margin: 0;
   opacity: 3%;
-
-  @media (min-width: $min-width-tablet) {
-    top: 45px;
-    left: 45px;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    top: 106px;
-    left: 120px;
-  }
 }
 
 .tours__wrapper-card {
@@ -404,7 +411,7 @@
   }
 
   &:disabled {
-    color: #999999;
+    color: $base-light;
   }
 
   &:hover::after {
@@ -421,7 +428,7 @@
   }
 
   &:disabled::after {
-    background-color: #999999;
+    background-color: $base-light;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -445,12 +452,7 @@
   }
 }
 
-.tours__button-prev {
-  background-color: #999999;
-}
-
 .tours__button-next {
-  background-color: $bg;
   transform: rotate(180deg);
 }
 
@@ -467,14 +469,14 @@
 
   @media (min-width: $min-width-tablet) {
     position: absolute;
-    top: 60px;
-    right: 45px;
+    top: 0;
+    right: 0;
     display: flex;
     gap: 4px;
   }
 
   @media (min-width: $min-width-desktop) {
-    top: 120px;
-    right: 120px;
+    top: -3px;
+    right: 0;
   }
 }

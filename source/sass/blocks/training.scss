@@ -1,14 +1,45 @@
 .training {
-  position: relative;
   padding: 20px 15px;
   overflow: hidden;
 
   @media (min-width: $min-width-tablet) {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     padding: 40px 45px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 612px;
+      right: -375px;
+      width: 840px;
+      height: 280px;
+      background-image: image-set("../../img/background4-tablet.png" 1x, "../../img/background4-tablet@2x.png" 2x, "../../img/background4-tablet.webp" 1x, "../../img/background4-tablet@2x.webp" 2x);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
     padding: 40px 120px 64px;
+
+    &::after {
+      right: -206px;
+    }
+  }
+}
+
+.training__container {
+  position: relative;
+
+  @media (min-width: $min-width-tablet) {
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 1200px;
   }
 }
 
@@ -34,24 +65,19 @@
 
   @media (min-width: $min-width-tablet) {
     position: absolute;
-    top: 218px;
-    right: 45px;
+    top: 178px;
+    right: 0;
     display: flex;
     gap: 4px;
   }
 
   @media (min-width: $min-width-desktop) {
-    top: 236px;
-    right: 120px;
+    top: 196px;
+    right: 0;
   }
 }
 
-.training__button-prev {
-  background-color: #999999;
-}
-
 .training__button-next {
-  background-color: $bg;
   transform: rotate(180deg);
 }
 
@@ -67,19 +93,13 @@
 
 .training__title-background {
   position: absolute;
-  top: 20px;
-  left: 15px;
+  top: 0;
+  left: 0;
   margin: 0;
   opacity: 3%;
 
   @media (min-width: $min-width-tablet) {
-    top: 45px;
-    left: 45px;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    top: 47px;
-    left: 120px;
+    top: 5px;
   }
 }
 
@@ -167,13 +187,17 @@
     line-height: 16px;
   }
 
+  div {
+    overflow: hidden;
+  }
+
   @media (min-width: $min-width-tablet) {
     width: 212px;
     min-height: 388px;
     background-color: $base-white;
 
     h5 {
-      margin: 17px 0 14px;
+      margin: 16px 0 14px;
     }
 
     p {
@@ -200,7 +224,7 @@
   width: 22px;
   height: 22px;
   padding: 4px;
-  outline: 1px solid rgba(45, 56, 63, 0.3);
+  outline: 1px solid $outline;
   color: $base-dark;
 
   &:hover {
@@ -218,8 +242,8 @@
   }
 
   &:disabled {
-    outline: 1px solid rgba(45, 56, 63, 0.3);
-    color: rgba(45, 56, 63, 0.3);
+    outline: 1px solid $outline;
+    color: $outline;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -446,17 +470,19 @@
 .training__image {
   display: block;
   height: 200px;
+  background: $base-light;
 
   @media (min-width: $min-width-tablet) {
     position: relative;
-    top: 1px;
+    top: 0;
+    right: 0;
     display: block;
     width: 182.5px;
-    height: 200px;
-    overflow: hidden;
+    height: 201px;
   }
 
   @media (min-width: $min-width-desktop) {
+    top: 1px;
     width: 255px;
   }
 }

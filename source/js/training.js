@@ -1,4 +1,4 @@
-import Swiper from "swiper/bundle";
+import Swiper from 'swiper/bundle';
 import 'swiper/scss';
 
 new Swiper('#swiper-training', {
@@ -10,14 +10,16 @@ new Swiper('#swiper-training', {
     320: {
       spaceBetween: 15,
       slidesPerView: 1,
+      initialSlide: 2,
     },
     768: {
       spaceBetween: 20,
       slidesPerView: 3,
+      initialSlide: 0,
     },
     1440: {
       spaceBetween: 20,
       slidesPerView: 4,
     }
   }
-})
+});

@@ -1,18 +1,22 @@
 .hero {
-  height: 568px;
+  position: relative;
+  min-height: 568px;
   margin: 0 auto;
+  background: $bg;
 
   @media (min-width: $min-width-tablet) {
-    height: 1034px;
+    min-height: 1034px;
   }
 
   @media (min-width: $min-width-desktop) {
-    height: 800px;
+    min-height: 800px;
   }
 }
 
 .hero__picture {
+  display: block;
   height: 568px;
+  background: $base-light;
 
   @media (min-width: $min-width-tablet) {
     height: 1034px;
@@ -29,12 +33,12 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 320px;
+  width: $min-width-mobile;
   margin: 0 auto;
   color: $base-white;
   list-style: none;
 
-  h1 {
+  h2 {
     margin: 0;
     margin-bottom: 15px;
     font-weight: 800;
@@ -51,7 +55,20 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    h1 {
+    position: relative;
+
+    &:nth-last-of-type(2)::after {
+      position: absolute;
+      content: "";
+      bottom: 36px;
+      left: 21%;
+      width: 442px;
+      height: 365px;
+      background-image: image-set("../../img/photo-cards-tablet.png" 1x, "../../img/photo-cards-tablet@2x.png" 2x, "../../img/photo-cards-tablet.webp" 1x, "../../img/photo-cards-tablet@2x.webp" 2x);
+      background-repeat: no-repeat;
+    }
+
+    h2 {
       margin-bottom: 13px;
       line-height: 56px;
       font-size: 56px;
@@ -66,11 +83,21 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    width: 1440px;
+    width: $min-width-desktop;
 
-    h1 {
+    &:nth-last-of-type(2)::after {
+      position: absolute;
+      content: "";
+      bottom: 160px;
+      left: 910px;
+      width: 410px;
+      height: 459px;
+      background-image: image-set("../../img/photo-cards-desktop.png" 1x, "../../img/photo-cards-desktop@2x.png" 2x, "../../img/photo-cards-desktop.webp" 1x, "../../img/photo-cards-desktop@2x.webp" 2x);
+    }
+
+    h2 {
       text-align: start;
-      width: 780px;
+      width: 921px;
       margin-bottom: 23px;
       line-height: 77px;
       font-size: 77px;
@@ -104,19 +131,20 @@
   position: absolute;
   content: "";
   top: 0;
-  padding: 145px 0 160px;
+  padding: 145px 15px 160px;
 
   br {
     display: none;
   }
 
   @media (min-width: $min-width-tablet) {
-    padding: 342px 0 401px;
+    padding: 342px 45px 401px;
   }
 
   @media (min-width: $min-width-desktop) {
     left: 120px;
     padding: 200px 0 257px;
+    z-index: 1;
 
     br {
       display: block;
@@ -209,7 +237,7 @@
 .hero__wrapper-pagination {
   position: absolute;
   content: "";
-  bottom: -17px;
+  bottom: 40px;
   left: 116px;
   display: flex;
   justify-content: space-between;
@@ -217,13 +245,13 @@
   z-index: 1;
 
   @media (min-width: $min-width-tablet) {
-    bottom: -465px;
+    bottom: 40px;
     left: 334px;
     width: 100px;
   }
 
   @media (min-width: $min-width-desktop) {
-    bottom: 39px;
+    bottom: 92px;
     left: 1220px;
   }
 }
@@ -233,6 +261,7 @@
   height: 16px;
   border-radius: 50%;
   border: 1px solid $base-white;
+  opacity: 1;
   background: inherit;
   cursor: pointer;
 

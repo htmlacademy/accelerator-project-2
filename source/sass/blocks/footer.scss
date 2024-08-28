@@ -13,8 +13,18 @@
 
 .footer__contacts {
   position: relative;
-  padding: 20px 0 19px;
-  border-bottom: 1px solid rgba(45, 56, 63, 0.2);
+  padding: 20px 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    min-width: $min-width-mobile;
+    margin: 0;
+    height: 1px;
+    background: rgba(45, 56, 63, 0.2);
+  }
 
   p {
     width: 295px;
@@ -23,6 +33,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  @media (min-width: $min-width-mobile) {
+    &::before {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+    }
   }
 
   @media (min-width: $min-width-tablet) {
@@ -59,7 +76,7 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    top: 47px;
+    top: 106px;
     left: 120px;
   }
 }
@@ -110,7 +127,7 @@
   min-height: 42px;
   margin-left: 32px;
 
-  h6 {
+  h5 {
     margin: 0;
     font-weight: 600;
     font-size: 14px;
@@ -123,7 +140,7 @@
     max-height: 44px;
     gap: 6px;
 
-    h6 {
+    h5 {
       font-size: 16px;
       line-height: 16px;
     }
@@ -137,7 +154,7 @@
     width: 290px;
     gap: 10px;
 
-    h6 {
+    h5 {
       font-size: 18px;
       line-height: 18px;
     }
@@ -275,7 +292,7 @@
 
 .footer__contacts-map {
   position: relative;
-  width: 320px;
+  width: $min-width-mobile;
   height: 343px;
   background: $bg;
   z-index: 0;
@@ -295,7 +312,7 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    width: 768px;
+    width: $min-width-tablet;
     height: 340px;
 
     &::after {
@@ -328,7 +345,7 @@
   padding: 23px 0 20px;
 
   @media (min-width: $min-width-tablet) {
-    padding: 34px 45px;
+    padding: 35px 45px 20px;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -361,7 +378,7 @@
 .footer__nav-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: $min-width-mobile;
   padding: 0 0 20px;
 
   @media (min-width: $min-width-tablet) {
@@ -409,36 +426,10 @@
   text-align: center;
   list-style: none;
 
-  &:hover {
-    margin-bottom: -1px;
-    border-bottom: 1px solid $base-dark;
-  }
-
-  &:active {
-    margin-bottom: 0;
-    border-bottom: none;
-  }
-
-  &:focus {
-    outline: 1px solid $base-dark;
-  }
-
-  &:disabled {
-    background: #999999;
-  }
-
   @media (min-width: $min-width-tablet) {
     min-width: 0;
     padding: 3px 5px;
   }
-}
-
-.footer__nav-item--two {
-  grid-row: 2 / 3;
-}
-
-.footer__nav-item--three {
-  grid-row: 3 / 4;
 }
 
 .footer__nav-link {
@@ -448,8 +439,23 @@
   text-decoration: none;
   color: $base-dark;
 
+  &:hover {
+    margin-bottom: -1px;
+    border-bottom: 1px solid $base-dark;
+  }
+
   &:active {
+    margin-bottom: 0;
+    border-bottom: none;
     color: $bg;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $base-dark;
+  }
+
+  &:disabled {
+    background: $base-light;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -490,38 +496,68 @@
     color: $base-dark;
     font-style: normal;
     height: 45px;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.1);
+    }
+
+    &:focus {
+      color: $bg;
+    }
+
+    &:active {
+      color: $bg-alt;
+    }
+
+    &:disabled {
+      color: $base-light;
+    }
   }
 }
 
 .footer__nav-item-social {
   position: relative;
-  outline: 1px solid rgba(45, 56, 63, 0.3);
   width: 32px;
   height: 30px;
   list-style: none;
 
-  &:hover {
-    outline: 1px solid $base-dark;
-  }
+  a {
+    display: block;
+    width: 32px;
+    height: 30px;
+    outline: 1px solid $outline;
 
-  &:focus {
-    outline: 1px solid inherit;
-  }
+    &:hover {
+      outline: 1px solid $base-dark;
+    }
 
-  &:active {
-    border: 1px solid $bg;
-    background: $bg;
-    color: $base-white;
-  }
+    &:focus {
+      outline: $base-white;
+    }
 
-  &:disabled {
-    outline: 1px solid rgba(45, 56, 63, 0.3);
-    color: rgba(45, 56, 63, 0.3);
+    &:active {
+      border: 1px solid $bg;
+      background: $bg;
+    }
+
+    &:disabled {
+      outline: 1px solid $outline;
+      color: $outline;
+    }
+
+    &:active svg {
+      color: $base-white;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
     width: 30px;
     height: 30px;
+
+    a {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 

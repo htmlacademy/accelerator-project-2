@@ -1,35 +1,67 @@
 .advantages {
   position: relative;
+  overflow: hidden;
 
   @media (min-width: $min-width-tablet) {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
+
+  @media (min-width: $min-width-desktop) {
+    height: 734px;
+    padding: 100px 0;
+  }
+}
+
+.advantages__container {
+  @media (min-width: $min-width-desktop) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__width {
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
+
     &::after {
       position: absolute;
       content: "";
-      top: 267px;
-      right: 0;
-      width: 768px;
-      height: 525px;
+      top: 765px;
+      right: -52px;
+      width: 620px;
+      height: 401px;
       background-image: image-set("../../img/background3-tablet.png" 1x, "../../img/background3-tablet@2x.png" 2x, "../../img/background3-tablet.webp" 1x, "../../img/background3-tablet@2x.webp" 2x);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 266px;
+      left: -284px;
+      width: 750px;
+      height: 301px;
+      background-image: image-set("../../img/background-tablet.png" 1x, "../../img/background-tablet@2x.png" 2x, "../../img/background-tablet.webp" 1x, "../../img/background-tablet@2x.webp" 2x);
       background-repeat: no-repeat;
       z-index: -1;
     }
   }
 
   @media (min-width: $min-width-desktop) {
-    height: 734px;
-    padding: 100px 0;
-    overflow: hidden;
+    position: relative;
 
     &::after {
-      position: absolute;
-      content: "";
-      top: -281px;
-      right: 0;
-      width: 1440px;
-      height: 447px;
-      background-image: image-set("../../img/background3-desktop.png" 1x, "../../img/background3-desktop@2x.png" 2x, "../../img/background3-desktop.webp" 1x, "../../img/background3-desktop@2x.webp" 2x);
-      background-repeat: no-repeat;
-      z-index: -1;
+      top: -198px;
+      right: -494px;
+    }
+
+    &::before {
+      top: -382px;
+      left: -486px;
     }
   }
 }
@@ -40,8 +72,10 @@
   text-align: center;
 
   @media (min-width: $min-width-tablet) {
-    margin: 0 0 11px;
+    position: relative;
+    margin: 0 auto 11px;
     padding-top: 60px;
+    width: 768px;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -66,8 +100,8 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    top: 106px;
-    left: 490px;
+    top: 6px;
+    left: 154px;
     font-size: 55px;
     line-height: 55px;
   }
@@ -82,20 +116,23 @@
   list-style: none;
 
   @media (min-width: $min-width-tablet) {
+    position: relative;
     max-width: 678px;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     column-gap: 30px;
     row-gap: 32px;
+    margin: 0 auto;
     padding: 50px 45px 39px;
   }
 
   @media (min-width: $min-width-desktop) {
     position: relative;
-    left: -305px;
+    right: -615px;
     flex-wrap: nowrap;
-    min-width: 2050px;
+    min-width: 100%;
+    max-width: 100%;
     padding: 50px 0;
   }
 }
@@ -122,8 +159,7 @@
     outline: 1px solid $bg;
   }
 
-  h6 {
-    // max-width: 249px;
+  h5 {
     margin: 62px 0 15px;
     padding: 0;
     font-weight: 600;
@@ -151,7 +187,7 @@
       height: 46px;
     }
 
-    h6 {
+    h5 {
       max-width: 284px;
       margin: 73px 0 15px;
       font-size: 16px;
@@ -176,7 +212,7 @@
       height: 52px;
     }
 
-    h6 {
+    h5 {
       max-width: 340px;
       margin: 84px 0 15px;
       font-size: 18px;
@@ -379,6 +415,16 @@
   }
 }
 
+.advantages__item:nth-last-of-type(1),
+.advantages__item:nth-last-of-type(2),
+.advantages__item:nth-last-of-type(3) {
+  display: none;
+
+  @media (min-width: $min-width-desktop) {
+    display: block;
+  }
+}
+
 // <!-- swiper -->
 .advantages__swiper-buttons {
   display: none;
@@ -396,12 +442,7 @@
   }
 }
 
-.advantages__button-prev {
-  background-color: $bg;
-}
-
 .advantages__button-next {
-  background-color: $bg;
   transform: rotate(180deg);
 }
 
@@ -412,5 +453,3 @@
   width: 13px;
   color: $base-white;
 }
-
-// <!-- swiper -->

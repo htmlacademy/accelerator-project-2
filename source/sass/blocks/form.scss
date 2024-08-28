@@ -124,3 +124,35 @@
     gap: 11px;
   }
 }
+
+@media (min-width: 1440px) {
+  .form {
+    height: 760px;
+    padding-top: 297px;
+    box-sizing: border-box;
+    background-image: url(../../img/form_desktop.png);
+    background-position: unset;
+  }
+
+  .form h3 {
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 16px;
+  }
+
+  .form p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    margin-bottom: 39.5px;
+  }
+
+  .form-sending {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .form-btn {
+    width: 180px;
+  }
+}

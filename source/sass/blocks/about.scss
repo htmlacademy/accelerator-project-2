@@ -101,12 +101,13 @@
 
 @media (min-width: 1440px) {
   .about {
-    padding: 100px 120px 100px 0;
+    padding: 101px 120px 100px 0;
     grid-template-columns: 50% 50%;
   }
 
   .about__photo img {
     position: static;
+    width: 100%;
   }
 
   .about__content {
@@ -129,7 +130,7 @@
   .about__content h4 {
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
 
   .about__content p {
@@ -139,7 +140,7 @@
   }
 
   .about__content p:first-of-type {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     margin-top: 14px;
     width: 571px;
   }
@@ -148,5 +149,9 @@
     font-size: 14px;
     line-height: 22px;
     width: 581px;
+  }
+
+  .about__content h4:last-of-type {
+    margin-bottom: 16px;
   }
 }

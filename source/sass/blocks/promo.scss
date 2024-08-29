@@ -68,21 +68,21 @@
   display: none;
 }
 
-.promo .swiper-pagination {
-  bottom: 36px !important;
+.promo .promo-swiper .swiper-pagination {
+  bottom: 36px ;
 }
 
-.promo .swiper-pagination-bullet {
-  width: 12px !important;
-  height: 12px !important;
-  background-color: transparent !important;
-  border: 2px solid $white !important;
-  opacity: 1 !important;
-  margin: 0 10px !important;
+.promo .promo-swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 12px ;
+  height: 12px ;
+  background-color: transparent ;
+  border: 2px solid $white ;
+  opacity: 1 ;
+  margin: 0 10px ;
 }
 
-.promo .swiper-pagination-bullet-active {
-  background-color: $white !important;
+.promo .promo-swiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: $white ;
 }
 
 .promo__tour-details {
@@ -144,9 +144,9 @@
     background-image: url("../../img/promo/promo-tablet-altay.png");
   }
 
-  .promo .swiper-pagination-bullet {
-    width: 16px !important;
-    height: 16px !important;
+  .promo .promo-swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -226,10 +226,10 @@
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: auto !important;
-    text-align: end !important;
-    right: 110px !important;
-    bottom: 88px !important;
+    width: auto;
+    text-align: end;
+    right: 110px;
+    bottom: 88px;
   }
 
   .slide-2 .promo-slide {

@@ -1,0 +1,132 @@
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev::after {
+    display: initial;
+    width: 37px !important;
+    height: 35px !important;
+    content: url(../../img/sprite/button-prev.svg) !important;
+    position: absolute;
+  }
+
+  .swiper-button-next::after {
+    display: initial;
+    width: 37px !important;
+    height: 35px !important;
+    content: url(../../img/sprite/button-nxt.svg) !important;
+    position: absolute;
+  }
+
+  .reviews-swiper-button-prev,
+  .reviews-swiper-button-next,
+  .instructor-swiper-button-prev,
+  .instructor-swiper-button-next,
+  .tours-swiper-button-prev,
+  .tours-swiper-button-next,
+  .gallery-swiper-button-prev,
+  .gallery-swiper-button-next {
+    display: initial !important;
+    opacity: 1 !important;
+  }
+
+  .tours-swiper-button-prev {
+    top: 74px !important;
+    left: 650px !important;
+  }
+
+  .tours-swiper-button-next {
+    top: 74px !important;
+    left: 691px !important;
+  }
+  .instructor-swiper-button-prev {
+    top: 11px !important;
+    left: 605px !important;
+  }
+
+  .instructor-swiper-button-next {
+    top: 11px !important;
+    left: 646px !important;
+  }
+
+  .reviews-swiper-button-prev {
+    top: 18.5px !important;
+    left: 645px !important;
+  }
+
+  .reviews-swiper-button-next {
+    top: 18.5px !important;
+    left: 686px !important;
+  }
+
+  .gallery-swiper-button-prev {
+    top: 81.5% !important;
+    left: 84% !important;
+  }
+
+  .gallery-swiper-button-next {
+    top: 81.5% !important;
+    left: 89.3% !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tours-swiper-button-next {
+    position: absolute !important;
+    top: 15px !important;
+    left: 1163px !important;
+  }
+
+  .tours-swiper-button-prev {
+    top: 15px !important;
+    left: 1122px !important;
+  }
+
+  .instructor-swiper-button-next {
+    left: 1163px !important;
+    top: 14.5px !important;
+  }
+
+  .instructor-swiper-button-prev {
+    left: 1122px !important;
+    top: 14.5px !important;
+  }
+
+  .reviews-swiper-button-next {
+    left: 1163px !important;
+  }
+
+  .reviews-swiper-button-prev {
+    left: 1123px !important;
+  }
+
+  .advantages-swiper-button-prev,
+  .advantages-swiper-button-next {
+    display: initial !important;
+    opacity: 1 !important;
+  }
+
+  .advantages-swiper-button-prev::after {
+    display: initial;
+    width: 37px !important;
+    height: 35px !important;
+    content: url(../img/sprite/prev-blue.svg) !important;
+  }
+
+  .advantages-swiper-button-prev {
+    top: 116.7% !important;
+    left: 47.3% !important;
+  }
+
+  .advantages-swiper-button-next {
+    top: 116.7% !important;
+    right: 48% !important;
+  }
+
+  .gallery-swiper-button-prev,
+  .gallery-swiper-button-next {
+    display: none !important;
+  }
+}

@@ -10,6 +10,11 @@
   background-position-x: -116px;
 }
 
+@media (min-width: 400px) and (max-width: 767px){
+  .form {background-position-x: 0;}
+
+}
+
 .form__inner {
   display: flex;
   flex-direction: column;

@@ -156,6 +156,11 @@
   margin: 0 auto;
 }
 
+ .footer__phone .phone-link{
+  display: none;
+ }
+
+
 @media (min-width: 768px) {
   .footer__contacts {
     padding: 60px 37px 40px 45px;
@@ -233,10 +238,19 @@
 
   .footer__nav-item {
     width: auto;
+    border-bottom: 1px solid transparent;
   }
 
   .footer__social-wrapper {
     margin-bottom: 34px;
+  }
+
+  .footer__nav-item:hover{
+     border-bottom: 1px solid $black;
+  }
+
+  .footer__nav-link:active {
+     color: $accent-blue;
   }
 }
 
@@ -295,4 +309,62 @@
   .footer__map {
     padding-top: 26px;
   }
+
+  .footer__down-content {
+    padding: 41px 120px 20px 149px;
+  }
+
+  .footer__phone .phone-link{
+      display: initial;
+      color: $black;
+  }
+
+  .footer__navigation-block {
+      justify-content: space-between;
+  }
+
+  .footer__nav-link {
+    color: rgb(45, 56, 63);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    display: block;
+  }
+
+  .footer__nav-link {
+    font-size: 16px;
+    line-height: 16px;
+ }
+
+  .footer__nav{
+      gap: 30px;
+      margin-left: -27px;
+ }
+
+  .footer__nav-list {
+       gap: 30px;
+  }
+
+  .footer__navigation-block {
+        margin-bottom: 27px;
+  }
+
+  .footer__social-wrapper {
+        margin-bottom: 22px;
+        margin-left: -29px;
+        gap: 13px;
+  }
+
+  .footer__confidential{
+      text-align: center;
+      padding-right: 28px;
+  }
+
+  .phone-link:hover{
+  color: rgba(2, 102, 193, 0.10)
+ }
+  .phone-link:active{
+  color: $active-dark;
+ }
 }

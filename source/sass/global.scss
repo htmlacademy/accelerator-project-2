@@ -2,6 +2,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -25,6 +26,20 @@ ul {
   font-weight: 800;
   line-height: 22px;
   position: relative;
+}
+
+.button {
+  cursor: pointer;
+
+  &:hover{
+    background-color: $white;
+    color: $active-dark;
+    border: 1px solid $active-dark;
+  }
+  &:active{
+    background-color: $active-dark;
+    color: $white;
+  }
 }
 
 @media (min-width: 768px) {

@@ -27,7 +27,9 @@ const swiper = new Swiper(".promo-swiper", {
 
 const swiperTours = new Swiper(".tours-swiper", {
   breakpoints: {
-    320: { allowTouchMove: true },
+    320: { allowTouchMove: true,
+      slidesPerView: 1,
+     },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,

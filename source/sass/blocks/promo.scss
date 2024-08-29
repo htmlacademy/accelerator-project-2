@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.promo-slide h2 {
+.promo-slide h1 {
   text-align: center;
   font-size: 26px;
   font-weight: 800;
@@ -106,13 +106,12 @@
     height: 934px;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     margin: 0 auto;
     box-sizing: border-box;
   }
 
-  .promo-slide h2 {
+  .promo-slide h1 {
     font-size: 56px;
     font-weight: 800;
     line-height: 56px;
@@ -183,7 +182,7 @@
     align-items: flex-start;
   }
 
-  .promo-slide h2 {
+  .promo-slide h1 {
     font-size: 77px;
     font-style: normal;
     font-weight: 800;
@@ -249,7 +248,7 @@
     right: 120px;
   }
 
-  .slide-2 .promo-slide h2 {
+  .slide-2 .promo-slide h1 {
     margin-top: 46px;
   }
 }

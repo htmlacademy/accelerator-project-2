@@ -161,14 +161,19 @@
   color: $black;
   font-size: 14px;
   font-weight: 700;
-  line-height: 14px; /* 100% */
+  line-height: 14px;
   letter-spacing: 0.56px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   gap: 10px;
   position: relative;
+
+  &::after{
+    content: url("../../img/sprite/right.svg");
+  }
 }
+
 
 .swiper-button-prev::after {
   display: none;

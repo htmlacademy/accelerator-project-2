@@ -25,14 +25,17 @@
   background-color: $white;
   width: 290px;
   box-sizing: border-box;
-  // height: 484px;
   margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
 }
 
 .reviews-slide {
   display: flex;
   flex-direction: column;
   gap: 19px;
+  text-decoration: none;
+  color:inherit;
 }
 
 .reviews-photo {

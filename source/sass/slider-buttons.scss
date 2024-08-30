@@ -1,36 +1,44 @@
 .swiper-button-prev,
 .swiper-button-next {
-  display: none !important;
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .swiper-button-prev::after {
+    .reviews__inner .reviews-swiper-button-prev::after,
+
+  .training__inner .instructor-swiper-button-prev::after,
+
+  .tours__inner .tours-swiper-button-prev::after,
+
+  .gallery__inner .gallery-swiper-button-prev::after {
     display: initial;
-    width: 37px !important;
-    height: 35px !important;
-    content: url(../../img/sprite/button-prev.svg) !important;
+    width: 37px;
+    height: 35px;
+    content: url(../../img/sprite/button-prev.svg);
     position: absolute;
   }
 
-  .swiper-button-next::after {
+     .reviews__inner .reviews-swiper-button-next::after,
+
+  .training__inner .instructor-swiper-button-next::after,
+
+  .tours__inner .tours-swiper-button-next::after,
+
+  .gallery__inner .gallery-swiper-button-next::after {
     display: initial;
-    width: 37px !important;
-    height: 35px !important;
-    content: url(../../img/sprite/button-nxt.svg) !important;
+    width: 37px;
+    height: 35px;
+    content: url(../../img/sprite/button-nxt.svg);
     position: absolute;
   }
 
-  .reviews-swiper-button-prev,
-  .reviews-swiper-button-next,
-  .instructor-swiper-button-prev,
-  .instructor-swiper-button-next,
-  .tours-swiper-button-prev,
-  .tours-swiper-button-next,
-  .gallery-swiper-button-prev,
-  .gallery-swiper-button-next {
-    display: initial !important;
-    opacity: 1 !important;
-  }
+  // .reviews-swiper-button-next,
+  // .instructor-swiper-button-prev,
+  // .instructor-swiper-button-next,
+  // .gallery-swiper-button-prev,
+  // .gallery-swiper-button-next {
+  //   // display: initial !important;
+  // }
 
   .tours-swiper-button-prev {
     top: 74px !important;

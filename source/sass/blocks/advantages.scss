@@ -117,8 +117,8 @@
     gap: 30px;
   }
 
-  .advantages-swiper .swiper-slide {
-    width: 324px !important;
+  .advantages__inner .advantages-swiper .swiper-slide {
+    width: 324px ;
     height: 340px;
   }
 
@@ -169,7 +169,7 @@
   }
 
   .advantages__inner {
-    position: relative !important;
+    position: relative;
   }
 
   .advantages-swiper .swiper-wrapper {
@@ -195,8 +195,8 @@
     box-sizing: border-box;
   }
 
-  .advantages-swiper .swiper-slide {
-    width: 380px !important;
+  .advantages__inner .advantages-swiper .swiper-slide {
+    width: 380px;
     height: 329px;
   }
 

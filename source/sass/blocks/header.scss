@@ -32,11 +32,26 @@
 
 .header__button {
   width: 26px;
+  height: 26px;
+  margin: 0;
+  background: none;
+  border: none;
+  mask-image: url("../__spritemap#sprite-burger-menu-view");
+  mask-repeat: no-repeat;
+  background-color: $base-white;
+
+  @media (min-width: $min-width-desktop) {
+    display: none;
+  }
+}
+
+.header__button.active.header__button {
+  width: 26px;
   height: 20px;
   margin: 3px 0;
   background: none;
   border: none;
-  mask-image: url("../__spritemap#sprite-menu-view");
+  mask-image: url("../__spritemap#sprite-close-view");
   mask-repeat: no-repeat;
   background-color: $base-white;
 
@@ -138,6 +153,7 @@
     align-items: center;
     height: 62px;
     padding: 0;
+    background: none;
   }
 }
 

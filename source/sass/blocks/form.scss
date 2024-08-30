@@ -202,12 +202,12 @@
   }
 }
 
-.form__input--phone.error {
-  border-bottom: 1px solid #ff121f;
+.form__input.error {
+  border: 1px solid #ff121f;
 }
 
-.form__input--email.error {
-  border-bottom: 1px solid #ff121f;
+.form__input:user-invalid {
+  border: 1px solid #ff121f;
 }
 
 .form__input::placeholder {

@@ -47,11 +47,17 @@
   }
 
   p {
+    max-height: 80px;
     margin: 0;
     margin-bottom: 80px;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
+    overflow: auto;
+  }
+
+  p::-webkit-scrollbar {
+    width: 0;
   }
 
   @media (min-width: $min-width-tablet) {

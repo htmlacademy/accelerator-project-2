@@ -174,6 +174,7 @@
   border: 1px solid rgba(2, 102, 193, 0.1);
 
   h5 {
+    max-width: 237px;
     margin: 16px 0 14px;
     font-weight: 700;
     font-size: 14px;
@@ -181,7 +182,7 @@
   }
 
   p {
-    margin: 0 0 -20px;
+    margin: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -219,7 +220,7 @@
 .training__social-link {
   position: absolute;
   content: "";
-  bottom: 103px;
+  top: 229px;
   right: 15px;
   width: 22px;
   height: 22px;
@@ -247,11 +248,7 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    bottom: 134px;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    bottom: 102px;
+    top: 230px;
   }
 }
 
@@ -278,7 +275,7 @@
   position: relative;
   display: grid;
   gap: 25px;
-  margin: 0 0 1px 63px;
+  margin: 0 0 1px;
   padding: 0;
   list-style: none;
 
@@ -286,7 +283,7 @@
     position: absolute;
     content: "";
     top: 22px;
-    left: -57px;
+    left: 6px;
     width: 2px;
     height: 183px;
     background: $bg;
@@ -320,6 +317,7 @@
 .training__item {
   position: relative;
   width: 201px;
+  margin-left: 63px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -337,6 +335,7 @@
 
   @media (min-width: $min-width-tablet) {
     width: 229px;
+    margin: 0;
     font-size: 14px;
     line-height: 22px;
 
@@ -373,8 +372,8 @@
     position: absolute;
     content: "";
     top: 1px;
-    left: -55px;
-    width: 68px;
+    left: -35px;
+    width: 25px;
     height: 25px;
     mask-image: url("../__spritemap#sprite-map-vector-view");
     mask-repeat: no-repeat;
@@ -396,8 +395,8 @@
     position: absolute;
     content: "";
     top: 1px;
-    left: -55px;
-    width: 68px;
+    left: -35px;
+    width: 25px;
     height: 25px;
     mask-image: url("../__spritemap#sprite-boots-view");
     mask-repeat: no-repeat;
@@ -421,8 +420,8 @@
     position: absolute;
     content: "";
     top: 1px;
-    left: -55px;
-    width: 68px;
+    left: -35px;
+    width: 25px;
     height: 25px;
     mask-image: url("../__spritemap#sprite-trees-view");
     mask-repeat: no-repeat;
@@ -446,8 +445,8 @@
     position: absolute;
     content: "";
     top: 1px;
-    left: -55px;
-    width: 68px;
+    left: -35px;
+    width: 25px;
     height: 25px;
     mask-image: url("../__spritemap#sprite-mountain-view");
     mask-repeat: no-repeat;

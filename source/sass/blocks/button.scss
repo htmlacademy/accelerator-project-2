@@ -10,7 +10,7 @@
     border: 1px solid $base-dark;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: $base-white;
   }
 
@@ -27,7 +27,7 @@
     color: $base-dark;
   }
 
-  &:focus svg {
+  &:focus-visible svg {
     color: $base-dark;
   }
 

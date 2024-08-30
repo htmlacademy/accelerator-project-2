@@ -232,21 +232,11 @@
 .tours__item-text--four {
   position: relative;
   top: -3px;
-  left: -4px;
   height: 16px;
   mask-image: url("../__spritemap#sprite-stars4-view");
-  mask-repeat: repeat;
+  mask-repeat: no-repeat;
+  width: 84px;
   background-color: $base-white;
-
-  @media (min-width: $min-width-tablet) {
-    left: -14px;
-    mask-image: url("../__spritemap#sprite-stars4-view");
-    mask-repeat: repeat;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    left: -26px;
-  }
 }
 
 .tours__item-text--three {
@@ -255,13 +245,12 @@
   left: -4px;
   height: 16px;
   mask-image: url("../__spritemap#sprite-stars3-view");
-  mask-repeat: repeat;
+  mask-repeat: no-repeat;
   background-color: $base-white;
 
   @media (min-width: $min-width-tablet) {
     left: -14px;
     mask-image: url("../__spritemap#sprite-stars3-view");
-    mask-repeat: repeat;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -275,13 +264,12 @@
   left: -4px;
   height: 16px;
   mask-image: url("../__spritemap#sprite-stars5-view");
-  mask-repeat: repeat;
+  mask-repeat: no-repeat;
   background-color: $base-white;
 
   @media (min-width: $min-width-tablet) {
     left: -14px;
     mask-image: url("../__spritemap#sprite-stars5-view");
-    mask-repeat: repeat;
   }
 
   @media (min-width: $min-width-desktop) {

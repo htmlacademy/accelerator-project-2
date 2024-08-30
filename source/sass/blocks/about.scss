@@ -1,0 +1,142 @@
+.about {
+  min-width: 320px;
+  padding: 20px 0 21px;
+  overflow: hidden;
+
+  @media (min-width: $min-width-mobile) {
+    width: 100%;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 48px 40px 0;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    justify-content: flex-start;
+    padding: 100px 195px 100px 0;
+  }
+}
+
+.about__picture {
+  display: block;
+  width: $min-width-mobile;
+  height: 400px;
+
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    top: 134px;
+    width: 450px;
+    height: 498px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    position: relative;
+    top: 0;
+    width: 660px;
+  }
+}
+
+.about__wrapper-text {
+  position: relative;
+  width: $min-width-mobile;
+  margin: 0;
+  padding: 0 15px;
+
+  h2 {
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    margin: 0;
+    opacity: 3%;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  h3 {
+    margin: 16px 0 43px;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  h4 {
+    margin: 27px 0 13px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 270px;
+    padding: 0;
+    margin-bottom: 2px;
+
+    h2 {
+      top: 7px;
+      left: 0;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    h3 {
+      margin: 20px 0 48px;
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    h4 {
+      margin: 29px 0 11px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 585px;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h2 {
+      top: 6px;
+      left: 0;
+      font-size: 55px;
+      line-height: 55px;
+    }
+
+    h3 {
+      margin: 45px 0 30px;
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    h4 {
+      margin: 29px 0 16px;
+      font-size: 21px;
+      line-height: 21px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

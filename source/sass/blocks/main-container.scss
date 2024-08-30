@@ -1,0 +1,14 @@
+.main-container {
+  flex-grow: 1;
+  width: $min-width-mobile;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $min-width-tablet) {
+    width: $min-width-tablet;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: $min-width-desktop;
+  }
+}

@@ -1,0 +1,15 @@
+.title-h4 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $min-width-tablet) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}

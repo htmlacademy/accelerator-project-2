@@ -49,7 +49,7 @@
     "w3c-html-validator": "1.7.0"
   },
   "dependencies": {
-    "swiper": "11.1.1"
+    "swiper": "^11.1.1"
   },
   "engines": {
     "node": "^18.18 || ^20.9"

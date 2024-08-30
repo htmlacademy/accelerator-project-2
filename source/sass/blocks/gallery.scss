@@ -1,0 +1,128 @@
+.gallery {
+  position: relative;
+  padding: 20px 0 3px;
+
+  p {
+    width: 290px;
+    margin: 0;
+    padding: 9px 15px 31px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    padding: 40px 0 3px;
+
+    p {
+      width: 430px;
+      padding: 20px 0 21px 45px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 100px 0 3px;
+
+    p {
+      width: 832px;
+      padding: 24px 120px 45px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+// <!-- swiper -->
+.gallery__swiper-buttons {
+  display: none;
+
+  @media (min-width: $min-width-tablet) {
+    position: absolute;
+    top: 146px;
+    right: 45px;
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    display: none;
+  }
+}
+
+.gallery__button-next {
+  transform: rotate(180deg);
+}
+
+.gallery__svg-color {
+  position: relative;
+  top: 1.5px;
+  right: 0.7px;
+  width: 13px;
+  color: $base-white;
+}
+
+// <!-- swiper -->
+.gallery__title {
+  width: 290px;
+  margin: 16px 0 18px;
+  padding: 0 15px;
+
+  @media (min-width: $min-width-tablet) {
+    margin: 20px 0 10px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 23px 0 0;
+    padding: 0 120px;
+  }
+}
+
+.gallery__title-background {
+  position: absolute;
+  top: 23px;
+  left: 15px;
+  margin: 0;
+  opacity: 3%;
+
+  @media (min-width: $min-width-tablet) {
+    top: 45px;
+    left: 45px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    top: 106px;
+    left: 120px;
+  }
+}
+
+.gallery__list {
+  max-height: 266px;
+
+  @media (min-width: $min-width-tablet) {
+    min-height: 418px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    min-height: 463px;
+  }
+}
+
+.gallery__item {
+  @media (min-width: $min-width-tablet) {
+    min-width: 253px;
+  }
+}
+
+.gallery__picture {
+  display: block;
+  height: 141px;
+  background: $bg-gradient-card;
+
+  @media (min-width: $min-width-tablet) {
+    height: 215px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    height: 240px;
+  }
+}

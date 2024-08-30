@@ -2,3 +2,29 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// @import "vendor/swiper";
+
+@import "common/variables";
+@import "common/global";
+@import "common/fonts";
+@import "common/visually-hidden";
+
+/* BLOCKS */
+@import "blocks/main-container";
+@import "blocks/hero";
+@import "blocks/background";
+@import "blocks/header";
+@import "blocks/tours";
+@import "blocks/button";
+@import "blocks/title-h3";
+@import "blocks/title-h4";
+@import "blocks/title-h5";
+@import "blocks/link";
+@import "blocks/training";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/advantages";
+@import "blocks/gallery";
+@import "blocks/form";
+@import "blocks/footer";

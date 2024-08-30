@@ -1,0 +1,41 @@
+.button {
+  width: 37px;
+  height: 35px;
+  border: inherit;
+  cursor: pointer;
+  background-color: $bg;
+
+  &:hover {
+    background-color: inherit;
+    border: 1px solid $base-dark;
+  }
+
+  &:focus-visible {
+    background-color: $base-white;
+  }
+
+  &:active {
+    background-color: $bg-alt;
+  }
+
+  &:disabled {
+    background-color: $base-light;
+    border: inherit;
+  }
+
+  &:hover svg {
+    color: $base-dark;
+  }
+
+  &:focus-visible svg {
+    color: $base-dark;
+  }
+
+  &:active svg {
+    color: $base-white;
+  }
+
+  &:disabled svg {
+    color: $base-white;
+  }
+}

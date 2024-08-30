@@ -126,12 +126,6 @@
     display: none;
   }
 
-  .gallery-slide__wrapper,
-  .gallery-swiper-slide {
-    width: 284px !important;
-    height: 463px !important;
-  }
-
   .gallery-slide img {
     width: 284px;
   }
@@ -160,13 +154,13 @@
     height: 100%;
   }
 
-  .gallery-slide__wrapper,
-  .gallery-swiper-slide {
-    margin-right: 5px !important;
-  }
+  // .gallery-slide__wrapper,
+  // .gallery-swiper-slide {
+  //   // margin-right: 5px !important;
+  // }
 
-  .gallery-swiper .swiper-wrapper {
-    display: flex !important;
-    justify-content: space-between !important;
-  }
+  // .gallery-swiper .swiper-wrapper {
+  //   // display: flex !important;
+  //   justify-content: space-between !important;
+  // }
 }

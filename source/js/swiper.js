@@ -163,6 +163,7 @@ const swiperGallery = new Swiper(".gallery-swiper", {
       enabled: true,
     },
     1440: {
+      slidesPerView: 5,
       enabled: false,
     },
   },

@@ -130,7 +130,7 @@
 
 @media (min-width: 1440px) {
   .reviews {
-    padding: 142px 0px 100px 120px;
+    padding: 144px 0px 100px 120px;
   }
 
   .reviews__title {
@@ -144,8 +144,8 @@
     }
   }
 
-  .reviews-swiper {
-    padding-left: 10px !important;
+  .reviews__inner .reviews-swiper {
+    padding-left: 10px ;
   }
 
   .swiper-slide-active .reviews-slide__wrapper {

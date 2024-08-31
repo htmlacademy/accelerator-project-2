@@ -206,6 +206,7 @@
       font-style: normal;
       font-weight: 800;
       line-height: 40px;
+      top: -14px;
     }
   }
 
@@ -248,19 +249,26 @@
     width: 69px;
   }
 
+  .tours__all-tours-link::after {
+    content: url(../../img/sprite/right.svg);
+    padding-left: -1px;
+    position: absolute;
+    right: 209px;
+    top: 11px;
+  }
+  
   .tours__all-tours-link {
-    z-index: 10;
-    // position: relative;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px; /* 100% */
-    letter-spacing: 0.64px;
-    text-transform: uppercase;
+      margin-right: 19px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.64px;
+      text-transform: uppercase;
   }
 
   .tours::before {
     content: url(../../img/tours/clouds-tablet.png);
-    top: -91px;
+    top: -92px;
     z-index: -1;
   }
 
@@ -307,5 +315,9 @@
   .tours::before {
     content: url(../../img/tours/clouds-desktop.png);
     top: -126px;
+  }
+
+  .tours__all-tours-link::after {
+    right: 471px;
   }
 }

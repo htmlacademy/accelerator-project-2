@@ -214,24 +214,24 @@
     width: 183px;
   }
 
-  .training__instructors {
+  .training {
     position: relative;
   }
+
+  .training__instructors::after {
+    content: "";
+    background-image: url(../../img/clouds-training-tablet.png);
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 558px;
+    width: 471px;
+    height: 280px;
+ }
 
   .instructor__data + p {
     width: 178px;
   }
-
-  // .instructor-swiper-button-next {
-  //   // position: absolute !important;
-  //   right: -35px !important;
-  //   top: 254px !important;
-  // }
-
-  // .instructor-swiper-button-prev {
-  //   left: -34px !important;
-  //   top: 254px !important;
-  // }
 
   .text-br {
     display: initial;

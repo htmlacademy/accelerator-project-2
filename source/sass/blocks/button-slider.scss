@@ -1,0 +1,31 @@
+.button-slider {
+  width: 37px;
+  height: 35px;
+
+  color: $color-white;
+
+  background-color: $color-navy-blue;
+  border: 1px solid $transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-resolution-blue;
+
+    background-color: $color-white;
+    border-color: $color-resolution-blue;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+
+    background-color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    background-color: $color-nobel;
+  }
+}

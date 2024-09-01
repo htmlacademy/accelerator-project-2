@@ -1,0 +1,29 @@
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-white;
+  text-decoration: none;
+
+  background-color: $color-navy-blue;
+
+  &:hover {
+    color: $color-resolution-blue;
+
+    background-color: $color-white;
+    outline: 1px solid $color-resolution-blue;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    background-color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    background-color: $color-nobel;
+  }
+}

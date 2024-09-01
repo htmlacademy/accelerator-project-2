@@ -52,6 +52,11 @@ ul {
     background-color: $active-dark;
     color: $white;
   }
+  &:focus{
+    border:transparent;
+    background-color: $white;
+    color: $active-dark;
+  }
 }
 
 @media (min-width: 768px) {

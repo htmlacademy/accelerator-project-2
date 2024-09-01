@@ -19,11 +19,11 @@
 }
 
 .gallery__title {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   &::before {
     content: "Фотогалерея";
     position: absolute;
-    top: -15px;
+    top: -13px;
     opacity: 0.03;
     font-size: 26px;
     line-height: 26px;
@@ -40,19 +40,22 @@
 .gallery-slide-smalls {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 6px;
 }
 
 .gallery-slide-small-up,
 .gallery-slide-small-up img {
   width: 157px;
-  height: 134px;
+  // height: 134px;
+  height: 135px;
+  display: block;
 }
 
 .gallery-slide-small-bottom,
 .gallery-slide-small-bottom img {
   width: 157px;
   height: 125px;
+  display: block;
 }
 
 @media (min-width: 768px) {

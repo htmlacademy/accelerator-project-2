@@ -19,11 +19,11 @@
 }
 
 .gallery__title {
-  margin-bottom: 27px;
+  margin-bottom: 27.5px;
   &::before {
     content: "Фотогалерея";
     position: absolute;
-    top: -13px;
+    top: -12.5px;
     opacity: 0.03;
     font-size: 26px;
     line-height: 26px;
@@ -46,7 +46,6 @@
 .gallery-slide-small-up,
 .gallery-slide-small-up img {
   width: 157px;
-  // height: 134px;
   height: 135px;
   display: block;
 }

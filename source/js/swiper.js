@@ -156,7 +156,7 @@ const swiperGallery = new Swiper(".gallery-swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 2,
-  spaceBetween: 5,
+  spaceBetween: 6,
   breakpoints: {
     768: {
       slidesPerView: 3,

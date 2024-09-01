@@ -7,19 +7,8 @@ function setBtnOpacity (elems) {
   })
 }
 
-// function setDisableColor (buttons) {
-//   buttons.forEach(button =>{
-//     button.addEventListener('click', ()=>{
-//       button.classList.includes('swiper-button-disabled') ? button.style.backgroundColor = '#999' : button.style.backgroundColor = '#0264c0'
-//     })
-//   })
-// }
-
 setBtnOpacity(btnNext);
 setBtnOpacity(btnPrev);
-
-// setDisableColor(btnNext);
-// setDisableColor(btnPrev);
 
 
 btnPrev.forEach(button =>{
@@ -46,9 +35,6 @@ function hangBtnDisableListener (elems1, elems2) {
             }
           }
       )}
-  // }else {
-  //   elem.style.backgroundColor = '#0264c0';
-  // }
     })
   })
 }

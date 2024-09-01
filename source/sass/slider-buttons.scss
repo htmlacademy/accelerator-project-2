@@ -28,10 +28,6 @@
     display: flex;
   }
 
-    .tours .tours__inner .tours-swiper-button-prev .swiper-button-prev .swiper-button-disabled {
-       background-color: $grey;
-    }
-
   .reviews__inner .reviews-swiper-button-next,
   .training__inner .instructor-swiper-button-next,
   .tours__inner .tours-swiper-button-next,
@@ -98,33 +94,33 @@
 @media (min-width: 1440px) {
   .tours__inner .tours-swiper-button-next {
     position: absolute;
-    top: 15px;
+    top: 18px;
     left: 1163px;
   }
 
   .tours__inner .tours-swiper-button-prev {
-    top: 15px;
+    top: 18px;
     left: 1122px;
   }
 
   .training__instructors .instructor-swiper-button-next {
-    left: 1288px;
-    top: 250px;
+    left: 1283px;
+    top: 258px;
   }
 
   .training__instructors .instructor-swiper-button-prev {
-    left: 1247px;
-    top: 250px;
+    left: 1242px;
+    top: 258px;
   }
 
   .reviews__inner .reviews-swiper-button-next {
-    left: 1168px;
-    top: 13px;
+    left: 1163px;
+    top: 21px;
   }
 
   .reviews__inner .reviews-swiper-button-prev {
-    left: 1127px;
-    top: 13px;
+    left: 1122px;
+    top: 21px;
   }
 
   .advantages__inner .advantages-swiper-button-prev,
@@ -133,29 +129,31 @@
     opacity: 1;
   }
 
-  .advantages__inner .advantages-swiper-button-prev::after {
-    display: initial;
+  .advantages__inner .advantages-swiper-button-prev {
+     background-color: $accent-blue;
     width: 37px;
     height: 35px;
-    content: url(../img/sprite/prev-blue.svg);
+    position: absolute;
+    cursor: pointer;
+    display: flex;
   }
 
-  .advantages__inner .advantages-swiper-button-next::after {
-    display: initial;
+  .advantages__inner .advantages-swiper-button-next {           background-color: $accent-blue;
     width: 37px;
     height: 35px;
-    content: url(../../img/sprite/button-nxt.svg);
     position: absolute;
+    cursor: pointer;
+    display: flex;
   }
 
   .advantages__inner .advantages-swiper-button-prev {
-    top: 116.7%;
+    top: 117%;
     left: 47.3%;
   }
 
   .advantages__inner .advantages-swiper-button-next {
-    top: 116.7%;
-    right: 48%;
+    top: 117%;
+    right: 47.3%;
   }
 
   .gallery__inner .gallery-swiper-button-prev,

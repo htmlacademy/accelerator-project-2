@@ -206,7 +206,7 @@
       font-style: normal;
       font-weight: 800;
       line-height: 40px;
-      top: -14px;
+      top: -13px;
     }
   }
 
@@ -242,7 +242,7 @@
   }
 
   .tour-info-bottom {
-    justify-content: space-between;
+    gap: 27px;
   }
 
   .tour-info-bottom__content:last-child {
@@ -256,7 +256,7 @@
     right: 209px;
     top: 11px;
   }
-  
+
   .tours__all-tours-link {
       margin-right: 19px;
       font-size: 16px;
@@ -275,6 +275,15 @@
   .tour-decor-line {
     margin: 14px 0 15px;
   }
+
+  .tour-info__duration span{
+    display: block;
+    margin-top: 5px;
+  }
+
+  // .tour-info-bottom__data .collecting-data{
+  //   padding-left: 2px;
+  // }
 }
 
 @media (min-width: 1440px) {

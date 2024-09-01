@@ -6,7 +6,7 @@
 }
 
 .gallery__info {
-  padding: 14px 15px 32px;
+  padding: 14px 15px 31px;
 }
 
 .gallery__info p {
@@ -34,6 +34,7 @@
 .gallery-slide-big img {
   width: 158px;
   height: 266px;
+  display: block;
 }
 
 .gallery-slide-smalls {

@@ -6,19 +6,6 @@
   }
 
 @media (min-width: 768px) {
-
-  // .reviews__inner .reviews-swiper-button-prev::after,
-  // .training__inner .instructor-swiper-button-prev::after,
-  // .tours__inner .tours-swiper-button-prev::after,
-  // .gallery__inner .gallery-swiper-button-prev::after {
-  //   display: initial;
-  //   width: 37px;
-  //   height: 35px;
-  //   content: url(../../img/sprite/button-prev.svg);
-  //   position: absolute;
-  //   cursor: pointer;
-  // }
-
   .page-body .swiper-button-prev,
   .page-body .swiper-button-next {
   display: initial;
@@ -41,6 +28,10 @@
     display: flex;
   }
 
+    .tours .tours__inner .tours-swiper-button-prev .swiper-button-prev .swiper-button-disabled {
+       background-color: $grey;
+    }
+
   .reviews__inner .reviews-swiper-button-next,
   .training__inner .instructor-swiper-button-next,
   .tours__inner .tours-swiper-button-next,
@@ -56,7 +47,6 @@
   .page-body .swiper-button-prev svg{
     transform: rotate(180deg);
  }
-
 
   .page-body .swiper-button-prev svg,
   .page-body .swiper-button-next svg{

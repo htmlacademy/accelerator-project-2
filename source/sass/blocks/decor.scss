@@ -1,0 +1,20 @@
+.decor {
+  position: absolute;
+
+  display: block;
+
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  color: rgba($color-elephant, 3%);
+
+  @media (min-width: $vp-768) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}

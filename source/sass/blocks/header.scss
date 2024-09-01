@@ -1,0 +1,112 @@
+.header {
+  position: relative;
+
+  background-color: $color-navy-blue;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 15px 15px 13px;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 45px;
+
+    gap: 10px 97px;
+  }
+
+  @media (min-width: $vp-1440) {
+    justify-content: center;
+    padding: 42px 120px 42px 153px;
+  }
+}
+
+.header__toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 26px;
+  height: 26px;
+  padding: 0;
+
+  background-color: $transparent;
+  background-image: url("../../img/header/burger-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 20px;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease 0s;
+
+  @media (min-width: $vp-768) {
+    top: 28px;
+    left: 45px;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+
+  .is-open & {
+    background-image: url("../../img/header/burger-button-close.svg");
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  margin-bottom: 16px;
+
+  @media (min-width: $vp-768) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-right: 65px;
+  }
+}
+
+.header__tel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-white;
+  text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    margin-top: 3px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-top: 5px;
+    margin-left: auto;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    color: $color-elephant;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    color: $color-nobel;
+  }
+}

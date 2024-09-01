@@ -1,0 +1,32 @@
+.title {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-elephant;
+
+  @media (min-width: $vp-768) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.title-wrapper {
+  position: relative;
+
+  padding: 16px 0 17px;
+
+  @media (min-width: $vp-768) {
+    padding: 20px 0 10px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 45px 0 0;
+  }
+}

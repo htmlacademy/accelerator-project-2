@@ -1,0 +1,248 @@
+.advantages {
+  position: relative;
+
+  &::before {
+    @media (min-width: $vp-768) {
+      content: "";
+      position: absolute;
+      top: 166px;
+      right: 0;
+      z-index: -1;
+
+      width: 768px;
+      height: 996px;
+
+      background-image: url("../../img/background/clouds-advantages-tablet.png");
+    }
+
+    @media (min-width: $vp-1440) {
+      top: -318px;
+
+      width: 1440px;
+      height: 447px;
+
+      background-image: url("../../img/background/clouds-advantages-desktop.png");
+    }
+  }
+}
+
+.advantages .swiper-wrapper {
+  @media (min-width: $vp-1440) {
+    margin-left: -2px;
+  }
+}
+
+.advantages .swiper-slide {
+  @media (min-width: $vp-1440) {
+    min-width: 380px;
+  }
+}
+
+.advantages__container {
+  padding: 3px 15px 20px;
+
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    padding: 42px 45px 40px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 79px 0 185px;
+  }
+}
+
+.advantages__container .swiper-wrapper {
+  @media (max-width: ($vp-768 - 1px)) {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  @media (max-width: ($vp-1440 - 1px)) and (min-width: (769px - 1px)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 30px;
+  }
+}
+
+.advantages__title-wrapper {
+  width: 290px;
+  margin: 0 auto 19px auto;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1200px;
+  }
+}
+
+.advantages__title-decor {
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  @media (min-width: $vp-768) {
+    top: 5px;
+  }
+
+  @media (min-width: $vp-1440) {
+    top: 16px;
+  }
+}
+
+.advantages__swiper-wrapper {
+  position: relative;
+}
+
+.advantages__swiper-slide {
+  padding: 20px 10px;
+
+  background-color: $color-white;
+  outline: 1px solid rgba($color-navy-blue, 0.1);
+  outline-offset: -1px;
+
+  h3 {
+    margin: 0 0 15px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-elephant;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 14px;
+
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @media (min-width: $vp-1440) {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-elephant;
+
+    @media (min-width: $vp-768) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    max-width: 324px;
+    padding: 30px 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    max-height: 329px;
+    padding: 40px 18px 40px 22px;
+  }
+
+  &--margin {
+    @media (min-width: $vp-768) {
+      padding-bottom: 36px;
+    }
+
+    @media (min-width: $vp-1440) {
+      min-height: 329px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.advantages__swiper-slide--margin h3 {
+  margin-right: 2px;
+
+  @media (min-width: $vp-1440) {
+    margin-right: 0;
+  }
+}
+
+.advantages__swiper-slide:nth-child(2n) br {
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.advantages__swiper-slide:nth-child(3n) br {
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
+.advantages__swiper-slide:nth-child(5n) br {
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
+.advantages__swiper-slide--desktop.swiper-slide {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: block;
+  }
+}
+
+.advantages__swiper-slide-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 20px auto;
+
+  border: 1px solid $color-navy-blue;
+
+  @media (min-width: $vp-768) {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 26px;
+    padding: 12px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__controls {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    position: absolute;
+    bottom: -85px;
+    left: 50%;
+    z-index: 2;
+
+    display: grid;
+
+    transform: translateX(-50%);
+
+    gap: 4px;
+    grid-template-columns: repeat(2, 37px);
+  }
+}
+
+.advantages__controls-button--prev {
+  svg {
+    transform: rotate(180deg);
+  }
+}

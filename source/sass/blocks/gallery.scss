@@ -78,23 +78,24 @@
     &::before {
       font-size: 40px;
       line-height: 40px;
+      top: -14px;
     }
   }
 
   .gallery-slide-small-up,
   .gallery-slide-small-up img {
-    width: 252px;
+    width: 253px;
     height: 210px;
   }
 
   .gallery-slide-small-bottom,
   .gallery-slide-small-bottom img {
     width: 252px;
-    height: 201px;
+    height: 202px;
   }
   .gallery-slide-big,
   .gallery-slide-big img {
-    width: 254px;
+    width: 253px;
     height: 418px;
   }
 }

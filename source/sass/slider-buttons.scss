@@ -42,7 +42,7 @@
 
   .page-body .swiper-button-prev svg{
     transform: rotate(180deg);
- }
+  }
 
   .page-body .swiper-button-prev svg,
   .page-body .swiper-button-next svg{
@@ -130,7 +130,7 @@
   }
 
   .advantages__inner .advantages-swiper-button-prev {
-     background-color: $accent-blue;
+    background-color: $accent-blue;
     width: 37px;
     height: 35px;
     position: absolute;

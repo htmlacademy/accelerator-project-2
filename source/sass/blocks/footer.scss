@@ -157,9 +157,9 @@
   margin: 0 auto;
 }
 
- .footer__phone .phone-link{
+.footer__phone .phone-link{
   display: none;
- }
+}
 
 
 @media (min-width: 768px) {
@@ -247,11 +247,11 @@
   }
 
   .footer__nav-item:hover{
-     border-bottom: 1px solid $black;
+    border-bottom: 1px solid $black;
   }
 
   .footer__nav-link:active {
-     color: $accent-blue;
+    color: $accent-blue;
   }
 }
 
@@ -316,7 +316,7 @@
     padding: 41px 120px 20px 149px;
   }
 
-  .footer__phone .phone-link{
+  .footer__phone .phone-link {
       display: initial;
       color: $black;
   }
@@ -337,37 +337,37 @@
   .footer__nav-link {
     font-size: 16px;
     line-height: 16px;
- }
+  }
 
-  .footer__nav{
-      gap: 30px;
-      margin-left: -27px;
- }
+  .footer__nav {
+    gap: 30px;
+    margin-left: -27px;
+  }
 
   .footer__nav-list {
-       gap: 30px;
+    gap: 30px;
   }
 
   .footer__navigation-block {
-        margin-bottom: 27px;
+    margin-bottom: 27px;
   }
 
   .footer__social-wrapper {
-        margin-bottom: 22px;
-        margin-left: -29px;
-        gap: 13px;
+    margin-bottom: 22px;
+    margin-left: -29px;
+    gap: 13px;
   }
 
-  .footer__confidential{
-      text-align: center;
-      padding-right: 28px;
+  .footer__confidential {
+    text-align: center;
+    padding-right: 28px;
   }
 
-  .phone-link:hover{
-  color: rgba(2, 102, 193, 0.10)
- }
+  .phone-link:hover {
+    color: rgba(2, 102, 193, 0.10)
+  }
 
-  .phone-link:active{
-  color: $active-dark;
- }
+  .phone-link:active {
+    color: $active-dark;
+  }
 }

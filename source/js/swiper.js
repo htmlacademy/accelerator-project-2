@@ -30,7 +30,7 @@ const swiperTours = new Swiper(".tours-swiper", {
     320: { allowTouchMove: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
-     },
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 18,

@@ -41,4 +41,3 @@ function hangBtnDisableListener (elems1, elems2) {
 
 hangBtnDisableListener(btnNext,btnPrev);
 hangBtnDisableListener(btnPrev,btnNext);
-

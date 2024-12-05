@@ -1,0 +1,76 @@
+@import "./vars";
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.phone-link{
+    text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  margin: 0;
+  color: $black;
+}
+
+.title,
+.about__content h3 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  position: relative;
+}
+
+.button {
+  cursor: pointer;
+
+  &:hover{
+    background-color: $white;
+    color: $active-dark;
+    border: 1px solid $active-dark;
+  }
+  &:active{
+    background-color: $active-dark;
+    color: $white;
+  }
+  &:focus{
+    border: transparent;
+    background-color: $white;
+    color: $active-dark;
+  }
+}
+
+@media (min-width: 768px) {
+  .title,
+  .about__content h3 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 35px;
+    line-height: 100%;
+  }
+}

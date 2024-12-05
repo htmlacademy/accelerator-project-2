@@ -1,0 +1,329 @@
+@import "../vars.scss";
+
+.tours {
+  padding: 17px 15px 20px;
+  position: relative;
+}
+
+.tours__back-img {
+  position: absolute;
+  right: 0;
+}
+
+.tours__title {
+  margin-bottom: 40px;
+  margin-top: 21px;
+}
+
+.tours__title::before {
+  content: "Ближайшие туры";
+  position: absolute;
+  top: -15px;
+  opacity: 0.03;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.swiper-tours {
+  margin-bottom: 25px;
+}
+
+.tours-slide {
+  width: 290px;
+  height: 416px;
+  padding: 30px 20px 26px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.tours-slide-1 {
+  background-image: url("../../img/tours/tours-mobile-elbrus.png");
+}
+
+.tours-slide-2 {
+  background-image: url("../../img/tours/tours-mobile-altay.png");
+}
+
+.tours-slide-3 {
+  background-image: url("../../img/tours/tours-mobile-adigeya.png");
+}
+
+.tours-slide-4 {
+  background-image: url("../../img/tours/tours-mobile-ural.png");
+}
+
+.tour-info {
+  color: $white;
+}
+
+.tour-info-up {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.tour-info__place {
+  display: block;
+  background-color: #0266c1;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 5px;
+}
+
+.tour-info__place span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour-info__duration {
+  display: flex;
+  margin-top: 12px;
+  gap: 7px;
+}
+
+.tour-info__days {
+  margin-right: 8px;
+}
+
+.tour-info__days,
+.tour-info__nights {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tour-info__days span,
+.tour-info__nights span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.tour-info-bottom {
+  display: flex;
+  gap: 8px;
+}
+
+.tour-info-bottom__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-info-bottom__criteria {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.criteria-hardness {
+  margin-bottom: 4px;
+}
+
+.criteria-collecting {
+  margin-bottom: 7px;
+  width: 83px;
+}
+
+.collecting-data {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.tour-decor-line {
+  width: 80px;
+  height: 1px;
+  opacity: 0.2;
+  background: $white;
+  margin: 15px 0;
+}
+
+.tours__all-tours-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 25px;
+  color: $black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+
+  &::after{
+    content: url("../../img/sprite/right.svg");
+  }
+}
+
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.tours::before {
+  content: url(../../img/tours/clouds-mobile.png);
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+@media (min-width: 768px) {
+  .tours {
+    padding: 40px 45px;
+  }
+
+  .tours__title {
+    margin-bottom: 35px;
+    margin-top: 20px;
+
+    &::before {
+      content: "Ближайшие туры";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 40px;
+      top: -13px;
+    }
+  }
+
+  .tours-slide {
+    width: 330px;
+    height: 416px;
+    padding: 30px 20px 26px;
+  }
+
+  .tours-slide-1 {
+    background-image: url("../../img/tours/tours-tablet-elbrus.png");
+  }
+
+  .tours-slide-2 {
+    background-image: url("../../img/tours/tours-tablet-altay.png");
+  }
+
+  .tours-slide-3 {
+    background-size: 100%;
+  }
+
+  .tours-slide-4 {
+    background-size: 100%;
+  }
+
+  .tour-info-up {
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .tour-title {
+    width: 235px;
+  }
+
+  .tour-info-bottom {
+    gap: 27px;
+  }
+
+  .tour-info-bottom__content:last-child {
+    width: 69px;
+  }
+
+  .tours__all-tours-link::after {
+    content: url(../../img/sprite/right.svg);
+    padding-left: -1px;
+    position: absolute;
+    right: 209px;
+    top: 11px;
+  }
+
+  .tours__all-tours-link {
+      margin-right: 19px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.64px;
+      text-transform: uppercase;
+  }
+
+  .tours::before {
+    content: url(../../img/tours/clouds-tablet.png);
+    top: -92px;
+    z-index: -1;
+  }
+
+  .tour-decor-line {
+    margin: 14px 0 15px;
+  }
+
+  .tour-info__duration span{
+    display: block;
+    margin-top: 5px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .tours {
+    padding: 103px 120px 100px;
+  }
+
+  .tours__inner {
+    position: relative;
+  }
+
+  .tours__title {
+    margin-bottom: 50px;
+  }
+
+  .tours-swiper {
+    margin-bottom: 53px;
+  }
+
+  .tours-slide {
+    width: 380px;
+    height: 416px;
+    padding: 30px 20px 26px;
+  }
+
+  .tours-slide-1 {
+    background-image: url("../../img/tours/tours-kaukaz-desktop.png");
+  }
+
+  .tours-slide-2 {
+    background-image: url("../../img/tours/tours-altay-desktop.png");
+  }
+
+  .tours-slide-3 {
+    background-image: url("../../img/tours/tours-adigeya-desktop.png");
+  }
+
+  .tours::before {
+    content: url(../../img/tours/clouds-desktop.png);
+    top: -126px;
+  }
+
+  .tours__all-tours-link::after {
+    right: 471px;
+  }
+}

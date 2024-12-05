@@ -1,0 +1,154 @@
+@import "../vars";
+
+.gallery {
+  background-color: $white;
+  padding-bottom: 3px;
+}
+
+.gallery__info {
+  padding: 14px 15px 31px;
+}
+
+.gallery__info p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 260px;
+  margin: 0;
+}
+
+.gallery__title {
+  margin-bottom: 27.5px;
+  &::before {
+    content: "Фотогалерея";
+    position: absolute;
+    top: -12.5px;
+    opacity: 0.03;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.gallery-slide-big,
+.gallery-slide-big img {
+  width: 158px;
+  height: 266px;
+  display: block;
+}
+
+.gallery-slide-smalls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gallery-slide-small-up,
+.gallery-slide-small-up img {
+  width: 157px;
+  height: 135px;
+  display: block;
+}
+
+.gallery-slide-small-bottom,
+.gallery-slide-small-bottom img {
+  width: 157px;
+  height: 125px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .gallery__info {
+    padding: 60px 45px 21px 45px;
+    position: relative;
+  }
+
+  .gallery__info p {
+    font-size: 14px;
+    line-height: 22px;
+    width: 388px;
+  }
+
+  .gallery__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .gallery__title {
+    &::before {
+      font-size: 40px;
+      line-height: 40px;
+      top: -14px;
+    }
+  }
+
+  .gallery-slide-small-up,
+  .gallery-slide-small-up img {
+    width: 253px;
+    height: 210px;
+  }
+
+  .gallery-slide-small-bottom,
+  .gallery-slide-small-bottom img {
+    width: 252px;
+    height: 202px;
+  }
+  .gallery-slide-big,
+  .gallery-slide-big img {
+    width: 253px;
+    height: 418px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gallery__info {
+    padding: 123px 120px 46px;
+  }
+
+  .gallery__title {
+    margin-bottom: 23px;
+
+    &::before {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+
+  .gallery__info p {
+    width: 592px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gallery__info br {
+    display: none;
+  }
+
+  .gallery-slide img {
+    width: 284px;
+  }
+
+  .gallery-slide-big {
+    height: 463px;
+  }
+
+  .gallery-slide-big img {
+    height: 100%;
+  }
+
+  .gallery-slide-small-up {
+    height: 233px;
+  }
+
+  .gallery-slide-small-up img {
+    height: 100%;
+  }
+
+  .gallery-slide-small-bottom {
+    height: 223px;
+  }
+
+  .gallery-slide-small-bottom img {
+    height: 100%;
+  }
+}

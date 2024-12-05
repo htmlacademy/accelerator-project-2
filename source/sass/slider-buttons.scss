@@ -1,0 +1,163 @@
+@import './vars.scss';
+
+  .page-body .swiper-button-prev,
+  .page-body .swiper-button-next {
+  display: none;
+  }
+
+@media (min-width: 768px) {
+  .page-body .swiper-button-prev,
+  .page-body .swiper-button-next {
+  display: initial;
+  }
+
+  .advantages__inner .advantages-swiper-button-prev,
+  .advantages__inner .advantages-swiper-button-next {
+    display: none;
+  }
+
+  .reviews__inner .reviews-swiper-button-prev,
+  .training__inner .instructor-swiper-button-prev,
+  .tours__inner .tours-swiper-button-prev,
+  .gallery__inner .gallery-swiper-button-prev {
+    background-color: $accent-blue;
+    width: 37px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .reviews__inner .reviews-swiper-button-next,
+  .training__inner .instructor-swiper-button-next,
+  .tours__inner .tours-swiper-button-next,
+  .gallery__inner .gallery-swiper-button-next {
+    background-color: $accent-blue;
+    width: 37px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .page-body .swiper-button-prev svg{
+    transform: rotate(180deg);
+  }
+
+  .page-body .swiper-button-prev svg,
+  .page-body .swiper-button-next svg{
+    width: 14px;
+    height: 9px;
+  }
+
+  .tours__inner .tours-swiper-button-prev {
+    top: 82px;
+    left: 644px;
+  }
+
+  .tours__inner .tours-swiper-button-next {
+    top: 82px;
+    left: 686px;
+  }
+
+  .training__instructors .instructor-swiper-button-prev {
+    top: 240px;
+    left: 645px;
+  }
+
+  .training__instructors .instructor-swiper-button-next {
+    top: 240px;
+    left: 686px;
+  }
+
+  .reviews__inner .reviews-swiper-button-next{
+    top: 22px;
+    right: 45px;
+  }
+
+  .reviews__inner .reviews-swiper-button-prev{
+    top: 22px;
+    left: 645px;
+  }
+
+  .gallery__inner .gallery-swiper-button-prev {
+    top: 83.2%;
+    left: 84%;
+  }
+
+  .gallery__inner .gallery-swiper-button-next {
+    top: 83.2%;
+    left: 89.3%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tours__inner .tours-swiper-button-next {
+    position: absolute;
+    top: 18px;
+    left: 1163px;
+  }
+
+  .tours__inner .tours-swiper-button-prev {
+    top: 18px;
+    left: 1122px;
+  }
+
+  .training__instructors .instructor-swiper-button-next {
+    left: 1283px;
+    top: 258px;
+  }
+
+  .training__instructors .instructor-swiper-button-prev {
+    left: 1242px;
+    top: 258px;
+  }
+
+  .reviews__inner .reviews-swiper-button-next {
+    left: 1163px;
+    top: 21px;
+  }
+
+  .reviews__inner .reviews-swiper-button-prev {
+    left: 1122px;
+    top: 21px;
+  }
+
+  .advantages__inner .advantages-swiper-button-prev,
+  .advantages__inner .advantages-swiper-button-next {
+    display: initial;
+    opacity: 1;
+  }
+
+  .advantages__inner .advantages-swiper-button-prev {
+    background-color: $accent-blue;
+    width: 37px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .advantages__inner .advantages-swiper-button-next {           background-color: $accent-blue;
+    width: 37px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .advantages__inner .advantages-swiper-button-prev {
+    top: 117%;
+    left: 47.3%;
+  }
+
+  .advantages__inner .advantages-swiper-button-next {
+    top: 117%;
+    right: 47.3%;
+  }
+
+  .gallery__inner .gallery-swiper-button-prev,
+  .gallery__inner .gallery-swiper-button-next {
+    display: none;
+  }
+}

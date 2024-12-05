@@ -2,3 +2,20 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// Global
+// ---------------------------------
+@import "global/variables";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/hero";
+@import "blocks/hero-slide";

@@ -1,0 +1,51 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin reset-link {
+  display: block;
+  text-decoration: none;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin gradient-text {
+  background: $color-gradient-text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

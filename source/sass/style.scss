@@ -1,4 +1,17 @@
-// Vendor
-// ---------------------------------
+// Vendor // ---------------------------------
 
 @import "vendor/normalize";
+
+// Global // ---------------------------------
+
+@import "common/mixins";
+@import "common/fonts";
+@import "common/variables";
+@import "common/global";
+
+// Blocks // ---------------------------------
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/site-list";
+

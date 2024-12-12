@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт тур фирмы Lifetour">
+  <title>Lifetour</title>
+  <link rel="preload" href="fonts/Montserrat-Variable-Font_wght.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page__body">
+  <header class="header" data-test="header">
+    <div class="header__wrapper">
+      <button class="header__nav-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__logo logo" href="index.html">
+        <picture>
+          <source srcset="img/icons/logotype.svg" type="image/svg+xml" width="142" height="42">
+          <img class="header__logo logo" loading="lazy" src="img/icons/logotype.svg" width="142" height="42" alt="Логотип компании Lifetour">
+        </picture>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list site-list">
+          <li class="header__item site-list__item"><a class="site-list__link" href="#">Туры</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#">Обучение</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#">О нас</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#">Фотографии</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header__link" href="tel:8-800-000-00-00">8 800 000-00-00</a>
+    </div>
+
+  </header>
+  <!-- пример использования спрайта
+	<img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+	<svg>
+		<use href="/__spritemap#sprite-user"></use>
+	</svg>
+	 примеры требуемых атрибутов data-test="*"
+	<div data-test="hero">hero</div>
+	<div data-test="tours">tours</div>
+	<div data-test="training">training</div>
+	<div data-test="about">about</div>
+	<div data-test="reviews">reviews</div>
+	<div data-test="adv">adv</div>
+	<div data-test="gallery">gallery</div>
+	<div data-test="form">form</div>
+	<div data-test="footer">footer</div> -->
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>

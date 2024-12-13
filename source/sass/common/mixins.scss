@@ -44,8 +44,15 @@
   flex-wrap: wrap;
 }
 
-@mixin gradient-text {
-  background: $color-gradient-text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+@mixin flex-space {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,31 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lifetour. Организация походов в горы">
+  <meta name="author" content="Фадеева Виктория">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проект Lifetour</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<body class="page-body">
+  <header class="main-header" data-test="header">
+    <div class="main-header__container">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <img class="main-header__logo-image" src="img/logotype.svg" width="142" height="42"
+            alt="Логотип Проекта Lifetour">
+        </picture>
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">
+              Туры
+            </a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">
+              Обучение
+            </a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">
+              Отзывы
+            </a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="main-header__phone" href="tel:+88000000000">
+        8 800 000-00-00
+      </a>
+    </div>
+  </header>
+  <main class="main-content">
+    <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Промо акции</h1>
+      <div class="hero__swiper swiper">
+        <ul class="hero__list swiper-wrapper">
+          <li class="hero__item hero__item--сaucasus swiper-slide">
+            <h2>Захватывающие вершины&nbsp;Кавказа</h2>
+            <p>
+              В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на&nbsp;вершину горы
+              Чегет.
+            </p>
+            <button class="hero_button button">Смотреть тур</button>
+            <div class="hero_detalis-wrapper">
+              <div class="hero_detalis hero_detalis--duration">6 дней/5 ночей</div>
+              <div class="hero_detalis hero_detalis--level">Высокая сложность</div>
+            </div>
+          </li>
+          <li class="hero__item hero__item--kamchatka swiper-slide">
+            <h2>Невероятная природа Камчатки</h2>
+            <p>
+              Незабываемое приключение, во&nbsp;время которого вы отправитесь в&nbsp;путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в&nbsp;мире.
+            </p>
+            <button class="hero_button button">Смотреть тур</button>
+            <div class="hero__picture-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" width="410" height="495" type="image/webp"
+                  srcset="img/photo-cards-desktop@1x.webp 1x, img/photo-cards-desktop@2x.webp 2x">
+                <source media="(min-width: 1440px)" width="410" height="495" type="image/png"
+                  srcset="img/photo-cards-desktop@1x.png 1x, img/photo-cards-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="442" height="365" type="image/webp"
+                  srcset="img/photo-cards-tablet@1x.webp 1x, img/photo-cards-tablet@2x.webp 2x">
+                <img class="hero__picture" src="img/photo-cards-tablet@1x.png" width="442" height="365"
+                  srcset="img/photo-cards-tablet@2x.png 2x" alt="Фотографии тура по камчатке" loading="lazy">
+              </picture>
+            </div>
+            <div class="hero_detalis-wrapper">
+              <div class="hero_detalis hero_detalis--duration">9 дней/10 ночей</div>
+              <div class="hero_detalis hero_detalis--level">Средняя сложность</div>
+            </div>
+          </li>
+          <li class="hero__item hero__item--altai swiper-slide">
+            <h2>Магические пейзажи Алтайского Края</h2>
+            <p>
+              Алтайский трекинг-тур — это&nbsp;захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.
+            </p>
+            <button class="hero_button button">Смотреть тур</button>
+            <div class="hero_detalis-wrapper">
+              <div class="hero_detalis hero_detalis--duration">8 дней/7 ночей</div>
+              <div class="hero_detalis hero_detalis--level">Легкая сложность</div>
+            </div>
+          </li>
+        </ul>
+        <div class="hero__pagination">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+    </svg> -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <div data-test="hero">hero</div>
+  <div data-test="tours">tours</div>
+  <div data-test="training">training</div>
+  <div data-test="about">about</div>
+  <div data-test="reviews">reviews</div>
+  <div data-test="adv">adv</div>
+  <div data-test="gallery">gallery</div>
+  <div data-test="form">form</div>
+  <div data-test="footer">footer</div>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>

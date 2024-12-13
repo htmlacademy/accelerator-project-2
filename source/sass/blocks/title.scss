@@ -1,0 +1,21 @@
+.title {
+  @include reset;
+
+  display: block;
+  font-family: $primary-font;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: start;
+  color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}

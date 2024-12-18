@@ -61,18 +61,19 @@
         url("../../img/hero-background-2@2x.webp") type("image/webp") 2x,
         url("../../img/hero-background-2@1x.jpg") type("image/jpeg") 1x,
         url("../../img/hero-background-2@2x.jpg") type("image/jpeg") 2x);
+    position: relative;
 
-        @media (min-width: $tablet-width) {
-          padding: 137px 45px 607px;
-        }
+    @media (min-width: $tablet-width) {
+      padding: 137px 45px 607px;
+    }
 
-        @media (min-width: $desktop-width) {
-          padding: 200px 120px 80px;
+    @media (min-width: $desktop-width) {
+      padding: 200px 120px 80px;
 
-          h2 {
-            width: 806px;
-          }
-        }
+      h2 {
+        width: 806px;
+      }
+    }
   }
 
   &--altai {
@@ -239,8 +240,7 @@
     width: 442px;
     height: 365px;
     bottom: 197px;
-    right: 50%;
-    transform: translateX(-50%);
+    right: 163px;
   }
 
   @media (min-width: $desktop-width) {
@@ -248,7 +248,6 @@
     height: 459px;
     right: 120px;
     bottom: 154px;
-    transform: translateX(0);
   }
 }
 

@@ -1,0 +1,143 @@
+.coach__title-wrapper {
+  @include flex;
+
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.coach__title {
+  @include reset;
+
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.coach__button-swiper{
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.coach__list {
+  @include reset-list;
+
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.coach__item {
+  width: 290px;
+  padding: 14px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 27px 14px 14px;
+  }
+}
+
+.coach__picture-wrapper {
+  width: 260px;
+  height: 200px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 183px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
+  }
+}
+
+.coach__picture {
+  width: 260px;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
+  }
+}
+
+.coach__description {
+  position: relative;
+
+  h4 {
+    @include reset;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    @include reset;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    @media (min-width: $desktop-width) {
+      width: 255px;
+    }
+  }
+}
+
+.coach__link {
+  @include reset-link;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $primary-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 23px;
+    height: 23px;
+    background-color: $primary-color;
+    mask-image: url("../../__spritemap#sprite-vk-view");
+    mask-size: 14px 8px;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+  }
+}

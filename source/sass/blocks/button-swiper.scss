@@ -1,0 +1,35 @@
+.button-swiper {
+  display: block;
+  position: relative;
+  border: none;
+  width: 37px;
+  height: 35px;
+  background-color: $color-button;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 35px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    mask-image: url("../../__spritemap#sprite-prev-view");
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
+    mask-size: 13px 9px;
+    background-color: $color-white;
+  }
+
+  &--prev {
+    margin-right: 4px;
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+  }
+
+  &:disabled {
+    background-color: $color-button-disabled;
+  }
+}

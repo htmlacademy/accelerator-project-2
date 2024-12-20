@@ -1,5 +1,5 @@
 /* в этот файл добавляет скрипты */
-const headerPage = document.querySelector('.header');
+
 const navMain = document.querySelector('.header__nav');
 const navToggle = document.querySelector('.header__nav-toggle');
 const siteList = document.querySelector('.header__list');

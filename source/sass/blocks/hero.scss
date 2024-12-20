@@ -1,0 +1,303 @@
+.hero {
+  line-height: 0;
+}
+
+.hero__swiper {
+  width: 320px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    width: 1440px;
+  }
+}
+
+.hero__slider {
+  line-height: 0;
+  position: relative;
+  margin: 0 auto;
+  width: $mobile-min-width;
+
+  @media (min-width: $tablet-min-width) {
+    width: $mobile-max-width;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    width: 1440px;
+  }
+}
+
+.hero__slider .hero__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+
+  grid-template-rows: 144px auto 160px;
+  max-width: $mobile-min-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-rows: 342px auto 402px;
+    max-width: 768px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    max-width: 1440px;
+    grid-template-rows: 200px auto 80px;
+  }
+}
+
+.hero__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.hero__image-wrapper::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $big-gradient;
+  display: block;
+  position: absolute;
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero__content {
+  grid-column: 1 / -1;
+  grid-row: 2/ 3;
+  z-index: 2; /* Чтобы текст был поверх изображения */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: $white-color; /* Цвет текста */
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 678px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    max-width: 940px;
+    margin: 0;
+    margin-left: 120px;
+  }
+
+  h2 {
+    @include font ($family: $primary-font, $size: 26px, $weight: 800);
+
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    @media (min-width: $tablet-max-width) {
+      text-align: left;
+      font-size: 77px;
+      line-height: 77px;
+      margin-bottom: 23px;
+    }
+  }
+
+  > p {
+    @include font ($family: $primary-font, $size: 15px, $height: 20px);
+
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 17px;
+      line-height: 24px;
+      max-width: 480px;
+    }
+
+    @media (min-width: $tablet-max-width) {
+      text-align: left;
+      max-width: 460px;
+      margin-left: 0;
+    }
+  }
+}
+
+.hero__link {
+  @include font ($family: $primary-font, $size: 16px, $weight: 500);
+
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: auto;
+  text-decoration: none;
+  background-color: $main-bnt-color;
+  min-width: 180px;
+  text-align: center;
+  padding: 19px;
+  border: 1px solid $main-bnt-color;
+  transition: color, border-color, background-color, 0.5s;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 35px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    margin-left: 0;
+    margin-top: 37px;
+    margin-bottom: 134px;
+  }
+
+  &:hover {
+    border-color: $active-color;
+    color: $active-color;
+    background-color: $white-color;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-color: $white-color;
+    color: $active-color;
+    background-color: $white-color;
+    outline: none;
+  }
+
+  &:active,
+  &--active {
+    border-color: $active-color;
+    background-color: $active-color;
+    color: $white-color;
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: $disabled-color;
+    background-color: $disabled-color;
+    color: $white-color;
+  }
+}
+
+.hero__detail-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-max-width) {
+    @include flex-box($align-items: center, $justify-content: flex-start, $flex-direction: row);
+
+    gap: 11px;
+  }
+}
+
+.hero__detail {
+  @media (min-width: $tablet-max-width) {
+    @include font ($family: $primary-font, $size: 12px, $height: 16px);
+    @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
+
+    gap: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 13px 19px;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.hero__detail--day::before {
+  background-image: url("/__spritemap#sprite-moon-view");
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.hero__detail--hight::before {
+  background-image: url("/__spritemap#sprite-level-view");
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.hero__swiper .hero__bulit-wrapper.swiper-pagination {
+  @include list-reset;
+  @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
+
+  gap: 20px;
+  width: 88px;
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-min-width) {
+    width: 100px;
+    bottom: 41px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    right: 120px;
+    left: auto;
+    bottom: 92px;
+    transform: translate(0, 0);
+  }
+}
+
+.hero__swiper .hero__bulit-wrapper.swiper-pagination .swiper-pagination-bullet {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white-color;
+  background-color: transparent;
+  margin: 0;
+  opacity: 1;
+  transition: background-color, 0.5s;
+
+  @media (min-width: $tablet-min-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-width: 1px;
+    outline-offset: 3px;
+  }
+
+  &:active,
+  &--active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: $disabled-color;
+    background-color: $disabled-color;
+    color: $white-color;
+  }
+}
+
+.hero__swiper .hero__bulit-wrapper.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $white-color;
+}

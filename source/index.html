@@ -24,7 +24,7 @@
       </a>
       <nav class="header__nav">
         <ul class="header__list site-list">
-          <li class="header__item site-list__item"><a class="site-list__link" href="#">Туры</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#hero">Туры</a></li>
           <li class="header__item site-list__item"><a class="site-list__link" href="#">Обучение</a></li>
           <li class="header__item site-list__item"><a class="site-list__link" href="#">О нас</a></li>
           <li class="header__item site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
@@ -34,8 +34,87 @@
       </nav>
       <a class="header__link" href="tel:8-800-000-00-00">8 800 000-00-00</a>
     </div>
-
   </header>
+  <main>
+    <section class="hero" data-test="hero" id="hero">
+      <h1 class="visually-hidden">Сайт тур фирмы Lifetour</h1>
+      <div class="swiper hero__swiper">
+        <div class="hero__slider swiper-wrapper">
+          <div class="hero__item swiper-slide">
+            <div class="hero__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/hero_desktop@1x.webp 1x, img/hero_desktop@2x.webp 2x" type="image/webp" width="1440" height="800">
+                <source media="(min-width: 768px)" srcset="img/hero_tablet@1x.webp 1x, img/hero_tablet@2x.webp 2x" type="image/webp" width="768" height="1034">
+                <source srcset="img/hero_mobile@1x.webp 1x, img/hero_mobile@2x.webp 2x" type="image/webp" width="320" height="568">
+                <source media="(min-width: 1440px)" srcset="img/hero_desktop@1x.png 1x, img/hero_desktop@2x.png 2x" type="image/png" width="1440" height="800">
+                <source media="(min-width: 768px)" srcset="img/hero_tablet@1x.png 1x, img/hero_tablet@2x.png 2x" type="image/png" width="768" height="1034">
+                <img class="hero__image" loading="lazy" src="img/hero_mobile@1x.png" srcset="img/hero_mobile@2x.png 2x" width="320" height="568" alt="Изображение горных вершин Кавказа">
+              </picture>
+            </div>
+            <div class="hero__content">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+              <a class="hero__link" href="#">Смотреть тур</a>
+              <div class="hero__detail-wrapper">
+                <p class="hero__detail hero__detail--day">6 дней/5 ночей</p>
+                <p class="hero__detail hero__detail--hight">Высокая сложность</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="hero__item swiper-slide">
+            <div class="hero__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/v2_hero_desktop@1x.webp 1x, img/v2_hero_desktop@2x.webp 2x" type="image/webp" width="1440" height="800">
+                <source media="(min-width: 768px)" srcset="img/v2_hero_tablet@1x.webp 1x, img/v2_hero_tablet@2x.webp 2x" type="image/webp" width="768" height="1034">
+                <source srcset="img/v2_hero_mobile@1x.webp 1x, img/v2_hero_mobile@2x.webp 2x" type="image/webp" width="320" height="568">
+                <source media="(min-width: 1440px)" srcset="img/v2_hero_desktop@1x.png 1x, img/v2_hero_desktop@2x.png 2x" type="image/png" width="1440" height="800">
+                <source media="(min-width: 768px)" srcset="img/v2_hero_tablet@1x.png 1x, img/v2_hero_tablet@2x.png 2x" type="image/png" width="768" height="1034">
+                <img class="hero__image" loading="lazy" src="img/v2_hero_mobile@1x.png" srcset="img/v2_hero_mobile@2x.png 2x" width="320" height="568" alt="Изображение горных вершин Камчатки">
+              </picture>
+            </div>
+            <div class="hero__content">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы&nbsp;в&nbsp;мире.</p>
+              <a class="hero__link" href="#" tabindex="-1">Смотреть тур</a>
+              <div class="hero__detail-wrapper">
+                <p class="hero__detail hero__detail--day">9 дней/10 ночей</p>
+                <p class="hero__detail hero__detail--hight">Средняя сложность</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="hero__item swiper-slide">
+            <div class="hero__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/v3_hero_desktop@1x.webp 1x, img/v3_hero_desktop@2x.webp 2x" type="image/webp" width="1440" height="800">
+                <source media="(min-width: 768px)" srcset="img/v3_hero_tablet@1x.webp 1x, img/v3_hero_tablet@2x.webp 2x" type="image/webp" width="768" height="1034">
+                <source srcset="img/v3_hero_mobile@1x.webp 1x, img/v3_hero_mobile@2x.webp 2x" type="image/webp" width="320" height="568">
+                <source media="(min-width: 1440px)" srcset="img/v3_hero_desktop@1x.png 1x, img/v3_hero_desktop@2x.png 2x" type="image/png" width="1440" height="800">
+                <source media="(min-width: 768px)" srcset="img/v3_hero_tablet@1x.png 1x, img/v3_hero_tablet@2x.png 2x" type="image/png" width="768" height="1034">
+                <img class="hero__image" loading="lazy" src="img/v3_hero_mobile@1x.png" srcset="img/v3_hero_mobile@2x.png 2x" width="320" height="568" alt="Изображение пейзажей Алтайского Края">
+              </picture>
+            </div>
+            <div class="hero__content">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+              <a class="hero__link" href="#" tabindex="-1">Смотреть тур</a>
+              <div class="hero__detail-wrapper">
+                <p class="hero__detail hero__detail--day">8 дней/7 ночей</p>
+                <p class="hero__detail hero__detail--hight">Лёгкая сложность</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="hero__bulit-wrapper swiper-pagination">
+        </div>
+      </div>
+    </section>
+  </main>
+
   <!-- пример использования спрайта
 	<img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
 	<svg>

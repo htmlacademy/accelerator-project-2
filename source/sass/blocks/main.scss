@@ -1,0 +1,27 @@
+.main {
+  background-image:
+    image-set(
+      url("/img/clouds@2x.webp") type("image/webp") 2x,
+      url("/img/clouds@1x.webp") type("image/webp") 1x,
+      url("/img/clouds@2x.png") type("image/png") 2x,
+      url("/img/clouds@1x.png") type("image/png") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 578px;
+
+  @media (min-width: $tablet-min-width) {
+    background-image:
+      image-set(
+        url("/img/clouds_1@2x.webp") type("image/webp") 2x,
+        url("/img/clouds_1@1x.webp") type("image/webp") 1x,
+        url("/img/clouds_1@2x.png") type("image/png") 2x,
+        url("/img/clouds_1@1x.png") type("image/png") 1x
+      );
+    background-position: 343px 942px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    background-position: right 674px;
+  }
+}

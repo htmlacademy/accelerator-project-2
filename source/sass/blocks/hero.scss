@@ -76,13 +76,11 @@
 }
 
 .hero__content {
+  @include flex-box($align-items: flex-start, $justify-content: center, $flex-direction: column);
+
   grid-column: 1 / -1;
   grid-row: 2/ 3;
   z-index: 2; /* Чтобы текст был поверх изображения */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   color: $white-color; /* Цвет текста */
   max-width: 290px;
   margin: 0 auto;

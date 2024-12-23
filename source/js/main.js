@@ -5,3 +5,4 @@
 
 import './burger';
 import './hero-swiper';
+import './tours-swiper';

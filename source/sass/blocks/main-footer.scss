@@ -1,0 +1,128 @@
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    @include flex-between;
+  }
+}
+
+.main-footer__logo-link {
+  @include reset-link;
+
+  width: 142px;
+  height: 42px;
+  color: $primary-color;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 60px;
+    padding: 9px 29px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 142px;
+    height: 42px;
+    background-color: $primary-color;
+    mask-image: url("../../__spritemap#sprite-logotype-view");
+    mask-size: 142px 42px;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
+
+.main-footer__list {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px 50px;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+    justify-content: flex-end;
+    width: 536px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.main-footer__item {
+  width: 120px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  &:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  &:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+
+.main-footer__link {
+  @include reset-link;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+  }
+}
+
+.main-footer__phone {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include reset-link;
+
+    display: block;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: right;
+    color: $primary-color;
+  }
+}
+
+.main-footer__politics {
+  @include reset-link;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: center;
+  color: $primary-color;
+}

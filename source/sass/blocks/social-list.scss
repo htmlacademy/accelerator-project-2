@@ -1,0 +1,62 @@
+.social-list {
+  @include reset-list;
+  @include flex;
+
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
+}
+
+.social-list__item {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.social-list__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $color-white;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid rgba(45, 56, 63, 0.3);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
+    background-color: $primary-color;
+  }
+
+  &--vk::before {
+    mask-image: url("../../__spritemap#sprite-vk-view");
+    mask-size: 16px 9px;
+  }
+
+  &--ok::before {
+    mask-image: url("../../__spritemap#sprite-ok-view");
+    mask-size: 9px 16px;
+  }
+
+  &--reddit::before {
+    mask-image: url("../../__spritemap#sprite-reddit-view");
+    mask-size: 14px 15px;
+  }
+}

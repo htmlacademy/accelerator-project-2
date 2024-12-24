@@ -3,7 +3,8 @@
     position: relative;
   }
 }
-.adv_background {
+
+.adv__background {
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
@@ -35,6 +36,7 @@
         url("../../img/background-clouds-desktop-3@2x.png") type("image/png") 2x);
   }
 }
+
 .adv__wrapper {
   width: 320px;
   padding: 20px 15px;
@@ -69,20 +71,30 @@
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      bottom: 14px;
+    }
   }
 }
 
 .adv__list {
   @include reset-list;
 
+  @media (max-width: $mobile-width-only) {
+    all: unset;
+    @include flex;
+  }
+
   @media (min-width: $tablet-width) {
+    all: unset;
     @include flex;
     gap: 30px;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    all: none;
     flex-wrap: nowrap;
     width: 1200px;
     margin: 0 auto;
@@ -91,13 +103,21 @@
   }
 }
 
-.adv__item {
+.adv .adv__item {
   width: 290px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   padding: 19px 9px;
   position: relative;
   margin-bottom: 15px;
   background-color: $color-white;
+
+  &--duplicate {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -106,131 +126,132 @@
   }
 
   @media (min-width: $desktop-width) {
+    all: unset;
+    box-sizing: border-box;
     width: 380px;
     height: 329px;
+    border: 1px solid rgba(2, 102, 193, 0.1);
     padding: 39px 19px;
+    position: relative;
+    background-color: $color-white;
   }
 
-  &:nth-child(1) {
-    @media (min-width: $desktop-width) {
-      margin-left: 30px;
-    }
+&:last-child {
+  margin-bottom: 0;
+}
+
+&::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 42px;
+  border: 1px solid $color-button;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    width: 48px;
+    height: 48px;
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    width: 54px;
+    height: 54px;
+  }
+}
+
+&::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 41px;
+  height: 41px;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  background-color: $color-button;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    width: 47px;
+    height: 47px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 42px;
-    height: 42px;
-    border: 1px solid $color-button;
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    width: 53px;
+    height: 53px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      top: 30px;
-      width: 48px;
-      height: 48px;
-    }
+&--safety::after {
+  mask-image: url("../../__spritemap#sprite-security-view");
+}
 
-    @media (min-width: $desktop-width) {
-      top: 40px;
-      width: 54px;
-      height: 54px;
-    }
+&--lore::after {
+  mask-image: url("../../__spritemap#sprite-crown-view");
+}
+
+&--equipment::after {
+  mask-image: url("../../__spritemap#sprite-boots-view");
+}
+
+&--routes::after {
+  mask-image: url("../../__spritemap#sprite-path-view");
+}
+
+&--nature::after {
+  mask-image: url("../../__spritemap#sprite-leaf-view");
+}
+
+
+h3 {
+  @include reset;
+
+  width: 240px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  padding-top: 62px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 74px;
+    margin-bottom: 14px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 41px;
-    height: 41px;
-    mask-size: 24px 24px;
-    mask-repeat: no-repeat;
-    mask-position: 50% 50%;
-    background-color: $color-button;
-
-    @media (min-width: $tablet-width) {
-      top: 31px;
-      width: 47px;
-      height: 47px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 41px;
-      width: 53px;
-      height: 53px;
-    }
-  }
-
-  &--safety::after {
-    mask-image: url("../../__spritemap#sprite-security-view");
-  }
-
-  &--lore::after {
-    mask-image: url("../../__spritemap#sprite-crown-view");
-  }
-
-  &--equipment::after {
-    mask-image: url("../../__spritemap#sprite-boots-view");
-  }
-
-  &--routes::after {
-    mask-image: url("../../__spritemap#sprite-path-view");
-  }
-
-  &--nature::after {
-    mask-image: url("../../__spritemap#sprite-leaf-view");
-  }
-
-
-  h3 {
-    @include reset;
-
-    width: 240px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 14px;
-    text-align: center;
-    padding-top: 62px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-
-    @media (min-width: $tablet-width) {
-      width: 280px;
-      font-size: 16px;
-      line-height: 16px;
-      padding-top: 73px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 340px;
-      font-size: 18px;
-      line-height: 18px;
-      padding-top: 84px;
-    }
-  }
-
-  p {
-    @include reset;
-
-    font-size: 12px;
-    font-weight: 400;
+  @media (min-width: $desktop-width) {
+    width: 340px;
+    font-size: 18px;
     line-height: 18px;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      font-size: 14px;
-      line-height: 22px;
-    }
+    padding-top: 84px;
+    margin-bottom: 15px;
   }
+}
+
+p {
+  @include reset;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 }
 
 .adv__button-wrapper {

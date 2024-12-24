@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.tours_background {
+.tours__background {
   position: absolute;
   top: 10px;
   right: 0;
@@ -45,7 +45,7 @@
   }
 }
 
-.tours_wrapper {
+.tours__wrapper {
   width: 320px;
   padding: 20px 15px;
   margin: 0 auto;
@@ -61,7 +61,7 @@
   }
 }
 
-.tours_title-wrapper {
+.tours__title-wrapper {
   @media (min-width: $tablet-width) {
     @include flex;
     margin-bottom: 25px;
@@ -73,7 +73,7 @@
   }
 }
 
-.tours_title {
+.tours__title {
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -154,14 +154,14 @@
   }
 }
 
-.tours_info-wrapper {
+.tours__info-wrapper {
   @include flex-between;
 
   row-gap: 12px;
   margin-bottom: 15px;
 }
 
-.tours_place {
+.tours__place {
   display: block;
   padding: 8px 12px 8px 34px;
   background-color: $color-button;
@@ -186,12 +186,12 @@
   }
 }
 
-.tours_stats {
+.tours__stats {
   @include flex;
   gap: 14px;
 }
 
-.tours_info {
+.tours__info {
   display: block;
   font-size: 12px;
   font-weight: 500;
@@ -223,14 +223,14 @@
   }
 }
 
-.tours_heading {
+.tours__heading {
   @include reset;
 
   display: block;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   position: relative;
 
   &::after {
@@ -245,11 +245,11 @@
   }
 }
 
-.tours_detalis-wrapper {
+.tours__detalis-wrapper {
   @include flex-between;
 }
 
-.tours_button {
+.tours__button {
   @include reset-link;
 
   position: relative;

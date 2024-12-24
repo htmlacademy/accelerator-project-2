@@ -1,0 +1,37 @@
+.footer__contacts {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex-between;
+
+    width: 1440px;
+    padding: 100px 120px 94px;
+  }
+}
+
+.footer__main-footer {
+  @include flex-column;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 23px 15px 20px;
+  gap: 23px;
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 34px 45px 20px;
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 32px 120px;
+    gap: 22px;
+  }
+}

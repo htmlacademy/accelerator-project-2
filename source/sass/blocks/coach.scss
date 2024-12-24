@@ -1,7 +1,7 @@
 .coach__title-wrapper {
   @include flex;
 
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -58,10 +58,6 @@
   @media (min-width: $tablet-width) {
     width: auto;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 14px 27px 14px 14px;
-  }
 }
 
 .coach__picture-wrapper {
@@ -74,21 +70,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 243px;
+    width: 255px;
   }
 }
 
 .coach__picture {
+  display: block;
   width: 260px;
   height: 200px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     object-fit: cover;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 243px;
+    width: 255px;
   }
 }
 
@@ -124,7 +121,7 @@
   right: 0;
   width: 24px;
   height: 24px;
-  border: 1px solid $primary-color;
+  border: 1px solid rgba(45, 56, 63, 0.3);
 
   &::before {
     content: "";
@@ -132,8 +129,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 23px;
-    height: 23px;
+    width: 24px;
+    height: 24px;
     background-color: $primary-color;
     mask-image: url("../../__spritemap#sprite-vk-view");
     mask-size: 14px 8px;

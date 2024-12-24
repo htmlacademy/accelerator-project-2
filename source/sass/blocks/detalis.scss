@@ -1,10 +1,10 @@
 .detalis--difficulty {
-  .detalis_key {
+  .detalis__key {
   margin-bottom: 4px;
   }
 }
 
-.detalis_key {
+.detalis__key {
   display: block;
   font-size: 12px;
   font-weight: 300;
@@ -12,14 +12,14 @@
   margin-bottom: 7px;
 }
 
-.detalis_value {
+.detalis__value {
   display: flex;
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
 }
 
-.detalis_star {
+.detalis__star {
   @include reset;
 
   display: block;

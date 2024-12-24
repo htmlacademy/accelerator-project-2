@@ -18,11 +18,12 @@
 
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: $desktop-width) {
@@ -33,7 +34,7 @@
 }
 
 .training__title {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0 10px;

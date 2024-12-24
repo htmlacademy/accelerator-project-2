@@ -1,5 +1,5 @@
 .about {
-  padding-top: 19px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -7,6 +7,9 @@
 }
 
 .about__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     position: relative;
     width: 768px;
@@ -23,7 +26,6 @@
 .about__picture-wrapper {
   width: 320px;
   height: 400px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -44,6 +46,9 @@
 }
 
 .about_picture {
+  display: block;
+  object-fit: cover;
+
   width: 320px;
   height: 400px;
 
@@ -142,7 +147,7 @@
     font-size: 16px;
     line-height: 16px;
     text-align: start;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;

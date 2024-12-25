@@ -6,7 +6,7 @@
 
 .page__body {
   font-family: $primary-font;
-  color: $dark-text-clor;
+  color: $dark-text-color;
   font-size: 16px;
   line-height: 24px;
   min-height: 100%;
@@ -17,4 +17,3 @@
 .page__body--with-overlay {
   overflow: hidden; /* Блокируем скролл */
 }
-

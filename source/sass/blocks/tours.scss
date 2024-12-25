@@ -312,7 +312,7 @@
 
 .tours__link {
   @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
-  @include font ($family: $primary-font, $size: 14px, $weight: 700, $color: $dark-text-clor);
+  @include font ($family: $primary-font, $size: 14px, $weight: 700, $color: $dark-text-color);
 
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -333,7 +333,7 @@
     mask-repeat: no-repeat;
     mask-size: auto;
     mask-position: center;
-    background-color: $dark-text-clor;
+    background-color: $dark-text-color;
     transition: backfround-color, 0.5s;
   }
 

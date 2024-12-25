@@ -8,11 +8,11 @@ import 'swiper/css';
 // import 'swiper/css/navigation';
 import 'swiper/css/navigation';
 
-const tourSlider = new Swiper ('.tours__swiper', {
+const tourSlider = new Swiper ('.training__swiper', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.tours__button--next',
-    prevEl: '.tours__button--prev',
+    nextEl: '.training__button--next',
+    prevEl: '.training__button--prev',
   },
   a11y: {
     prevSlideMessage: 'Предыдущий слайд',
@@ -24,14 +24,15 @@ const tourSlider = new Swiper ('.tours__swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 15,
+      initialSlide: 2,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 4,
+      spaceBetween: 20,
     }
   },
   loop : false,

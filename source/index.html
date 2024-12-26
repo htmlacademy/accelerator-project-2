@@ -392,7 +392,108 @@
         <h3>Наша цель</h3>
         <p>Подарить вам незабываемые впечатления от похода в горы. Мы&nbsp;берём&nbsp;на&nbsp;себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
       </div>
+    </section>
+    <section class="reviews" data-test="reviews">
+      <div class="swiper reviews__swiper">
+        <h2 class="reviews__title" title="Отзывы">Отзывы</h2>
+        <!-- If we need navigation buttons -->
+        <div class="reviews__button-wrapper">
+          <button class="swiper-button-prev reviews__button reviews__button--prev" type="button"><span class="visually-hidden">назад</span></button>
+          <button class="swiper-button-next reviews__button reviews__button--next" type="button"><span class="visually-hidden">вперёд</span></button>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper reviews__swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide review">
+            <div class="review__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/review_1_desktop@1x.webp 1x, img/review_1_desktop@2x.webp 2x" type="image/webp" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_1_tablet@1x.webp 1x, img/review_1_tablet@2x.webp 2x" type="image/webp" width="186" height="237">
+                <source srcset="img/review_1_mobile@1x.webp 1x, img/review_1_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
+                <source media="(min-width: 1440px)" srcset="img/review_1_desktop@1x.jpg 1x, img/review_1_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_1_tablet@1x.jpg 1x, img/review_1_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
+                <img class="review__image" loading="lazy" src="img/review_1_mobile.png" srcset="img/review_1_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Александра Фролова">
+              </picture>
+            </div>
+            <div class="review__content">
+              <div class="review__text">
+                <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.</p>
+                <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+              </div>
+              <h3 class="review__author">Фролов Александр</h3>
+              <p class="review__details">38 лет, Москва</p>
+            </div>
 
+          </div>
+
+          <div class="swiper-slide review">
+            <div class="review__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/review_2_desktop@1x.webp 1x, img/review_2_desktop@2x.webp 2x" type="image/webp" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_2_tablet@1x.webp 1x, img/review_2_tablet@2x.webp 2x" type="image/webp" width="186" height="237">
+                <source srcset="img/review_2_mobile@1x.webp 1x, img/review_2_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
+                <source media="(min-width: 1440px)" srcset="img/review_2_desktop@1x.jpg 1x, img/review_2_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_2_tablet@1x.jpg 1x, img/review_2_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
+                <img class="review__image" loading="lazy" src="img/review_2_mobile.png" srcset="img/review_2_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Ивана Соловьёва">
+              </picture>
+            </div>
+            <div class="review__content">
+              <div class="review__text">
+                <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                  Было очень интересно!</p>
+                <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
+                  Всем советую этот тур.</p>
+              </div>
+              <h3 class="review__author">Иван Соловьёв</h3>
+              <p class="review__details">25 лет, Владивосток</p>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide review">
+            <div class="review__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/review_3_desktop@1x.webp 1x, img/review_3_desktop@2x.webp 2x" type="image/webp" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_3_tablet@1x.webp 1x, img/review_3_tablet@2x.webp 2x" type="image/webp" width="186" height="237">
+                <source srcset="img/review_3_mobile@1x.webp 1x, img/review_3_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
+                <source media="(min-width: 1440px)" srcset="img/review_3_desktop@1x.jpg 1x, img/review_3_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_3_tablet@1x.jpg 1x, img/review_3_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
+                <img class="review__image" loading="lazy" src="img/review_3_mobile.png" srcset="img/review_3_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Евгении Баженовой">
+              </picture>
+            </div>
+            <div class="review__content">
+              <div class="review__text">
+                <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
+                <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
+              </div>
+              <h3 class="review__author">Евгения Баженова</h3>
+              <p class="review__details">23 года, Кострома</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide review">
+            <div class="review__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/review_4_desktop@1x.webp 1x, img/review_4_desktop@2x.webp 2x" type="image/webp" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_4_tablet@1x.webp 1x, img/review_4_tablet@2x.webp 2x" type="image/webp" width="186" height="237">
+                <source srcset="img/review_4_mobile@1x.webp 1x, img/review_4_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
+                <source media="(min-width: 1440px)" srcset="img/review_4_desktop@1x.jpg 1x, img/review_4_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
+                <source media="(min-width: 768px)" srcset="img/review_4_tablet@1x.jpg 1x, img/review_4_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
+                <img class="review__image" loading="lazy" src="img/review_4_mobile.png" srcset="img/review_4_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Елены Пироговой">
+              </picture>
+            </div>
+            <div class="review__content">
+              <div class="review__text">
+                <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
+                <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
+              </div>
+              <h3 class="review__author">Елена Пирогова</h3>
+              <p class="review__details">37 лет, Тюмень</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 

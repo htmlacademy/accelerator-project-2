@@ -1,14 +1,14 @@
 .coach__title-wrapper {
   @include flex;
 
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 }
 
@@ -23,15 +23,18 @@
     font-size: 25px;
     line-height: 25px;
     margin-right: auto;
+    padding-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+    padding-bottom: 0;
+    padding-top: 7px;
   }
 }
 
-.coach__button-swiper{
+.coach__button-swiper {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -42,10 +45,14 @@
 .coach__list {
   @include reset-list;
 
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 }
 
@@ -63,7 +70,7 @@
 .coach__picture-wrapper {
   width: 260px;
   height: 200px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     width: 183px;
@@ -78,6 +85,7 @@
   display: block;
   width: 260px;
   height: 200px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     object-fit: cover;
@@ -98,7 +106,8 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    letter-spacing: 0.2px
   }
 
   p {
@@ -133,8 +142,38 @@
     height: 24px;
     background-color: $primary-color;
     mask-image: url("../../__spritemap#sprite-vk-view");
-    mask-size: 14px 8px;
+    mask-size: 15px 10px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
+  }
+
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    border: none;
+    background-color: $color-button;
+
+    &::before {
+      background-color: $color-white;
+      z-index: 1;
+    }
+  }
+}
+
+.coach__link--disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+  border: 1px solid $primary-color;
+  background-color: none;
+
+  &::before {
+    background-color: $primary-color;
   }
 }

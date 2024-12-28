@@ -13,6 +13,7 @@
   position: relative;
   margin: 0 auto;
   margin-bottom: 23px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -32,7 +33,7 @@
     width: 142px;
     height: 42px;
     background-color: $primary-color;
-    mask-image: url("../../__spritemap#sprite-logotype-view");
+    mask-image: url("../../img/logotype.svg");
     mask-size: 142px 42px;
     mask-position: 50% 50%;
     mask-repeat: no-repeat;
@@ -41,6 +42,21 @@
       width: 200px;
       height: 60px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-button;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
   }
 }
 
@@ -54,6 +70,7 @@
 
   @media (min-width: $tablet-width) {
     @include flex;
+
     justify-content: flex-end;
     width: 536px;
     gap: 20px;
@@ -85,10 +102,12 @@
 .main-footer__link {
   @include reset-link;
 
+  position: relative;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   color: $primary-color;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     letter-spacing: 0.8px;
@@ -98,6 +117,44 @@
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.1px;
+  }
+
+  &:hover {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 6px);
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &:active {
+    color: $color-button;
+  }
+
+  &--disabled {
+    color: $color-button-disabled;
+    cursor: not-allowed;
   }
 }
 
@@ -114,6 +171,25 @@
     line-height: 18px;
     text-align: right;
     color: $primary-color;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-button;
+  }
+
+  &:active {
+    color: $color-button-active;
+  }
+
+  &--disabled {
+    color: $color-button-disabled;
+    cursor: not-allowed;
   }
 }
 

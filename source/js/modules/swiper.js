@@ -9,16 +9,33 @@ const swiperHero = new Swiper('.hero__swiper', {
   pagination: {
     el: '.hero__pagination',
     clickable: true,
-    bulletClass: 'slider__pagination-button',
-    bulletActiveClass: 'slider__pagination-button--active',
-    type: 'bullets',
-    //
+    bulletClass: 'hero__pagination-button',
+    bulletActiveClass: 'hero__pagination-button--active',
     renderBullet: function (index, className) {
-      return `<span class= ${className} ></span>`;
+      return `<button class="hero__pagination-button ${className}" type="button" aria-label="Перейти к ${index + 1} слайду"></button>`;
     },
   },
   slideClass: 'hero__item',
   wrapperClass: 'hero__list',
+  breakpoints: {
+    320: {
+      pagination: {
+        clickable: false,
+        renderBullet: function (index, className) {
+          return `<button class="hero__pagination-button ${className}" type="button" aria-label="Перейти к ${index + 1} слайду" tabindex='-1'></button>`;
+        },
+      }
+    },
+    1440: {
+      pagination: {
+        clickable: true,
+        type: 'bullets',
+        renderBullet: function (index, className) {
+          return `<button class="hero__pagination-button ${className}" type="button" aria-label="Перейти к ${index + 1} слайду" tabindex='0'></button>`;
+        },
+      }
+    },
+  }
 });
 
 swiperHero.init();
@@ -90,6 +107,7 @@ const swiperReview = new Swiper('.reviews__swiper', {
 
     768: {
       slidesPerView: 'auto',
+      spaceBetween: 30,
     },
 
     1440: {

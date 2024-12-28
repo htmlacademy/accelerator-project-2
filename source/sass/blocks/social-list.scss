@@ -59,4 +59,43 @@
     mask-image: url("../../__spritemap#sprite-reddit-view");
     mask-size: 14px 15px;
   }
+
+  &:hover {
+    &::after {
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &:focus {
+    &::after {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &:active {
+    &::after {
+      border: none;
+      background-color: $color-button;
+    }
+
+    &::before {
+      background-color: $color-white;
+      z-index: 1;
+    }
+  }
+}
+
+.social-list__link--disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+
+  &::after {
+    border: 1px solid $primary-color;
+    background-color: none;
+  }
+
+  &::before {
+    background-color: $primary-color;
+  }
 }

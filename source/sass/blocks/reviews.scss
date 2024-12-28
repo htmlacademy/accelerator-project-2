@@ -11,12 +11,14 @@
   }
 }
 
-.review__title-wrapper {
+.reviews__wrapper-title {
   padding: 20px 15px 0;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+
     @include flex;
+
     padding: 40px 45px 0;
     align-items: end;
   }
@@ -38,8 +40,12 @@
   }
 
   &::after {
+    @media (min-width: $tablet-width) {
+      bottom: 11px;
+    }
+
     @media (min-width: $desktop-width) {
-      bottom: 25px;
+      bottom: 23px;
     }
   }
 }
@@ -54,6 +60,7 @@
 
 .reviews__list {
   @include reset-list;
+
   padding: 15px;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 38px 0 177px 130px;
+    padding: 38px 0 87px 130px;
   }
 }
 
@@ -71,17 +78,19 @@
   height: 100%;
   background-color: #ffffff;
   padding: 20px;
-  box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
 
   @media (min-width: $tablet-width) {
     @include flex;
+
     width: 565px;
     height: 277px;
-    padding: 20px 30px 20px 20px;
+    padding: 19px 30px 20px 20px;
   }
 
   @media (min-width: $desktop-width) {
+    align-items: flex-start;
     width: 700px;
     height: 293px;
     padding: 20px 40px 20px 20px;
@@ -129,16 +138,23 @@
     width: 294px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 352px;
+  }
+
   p {
     @include reset;
+
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 10px;
     letter-spacing: 1.5;
 
-    @media (min-width: desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: 14px;
       line-height: 22px;
+      margin-top: -2px;
+      margin-bottom: 12px;
     }
   }
 }
@@ -162,14 +178,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 24px;
+    margin-top: -8px;
+    margin-bottom: 8px;
   }
 }
 
-.review__info {
+.reviews__info {
   @include reset;
+
   display: block;
   font-size: 12px;
   line-height: 12px;
   text-align: left;
+  letter-spacing: -0.1px;
 }

@@ -1,5 +1,5 @@
 .hero {
-  background-image: linear-gradient(#44628e 17.23%, rgba(15, 20, 41, 0.33) 94.93%), ;
+  background-image: linear-gradient(#44628e 17.23%, rgba(15, 20, 41, 0.33) 94.93%);
 }
 
 .hero__swiper {
@@ -45,22 +45,22 @@
     align-items: start;
   }
 
-  &--сaucasus {
+  &--kavkaz {
     background-image:
       $background-big,
       image-set(url("../../img/hero-background-1@1x.webp") type("image/webp") 1x,
-        url("../../img/hero-background-1@2x.webp") type("image/webp") 2x,
-        url("../../img/hero-background-1@1x.jpg") type("image/jpg") 1x,
-        url("../../img/hero-background-1@2x.jpg") type("image/jpg") 2x);
+      url("../../img/hero-background-1@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-background-1@1x.jpg") type("image/jpg") 1x,
+      url("../../img/hero-background-1@2x.jpg") type("image/jpg") 2x);
   }
 
   &--kamchatka {
     background-image:
       $background-big,
       image-set(url("../../img/hero-background-2@1x.webp") type("image/webp") 1x,
-        url("../../img/hero-background-2@2x.webp") type("image/webp") 2x,
-        url("../../img/hero-background-2@1x.jpg") type("image/jpg") 1x,
-        url("../../img/hero-background-2@2x.jpg") type("image/jpg") 2x);
+      url("../../img/hero-background-2@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-background-2@1x.jpg") type("image/jpg") 1x,
+      url("../../img/hero-background-2@2x.jpg") type("image/jpg") 2x);
     position: relative;
 
     @media (min-width: $tablet-width) {
@@ -80,9 +80,9 @@
     background-image:
       $background-big,
       image-set(url("../../img/hero-background-3@1x.webp") type("image/webp") 1x,
-        url("../../img/hero-background-3@2x.webp") type("image/webp") 2x,
-        url("../../img/hero-background-3@1x.jpg") type("image/jpg") 1x,
-        url("../../img/hero-background-3@2x.jpg") type("image/jpg") 2x),
+      url("../../img/hero-background-3@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-background-3@1x.jpg") type("image/jpg") 1x,
+      url("../../img/hero-background-3@2x.jpg") type("image/jpg") 2x),;
   }
 
   h2 {
@@ -133,7 +133,7 @@
   }
 }
 
-.hero_button {
+.hero__button {
   width: 180px;
   min-height: 56px;
   padding: 20px;
@@ -141,9 +141,39 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 134px;
   }
+
+  &:hover {
+    border: 1px solid $color-button-active;
+    background-color: $color-white;
+    color: $color-button-active;
+    padding: 19px;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    padding: 20px;
+    background-color: $color-white;
+    color: $color-button-active;
+  }
+
+  &:active {
+    border: none;
+    padding: 20px;
+    background-color: $color-button-active;
+    color: $color-white;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    border: none;
+    padding: 20px;
+    background-color: $color-button-disabled;
+    color: $color-white;
+  }
 }
 
-.hero_detalis-wrapper {
+.hero__detalis-wrapper {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -151,7 +181,7 @@
   }
 }
 
-.hero_detalis {
+.hero__detalis {
   padding: 13px 20px 13px 40px;
   margin-right: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -184,7 +214,6 @@
   &--level::before {
     mask-image: url("../../__spritemap#sprite-level-view");
   }
-
 }
 
 .hero__pagination {
@@ -212,7 +241,7 @@
   }
 }
 
-.slider__pagination-button {
+.hero__pagination-button {
   display: block;
   width: 16px;
   height: 16px;
@@ -223,6 +252,36 @@
   @media (min-width: $tablet-width) {
     width: 20px;
     height: 20px;
+  }
+
+  &:hover {
+    background-color: $color-hover-bullet;
+    border: 1px solid $color-white;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: inherit;
+    position: relative;
+    border: 1px solid $color-white;
+
+    &::after {
+      content: "";
+      display: block;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      border-radius: 50%;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      z-index: -1;
+    }
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid $color-white;
   }
 
   &--active {

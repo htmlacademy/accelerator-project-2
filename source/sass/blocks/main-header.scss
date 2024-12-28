@@ -5,7 +5,7 @@
 .main-header__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 15px 11px;
   display: grid;
   grid-template-columns: 1fr 142px;
   gap: 14px;
@@ -15,7 +15,6 @@
 
     width: 768px;
     padding: 20px 45px;
-    position: relative;
     gap: 0;
   }
 
@@ -36,17 +35,19 @@
 
 .main-header__list {
   @include reset-list;
+
   width: 320px;
   margin: 0 auto;
-  padding: 15px 0 50px 15px;
+  padding: 15px 15px 50px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 30px 0 70px 45px;
+    padding: 30px 45px 70px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex-between;
+
     width: auto;
     gap: 30px;
     padding: 0 133px;
@@ -74,12 +75,14 @@
 .main-header__link {
   @include reset-link;
 
+  position: relative;
   color: $color-white;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -91,25 +94,66 @@
     letter-spacing: 0;
     text-transform: none;
   }
+
+  &:hover {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-white;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 6px);
+      border: 1px solid $color-white;
+    }
+  }
+
+  &:active {
+    color: $color-button-active;
+  }
+
+  &--disabled {
+    color: $color-button-disabled;
+    cursor: not-allowed;
+  }
 }
 
-.main-header__logo {
-  display: block;
-  width: 142px;
-  height: 42px;
-  text-align: center;
+.main-header__logo-wrapper {
   grid-column: 2 / 3;
 
   @media (min-width: $tablet-width) {
-    margin-left: 268px;
+    width: 226px;
+    padding: 0 42px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
     width: 205px;
     height: 62px;
-    padding: 10px 31px 10px 32px;
+    padding: 10px 30px 10px 32px
   }
+}
+
+.main-header__logo {
+  display: block;
+  width: 142px;
+  height: 42px;
 }
 
 .main-header__toggle {
@@ -121,21 +165,30 @@
   mask-image: url("../../__spritemap#sprite-menu-view");
   mask-size: 26px 26px;
   background-color: $color-white;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 45px;
-    top: 28px;
+    margin-right: auto;
   }
+
 
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.1;
+  }
 }
 
 @media (max-width: $tablet-width-only) {
-
-  .main-header__container--opened .main-header__nav {
+  .main-header__wrapper--opened .main-header__nav {
     position: absolute;
     display: block;
     top: 100px;
@@ -151,34 +204,59 @@
     }
   }
 
-  .main-header__container--opened .main-header__toggle {
+  .main-header__wrapper--opened .main-header__toggle {
     mask-image: url("../../__spritemap#sprite-cross-view");
     mask-size: 20px 20px;
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
     width: 20px;
     height: 21px;
-    right: 20px;
   }
 }
 
 .main-header__phone {
   @include reset-link;
+
   grid-area: 2 / 2 / 3 / 3;
   font-size: 14px;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 18px;
   text-align: right;
   color: $color-white;
+  letter-spacing: 0.1px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    width: 226px;
     font-weight: 600;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 17px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     font-size: 18px;
     line-height: 18px;
+    padding-top: 1px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 1;
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $color-button-active;
+  }
+
+  &--disabled {
+    color: $color-button-disabled;
+    cursor: not-allowed;
   }
 }

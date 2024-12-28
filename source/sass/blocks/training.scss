@@ -18,32 +18,42 @@
 
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 25px;
+      margin-bottom: 27px;
     }
 
     @media (min-width: $desktop-width) {
       width: 820px;
-      margin-bottom: 56px;
+      margin-bottom: 54px;
     }
   }
 }
 
 .training__title {
   margin-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding: 20px 0 10px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 19px 0 1px;
-    margin-bottom: 38px;
+    padding: 23px 0 1px;
+    margin-bottom: 31px;
+  }
+
+  &::after {
+    bottom: 13px;
+
+    @media (min-width: $desktop-width) {
+      bottom: 0;
+    }
   }
 }
 
@@ -53,18 +63,18 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 104px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 23px;
+    margin-bottom: 19px;
   }
 }
 
@@ -80,7 +90,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 104px;
-    column-gap: 174px;
+    column-gap: 134px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +101,7 @@
 
   &::before {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     top: 18px;
     left: 6px;
@@ -107,7 +117,7 @@
       display: block;
       top: auto;
       left: 20px;
-      bottom: 14px;
+      bottom: 12px;
       width: 1180px;
       height: 2px;
     }
@@ -124,13 +134,15 @@
   @media (min-width: $tablet-width) {
     width: 232px;
     padding-left: 35px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-   padding: 8px 0 22px 45px;
-   font-size: 16px;
-   line-height: 24px;
+    padding: 8px 0 22px 45px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   &--map {
@@ -173,9 +185,9 @@
 
   &::after {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
-    top: 50%;
+    top: 19px;
     left: 0;
     transform: translateY(-50%);
     width: 14px;
@@ -189,7 +201,7 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      bottom: 0;
+      bottom: -1px;
       top: auto;
       left: 20px;
     }
@@ -201,9 +213,9 @@
 
   &::before {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
-    top: 50%;
+    top: 14px;
     left: 29px;
     transform: translateY(-50%);
     width: 25px;
@@ -215,11 +227,12 @@
 
     @media (min-width: $tablet-width) {
       left: 0;
+      top: 15px;
     }
 
     @media (min-width: $desktop-width) {
       left: 10px;
-      top: 8px;
+      top: 10px;
       transform: translateY(0);
     }
   }
@@ -230,6 +243,7 @@
 
   &--boots::before {
     mask-image: url("../../__spritemap#sprite-boots-view");
+    mask-size: 28px 27px;
   }
 
   &--tree::before {
@@ -238,5 +252,14 @@
 
   &--mountain::before {
     mask-image: url("../../__spritemap#sprite-mountain-view");
+  }
+}
+
+
+.training__item br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

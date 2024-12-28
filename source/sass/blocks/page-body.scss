@@ -15,6 +15,19 @@
     overflow-y: scroll;
     position: fixed;
     width: 100%;
-    top: calc(-1 * var(--scroll-position));
   }
+}
+
+.page-body--no-scroll .main-content {
+  position: relative;
+}
+
+.page-body--no-scroll .main-content ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, $color-overlay 50%, $color-overlay 50%);
 }

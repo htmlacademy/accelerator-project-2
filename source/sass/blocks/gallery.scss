@@ -1,0 +1,160 @@
+.gallery__wrapper {
+  width: 320px;
+  padding-bottom: 3px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.gallery__wrapper-title {
+  padding: 20px 15px 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 45px 21px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 120px 46px;
+  }
+
+  p {
+    @include reset;
+
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+      width: 420px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 620px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+
+.gallery__wrapper-buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    content: '';
+    bottom: 21px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.gallery__button-swiper {
+
+  &::before {
+    mask-size: 15px 10px;
+  }
+}
+
+
+.gallery__title {
+  font-size: 23px;
+  letter-spacing: -0.7px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    margin-bottom: 26px;
+  }
+}
+
+
+.gallery__list {
+  @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    gap: 5px;
+  }
+}
+
+.gallery__list .gallery__item {
+  @include flex-column;
+  height: 266px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 418px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 463px;
+  }
+}
+
+
+.gallery__picture-wrapper {
+  width: auto;
+}
+
+.gallery__picture {
+  @include reset;
+
+  object-fit: cover;
+  display: block;
+
+  &--big {
+    display: block;
+    width: 158px;
+    height: 266px;
+
+    @media (min-width: $tablet-width) {
+      width: 253px;
+      height: 418px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 284px;
+      height: 463px;
+    }
+  }
+
+  &--small {
+    width: 157px;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 252px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 284px;
+    }
+  }
+}

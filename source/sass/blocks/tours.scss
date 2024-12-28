@@ -1,9 +1,11 @@
 .tours {
   line-height: 0;
   padding: 20px 15px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-min-width) {
     padding: 40px 45px 50px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-max-width) {

@@ -1,10 +1,12 @@
 .training {
   max-width: 320px;
   margin: 0 auto;
+  margin-bottom: 5px;
   padding: 18px 15px;
 
   @media (min-width: $tablet-min-width) {
     max-width: 768px;
+    margin-bottom: 0;
     padding: 40px 45px;
   }
 
@@ -381,14 +383,12 @@
   @include flex-box($align-items: flex-start, $justify-content: flex-start, $flex-direction: row);
 
   flex-wrap: nowrap;
-  margin-bottom: 25px;
   position: relative;
   gap: 9px;
 
   @media (min-width: $tablet-min-width) {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 0;
     width: calc(50% - 67px);
   }
 
@@ -428,6 +428,14 @@
       top: 74px;
       left: 10px;
     }
+  }
+}
+
+.training__item:not(:last-child) {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 0;
   }
 }
 

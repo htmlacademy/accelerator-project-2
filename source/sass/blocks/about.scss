@@ -7,6 +7,7 @@
     @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
 
     width: 768px;
+    margin-bottom: 4px;
     padding: 0 48px 40px 0;
   }
 
@@ -14,6 +15,7 @@
     width: 1440px;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-bottom: 0;
     align-items: flex-start;
   }
 }

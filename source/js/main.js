@@ -4,10 +4,7 @@ import { getGallerySlider } from './modules/gallery-slider';
 
 import { getTabindexSlider } from './modules/tabindex';
 import { validForm, validateLength } from './modules/validate';
-import './modules/review-slider';
-import './modules/hero-slider';
-import './modules/tours-slider';
-import './modules/coach-slider';
+import './modules/sliders';
 
 window.addEventListener('DOMContentLoaded', () => {
   getAdvantagesSlider();

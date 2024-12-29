@@ -1,3 +1,7 @@
+.main-footer {
+  flex-grow: 0;
+}
+
 .main-footer__wrapper {
   @media (min-width: $tablet-width) {
     @include flex-between;
@@ -25,39 +29,29 @@
     padding: 9px 29px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 142px;
-    height: 42px;
-    background-color: $primary-color;
-    mask-image: url("../../img/logotype.svg");
-    mask-size: 142px 42px;
-    mask-position: 50% 50%;
-    mask-repeat: no-repeat;
-
-    @media (min-width: $desktop-width) {
-      width: 200px;
-      height: 60px;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.7;
+  &:focus{
     outline: none;
   }
 
-  &:active {
-    background-color: $color-button;
+  &:hover .main-footer__logo,
+  &:focus .main-footer__logo{
+    opacity: 0.7;
   }
 
-  &--disabled {
+  &:active .main-footer__logo {
+    fill: $color-button;
+  }
+
+  &--disabled .main-footer__logo {
     cursor: not-allowed;
     opacity: 0.3;
   }
+}
+
+.main-footer__logo {
+  width: 142px;
+  height: 42px;
+  fill: $primary-color;
 }
 
 .main-footer__list {
@@ -201,4 +195,16 @@
   line-height: 12px;
   text-align: center;
   color: $primary-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-button;
+  }
+
+  &--disabled {
+    color: $color-button-disabled;
+    cursor: not-allowed;
+  }
 }

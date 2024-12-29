@@ -24,6 +24,7 @@
   width: 30px;
   height: 30px;
   background-color: $color-white;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -67,8 +68,9 @@
   }
 
   &:focus {
+    outline: none;
+
     &::after {
-      outline: none;
       border: none;
     }
   }

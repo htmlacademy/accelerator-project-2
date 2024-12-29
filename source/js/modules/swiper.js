@@ -21,18 +21,12 @@ const swiperHero = new Swiper('.hero__swiper', {
     320: {
       pagination: {
         clickable: false,
-        renderBullet: function (index, className) {
-          return `<button class="hero__pagination-button ${className}" type="button" aria-label="Перейти к ${index + 1} слайду" tabindex='-1'></button>`;
-        },
       }
     },
     1440: {
       pagination: {
         clickable: true,
         type: 'bullets',
-        renderBullet: function (index, className) {
-          return `<button class="hero__pagination-button ${className}" type="button" aria-label="Перейти к ${index + 1} слайду" tabindex='0'></button>`;
-        },
       }
     },
   }

@@ -16,8 +16,8 @@ const createSlider = () => {
       breakpoints: {
         1440: {
           spaceBetween: 30,
-          slidesPergroup: 2,
-          slidesOffsetBefore: 15,
+          slidesPerGroup: 2,
+          slidesOffsetBefore: 30,
         },
       }
     });

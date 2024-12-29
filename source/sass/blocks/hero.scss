@@ -24,7 +24,7 @@
   @include flex-column;
 
   width: 320px;
-  height: 568px;
+  min-height: 568px;
   justify-content: center;
   background-color: #44628e;
   background-size: cover;
@@ -34,13 +34,13 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    height: 1034px;
+    min-height: 1034px;
     padding: 342px 45px 402px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    height: 800px;
+    min-height: 800px;
     padding: 200px 120px 80px;
     align-items: start;
   }
@@ -134,9 +134,17 @@
 }
 
 .hero__button {
+  display: block;
+  background-color: $color-button;
+  color: $color-white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
   width: 180px;
   min-height: 56px;
   padding: 20px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 134px;

@@ -36,7 +36,6 @@
     padding-top: 20px;
     padding-bottom: 10px;
     margin-bottom: 0;
-    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,7 +61,7 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 290px;
-  height: 416px;
+  min-height: 416px;
   padding: 30px 20px;
   color: $color-white;
   background-color: #44628e;

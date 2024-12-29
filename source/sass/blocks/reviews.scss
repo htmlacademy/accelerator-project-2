@@ -85,14 +85,14 @@
     @include flex;
 
     width: 565px;
-    height: 277px;
+    min-height: 277px;
     padding: 19px 30px 20px 20px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
     width: 700px;
-    height: 293px;
+    min-height: 293px;
     padding: 20px 40px 20px 20px;
   }
 }

@@ -106,7 +106,7 @@
     top: 18px;
     left: 6px;
     width: 2px;
-    height: 183px;
+    height: calc(100% - 36px);
     background-color: $color-button;
 
     @media (min-width: $tablet-width) {
@@ -125,6 +125,7 @@
 }
 
 .training__item {
+  min-height: 30px;
   width: 260px;
   padding-left: 63px;
   font-size: 12px;

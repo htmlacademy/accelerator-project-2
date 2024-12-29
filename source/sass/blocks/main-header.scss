@@ -1,5 +1,6 @@
 .main-header {
   background-color: $color-button;
+  flex-grow: 0;
 }
 
 .main-header__wrapper {
@@ -136,6 +137,8 @@
 
 .main-header__logo-wrapper {
   grid-column: 2 / 3;
+  width: 142px;
+  height: 42px;
 
   @media (min-width: $tablet-width) {
     width: 226px;
@@ -146,7 +149,7 @@
     margin-left: 0;
     width: 205px;
     height: 62px;
-    padding: 10px 30px 10px 32px
+    padding: 10px 30px 10px 32px;
   }
 }
 

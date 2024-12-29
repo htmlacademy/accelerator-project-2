@@ -14,6 +14,10 @@
   }
 }
 
+.footer__footer {
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+}
+
 .footer__main-footer {
   @include flex-column;
 
@@ -21,7 +25,6 @@
   margin: 0 auto;
   padding: 23px 15px 20px;
   gap: 23px;
-  border-top: 1px solid rgba(45, 56, 63, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 768px;

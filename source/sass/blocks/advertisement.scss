@@ -6,11 +6,13 @@
   @media (min-width: $tablet-min-width) {
     max-width: 768px;
     padding: 40px 45px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $tablet-max-width) {
     max-width: 1440px;
     padding: 112px 0 100px;
+    margin-bottom: 0;
   }
 }
 

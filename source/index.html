@@ -614,6 +614,33 @@
         </ul>
       </div>
     </section>
+    <section class="form" data-test="form">
+      <div class="form__container">
+        <h2 class="visually-hidden">Форма обртной связи</h2>
+        <h3>Остались вопросы?</h3>
+        <p>Заполните форму и наш оператор <br>свяжется<br> с вами для консультации.</p>
+        <form class="form__group" action="https://echo.htmlacademy.ru">
+          <div class="form__group-wrapper phone">
+            <label class="phone__label" for="phone">Телефон</label>
+            <input class="form__group-phone form__input" type="tel" name="phone" id="phone" placeholder="+7 (000)-000-00-00" pattern="[^A-Za-zА-Яа-яЁё]+$" title="+7 (000)-000-00-00" data-error-message="Не разрешены буквы." aria-describedby="phone-error" required>
+            <span class="form__error phone__error" id="phone-error" aria-live="polite">
+            </span>
+          </div>
+          <div class="form__group-wrapper email">
+            <label class="email__label" for="email">Email</label>
+            <input class="form__group-email form__input" type="text" name="email" id="email" placeholder="Email" pattern="^[a-zA-Zа-яА-Я0-9._%+\-]+@[a-zA-Zа-яА-Я0-9.\-]+\.[a-zA-Zа-яА-Я]{2,}$" title="Только Email" data-error-message="Разрешены Email." aria-describedby="name-error" required>
+            <span class="form__error email__error" id="name-error" aria-live="polite">
+            </span>
+          </div>
+
+          <button class="form__button button" type="submit" aria-describedby="empty-error">Отправить</button>
+          <span class="form__empty form__empty--error" id="empty-error" aria-live="assertive">
+          </span>
+
+        </form>
+      </div>
+
+    </section>
   </main>
 
   <!-- пример использования спрайта

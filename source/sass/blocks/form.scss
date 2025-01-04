@@ -1,0 +1,319 @@
+.form {
+  padding-top: 174px;
+  padding-bottom: 174px;
+  background-image:
+    image-set(
+      url("/img/form_background_mobile@2x.webp") type("image/webp") 2x,
+      url("/img/form_background_mobile@1x.webp") type("image/webp") 1x,
+      url("/img/form_background_mobile@2x.jpg") type("image/png") 2x,
+      url("/img/form_background_mobile@1x.jpg") type("image/png") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #414337;
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 183px;
+    padding-bottom: 183px;
+    background-image:
+      image-set(
+        url("/img/form_background_tablet@2x.webp") type("image/webp") 2x,
+        url("/img/form_background_tablet@1x.webp") type("image/webp") 1x,
+        url("/img/form_background_tablet@2x.png") type("image/png") 2x,
+        url("/img/form_background_tablet@1x.png") type("image/png") 1x
+      );
+  }
+
+  @media (min-width: $tablet-max-width) {
+    padding-top: 292px;
+    padding-bottom: 292px;
+    background-image:
+      image-set(
+        url("/img/form_background_desktop@2x.webp") type("image/webp") 2x,
+        url("/img/form_background_desktop@1x.webp") type("image/webp") 1x,
+        url("/img/form_background_desktop@2x.png") type("image/png") 2x,
+        url("/img/form_background_desktop@1x.png") type("image/png") 1x
+      );
+  }
+}
+
+.form__container {
+  @include flex-box($align-items: center, $justify-content: center, $flex-direction: column);
+
+  gap: 19px;
+  max-width: 258px;
+  margin: 0 auto;
+  color: $white-color;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 360px;
+    gap: 23px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    max-width: 960px;
+    gap: 18px;
+  }
+}
+
+.form__container h3 {
+  @include font ($family: $primary-font, $size: 22px, $weight: 800);
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 25px;
+    line-height: 25px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.form__container p {
+  @include font ($family: $primary-font, $size: 12px, $height: 18px, $weight: 400);
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-max-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__group {
+  @include flex-box($flex-direction: column, $justify-content: flex-start, $align-items: flex-start);
+
+  gap: 8px;
+
+  @media (min-width: $tablet-min-width) {
+    gap: 9px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.form__group-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto calc(14px * 2);
+}
+
+// .form__empty {
+//   opacity: 0;
+//   visibility: hidden;
+// }
+
+.form__group-phone,
+.form__group-email {
+  @include font($family: $primary-font, $size: 16px, $weight: 400, $style: normal);
+
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+
+  width: 258px;
+  margin-bottom: 0;
+  background-color: $white-color;
+  border-radius: 2px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding: 14px 13px;
+  color: $dark-text-color;
+  transition: color, border-color, outline, border-bottom, 0.3s;
+
+  @media (min-width: $tablet-min-width) {
+    width: 360px;
+    padding: 18px 30px;
+  }
+
+  &:hover {
+    border-color: $main-bnt-color;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-color: $dark-text-color;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $disabled-color;
+  }
+}
+
+.phone__label,
+.email__label {
+  @include font($family: $primary-font, $size: 16px, $weight: 400, $style: normal);
+
+  color: $dark-text-color;
+
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  opacity: 0.5;
+  padding: 17px 15px;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 20px 30px 19px;
+  }
+}
+
+.form__group-phone::placeholder,
+.form__group-email::placeholder {
+  color: transparent;
+}
+
+.form__group .phone__label,
+.form__group .email__label {
+  pointer-events: none;
+}
+
+.form__button {
+  @include font ($family: $primary-font, $size: 16px, $weight: 500);
+
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: $main-bnt-color;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid $main-bnt-color;
+  transition: color, border-color, background-color, 0.5s;
+
+  @media (min-width: $tablet-max-width) {
+    width: 180px;
+  }
+
+  &:hover {
+    border-color: $active-color;
+    color: $active-color;
+    background-color: $white-color;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-color: $white-color;
+    color: $active-color;
+    background-color: $white-color;
+    outline: none;
+  }
+
+  &:active,
+  &--active {
+    border-color: $active-color;
+    background-color: $active-color;
+    color: $white-color;
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: $disabled-color;
+    background-color: $disabled-color;
+    color: $white-color;
+  }
+}
+
+.form__group-phone:focus::placeholder,
+.form__group-phone:focus-visible::placeholder,
+.form__group-email:focus::placeholder,
+.form__group-email:focus-visible::placeholder {
+  color: $dark-text-color;
+  opacity: 0.5;
+}
+
+.form__group-wrapper:focus-within .phone__label,
+.form__group-wrapper:focus-within .email__label {
+  color: transparent;
+}
+
+.form__input:invalid:not(:placeholder-shown) {
+  border-color: $error-color;
+}
+
+/* Для изменения цвета обводки элемента формы при валидации */
+.form__input--error {
+  border-color: $error-color;
+  opacity: 1;
+  visibility: visible;
+}
+
+// .form__error {
+//   display: none;
+//   color: #ff121f;
+//   grid-column: 1;
+//   align-self: self-start;
+//   grid-row-end: span 2;
+//   font-size: 14px;
+//   line-height: 1.1;
+//   inline-size: 223px;
+//   padding: 5px;
+
+//   @media (min-width: $tablet-min-width) {
+//     inline-size: 205px;
+//   }
+// }
+
+
+/* Для блокировки кнопки submit */
+.form__button--inactive {
+  cursor: default;
+}
+
+.form__error {
+  display: none;
+  color: #ff121f;
+  border-color: $error-color;
+  grid-column: 1;
+  align-self: self-start;
+  grid-row-end: span 2;
+  font-size: 10px;
+  line-height: 1.1;
+  inline-size: 223px;
+  padding: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form__error--visible {
+  display: block;
+  opacity: 1;
+}
+
+.form__empty--error {
+  display: none;
+  padding: 2px 0;
+  font-size: 10px;
+  background-color: $error-color;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form__empty--error.visible {
+  display: block;
+  opacity: 1;
+}
+
+/* Для отображения span-элемента с ошибкой */
+.form__error--active {
+  display: block;
+  opacity: 1;
+}

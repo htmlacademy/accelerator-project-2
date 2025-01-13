@@ -1,0 +1,230 @@
+.footer {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-min-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    width: 1440px;
+  }
+}
+
+.footer__contacts {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    @include flex-box($align-items: center, $justify-content: space-between, $flex-direction: row);
+
+    padding: 100px 120px 94px;
+  }
+}
+
+.footer__social {
+  @include flex-box($align-items: flex-start, $justify-content: center, $flex-direction: row);
+
+  padding: 22px 15px 20px;
+  border-top: 1px solid #d5d7d9;
+  gap: 19px;
+
+  @media (min-width: $tablet-min-width) {
+    gap: 33px 30px;
+    align-items: center;
+    padding: 34px 45px 20px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    padding: 41px 120px 34px;
+    gap: 31px 133px;
+    justify-content: space-between;
+  }
+}
+
+.footer__social-logo {
+  line-height: 0;
+  transition: opacity, 0.3s;
+
+  @media (min-width: $tablet-min-width) {
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    margin: 0;
+    margin-left: 29px;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.footer__nav {
+  @include flex-box($align-items: flex-start, $justify-content: space-between, $flex-direction: row);
+
+  gap: 40px;
+
+  @media (min-width: $tablet-min-width) {
+    width: auto;
+    align-items: center;
+  }
+}
+
+.footer__list {
+  @include list-reset;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: dense;
+  justify-items: center;
+  row-gap: 10px;
+  column-gap: 57px;
+
+  @media (min-width: $tablet-min-width) {
+    @include flex-box($align-items: center, $justify-content: space-between, $flex-direction: row);
+
+    gap: 12px 1px;
+    max-width: 536px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    max-width: 600px;
+    gap: 19px 8px;
+  }
+}
+
+.footer__item {
+  @include font ($family: $primary-font, $size: 14px, $weight: 400);
+
+  text-align: center;
+  padding: 3px 5px;
+
+  &:nth-child(-n+3) {
+    grid-column: 1;
+  }
+
+  &:nth-child(n+4):nth-child(-n+6) {
+    grid-column: 2;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+  padding: 3px 5px;
+  border: 1px solid transparent;
+  transition: color, 0.3s, border-color, 0.3s;
+
+  &:hover {
+    border-bottom-color: $dark-text-color;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline-style: solid;
+    outline-color: $dark-text-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $disabled-color;
+  }
+}
+
+.footer__link-phone {
+  display: none;
+
+  @media (min-width: $tablet-max-width) {
+    @include font ($family: $primary-font, $size: 18px, $weight: 600);
+
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    text-align: right;
+    margin-left: auto;
+    transition: color, 0.3s;
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $main-bnt-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
+}
+
+
+.footer__wrapper {
+  @include flex-box($align-items: flex-start, $justify-content: center, $flex-direction: row);
+
+  gap: 23px;
+
+  @media (min-width: $tablet-min-width) {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    margin-right: auto;
+    margin-left: auto;
+    gap: 22px;
+  }
+}
+
+.footer__link-policy {
+  @include font ($family: $primary-font, $size: 12px, $weight: 300);
+
+  color: inherit;
+  text-decoration: none;
+  transition: color, 0.3s;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $main-bnt-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
+}
+
+.footer__image-wrapper {
+  line-height: 0;
+}

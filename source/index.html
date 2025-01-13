@@ -13,8 +13,9 @@
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__wrapper">
-      <button class="header__nav-toggle" type="button">
+      <button class="header__nav-toggle" type="button" aria-label="Открыть меню">
         <span class="visually-hidden">Открыть меню</span>
+        <span class="header__nav-toggle-line"></span>
       </button>
       <a class="header__logo logo" href="index.html">
         <picture>
@@ -22,14 +23,14 @@
           <img class="header__logo logo" loading="lazy" src="img/icons/logotype.svg" width="142" height="42" alt="Логотип компании Lifetour">
         </picture>
       </a>
-      <nav class="header__nav">
+      <nav class="header__nav" aria-label="Навигация в шапке">
         <ul class="header__list site-list">
           <li class="header__item site-list__item"><a class="site-list__link" href="#tours">Туры</a></li>
-          <li class="header__item site-list__item"><a class="site-list__link" href="#">Обучение</a></li>
-          <li class="header__item site-list__item"><a class="site-list__link" href="#">О нас</a></li>
-          <li class="header__item site-list__item"><a class="site-list__link" href="#">Отзывы</a></li>
-          <li class="header__item site-list__item"><a class="site-list__link" href="#">Фотографии</a></li>
-          <li class="header__item site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#training">Обучение</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#about">О нас</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#reviews">Отзывы</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#gallery">Фотографии</a></li>
+          <li class="header__item site-list__item"><a class="site-list__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <a class="header__link" href="tel:8-800-000-00-00">8 800 000-00-00</a>
@@ -40,7 +41,7 @@
       <h1 class="visually-hidden">Сайт тур фирмы Lifetour</h1>
       <div class="swiper hero__swiper">
         <div class="hero__slider swiper-wrapper">
-          <div class="hero__item swiper-slide">
+          <div class="hero__item swiper-slide" data-bg-color="#6083AB">
             <div class="hero__image-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/hero_desktop@1x.webp 1x, img/hero_desktop@2x.webp 2x" type="image/webp" width="1440" height="800">
@@ -63,7 +64,7 @@
             </div>
           </div>
 
-          <div class="hero__item swiper-slide">
+          <div class="hero__item swiper-slide" data-bg-color="#1F3138">
             <div class="hero__image-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/v2_hero_desktop@1x.webp 1x, img/v2_hero_desktop@2x.webp 2x" type="image/webp" width="1440" height="800">
@@ -86,7 +87,7 @@
             </div>
           </div>
 
-          <div class="hero__item swiper-slide">
+          <div class="hero__item swiper-slide" data-bg-color="#938776">
             <div class="hero__image-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/v3_hero_desktop@1x.webp 1x, img/v3_hero_desktop@2x.webp 2x" type="image/webp" width="1440" height="800">
@@ -114,12 +115,12 @@
       </div>
     </section>
     <section class="tours" data-test="tours" id="tours">
-      <div class="swiper tours__swiper">
-        <h2 class="tours__title" title="Ближайшие туры">Ближайшие туры</h2>
+      <div class="swiper tours__swiper slider">
+        <h2 class="tours__title shadow-title" title="Ближайшие туры">Ближайшие туры</h2>
         <!-- If we need navigation buttons -->
-        <div class="tours__button-wrapper">
-          <button class="swiper-button-prev tours__button tours__button--prev" type="button"><span class="visually-hidden">назад</span></button>
-          <button class="swiper-button-next tours__button tours__button--next" type="button"><span class="visually-hidden">вперёд</span></button>
+        <div class="tours__button-wrapper slider__button-wrapper">
+          <button class="swiper-button-prev tours__button tours__button--prev slider__button slider__button--prev" type="button"><span class="visually-hidden">назад</span></button>
+          <button class="swiper-button-next tours__button tours__button--next slider__button" type="button"><span class="visually-hidden">вперёд</span></button>
         </div>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper tours__swiper-wrapper">
@@ -132,7 +133,7 @@
                 <source srcset="img/tour_1_mobile@1x.webp 1x, img/tour_1_mobile@2x.webp 2x" type="image/webp" width="290" height="416">
                 <source media="(min-width: 1440px)" srcset="img/tour_1_desktop@1x.jpg 1x, img/tour_1_desktop@2x.jpg 2x" type="image/jpg" width="380" height="416">
                 <source media="(min-width: 768px)" srcset="img/tour_1_tablet@1x.jpg 1x, img/tour_1_tablet@2x.jpg 2x" type="image/jpg" width="330" height="416">
-                <img class="tour__image" loading="lazy" src="img/tour_1_mobile.png" srcset="img/tour_1_mobile@2x.jpg 2x" width="290" height="416" alt="Изображение пейзажей Эльбруса">
+                <img class="tour__image" loading="lazy" src="img/tour_1_mobile.jpg" srcset="img/tour_1_mobile@2x.jpg 2x" width="290" height="416" alt="Изображение пейзажей Эльбруса">
               </picture>
             </div>
             <div class="tour__content">
@@ -169,7 +170,7 @@
                 <source srcset="img/tour_2_mobile@1x.webp 1x, img/tour_2_mobile@2x.webp 2x" type="image/webp" width="290" height="416">
                 <source media="(min-width: 1440px)" srcset="img/tour_2_desktop@1x.jpg 1x, img/tour_2_desktop@2x.jpg 2x" type="image/jpg" width="380" height="416">
                 <source media="(min-width: 768px)" srcset="img/tour_2_tablet@1x.jpg 1x, img/tour_2_tablet@2x.jpg 2x" type="image/jpg" width="330" height="416">
-                <img class="tour__image" loading="lazy" src="img/tour_2_mobile.png" srcset="img/tour_2_mobile@2x.jpg 2x" width="290" height="416" alt="Изображение пейзажей Алтая">
+                <img class="tour__image" loading="lazy" src="img/tour_2_mobile.jpg" srcset="img/tour_2_mobile@2x.jpg 2x" width="290" height="416" alt="Изображение пейзажей Алтая">
               </picture>
             </div>
             <div class="tour__content">
@@ -274,14 +275,14 @@
       </div>
       <a class="tours__link" href="#">Показать все туры</a>
     </section>
-    <section class="training" data-test="training">
-      <h2 class="training__title" title="Обучение">Обучение</h2>
+    <section class="training" data-test="training" id="training">
+      <h2 class="training__title shadow-title" title="Обучение">Обучение</h2>
       <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-      <div class="swiper training__swiper">
+      <div class="swiper training__swiper slider">
         <h3 class="training__swiper-title">Наши инструкторы</h3>
-        <div class="training__button-wrapper">
-          <button class="swiper-button-prev training__button training__button--prev" type="button"><span class="visually-hidden">назад</span></button>
-          <button class="swiper-button-next training__button training__button--next" type="button"><span class="visually-hidden">вперёд</span></button>
+        <div class="training__button-wrapper slider__button-wrapper">
+          <button class="swiper-button-prev training__button training__button--prev slider__button slider__button--prev" type="button"><span class="visually-hidden">назад</span></button>
+          <button class="swiper-button-next training__button training__button--next slider__button " type="button"><span class="visually-hidden">вперёд</span></button>
         </div>
         <div class="swiper-wrapper training__swiper-wrapper">
           <div class="swiper-slide training__slide">
@@ -295,7 +296,7 @@
             <div class="training__content instructor">
               <div class="instructor-wrapper instructor">
                 <h4>Александр Прокофьев</h4>
-                <a class="instructor__link" href="#"><span class="visually-hidden">ссылка на ВК</span></a>
+                <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
               <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
             </div>
@@ -311,7 +312,7 @@
             <div class="training__content">
               <div class="instructor-wrapper instructor">
                 <h4>Светлана Афиногенова</h4>
-                <a class="instructor__link" href="#"><span class="visually-hidden">ссылка на ВК</span></a>
+                <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
               <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
             </div>
@@ -327,7 +328,7 @@
             <div class="training__content">
               <div class="instructor-wrapper instructor">
                 <h4>Надежда Колесниченко</h4>
-                <a class="instructor__link" href="#"><span class="visually-hidden">ссылка на ВК</span></a>
+                <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
               <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
             </div>
@@ -343,7 +344,7 @@
             <div class="training__content">
               <div class="instructor-wrapper instructor">
                 <h4>Федор Кайгородов</h4>
-                <a class="instructor__link" href="#"><span class="visually-hidden">ссылка на ВК</span></a>
+                <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
               <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
             </div>
@@ -359,7 +360,7 @@
             <div class="training__content">
               <div class="instructor-wrapper instructor">
                 <h4>Даниэль Васнецов</h4>
-                <a class="instructor__link" href="#"><span class="visually-hidden">ссылка на ВК</span></a>
+                <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
               <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
             </div>
@@ -374,7 +375,7 @@
         <li class="training__item training__item--mountain">Разъяснение сложности <br>горных препятствий</li>
       </ul>
     </section>
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__image-wrapper">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/about_desktop@1x.webp 1x, img/about_desktop@2x.webp 2x" type="image/webp" width="660" height="498">
@@ -393,13 +394,13 @@
         <p>Подарить вам незабываемые впечатления от похода в горы. Мы&nbsp;берём&nbsp;на&nbsp;себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
       </div>
     </section>
-    <section class="reviews" data-test="reviews">
-      <div class="swiper reviews__swiper">
-        <h2 class="reviews__title" title="Отзывы">Отзывы</h2>
+    <section class="reviews" data-test="reviews" id="reviews">
+      <div class="swiper reviews__swiper slider">
+        <h2 class="reviews__title shadow-title" title="Отзывы">Отзывы</h2>
         <!-- If we need navigation buttons -->
-        <div class="reviews__button-wrapper">
-          <button class="swiper-button-prev reviews__button reviews__button--prev" type="button"><span class="visually-hidden">назад</span></button>
-          <button class="swiper-button-next reviews__button reviews__button--next" type="button"><span class="visually-hidden">вперёд</span></button>
+        <div class="reviews__button-wrapper slider__button-wrapper">
+          <button class="swiper-button-prev reviews__button reviews__button--prev slider__button slider__button--prev" type="button"><span class="visually-hidden">назад</span></button>
+          <button class="swiper-button-next reviews__button reviews__button--next slider__button" type="button"><span class="visually-hidden">вперёд</span></button>
         </div>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper reviews__swiper-wrapper">
@@ -412,7 +413,7 @@
                 <source srcset="img/review_1_mobile@1x.webp 1x, img/review_1_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
                 <source media="(min-width: 1440px)" srcset="img/review_1_desktop@1x.jpg 1x, img/review_1_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
                 <source media="(min-width: 768px)" srcset="img/review_1_tablet@1x.jpg 1x, img/review_1_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
-                <img class="review__image" loading="lazy" src="img/review_1_mobile.png" srcset="img/review_1_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Александра Фролова">
+                <img class="review__image" loading="lazy" src="img/review_1_mobile.jpg" srcset="img/review_1_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Александра Фролова">
               </picture>
             </div>
             <div class="review__content">
@@ -434,7 +435,7 @@
                 <source srcset="img/review_2_mobile@1x.webp 1x, img/review_2_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
                 <source media="(min-width: 1440px)" srcset="img/review_2_desktop@1x.jpg 1x, img/review_2_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
                 <source media="(min-width: 768px)" srcset="img/review_2_tablet@1x.jpg 1x, img/review_2_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
-                <img class="review__image" loading="lazy" src="img/review_2_mobile.png" srcset="img/review_2_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Ивана Соловьёва">
+                <img class="review__image" loading="lazy" src="img/review_2_mobile.jpg" srcset="img/review_2_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Ивана Соловьёва">
               </picture>
             </div>
             <div class="review__content">
@@ -458,7 +459,7 @@
                 <source srcset="img/review_3_mobile@1x.webp 1x, img/review_3_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
                 <source media="(min-width: 1440px)" srcset="img/review_3_desktop@1x.jpg 1x, img/review_3_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
                 <source media="(min-width: 768px)" srcset="img/review_3_tablet@1x.jpg 1x, img/review_3_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
-                <img class="review__image" loading="lazy" src="img/review_3_mobile.png" srcset="img/review_3_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Евгении Баженовой">
+                <img class="review__image" loading="lazy" src="img/review_3_mobile.jpg" srcset="img/review_3_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Евгении Баженовой">
               </picture>
             </div>
             <div class="review__content">
@@ -479,7 +480,7 @@
                 <source srcset="img/review_4_mobile@1x.webp 1x, img/review_4_mobile@2x.webp 2x" type="image/webp" width="250" height="169">
                 <source media="(min-width: 1440px)" srcset="img/review_4_desktop@1x.jpg 1x, img/review_4_desktop@2x.jpg 2x" type="image/jpg" width="258" height="253">
                 <source media="(min-width: 768px)" srcset="img/review_4_tablet@1x.jpg 1x, img/review_4_tablet@2x.jpg 2x" type="image/jpg" width="186" height="237">
-                <img class="review__image" loading="lazy" src="img/review_4_mobile.png" srcset="img/review_4_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Елены Пироговой">
+                <img class="review__image" loading="lazy" src="img/review_4_mobile.jpg" srcset="img/review_4_mobile@2x.jpg 2x" width="250" height="169" alt="Фотография автора отзыва Елены Пироговой">
               </picture>
             </div>
             <div class="review__content">
@@ -495,9 +496,9 @@
         </div>
       </div>
     </section>
-    <section class="advertisement" data-test="adv">
-      <h2 class="advertisement__title" title="Преимущества">Преимущества</h2>
-      <div class="swiper advertisement__swiper">
+    <section class="advertisement slider" data-test="adv">
+      <h2 class="advertisement__title shadow-title" title="Преимущества">Преимущества</h2>
+      <div class="swiper advertisement__swiper ">
         <ul class="swiper-wrapper advertisement__swiper-wrapper advertisement__list">
           <li class="swiper-slide advertisement__item advertisement__item--safe">
             <h3>Безопасность</h3>
@@ -523,19 +524,19 @@
         </ul>
 
       </div>
-      <div class="advertisement__button-wrapper">
-        <button class="swiper-button-prev advertisement__button advertisement__button--prev" type="button"><span class="visually-hidden">назад</span></button>
-        <button class="swiper-button-next advertisement__button advertisement__button--next" type="button"><span class="visually-hidden">вперёд</span></button>
+      <div class="advertisement__button-wrapper slider__button-wrapper">
+        <button class="swiper-button-prev advertisement__button advertisement__button--prev slider__button slider__button--prev" type="button"><span class="visually-hidden">назад</span></button>
+        <button class="swiper-button-next advertisement__button advertisement__button--next slider__button" type="button"><span class="visually-hidden">вперёд</span></button>
       </div>
     </section>
-    <section class="gallery" data-test="gallery">
+    <section class="gallery slider" data-test="gallery" id="gallery">
       <div class="gallery__text-content">
-        <h2 class="gallery__title" title="Фотогалерея">Фотогалерея</h2>
+        <h2 class="gallery__title shadow-title" title="Фотогалерея">Фотогалерея</h2>
         <p>Добавляйте фото с хэштегом #лайфтур, <br>а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
       </div>
-      <div class="gallery__button-wrapper">
-        <button class="swiper-button-prev gallery__button gallery__button--prev" type="button"><span class="visually-hidden">назад</span></button>
-        <button class="swiper-button-next gallery__button gallery__button--next" type="button"><span class="visually-hidden">вперёд</span></button>
+      <div class="gallery__button-wrapper slider__button-wrapper">
+        <button class="swiper-button-prev gallery__button gallery__button--prev slider__button  slider__button--prev" type="button"><span class="visually-hidden">назад</span></button>
+        <button class="swiper-button-next gallery__button gallery__button--next slider__button" type="button"><span class="visually-hidden">вперёд</span></button>
       </div>
       <div class="swiper gallery__swiper">
 
@@ -548,7 +549,7 @@
                 <source srcset="img/gallery_1_mobile@1x.webp 1x, img/gallery_1_mobile@2x.webp 2x" type="image/webp" width="158" height="266">
                 <source media="(min-width: 1440px)" srcset="img/gallery_1@1x.jpg 1x, img/gallery_1@2x.jpg 2x" type="image/jpg" width="284" height="463">
                 <source media="(min-width: 768px)" srcset="img/gallery_1_tablet@1x.jpg 1x, img/gallery_1_tablet@2x.jpg 2x" type="image/jpg" width="253" height="418">
-                <img class="gallery__image" loading="lazy" src="img/gallery_1_mobile.png" srcset="img/gallery_1_mobile@2x.jpg 2x" width="158" height="266" alt="Фотография туриста в горах">
+                <img class="gallery__image" loading="lazy" src="img/gallery_1_mobile.jpg" srcset="img/gallery_1_mobile@2x.jpg 2x" width="158" height="266" alt="Фотография туриста в горах">
               </picture>
             </div>
           </li>
@@ -560,7 +561,7 @@
                 <source srcset="img/gallery_2_mobile@1x.webp 1x, img/gallery_2_mobile@2x.webp 2x" type="image/webp" width="157" height="135">
                 <source media="(min-width: 1440px)" srcset="img/gallery_2@1x.jpg 1x, img/gallery_2@2x.jpg 2x" type="image/jpg" width="284" height="230">
                 <source media="(min-width: 768px)" srcset="img/gallery_2_tablet@1x.jpg 1x, img/gallery_2_tablet@2x.jpg 2x" type="image/jpg" width="253" height="209">
-                <img class="gallery__image gallery__image--max-half" loading="lazy" src="img/gallery_2_mobile.png" srcset="img/gallery_2_mobile@2x.jpg 2x" width="157" height="136" alt="Фотография большого костра на привале">
+                <img class="gallery__image gallery__image--max-half" loading="lazy" src="img/gallery_2_mobile.jpg" srcset="img/gallery_2_mobile@2x.jpg 2x" width="157" height="136" alt="Фотография большого костра на привале">
               </picture>
             </div>
             <div class="gallery__image-wrapper">
@@ -570,7 +571,7 @@
                 <source srcset="img/gallery_3_mobile@1x.webp 1x, img/gallery_3_mobile@2x.webp 2x" type="image/webp" width="157" height="124">
                 <source media="(min-width: 1440px)" srcset="img/gallery_3@1x.jpg 1x, img/gallery_3@2x.jpg 2x" type="image/jpg" width="284" height="223">
                 <source media="(min-width: 768px)" srcset="img/gallery_3_tablet@1x.jpg 1x, img/gallery_3_tablet@2x.jpg 2x" type="image/jpg" width="252" height="202">
-                <img class="gallery__image gallery__image--half" loading="lazy" src="img/gallery_3_mobile.png" srcset="img/gallery_3_mobile@2x.jpg 2x" width="157" height="124" alt="Фотография компаса с руках туриста">
+                <img class="gallery__image gallery__image--half" loading="lazy" src="img/gallery_3_mobile.jpg" srcset="img/gallery_3_mobile@2x.jpg 2x" width="157" height="124" alt="Фотография компаса с руках туриста">
               </picture>
             </div>
           </li>
@@ -581,7 +582,7 @@
                 <source media="(min-width: 768px)" srcset="img/gallery_4_tablet@1x.webp 1x, img/gallery_4_tablet@2x.webp 2x" type="image/webp" width="253" height="418">
                 <source media="(min-width: 1440px)" srcset="img/gallery_4@1x.jpg 1x, img/gallery_4@2x.jpg 2x" type="image/jpg" width="284" height="463">
                 <source media="(min-width: 768px)" srcset="img/gallery_4_tablet@1x.jpg 1x, img/gallery_4_tablet@2x.jpg 2x" type="image/jpg" width="253" height="418">
-                <img class="gallery__image" loading="lazy" src="img/gallery_tablet.png" srcset="img/gallery_4_tablet@2x.jpg 2x" width="158" height="266" alt="Фотография трекинга в горах">
+                <img class="gallery__image" loading="lazy" src="img/gallery_tablet.jpg" srcset="img/gallery_4_tablet@2x.jpg 2x" width="158" height="266" alt="Фотография трекинга в горах">
               </picture>
             </div>
           </li>
@@ -622,42 +623,83 @@
         <form class="form__group" action="https://echo.htmlacademy.ru">
           <div class="form__group-wrapper phone">
             <label class="phone__label" for="phone">Телефон</label>
-            <input class="form__group-phone form__input" type="tel" name="phone" id="phone" placeholder="+7 (000)-000-00-00" pattern="[^A-Za-zА-Яа-яЁё]+$" title="+7 (000)-000-00-00" data-error-message="Не разрешены буквы." aria-describedby="phone-error" required>
-            <span class="form__error phone__error" id="phone-error" aria-live="polite">
-            </span>
+            <input class="form__group-phone form__input" type="tel" name="phone" id="phone" placeholder="+7 (000)-000-00-00" pattern="[^A-Za-zА-Яа-яЁё]+$" title="+7 (000)-000-00-00" data-error-message="Не разрешены буквы." required>
           </div>
           <div class="form__group-wrapper email">
             <label class="email__label" for="email">Email</label>
-            <input class="form__group-email form__input" type="text" name="email" id="email" placeholder="Email" pattern="^[a-zA-Zа-яА-Я0-9._%+\-]+@[a-zA-Zа-яА-Я0-9.\-]+\.[a-zA-Zа-яА-Я]{2,}$" title="Только Email" data-error-message="Разрешены Email." aria-describedby="name-error" required>
-            <span class="form__error email__error" id="name-error" aria-live="polite">
-            </span>
+            <input class="form__group-email form__input" type="text" name="email" id="email" placeholder="Email" pattern="^[a-zA-Zа-яА-Я0-9._%+\-]+@[a-zA-Zа-яА-Я0-9.\-]+\.[a-zA-Zа-яА-Я]{2,}$" title="hahaha@ya.com" data-error-message="Разрешены Email." required>
           </div>
-
-          <button class="form__button button" type="submit" aria-describedby="empty-error">Отправить</button>
-          <span class="form__empty form__empty--error" id="empty-error" aria-live="assertive">
-          </span>
-
+          <button class="form__button button" type="submit">Отправить</button>
         </form>
       </div>
-
     </section>
   </main>
-
-  <!-- пример использования спрайта
-	<img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-	<svg>
-		<use href="/__spritemap#sprite-user"></use>
-	</svg>
-	 примеры требуемых атрибутов data-test="*"
-	<div data-test="hero">hero</div>
-	<div data-test="tours">tours</div>
-	<div data-test="training">training</div>
-	<div data-test="about">about</div>
-	<div data-test="reviews">reviews</div>
-	<div data-test="adv">adv</div>
-	<div data-test="gallery">gallery</div>
-	<div data-test="form">form</div>
-	<div data-test="footer">footer</div> -->
+  <footer class="footer" data-test="footer" id="contacts">
+    <section class="footer__contacts">
+      <div class="contacts">
+        <h2 class="contacts__title shadow-title" title="Контакты">Контакты</h2>
+        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        <ul class="contacts__wrapper contact-list">
+          <li class="contact-list__item contact-list__item--phone">
+            <div class="contact-list__wrapper">
+              Телефон
+              <a class="contact-list__link" href="tel:+79837454545">+7 983 745-45-45</a>
+            </div>
+          </li>
+          <li class="contact-list__item contact-list__item--mail">
+            <div class="contact-list__wrapper">
+              Email
+              <a class="contact-list__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </div>
+          </li>
+          <li class="contact-list__item contact-list__item--pin">
+            <div class="contact-list__wrapper">
+              <p class="contact-list__subtitle">Адрес</p>
+              <p class="contact-list__text">г. Москва, пр-т Мира, <br>д. 14, офис 101</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__image-wrapper">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map_desktop@1x.webp 1x, img/map_desktop@2x.webp 2x" type="image/webp" width="600" height="324">
+          <source media="(min-width: 768px)" srcset="img/map_tablet@1x.webp 1x, img/map_tablet@2x.webp 2x" type="image/webp" width="768" height="340">
+          <source srcset="img/map_mobile@1x.webp 1x, img/map_mobile@2x.webp 2x" type="image/webp" width="320" height="343">
+          <source media="(min-width: 1440px)" srcset="img/map_mobile@1x.jpg 1x, img/map_mobile@2x.jpg 2x" type="image/jpg" width="320" height="343">
+          <source media="(min-width: 768px)" srcset="img/map_tablet@1x.jpg 1x, img/map_tablet@2x.jpg 2x" type="image/jpg" width="768" height="340">
+          <img class="footer__image" loading="lazy" src="img/map_mobile.jpg" srcset="img/map_mobile@2x.jpg 2x" width="320" height="343" alt="Карта расположения компании">
+        </picture>
+      </div>
+    </section>
+    <section class="footer__social">
+      <h2 class="visually-hidden">Социальные сети компании</h2>
+      <a class="logo footer__social-logo" href="index.html">
+        <picture>
+          <source srcset="img/icons/logotype.svg" type="image/svg+xml" width="142" height="42">
+          <img class="logo__footer" loading="lazy" src="img/icons/logotype.svg" width="142" height="42" alt="Логотип компании Lifetour">
+        </picture>
+      </a>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#tours">Туры</a></li>
+          <li class="footer__item"><a class="footer__link" href="#training">Обучение</a></li>
+          <li class="footer__item"><a class="footer__link" href="#about">О нас</a></li>
+          <li class="footer__item"><a class="footer__link" href="#reviews">Отзывы</a></li>
+          <li class="footer__item"><a class="footer__link" href="#gallery">Фотографии</a></li>
+          <li class="footer__item"><a class="footer__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="footer__link-phone" href="tel:8-800-725-32-32">8 800 725-32-32</a>
+      <div class="footer__wrapper">
+        <ul class="social">
+          <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+          <li class="social__item"><a class="social__link social__link--ok" href="https://ok.ru/"><span class="visually-hidden">Мы в Одноклассниках</span></a></li>
+          <li class="social__item"><a class="social__link social__link--rd" href="https://www.reddit.com"><span class="visually-hidden">Мы в Reddit</span></a></li>
+        </ul>
+        <a class="footer__link-policy" href="#">Политика конфиденциальности</a>
+      </div>
+    </section>
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 

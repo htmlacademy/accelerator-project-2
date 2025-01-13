@@ -31,50 +31,26 @@
 }
 
 .gallery__title {
-  @include font ($family: $primary-font, $size: 22px, $weight: 800);
-
-  margin: 0;
   margin-bottom: 10px;
   padding-top: 16px;
   padding-bottom: 17px;
-  padding-left: 0;
-  position: relative;
+
 
   @media (min-width: $tablet-min-width) {
+    margin-bottom: 30px;
     padding-top: 20px;
     padding-bottom: 0;
-    font-size: 25px;
-    line-height: 25px;
-    margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-max-width) {
-    font-size: 35px;
-    line-height: 35px;
     margin-bottom: 24px;
     padding-top: 23px;
   }
 
   &::after {
-    content: attr(title);
-    opacity: 0.03;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 800;
-    position: absolute;
-    z-index: -1;
     bottom: 26px;
-    left: 0;
-
-    @media (min-width: $tablet-min-width) {
-      font-size: 40px;
-      bottom: 0;
-      line-height: 40px;
-    }
 
     @media (min-width: $tablet-max-width) {
-      font-size: 55px;
-      line-height: 55px;
       bottom: -3px;
     }
   }
@@ -180,88 +156,14 @@
 }
 
 .gallery__button-wrapper {
-  display: none;
+  // display: none;
 
   @media (min-width: $tablet-min-width) {
-    @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
-
-    position: absolute;
     top: 168px;
     right: 45px;
-    gap: 4px;
   }
 
   @media (min-width: $tablet-max-width) {
     display: none;
   }
-}
-
-.gallery__button-wrapper .gallery__button--prev,
-.gallery__button-wrapper .gallery__button--next {
-  @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
-
-  position: static;
-  width: 37px;
-  height: 35px;
-  background-color: $main-bnt-color;
-  border-radius: 0;
-  border: 1px solid $main-bnt-color;
-  transition: border-color, background-color, 0.5s;
-
-  &::after {
-    width: 14px;
-    height: 9px;
-    content: "";
-    mask-image: url("/__spritemap#sprite-right-button-arrow-view");
-    mask-repeat: no-repeat;
-    mask-size: auto;
-    mask-position: center;
-    background-color: $white-color;
-    transition: background-color, 0.5s;
-  }
-
-  &:hover {
-    background-color: $white-color;
-    border-color: $active-color;
-
-    &::after {
-      background-color: $active-color;
-    }
-  }
-
-  &:focus,
-  &:focus-visible {
-    background-color: $white-color;
-    border-color: $white-color;
-    outline: none;
-
-    &::after {
-      background-color: $active-color;
-    }
-  }
-
-  &:active {
-    background-color: $active-color;
-    border-color: $active-color;
-
-    &::after {
-      background-color: $white-color;
-    }
-  }
-
-  &:disabled {
-    background-color: $disabled-color;
-    border-color: $disabled-color;
-  }
-}
-
-.gallery__button-wrapper .gallery__button--prev.swiper-button-disabled,
-.gallery__button-wrapper .gallery__button--next.swiper-button-disabled {
-  background-color: $disabled-color;
-  border-color: $disabled-color;
-  opacity: 1;
-}
-
-.gallery__button-wrapper .gallery__button--prev {
-  transform: rotate(180deg);
 }

@@ -29,8 +29,9 @@ function openMenu() {
   navMain.classList.remove('header__nav--closed');
   navMain.classList.add('header__nav--opened');
   navToggle.classList.add('header__nav-toggle--close');
-  body.classList.add('page__body--with-overlay'); // Добавляем класс для оверлея и блокировки скролла
-  createOverlay(); // Создаем оверлей
+  navToggle.classList.remove('header__nav-toggle--open');
+  body.classList.add('page__body--with-overlay');
+  createOverlay();
 }
 
 // Функция для закрытия меню
@@ -38,8 +39,9 @@ function closeMenu() {
   navMain.classList.add('header__nav--closed');
   navMain.classList.remove('header__nav--opened');
   navToggle.classList.remove('header__nav-toggle--close');
-  body.classList.remove('page__body--with-overlay'); // Удаляем класс для оверлея и скролла
-  removeOverlay(); // Удаляем оверлей
+  navToggle.classList.add('header__nav-toggle--open');
+  body.classList.remove('page__body--with-overlay');
+  removeOverlay();
 }
 
 // Создание оверлея

@@ -1,6 +1,4 @@
 const form = document.querySelector('.form__group');
-// if (!form) return; // Проверка существования формы
-
 const inputList = Array.from(form.querySelectorAll('.form__input'));
 const buttonElement = form.querySelector('.form__button');
 
@@ -17,9 +15,9 @@ function startValidation() {
     isFormSubmitted = true; // Устанавливаем флаг, что форма была отправлена
 
     // Проверка валидности всех полей
-    const isFormValid = inputList.every((inputElement) => {
-      return inputElement.validity.valid; // Возвращает true, если поле валидно
-    });
+    const isFormValid = inputList.every((inputElement) =>
+      inputElement.validity.valid // Возвращает true, если поле валидно
+    );
 
     if (isFormValid) {
       submitForm(); // Отправка формы, если все поля валидны
@@ -38,12 +36,16 @@ function startValidation() {
 
     inputElement.addEventListener('input', () => {
       toggleLabelVisibility(inputElement, labelElement); // Скрыть/показать label
-      if (isFormSubmitted) inputElement.reportValidity(); // Показываем ошибку, если форма уже отправлялась
+      if (isFormSubmitted) {
+        inputElement.reportValidity();
+      } // Показываем ошибку, если форма уже отправлялась
       toggleButtonState();
     });
 
     inputElement.addEventListener('blur', () => {
-      if (isFormSubmitted) inputElement.reportValidity(); // Показываем ошибку, если форма уже отправлялась
+      if (isFormSubmitted) {
+        inputElement.reportValidity();
+      } // Показываем ошибку, если форма уже отправлялась
     });
 
     // Инициализация видимости label при загрузке страницы

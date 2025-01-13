@@ -12,8 +12,9 @@
   @include flex-box ($align-items: flex-start, $flex-direction: row);
 
   max-width: $mobile-min-width;
-  gap: 8px;
+  gap: 16px 1px;
   padding: 15px;
+  padding-right: 14px;
   margin: 0 auto;
 
   @media (min-width: $tablet-min-width) {
@@ -28,44 +29,87 @@
   }
 }
 
-.header__nav {
-  width: 100%;
-
-  @media (min-width: $tablet-min-width) {
-    display: contents;
-  }
-}
-
 .header__nav-toggle {
-  background-color: $main-bnt-color;
-  background-image: url("/__spritemap#sprite-menu-view");
-  background-repeat: no-repeat;
-  background-size: 26px 26px;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
   border: none;
-  min-width: 26px;
-  min-height: 26px;
   cursor: pointer;
+  padding: 0;
+  z-index: 20;
 
   @media (min-width: $tablet-max-width) {
     display: none;
   }
+}
 
-  &--close {
-    display: block;
-    background-image: url("/__spritemap#sprite-cross-view");
-  }
+.header__nav-toggle-line,
+.header__nav-toggle::before,
+.header__nav-toggle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $white-color;
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+}
 
-  &--open {
-    display: block;
-  }
+.header__nav-toggle::before {
+  top: 4px;
+}
+
+.header__nav-toggle-line {
+  top: 12px;
+  width: 16px;
+}
+
+.header__nav-toggle::after {
+  top: 20px;
+}
+
+/* Анимация в крестик при открытии меню */
+.header__nav-toggle--close::before {
+  top: 12px;
+  transform: rotate(45deg);
+}
+
+.header__nav-toggle--close .header__nav-toggle-line {
+  opacity: 0; /* Скрываем среднюю линию */
+}
+
+.header__nav-toggle--close::after {
+  top: 12px;
+  transform: rotate(-45deg);
+}
+
+/* Анимация в бургер при закрытии меню */
+.header__nav-toggle--open::before {
+  top: 6px;
+  transform: rotate(0);
+}
+
+.header__nav-toggle--open .header__nav-toggle-line {
+  opacity: 1; /* Показываем среднюю линию */
+}
+
+.header__nav-toggle--open::after {
+  top: 18px;
+  transform: rotate(0);
 }
 
 .header__list {
-  display: none;
-
   @include list-reset;
 
+  position: absolute;
+  top: -500%; /* Начальное положение за пределами видимости */
+  left: 0;
   max-width: $mobile-min-width;
+  width: 100%;
+  background-color: $main-bnt-color;
+  transition: top 0.8s ease-in-out; /* Плавное перемещение */
+  z-index: 10;
 
   @media (min-width: $tablet-min-width) {
     max-width: $tablet-min-width;
@@ -76,6 +120,7 @@
 
     min-width: 475px;
     gap: 10px 18px;
+    position: static;
   }
 }
 
@@ -122,9 +167,10 @@
 
 .header__logo {
   display: block;
+  margin-left: auto;
 
   @media (min-width: $tablet-min-width) {
-    margin-left: 57px;
+    margin-left: 89px;
   }
 
   @media (min-width: $tablet-max-width) {
@@ -140,16 +186,17 @@
 
 @media (max-width: $tablet-max-width) {
   .header__nav--opened .header__list {
-    position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: block;
-    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet-min-width) {
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
   }
 
   .header__nav--closed .header__item {
-    display: none;
+    top: -100%;
   }
 }

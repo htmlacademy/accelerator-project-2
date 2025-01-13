@@ -1,0 +1,59 @@
+
+.instructor-wrapper {
+  @include flex-box($align-items: flex-start, $justify-content: space-between, $flex-direction: row);
+
+  width: 100%;
+
+  h4 {
+    @include font ($family: $primary-font, $size: 14px, $height:16px,  $weight: 700);
+
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+  }
+}
+
+.instructor__link {
+  @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
+
+  border: 1px solid #c0c3c5;
+  width: 24px;
+  height: 24px;
+  transition: background-color, border-color, opacity, 0.5s;
+
+  &::before {
+    width: 16px;
+    height: 9px;
+    content: "";
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-repeat: no-repeat;
+    mask-size: auto;
+    mask-position: center;
+    background-color: $dark-text-color;
+    transition: background-color, opacity, 0.5s;
+  }
+
+  &:hover {
+    border-color: $dark-text-color;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-color: transparent;
+    outline: none;
+  }
+
+
+  &:active {
+    background-color: $main-bnt-color;
+    border-color: $main-bnt-color;
+
+    &::before {
+      background-color: $white-color;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

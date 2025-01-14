@@ -61,7 +61,7 @@
 
   margin: 0;
   margin-bottom: 42px;
-  padding-top: 16px;
+  padding-top: 17px;
   padding-bottom: 0;
   padding-left: 0;
   position: relative;
@@ -110,7 +110,7 @@
 
   padding: 0;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-min-width) {
     font-size: 18px;
@@ -143,11 +143,11 @@
 }
 
 .about__content p:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
-  @media (min-width: $tablet-min-width) {
-    margin-bottom: 28px;
-  }
+  // @media (min-width: $tablet-min-width) {
+  //   margin-bottom: 28px;
+  // }
 
   @media (min-width: $tablet-max-width) {
     margin-bottom: 29px;

@@ -11,3 +11,4 @@ import './reviews-swiper';
 import './advertisement-swiper';
 import './gallery-swiper';
 import './form';
+import './helper';

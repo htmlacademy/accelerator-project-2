@@ -31,8 +31,8 @@
 }
 
 .gallery__title {
-  margin-bottom: 9px;
-  padding-top: 17px;
+  margin-bottom: 10px;
+  padding-top: 16px;
   padding-bottom: 17px;
 
 
@@ -156,8 +156,6 @@
 }
 
 .gallery__button-wrapper {
-  // display: none;
-
   @media (min-width: $tablet-min-width) {
     top: 168px;
     right: 45px;

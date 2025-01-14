@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-min-width) {
     padding-top: 183px;
-    padding-bottom: 183px;
+    padding-bottom: 182px;
     background-image:
       image-set(
         url("/img/form_background_tablet@2x.webp") type("image/webp") 2x,
@@ -41,14 +41,14 @@
 .form__container {
   @include flex-box($align-items: center, $justify-content: center, $flex-direction: column);
 
-  gap: 19px;
+  gap: 17px;
   max-width: 258px;
   margin: 0 auto;
   color: $white-color;
 
   @media (min-width: $tablet-min-width) {
     max-width: 360px;
-    gap: 23px;
+    gap: 24px;
   }
 
   @media (min-width: $tablet-max-width) {
@@ -63,12 +63,12 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-top: 2px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-min-width) {
     font-size: 25px;
     line-height: 25px;
-    padding-top: 4px;
+    padding-top: 3px;
   }
 
   @media (min-width: $tablet-max-width) {
@@ -83,10 +83,12 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-min-width) {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
 
     br {
       display: none;
@@ -104,7 +106,7 @@
   gap: 8px;
 
   @media (min-width: $tablet-min-width) {
-    gap: 9px;
+    gap: 10px;
   }
 
   @media (min-width: $tablet-max-width) {

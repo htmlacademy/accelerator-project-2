@@ -21,7 +21,6 @@
 
   @media (min-width: $tablet-min-width) {
     width: 678px;
-    margin-bottom: 36px;
   }
 
   @media (min-width: $tablet-max-width) {
@@ -118,7 +117,6 @@
   @media (min-width: $tablet-min-width) {
     max-width: 290px;
     margin: 0 auto;
-    gap: 14px;
   }
 
   @media (min-width: $tablet-max-width) {
@@ -219,13 +217,9 @@
   margin-top: 2px;
   padding: 0;
 
-  // @media (min-width: $tablet-min-width) {
-  //   margin-top: 1px;
-  // }
-
-  // @media (min-width: $tablet-max-width) {
-  //   margin-top: 2px;
-  // }
+  @media (min-width: $tablet-min-width) {
+    margin-top: 1px;
+  }
 }
 
 .tour__information-wrapper {

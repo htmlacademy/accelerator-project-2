@@ -230,7 +230,6 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-min-width) {
-    margin-top: 16px;
     width: 290px;
     gap: 20px;
   }
@@ -287,7 +286,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   text-decoration: none;
-  gap: 12px;
+  gap: 11px;
   transition: color, 0.5s;
 
   @media (min-width: $tablet-min-width) {

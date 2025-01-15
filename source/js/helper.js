@@ -19,16 +19,28 @@ function isMobile() {
   return window.innerWidth <= 320; // Пример мобильного разрешения
 }
 
+// Функция для проверки планшетного разрешения
+function isTablet() {
+  return window.innerWidth > 320 && window.innerWidth <= 768;
+}
+
 // Применение стилей в зависимости от ОС и разрешения
 function applyStyles() {
   const os = getOS();
   const galleryTitle = document.querySelector('.gallery__title');
+  const toursInformation = document.querySelector('.tour__information-wrapper');
 
   if (galleryTitle && isMobile()) {
       if (os === 'Windows') {
           galleryTitle.style.paddingTop = '17px';
           galleryTitle.style.paddingBottom = '16px';
       }
+  }
+
+  if (toursInformation && isTablet()){
+    if (os === 'MacOS') {
+      toursInformation.style.marginTop = '16px';
+    }
   }
 }
 

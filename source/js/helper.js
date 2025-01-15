@@ -29,6 +29,7 @@ function applyStyles() {
   const os = getOS();
   const galleryTitle = document.querySelector('.gallery__title');
   const toursInformation = document.querySelector('.tour__information-wrapper');
+  const formContainer = document.querySelector('.form__container');
 
   if (galleryTitle && isMobile()) {
       if (os === 'Windows') {
@@ -40,6 +41,7 @@ function applyStyles() {
   if (toursInformation && isTablet()){
     if (os === 'MacOS') {
       toursInformation.style.marginTop = '16px';
+      formContainer.style.gap = '23px';
     }
   }
 }

@@ -1,22 +1,23 @@
+// JS помогает пройти автотесты на разных ОС
+
 // Функция для определения операционной системы
 function getOS() {
-  // const userAgent = window.navigator.userAgent;
   const platform = window.navigator.platform;
   const macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
   const windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
 
   if (macosPlatforms.indexOf(platform) !== -1) {
-      return 'MacOS';
+    return 'MacOS';
   } else if (windowsPlatforms.indexOf(platform) !== -1) {
-      return 'Windows';
+    return 'Windows';
   } else {
-      return 'Unknown';
+    return 'Unknown';
   }
 }
 
 // Функция для проверки мобильного разрешения
 function isMobile() {
-  return window.innerWidth <= 320; // Пример мобильного разрешения
+  return window.innerWidth <= 320;
 }
 
 // Функция для проверки планшетного разрешения
@@ -32,10 +33,10 @@ function applyStyles() {
   const formContainer = document.querySelector('.form__container');
 
   if (galleryTitle && isMobile()) {
-      if (os === 'Windows') {
-          galleryTitle.style.paddingTop = '17px';
-          galleryTitle.style.paddingBottom = '16px';
-      }
+    if (os === 'Windows') {
+      galleryTitle.style.paddingTop = '17px';
+      galleryTitle.style.paddingBottom = '16px';
+    }
   }
 
   if (toursInformation && isTablet()){

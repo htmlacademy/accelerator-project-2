@@ -13,10 +13,10 @@
   @media (min-width: $tablet-min-width) {
     background-image:
       image-set(
-        url("/img/clouds-2_tablet@2x.webp") type("image/webp") 2x,
-        url("/img/clouds-2_tablet@1x.webp") type("image/webp") 1x,
-        url("/img/clouds-2_tablet@2x.png") type("image/png") 2x,
-        url("/img/clouds-2_tablet@1x.png") type("image/png") 1x
+        url("/img/clouds_2_tablet@2x.webp") type("image/webp") 2x,
+        url("/img/clouds_2_tablet@1x.webp") type("image/webp") 1x,
+        url("/img/clouds_2_tablet@2x.png") type("image/png") 2x,
+        url("/img/clouds_2_tablet@1x.png") type("image/png") 1x
       ),
       image-set(
         url("/img/clouds_1@2x.webp") type("image/webp") 2x,
@@ -25,10 +25,10 @@
         url("/img/clouds_1@1x.png") type("image/png") 1x
       ),
       image-set(
-        url("/img/clouds-3-tablet@2x.webp") type("image/webp") 2x,
-        url("/img/clouds-3-tablet@1x.webp") type("image/webp") 1x,
-        url("/img/clouds-3-tablet@2x.png") type("image/png") 2x,
-        url("/img/clouds-3-tablet@1x.png") type("image/png") 1x
+        url("/img/clouds_3_tablet@2x.webp") type("image/webp") 2x,
+        url("/img/clouds_3_tablet@1x.webp") type("image/webp") 1x,
+        url("/img/clouds_3_tablet@2x.png") type("image/png") 2x,
+        url("/img/clouds_3_tablet@1x.png") type("image/png") 1x
       );
     background-position: right 35%, 343px 942px, center 4066px;
   }
@@ -42,16 +42,16 @@
         url("/img/clouds_1@1x.png") type("image/png") 1x
       ),
       image-set(
-        url("/img/clouds-3@2x.webp") type("image/webp") 2x,
-        url("/img/clouds-3@1x.webp") type("image/webp") 1x,
-        url("/img/clouds-3@2x.png") type("image/png") 2x,
-        url("/img/clouds-3@1x.png") type("image/png") 1x
+        url("/img/clouds_3@2x.webp") type("image/webp") 2x,
+        url("/img/clouds_3@1x.webp") type("image/webp") 1x,
+        url("/img/clouds_3@2x.png") type("image/png") 2x,
+        url("/img/clouds_3@1x.png") type("image/png") 1x
       ),
       image-set(
-        url("/img/clouds-2@2x.webp") type("image/webp") 2x,
-        url("/img/clouds-2@1x.webp") type("image/webp") 1x,
-        url("/img/clouds-2@2x.png") type("image/png") 2x,
-        url("/img/clouds-2@1x.png") type("image/png") 1x
+        url("/img/clouds_2@2x.webp") type("image/webp") 2x,
+        url("/img/clouds_2@1x.webp") type("image/webp") 1x,
+        url("/img/clouds_2@2x.png") type("image/png") 2x,
+        url("/img/clouds_2@1x.png") type("image/png") 1x
       );
     background-position: right 674px, center 63%, right 39%;
   }

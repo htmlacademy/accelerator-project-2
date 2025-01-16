@@ -1,0 +1,205 @@
+
+.tour__image-wrapper {
+  background-color: #48550c;
+  position: relative;
+  min-height: 416px;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $small-gradient;
+    display: block;
+    position: absolute;
+  }
+}
+
+.tour__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour__content {
+  @include flex-box($align-items: flex-start, $justify-content: flex-end, $flex-direction: column);
+
+  gap: 15px;
+  grid-column: 1 / -1;
+  grid-row: 2/ 3;
+  z-index: 2; /* Чтобы текст был поверх изображения */
+  color: $white-color;
+  max-width: 250px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    max-width: 340px;
+  }
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: $white-color;
+    opacity: 0.2;
+    bottom: 48px;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.tour__details-wrapper {
+  @include flex-box($align-items: center, $justify-content: flex-start, $flex-direction: row);
+  @include font ($family: $primary-font, $size: 12px, $weight: 500);
+
+  gap: 12px 3px;
+  width: 250px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 290px;
+    gap: 14px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    width: 340px;
+  }
+}
+
+.tour__details {
+  @include flex-box($align-items: center, $justify-content: center, $flex-direction: row);
+
+  padding: 0;
+  margin: 0;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+}
+
+.tour__details--region {
+  padding: 8px 15px 7px 16px;
+  gap: 9px;
+  background-color: $main-bnt-color;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 8px 11px 7px 16px;
+    margin-right: auto;
+  }
+
+  &::before {
+    content: "";
+    width: 9px;
+    height: 12px;
+    background-image: url("/__spritemap#sprite-pin-view");
+    background-size: 9px 12px;
+  }
+}
+
+.tour__duration-wrapper {
+  @include flex-box($align-items: center, $justify-content: flex-start, $flex-direction: row);
+
+  gap: 14px;
+}
+
+.tour__details--days {
+  gap: 12px;
+
+  &::before {
+    content: "";
+    background-image: url("/__spritemap#sprite-sun-view");
+  }
+}
+
+.tour__details--nights {
+  gap: 12px;
+
+  &::before {
+    background-image: url("/__spritemap#sprite-moon-view");
+    background-size: 20px 18px;
+  }
+}
+
+.tour__content-title {
+  @include font ($family: $primary-font, $size: 24px, $height: 28px, $weight: 700);
+
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 1px;
+  }
+}
+
+.tour__information-wrapper {
+  @include flex-box($align-items: center, $justify-content: space-between, $flex-direction: row);
+  @include font ($family: $primary-font, $size: 12px, $weight: 300);
+
+  width: 250px;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 290px;
+    gap: 20px;
+  }
+
+  @media (min-width: $tablet-max-width) {
+    width: 340px;
+  }
+}
+
+.tour__information-item {
+  @include flex-box($align-items: flex-start, $justify-content: space-between, $flex-direction: column);
+
+  gap: 4px;
+  margin: 0;
+}
+
+.tour__information-text {
+  margin-bottom: 4px;
+}
+
+.tour__information-text--difficult {
+  margin-bottom: 0;
+}
+
+.tour__information-description {
+  @include font ($family: $primary-font, $size: 13px, $weight: 700);
+
+  margin: 0;
+}
+
+.tour__stars {
+  width: 84px;
+  height: 16px;
+  margin-bottom: 1px;
+  background-repeat: no-repeat;
+}
+
+.tour__stars--five {
+  background-image: url("/__spritemap#sprite-5stars-view");
+}
+
+.tour__stars--four {
+  background-image: url("/__spritemap#sprite-4stars-view");
+}
+
+.tour__stars--three {
+  background-image: url("/__spritemap#sprite-3stars-view");
+}

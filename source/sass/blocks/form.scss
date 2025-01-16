@@ -1,6 +1,7 @@
 .form {
   padding-top: 174px;
   padding-bottom: 174px;
+  background-color: #414337;
   background-image:
     image-set(
       url("/img/form_background_mobile@2x.webp") type("image/webp") 2x,
@@ -11,7 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #414337;
 
   @media (min-width: $tablet-min-width) {
     padding-top: 183px;
@@ -156,8 +156,8 @@
   }
 }
 
-.phone__label,
-.email__label {
+.form__group-wrapper .phone__label,
+.form__group-wrapper .email__label {
   @include font($family: $primary-font, $size: 16px, $weight: 400, $style: normal);
 
   color: $dark-text-color;
@@ -166,9 +166,11 @@
   grid-row: 1 / -1;
   opacity: 0.5;
   padding: 17px 15px;
+  width: 258px;
 
   @media (min-width: $tablet-min-width) {
     padding: 20px 30px 19px;
+    width: 360px;
   }
 }
 

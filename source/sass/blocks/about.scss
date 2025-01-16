@@ -146,10 +146,6 @@
 .about__content p:not(:last-child) {
   margin-bottom: 28px;
 
-  // @media (min-width: $tablet-min-width) {
-  //   margin-bottom: 28px;
-  // }
-
   @media (min-width: $tablet-max-width) {
     margin-bottom: 29px;
   }

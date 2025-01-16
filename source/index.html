@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт тур фирмы Lifetour">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.png"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Lifetour</title>
   <link rel="preload" href="fonts/Montserrat-Variable-Font_wght.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
@@ -293,8 +298,8 @@
                 <img class="training__image" loading="lazy" fetchpriority="high" src="img/instructor_1@1x.jpg" width="260" height="200" alt="Фотография инструктора Александра Прокофьева">
               </picture>
             </div>
-            <div class="training__content instructor">
-              <div class="instructor-wrapper instructor">
+            <div class="training__content">
+              <div class="instructor">
                 <h4>Александр Прокофьев</h4>
                 <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
@@ -310,7 +315,7 @@
               </picture>
             </div>
             <div class="training__content">
-              <div class="instructor-wrapper instructor">
+              <div class="instructor">
                 <h4>Светлана Афиногенова</h4>
                 <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
@@ -326,7 +331,7 @@
               </picture>
             </div>
             <div class="training__content">
-              <div class="instructor-wrapper instructor">
+              <div class="instructor">
                 <h4>Надежда Колесниченко</h4>
                 <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
@@ -342,7 +347,7 @@
               </picture>
             </div>
             <div class="training__content">
-              <div class="instructor-wrapper instructor">
+              <div class="instructor">
                 <h4>Федор Кайгородов</h4>
                 <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
@@ -358,7 +363,7 @@
               </picture>
             </div>
             <div class="training__content">
-              <div class="instructor-wrapper instructor">
+              <div class="instructor">
                 <h4>Даниэль Васнецов</h4>
                 <a class="instructor__link" href="#" tabindex="-1"><span class="visually-hidden">ссылка на ВК</span></a>
               </div>
@@ -381,9 +386,9 @@
           <source media="(min-width: 1440px)" srcset="img/about_desktop@1x.webp 1x, img/about_desktop@2x.webp 2x" type="image/webp" width="660" height="498">
           <source media="(min-width: 768px)" srcset="img/about_tablet@1x.webp 1x, img/about_tablet@2x.webp 2x" type="image/webp" width="450" height="350">
           <source srcset="img/about_mobile@1x.webp 1x, img/about_mobile@2x.webp 2x" type="image/webp" width="320" height="400">
-          <source media="(min-width: 1440px)" srcset="img/about_desktop@1x.jpg 1x, img/about_desktop@2x.jpg 2x" type="image/jpg" width="660" height="498">
-          <source media="(min-width: 768px)" srcset="img/about_tablet@1x.png 1x, img/about_tablet@2x.jpg 2x" type="image/jpg" width="450" height="350">
-          <img class="about__image" loading="lazy" src="img/about_mobile@1x.jpg" srcset="img/about_mobile@2x.jpg 2x" width="320" height="400" alt="Изображение тургруппы в походе">
+          <source media="(min-width: 1440px)" srcset="img/about_desktop@1x.png 1x, img/about_desktop@2x.png 2x" type="image/png" width="660" height="498">
+          <source media="(min-width: 768px)" srcset="img/about_tablet@1x.png 1x, img/about_tablet@2x.png 2x" type="image/png" width="450" height="350">
+          <img class="about__image" loading="lazy" src="img/about_mobile@1x.png" srcset="img/about_mobile@2x.png 2x" width="320" height="400" alt="Изображение тургруппы в походе">
         </picture>
       </div>
       <div class="about__content">
@@ -638,7 +643,7 @@
     <section class="footer__contacts">
       <div class="contacts">
         <h2 class="contacts__title shadow-title" title="Контакты">Контакты</h2>
-        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        <p>Свяжитесь с нами любым удобным для вас способом <br>или приходите к нам в гости. Мы будем рады поделиться <br>увлекательными историями и подобрать для вас тур.</p>
         <ul class="contacts__wrapper contact-list">
           <li class="contact-list__item contact-list__item--phone">
             <div class="contact-list__wrapper">
@@ -655,7 +660,7 @@
           <li class="contact-list__item contact-list__item--pin">
             <div class="contact-list__wrapper">
               <p class="contact-list__subtitle">Адрес</p>
-              <p class="contact-list__text">г. Москва, пр-т Мира, <br>д. 14, офис 101</p>
+              <p class="contact-list__text">г. Москва, пр-т Мира, <br class="contact-list__br">д. 14, офис 101</p>
             </div>
           </li>
         </ul>

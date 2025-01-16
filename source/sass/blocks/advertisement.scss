@@ -52,7 +52,7 @@
 
 .advertisement__swiper-wrapper.swiper-wrapper.advertisement__list {
   @include list-reset;
-  @include flex-box($align-items: flex-start, $justify-content: flex-start, $flex-direction: column);
+  @include flex-box($align-items: stretch, $justify-content: flex-start, $flex-direction: column);
 
   gap: 15px;
 
@@ -75,6 +75,7 @@
   padding: 19px 9px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   width: 290px;
+  height: auto;
 
   @media (min-width: $tablet-min-width) {
     width: 324px;
@@ -172,8 +173,11 @@
 }
 
 .advertisement__button-wrapper {
+  display: none;
+
   @media (min-width: $tablet-max-width) {
     position: static;
+    display: flex;
   }
 }
 

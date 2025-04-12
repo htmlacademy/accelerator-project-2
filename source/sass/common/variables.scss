@@ -1,0 +1,25 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+/* size */
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+/* color */
+
+$base-text-color: #2d383f;
+$main-background-color: #0266c1;
+$active-color: #1c3374;
+$focus-color: #2d383f;
+$disabled-color: #999999;
+$base-white-color: #ffffff;
+$colorless: rgba(0, 0, 0, 0);
+
+

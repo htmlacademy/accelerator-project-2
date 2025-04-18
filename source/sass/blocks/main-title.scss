@@ -1,0 +1,42 @@
+.main-title {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.main-title__shadow-title {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  color: $base-text-color;
+  opacity: 0.03;
+  text-align: left;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}

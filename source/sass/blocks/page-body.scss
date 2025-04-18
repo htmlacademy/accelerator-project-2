@@ -1,0 +1,16 @@
+.page-body--menu-open {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(45, 56, 63, 0.6);
+    opacity: 0.5;
+    z-index: 1;
+  }
+}

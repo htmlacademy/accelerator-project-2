@@ -1,0 +1,75 @@
+
+.slider-navigation {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  border: none;
+  background-color: $main-background-color;
+  cursor: pointer;
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 13px;
+    height: 10px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $base-white-color;
+  }
+
+  &:hover {
+    background-color: $colorless;
+    outline: 1px solid $active-color;
+    outline-offset: -1px;
+
+    &::after {
+      background-color: $active-color;
+    }
+  }
+
+  &:focus-visible {
+    background-color: $colorless;
+    outline: none;
+
+    &::after {
+      background-color: $active-color;
+    }
+  }
+
+  &:active {
+    background-color: $active-color;
+    outline: none;
+
+    &::after {
+      background-color: $base-white-color;
+    }
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+    pointer-events: none;
+    cursor: default;
+    outline: none;
+
+    &::after {
+      background-color: $base-white-color;
+    }
+  }
+}
+
+.slider-navigation--prev {
+  &::after {
+    mask-image: url("/__spritemap#sprite-arrow-left-nav-view");
+  }
+}
+
+.slider-navigation--next {
+  &::after {
+    mask-image: url("/__spritemap#sprite-arrow-left-nav-view");
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}

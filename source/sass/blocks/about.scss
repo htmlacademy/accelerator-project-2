@@ -1,0 +1,145 @@
+.about {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 100px 0;
+    align-items: start;
+  }
+}
+
+.about__text-container {
+  width: 320px;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    padding: 0;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    padding: 0;
+    padding-right: 120px;
+  }
+}
+
+.about__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.about__title {
+  margin-top: 16px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 57px;
+    padding-top: 45px;
+    padding-bottom: 2px;
+  }
+}
+
+.about__title .main-title__shadow-title {
+  top: -13px;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 4px;
+  }
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 29px;
+  }
+}
+
+.about__item {
+  @media (min-width: $desktop-width) {
+    width: 585px;
+  }
+}
+
+.about__item-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.about__list-text {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 585px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.about__list-text span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

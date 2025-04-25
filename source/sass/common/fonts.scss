@@ -1,0 +1,8 @@
+$base-font: "Montserrat","Arial", sans-serif;
+
+@include font-face("Montserrat", 300, normal, url("../../fonts/montserrat-light.woff2") format("woff2"), url("../../fonts/montserrat-light.woff") format("woff"));
+@include font-face("Montserrat", 400, normal, url("../../fonts/montserrat-regular.woff2") format("woff2"), url("../../fonts/montserrat-regular.woff") format("woff"));
+@include font-face("Montserrat", 500, normal, url("../../fonts/montserrat-medium.woff2") format("woff2"), url("../../fonts/montserrat-regular.woff") format("woff"));
+@include font-face("Montserrat", 600, normal, url("../../fonts/montserrat-semiBold.woff2") format("woff2"), url("../../fonts/montserrat-semiBold.woff") format("woff"));
+@include font-face("Montserrat", 700, normal, url("../../fonts/montserrat-bold.woff2") format("woff2"), url("../../fonts/montserrat-bold.woff") format("woff"));
+@include font-face("Montserrat", 800, normal, url("../../fonts/montserrat-extraBold.woff2") format("woff2"), url("../../fonts/montserrat-extraBold.woff") format("woff"));

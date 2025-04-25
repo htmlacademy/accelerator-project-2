@@ -1,0 +1,26 @@
+.slider-control-button.swiper-button-prev,
+.slider-control-button.swiper-button-next {
+  position: static;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 37px;
+  height: 35px;
+  border: none;
+  background-color: var(--accent-color, $accent-color);
+
+  &::after {
+    display: none;
+  }
+}
+
+.slider-control-button.swiper-button-disabled {
+  background-color: var(--disabled-element-color, $disabled-element-color);
+  opacity: 1;
+}
+
+.slider-control-button svg {
+  width: 13px;
+  height: 9px;
+  fill: var(--secondary-color, $secondary-color);
+}

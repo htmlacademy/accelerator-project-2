@@ -1,0 +1,193 @@
+.training {
+  margin: 0 auto;
+  padding: 20px 15px;
+  width: 290px;
+
+  p {
+    @include font (14px, 20px, 400);
+
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.training__title {
+  @include font (22px, 22px, 800);
+
+  position: relative;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 16px 0 17px;
+}
+
+.training__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.training__slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 78px;
+  min-height: 35px;
+}
+
+.training__inner-title {
+  @include font (22px, 22px, 800);
+
+  margin: 0;
+}
+
+.training__slider {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.training__slider-list {
+  @include list-style;
+}
+
+.training__slider-item.swiper-slide {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+  width: 290px;
+  min-height: 356px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid rgba(2, 102, 193, 0.2);
+  background-color: var(--secondary-color, $secondary-color);
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    width: 100%;
+  }
+
+  a,
+  picture {
+    display: block;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    outline: 1px solid var(--primary-color, $primary-color);
+  }
+
+  h4 {
+    @include font (14px, 16px, 700);
+
+    margin: 0;
+    padding-right: 15px;
+  }
+
+  p {
+    @include font (12px, 16px, 400);
+
+    margin: 0;
+  }
+}
+
+@media (min-width: $mobile-width) and (width <= 767px) {
+  .training__slider-controls {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) and (width <= 1439px) {
+  .training {
+    padding: 40px 45px;
+    width: 678px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .training__title {
+    margin-bottom: 26px;
+    padding: 20px 0 10px;
+
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .training__inner {
+    margin-bottom: 30px;
+  }
+
+  .training__inner-title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .training__slider-item.swiper-slide {
+    padding-bottom: 13px;
+    min-height: 388px;
+
+    picture {
+      width: 182px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    picture img {
+      object-fit: contain;
+      object-position: -31px center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training {
+    padding: 40px 120px;
+    width: 1200px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .training__title {
+    margin-bottom: 37px;
+    padding: 19px 0 1px;
+
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .training__inner {
+    margin-bottom: 20px;
+  }
+
+  .training__inner-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .training__slider-item.swiper-slide {
+    padding-bottom: 13px;
+
+    picture {
+      width: 255px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    h4 {
+      padding-right: 55px;
+    }
+  }
+}

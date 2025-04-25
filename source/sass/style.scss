@@ -1,4 +1,23 @@
-// Vendor
-// ---------------------------------
+/* SWIPER */
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 
+/* Vendor */
 @import "vendor/normalize";
+
+/* GLOBAL */
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/fonts";
+@import "./common/global";
+@import "./common/visually-hidden";
+@import "./common/buttons";
+
+/* BLOCKS */
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/hero-slider";
+@import "./blocks/tours";
+@import "./blocks/card";
+@import "./blocks/training";
+@import "./blocks/features-container";
+

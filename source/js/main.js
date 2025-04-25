@@ -1,4 +1,9 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+import { initHeroSwiper } from './modules/hero-slider';
+import { initToursSwiper } from './modules/tours-slider';
+import { initTrainersSwiper } from './modules/trainers-slider';
+import { getRating } from './modules/stars';
+
+initHeroSwiper();
+initToursSwiper();
+initTrainersSwiper();
+getRating();

@@ -1,0 +1,56 @@
+.main {
+  position: relative;
+  background: url("../../img/clouds-1-mobile.webp") no-repeat top 10px right;
+  background-size: auto;
+
+  @media (min-resolution:2dppx) {
+    background: url("../../img/clouds-1-mobile@2x.webp") no-repeat top 10px right;
+    background-size: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/clouds-1-tablet.webp") no-repeat top 942px right,
+      url("../../img/clouds-2-tablet.webp") no-repeat top 2283px right,
+      url("../../img/clouds-3-tablet.webp") no-repeat top 4066px right;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution:2dppx) {
+    background: url("../../img/clouds-1-tablet@2x.webp") no-repeat top 942px right /425px,
+      url("../../img/clouds-2-tablet@2x.webp") no-repeat top 2283px right /465px,
+      url("../../img/clouds-3-tablet@2x.webp") no-repeat top 4066px right /768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background:
+      url("../../img/clouds-1-desktop.webp") no-repeat top 674px right,
+      url("../../img/clouds-2-desktop.webp") no-repeat top 2226px right,
+      url("../../img/clouds-3-desktop.webp") no-repeat top 3517px right;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution:2dppx) {
+    background:
+      url("../../img/clouds-1-desktop@2x.webp") no-repeat top 674px right /602px,
+      url("../../img/clouds-2-desktop@2x.webp") no-repeat top 2226px right /635px,
+      url("../../img/clouds-3-desktop@2x.webp") no-repeat top 3517px right /1440px;
+  }
+}
+
+.main__overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(45, 56, 63, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+}
+
+.main__overlay.active {
+  display: flex;
+}
+
+.page:has(.header__toggle--opened) {
+  height: 100vh;
+  overflow: hidden;
+}

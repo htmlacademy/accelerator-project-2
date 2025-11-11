@@ -1,0 +1,60 @@
+.tours-swiper {
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 4px;
+  row-gap: 39px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 25px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 50px;
+  }
+}
+
+.tours-swiper__title {
+  @include section-title;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-top: -3px;
+
+    &::after {
+      bottom: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+
+    &::after {
+      bottom: -3px;
+    }
+  }
+}
+
+.tours-swiper__button {
+  margin-top: -3px;
+}
+
+.tours-swiper__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.tours-swiper .swiper-slide {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: calc((100% - 18px) / 2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc((100% - 60px) / 3);
+  }
+}

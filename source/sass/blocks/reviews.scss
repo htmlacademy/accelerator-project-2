@@ -1,0 +1,13 @@
+.reviews {
+  padding: 17px 0 2px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 105px 0 87px;
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,108 @@
+.tours {
+  padding: 39px 15px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 45px 40px;
+    position: relative;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 103px 120px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.tours__swiper {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.tours__link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: $primary-dark-color;
+  margin: 0 auto;
+  width: fit-content;
+
+  &:hover {
+    outline: none;
+    color: $primary-accent-color;
+    opacity: 10%;
+  }
+
+  &:focus {
+    outline: none;
+    color: $primary-accent-color;
+    opacity: 100%;
+  }
+
+  &:active {
+    color: $darker-accent-color;
+  }
+
+  &--disabled {
+    outline: none;
+    color: $disabled-color;
+    opacity: 100%;
+  }
+}
+
+.tours__link span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-transform: uppercase;
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 14px;
+    mask-image: url("/__spritemap#sprite-readmore-view");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $primary-dark-color;
+    margin-left: 11px;
+    margin-right: -2px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 12px;
+    }
+  }
+}
+
+.tours__link:hover span::after {
+  background-color: $primary-accent-color;
+}
+
+.tours__link:focus span::after {
+  background-color: $primary-accent-color;
+}
+
+.tours__link:active span::after {
+  background-color: $darker-accent-color;
+}
+
+.tours__link--disabled span::after {
+  background-color: $disabled-color;
+}

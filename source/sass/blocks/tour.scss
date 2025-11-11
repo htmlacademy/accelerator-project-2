@@ -1,0 +1,190 @@
+.tour {
+  min-height: 416px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.tour__image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tour__image img {
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tour__wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 20px;
+  background: $tour-linear;
+  display: flex;
+  flex-flow: row wrap;
+  color: $primary-light-color;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+
+.tour__info,
+.tour__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour__info {
+  align-items: center;
+  row-gap: 12px;
+  flex-flow: row wrap;
+}
+
+.tour-details {
+  align-items: flex-end;
+}
+
+.tour-info__location {
+  display: flex;
+  padding: 9px 13px 9px 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-accent-color;
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 13px 8px 16px;
+  }
+}
+
+.tour-location__title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 12px;
+    margin-right: 9px;
+    mask-image: url("/__spritemap#sprite-pin-view");
+    background-color: $primary-light-color;
+  }
+}
+
+.tour-info__length {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+}
+
+.tour-length__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-color: $primary-light-color;
+  }
+
+  &--day::before {
+    mask-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &--night::before {
+    mask-image: url("/__spritemap#sprite-moon-view");
+    mask-size: 16px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+}
+
+.tour__title {
+  margin: 15px 0 14px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin: 16px 0 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+  }
+}
+
+.tour-level {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tour-level__title,
+.tour-dates__title,
+.tour-group__title {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tour-level__image {
+  display: block;
+  width: 84px;
+  height: 16px;
+}
+
+.tour--belukha .tour-level__image {
+  background: url("/__spritemap#sprite-stars-three-view") no-repeat center;
+}
+
+.tour--elbrus .tour-level__image,
+.tour--fisht .tour-level__image {
+  background: url("/__spritemap#sprite-stars-four-view") no-repeat center;
+}
+
+.tour--manaraga .tour-level__image {
+  background: url("/__spritemap#sprite-stars-five-view") no-repeat center;
+}
+
+.tour-dates,
+.tour-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tour__dates {
+  margin: 0 auto;
+}
+
+.tour-dates__text,
+.tour-group__text {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  margin-top: 7px;
+  margin-right: 1px;
+}

@@ -1,0 +1,76 @@
+.swiper-button {
+  width: 37px;
+  height: 35px;
+  border-radius: 0;
+  border: 1px solid $primary-accent-color;
+  background-color: $primary-accent-color;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  &:hover {
+    outline: none;
+    border: 1px solid $darker-accent-color;
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $primary-light-color;
+    background-color: $primary-light-color;
+  }
+
+  &:active {
+    outline: none;
+    border: 1px solid $darker-accent-color;
+    background-color: $darker-accent-color;
+  }
+
+  &:disabled {
+    outline: none;
+    border: 1px solid #999999;
+    background-color: #999999;
+  }
+}
+
+.swiper-button-next {
+  @media (min-width: $tablet-width) {
+    right: 45px;
+  }
+}
+
+.swiper-button-prev {
+  @media (min-width: $tablet-width) {
+    right: 86px;
+  }
+}
+
+.swiper-button__overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-light-color;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 13px;
+}
+
+.swiper-button:hover .swiper-button__overlay,
+.swiper-button:focus .swiper-button__overlay {
+  background-color: $darker-accent-color;
+}
+
+.swiper-button:active .swiper-button__overlay,
+.swiper-button:disabled .swiper-button__overlay {
+  background-color: $primary-light-color;
+}
+
+.swiper-button-prev .swiper-button__overlay {
+  mask-image: url("/__spritemap#sprite-arrow-left-view");
+}
+
+.swiper-button-next .swiper-button__overlay {
+  mask-image: url("/__spritemap#sprite-arrow-right-view");
+}

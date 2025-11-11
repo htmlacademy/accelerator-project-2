@@ -1,0 +1,36 @@
+.gallery {
+  padding: 37px 0 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 0 3px;
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.gallery__title {
+  @include section-title;
+
+  margin: 0 15px 26px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 45px 30px;
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px 24px;
+
+    &::after {
+      bottom: -3px;
+    }
+  }
+}

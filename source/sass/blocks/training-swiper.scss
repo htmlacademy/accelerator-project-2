@@ -1,0 +1,61 @@
+.training-swiper {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 22px;
+  overflow: hidden;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 4px;
+    row-gap: 30px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 16px;
+    margin-bottom: 58px;
+  }
+}
+
+.training-swiper__title {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-right: auto;
+    margin-top: 3px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-top: 4px;
+  }
+}
+
+.training-swiper .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: stretch;
+}
+
+.training-swiper .swiper-slide {
+  padding: 14px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background-color: $primary-light-color;
+  height: auto;
+}

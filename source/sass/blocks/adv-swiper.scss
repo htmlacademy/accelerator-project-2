@@ -1,0 +1,193 @@
+.adv-swiper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 4px;
+    width: 100%;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+}
+
+.adv-swiper .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row nowrap;
+    margin-bottom: 50px;
+    gap: 0;
+    justify-content: flex-start;
+  }
+}
+
+.adv-swiper__list .swiper-slide {
+  margin: 0;
+  padding: 19px 9px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-light-color;
+
+  /* white-space: break-spaces; */
+
+  @media (min-width: $tablet-width) {
+    width: calc((100% - 30px) / 2);
+    padding: 29px 19px;
+    min-height: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    padding: 39px 19px;
+    min-height: 329px;
+  }
+}
+
+.adv-swiper__item h3 {
+  margin: 0 15px 15px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  white-space: break-spaces;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 auto 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 auto 15px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $primary-accent-color;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.adv-swiper__item--shield h3::before {
+  background-image: url("/__spritemap#sprite-shield-view");
+  background-size: 56%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 48%;
+  }
+}
+
+.adv-swiper__item--crown h3::before {
+  background-image: url("/__spritemap#sprite-crown-view");
+  background-size: 59%;
+  background-position-y: 9px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 52%;
+    background-position-y: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 47%;
+    background-position-y: 15px;
+  }
+}
+
+.adv-swiper__item--boot h3::before {
+  background-image: url("/__spritemap#sprite-boot-blue-view");
+  background-size: 56%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 43%;
+  }
+}
+
+.adv-swiper__item--map h3::before {
+  background-image: url("/__spritemap#sprite-path-view");
+  background-size: 59%;
+  background-position-y: 8px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 52%;
+    background-position-y: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 47%;
+    background-position-y: 14px;
+  }
+}
+
+.adv-swiper__item--flower h3::before {
+  background-image: url("/__spritemap#sprite-leaf-view");
+  background-size: 59%;
+  background-position-y: 11px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 52%;
+    background-position-y: 14px;
+  }
+}
+
+.adv-swiper__item p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.adv-swiper__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    z-index: 5;
+  }
+}

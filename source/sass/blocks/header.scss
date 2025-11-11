@@ -1,0 +1,143 @@
+.header {
+  background-color: $primary-accent-color;
+  width: 100%;
+  grid-row: 1/2;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: $desktop-width;
+  padding: 15px 15px 13px;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 45px 16px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 120px 38px;
+    justify-content: space-between;
+  }
+}
+
+.header__toggle {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $primary-light-color;
+  margin-right: auto;
+  outline: none;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus {
+    background-color: $darker-accent-color;
+  }
+
+  &:active {
+    background-color: $primary-light-color;
+    opacity: 80%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__toggle--closed {
+  mask-image: url("/__spritemap#sprite-menu-view");
+}
+
+.header__toggle--opened {
+  mask-image: url("/__spritemap#sprite-cross-view");
+}
+
+.header__navigation {
+  display: none;
+  width: 100%;
+  order: 4;
+  z-index: 11;
+  position: absolute;
+  background-color: $primary-accent-color;
+  top: 100px;
+  padding: 0 15px;
+  left: 0;
+
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    order: 0;
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.header__toggle--opened ~ .header__navigation {
+  display: flex;
+}
+
+.header__logo {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 129px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+    margin-right: 31px;
+  }
+}
+
+.header__phone {
+  width: 100%;
+  text-align: right;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-decoration: none;
+  color: $primary-light-color;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus {
+    opacity: 100%;
+    color: $primary-dark-color;
+    outline: none;
+  }
+}

@@ -1,0 +1,305 @@
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-swiper__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-item {
+  background-size: cover;
+  position: relative;
+  background-color: $primary-accent-color;
+
+  &--caucas {
+    background: $slider-linear,
+    url("../../img/hero-slide-caucas-mobile.webp") bottom center /cover;
+
+    @media (min-resolution: 2dppx) {
+      background: $slider-linear,
+    url("../../img/hero-slide-caucas-mobile@2x.webp") bottom center /cover;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: $slider-linear,
+      url("../../img/hero-slide-caucas.webp") bottom center /cover;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+      background: $slider-linear,
+        url("../../img/hero-slide-caucas@2x.webp") bottom center /cover;
+    }
+  }
+
+  &--kamchatka {
+    background: $slider-linear,
+    url("../../img/hero-slide-kamchatka-mobile.webp") bottom center /cover;
+
+    @media (min-resolution: 2dppx) {
+      background: $slider-linear,
+    url("../../img/hero-slide-kamchatka-mobile@2x.webp") bottom center /cover;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: $slider-linear,
+      url("../../img/hero-slide-kamchatka.webp") bottom center /cover;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+      background: $slider-linear,
+        url("../../img/hero-slide-kamchatka@2x.webp") bottom center /cover;
+    }
+  }
+
+
+  &--altay {
+    background: $slider-linear,
+    url("../../img/hero-slide-altay-mobile.webp") bottom center /cover;
+
+    @media (min-resolution: 2dppx) {
+      background: $slider-linear,
+    url("../../img/hero-slide-altay-mobile@2x.webp") bottom center /cover;
+    }
+
+    @media (min-width: $tablet-width) {
+      background: $slider-linear,
+      url("../../img/hero-slide-altay.webp") bottom center /cover;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+      background: $slider-linear,
+        url("../../img/hero-slide-altay@2x.webp") bottom center /cover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 0 center;
+    min-height: 800px;
+  }
+}
+
+.hero-item__photo-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 442px;
+    height: 365px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 420px;
+    height: 459px;
+    position: absolute;
+    top: 187px;
+    right: calc(50% - 610px);
+  }
+}
+
+.hero-item__photo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+
+    &--two {
+      left: 206px;
+      top: 53px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &--two {
+      top: 93px;
+      left: auto;
+      right: 10px;
+    }
+  }
+}
+
+.hero-item__wrapper {
+  height: 100%;
+  padding: 42px 15px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+    justify-content: flex-start;
+    max-width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 120px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: $desktop-width;
+  }
+}
+
+.hero-item__wrapper h2 {
+  margin: 0 auto 15px;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: center;
+  color: $primary-light-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 342px auto 13px;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    line-height: 77px;
+    text-align: left;
+    margin: 120px 0 23px;
+    max-width: 944px;
+    z-index: 3;
+  }
+}
+
+.hero-item--kamchatka .hero-item__wrapper h2 {
+  @media (min-width: $tablet-width) {
+    margin: 137px auto 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 120px 0 23px;
+  }
+}
+
+.hero-item__wrapper p {
+  margin: 0 auto 60px;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $primary-light-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 89px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    max-width: 464px;
+    margin: 0 0 37px;
+  }
+}
+
+.hero-item__link {
+  display: block;
+  padding: 19px 33px;
+  color: $primary-light-color;
+  background-color: $primary-accent-color;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto -1px;
+  border: 1px solid $primary-accent-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 45px;
+    padding: 20px 33px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 134px;
+  }
+
+  &:hover {
+    background-color: $primary-light-color;
+    border: 1px solid $darker-accent-color;
+    color: $darker-accent-color;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $primary-light-color;
+    border: 1px solid $primary-light-color;
+    color: $darker-accent-color;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $darker-accent-color;
+    border: 1px solid $darker-accent-color;
+    color: $primary-light-color;
+  }
+}
+
+.hero-item__link--disabled {
+  outline: none;
+  background-color: $disabled-color;
+  border: 1px solid $disabled-color;
+  color: $primary-light-color;
+}
+
+.hero-item__options {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.hero-item__options span {
+  padding: 13px 19px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: $primary-light-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.options__length::before {
+  background: url("/__spritemap#sprite-moon-view") no-repeat center;
+}
+
+.hero-item__options .options__level {
+  padding-right: 20px;
+}
+
+.options__level::before {
+  background: url("/__spritemap#sprite-level-view") no-repeat center;
+}

@@ -1,0 +1,127 @@
+.gallery-swiper {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 4px;
+  row-gap: 31px;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 45px;
+  }
+}
+
+.gallery-swiper p {
+  margin: 0 15px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 62%;
+    margin: 0 auto 0 45px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 43%;
+  }
+}
+
+.gallery-swiper__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.gallery-swiper__button:last-of-type {
+  margin-right: 45px;
+}
+
+.gallery-swiper .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 266px;
+
+  @media (min-width: $tablet-width) {
+    height: 418px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 463px;
+    column-gap: 5px;
+  }
+}
+
+.gallery-swiper .swiper-slide {
+  width: 158px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 253px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 284px;
+  }
+}
+
+.gallery-swiper .swiper-slide:has(ul) {
+  width: 157px;
+
+  @media (min-width: $tablet-width) {
+    width: 252px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 284px;
+  }
+}
+
+.gallery-swiper picture,
+.gallery-swiper img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-swiper .swiper-slide__sublist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    gap: 7px;
+  }
+}
+
+.gallery-swiper .swiper-slide__sublist li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
